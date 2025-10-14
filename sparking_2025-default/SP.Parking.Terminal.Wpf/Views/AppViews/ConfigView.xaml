@@ -1,0 +1,122 @@
+﻿<Views:BaseView x:Class="SP.Parking.Terminal.Wpf.Views.AppViews.ConfigView"
+             xmlns:Views="clr-namespace:SP.Parking.Terminal.Wpf.Views"
+             xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" >
+
+    <Grid Name="MainGrid" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <TabControl HorizontalAlignment="Stretch" 
+                    VerticalAlignment="Stretch" 
+                    SelectionChanged="TabControl_SelectionChanged" 
+                    Grid.Row="0"
+                    Name="MainTabControl" 
+                    Background="White"
+                    Style="{StaticResource MaterialDesignNavigatilRailTabControl}"
+                    materialDesign:ShadowAssist.ShadowDepth="Depth5"
+                    materialDesign:ColorZoneAssist.Mode="Standard"
+                    ><!--Margin="0 100 0 0"-->
+            <!--Header="Hệ thống" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Cursor="Hand"-->
+            <TabItem Name="ServerConfig" Style="{StaticResource MaterialDesignNavigationRailTabItem}" Width="Auto">
+                <TabItem.Header>
+                    <materialDesign:PackIcon
+                        Kind="TelevisionGuide"
+                        Width="35"
+                        Height="35" 
+                        
+                        ToolTip="System Config"/>
+                </TabItem.Header>
+                <Grid Name="ServerConfigGrid" Background="#FFE5E5E5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+                </Grid>
+            </TabItem>
+            
+            <!--Header="Làn xe" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"-->
+            <TabItem Name="LaneConfig" Style="{StaticResource MaterialDesignNavigationRailTabItem}" Width="Auto">
+                <TabItem.Header>
+                    <materialDesign:PackIcon
+                        Kind="TuneVerticalVariant"
+                        Width="35"
+                        Height="35" 
+                        
+                        ToolTip="Lans Config"
+                        />
+                </TabItem.Header>
+                <Grid Name="LaneConfigGrid" Background="#FFE5E5E5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+                </Grid>
+            </TabItem>
+            
+            <!--Header="Phím tắt" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"-->
+            <TabItem Name="KeyConfig" Style="{StaticResource MaterialDesignNavigationRailTabItem}" Width="Auto">
+                <TabItem.Header>
+                    <materialDesign:PackIcon
+                        Kind="KeyboardSettings"
+                        Width="35"
+                        Height="35" 
+                        
+                        ToolTip="Shortcut Keys"/>
+                </TabItem.Header>
+                <Grid Name="KeyConfigurationGrid" Background="#FFE5E5E5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+                </Grid>
+            </TabItem>
+            
+            <!--Header="Tùy chọn khác" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"-->
+            <TabItem Name="OptionsConfig" Style="{StaticResource MaterialDesignNavigationRailTabItem}" Width="Auto">
+                <TabItem.Header>
+                    <materialDesign:PackIcon
+                        Kind="Cogs"
+                        Width="35"
+                        Height="35" 
+                        
+                        ToolTip="Other Configs"/>
+                </TabItem.Header>
+                <Grid Name="OptionsConfigGrid" Background="#FFE5E5E5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+                </Grid>
+            </TabItem>
+
+            <!--Header="Đăng ký thẻ" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"-->
+            <TabItem Name="InputCard" Style="{StaticResource MaterialDesignNavigationRailTabItem}" Width="Auto">
+                <TabItem.Header>
+                    <materialDesign:PackIcon
+                        Kind="CreditCardScan"
+                        Width="35"
+                        Height="35" 
+                        
+                        ToolTip="Parking Card Regis"/>
+                </TabItem.Header>
+                <Grid Name="InputCardGrid" Background="#FFE5E5E5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="651*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="START"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Width="152"
+                    MinHeight="60"
+                    FontSize="24"
+                    FontWeight="Regular"
+                    Command="{Binding StartCommand}"
+                    Background="{StaticResource VietPark.Brushes.WayIn}"
+                    Foreground="White"
+                    BorderThickness="0" Grid.Column="1" Margin="248.253,0,251,0"
+                    Style="{StaticResource MaterialDesignRaisedLightButton}" Cursor="Hand"
+                    ToolTip="GO TO HOME PAGE"/>
+        </Grid>
+    </Grid>
+</Views:BaseView>

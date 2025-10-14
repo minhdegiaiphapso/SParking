@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="SP.Parking.Terminal.Wpf.RtspSupport.RtspPlayer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SP.Parking.Terminal.Wpf.RtspSupport"
+             mc:Ignorable="d" 
+             HorizontalAlignment="Stretch" VerticalContentAlignment="Stretch"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <FontFamily x:Key="FontAwesome">Fonts/fontawesome-webfont.ttf#FontAwesome</FontFamily>
+        <ControlTemplate x:Key="ValidationTemplate">
+            <DockPanel>
+                <TextBlock Foreground="Red" FontSize="20">!</TextBlock>
+                <AdornedElementPlaceholder />
+            </DockPanel>
+        </ControlTemplate>
+        <Style x:Key="TextBoxInError" TargetType="{x:Type TextBox}">
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="true">
+                    <Setter Property="ToolTip"
+                            Value="{Binding RelativeSource={x:Static RelativeSource.Self},
+                        Path=(Validation.Errors)[0].ErrorContent}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    <Grid x:Name="grdparent"  MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave">
+        <Border x:Name="boder" Background="GhostWhite" Margin="1" BorderBrush="DarkSeaGreen" BorderThickness="1">
+            <Grid x:Name="container">
+                <local:RtspFrame x:Name="video"></local:RtspFrame>
+            </Grid>
+        </Border>
+        <StackPanel Visibility="Hidden" x:Name="pnlConfig"  Margin="5"  VerticalAlignment="Bottom" HorizontalAlignment="Center">
+            <Grid Opacity="1" Background="Transparent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />   
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Margin="2">  
+                    <DockPanel Grid.Column="0">
+                        <Label Content="Device address:" Foreground="WhiteSmoke"/>
+                        <TextBox x:Name="txtAddress" VerticalContentAlignment="Center" >
+                        </TextBox>
+                    </DockPanel>   
+                </Grid>
+                <WrapPanel x:Name="pnlAction" Grid.Row="1"  Margin="2" HorizontalAlignment="Center">
+                    <Button x:Name="btnStart" Click="btnStart_Click"  Background="Transparent" Foreground="DarkSeaGreen"  Margin="4" FontFamily="{StaticResource FontAwesome}" FontSize="32" >&#xf144;</Button>
+                    <Button x:Name="btnStop" IsEnabled="False" Click="btnStop_Click" Background="Transparent" Foreground="DarkSeaGreen" Margin="4" FontFamily="{StaticResource FontAwesome}" FontSize="32" >&#xf28b;</Button>
+                    <Button BorderThickness="0" Foreground="DarkSeaGreen" Background="Transparent"  Click="BtnZoom_Click"  Margin="3" Name="btnZoomOut" FontFamily="{StaticResource FontAwesome}" FontSize="32">&#xf055;</Button>
+                    <Button BorderThickness="0" Foreground="DarkSeaGreen" Background="Transparent" Click="BtnZoom_Click" Margin="3" Name="btnZoomIn"  FontFamily="{StaticResource FontAwesome}" FontSize="32">&#xf056;</Button>
+                    <Button BorderThickness="0" Foreground="DarkSeaGreen" Background="Transparent" Click="BtnZoom_Click" Margin="3" Name="btnZoomLeft"  FontFamily="{StaticResource FontAwesome}" FontSize="32">&#xf137;</Button>
+                    <Button BorderThickness="0" Foreground="DarkSeaGreen" Background="Transparent" Click="BtnZoom_Click" Margin="3" Name="btnZoomRight"  FontFamily="{StaticResource FontAwesome}" FontSize="32">&#xf138;</Button>
+                    <Button BorderThickness="0" Foreground="DarkSeaGreen" Background="Transparent" Click="BtnZoom_Click" Margin="3" Name="btnZoomUp"  FontFamily="{StaticResource FontAwesome}" FontSize="32">&#xf139;</Button>
+                    <Button BorderThickness="0" Foreground="DarkSeaGreen" Background="Transparent" Click="BtnZoom_Click" Margin="3" Name="btnZoomDown"  FontFamily="{StaticResource FontAwesome}" FontSize="32">&#xf13a;</Button>
+                </WrapPanel>
+                <TextBlock Foreground="WhiteSmoke" Margin="2" Grid.Row="2" Height="20" x:Name="lblStatus" />
+            </Grid>
+        </StackPanel>
+    </Grid>
+</UserControl>

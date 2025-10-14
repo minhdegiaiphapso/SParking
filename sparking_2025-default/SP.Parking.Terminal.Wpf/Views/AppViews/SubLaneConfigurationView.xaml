@@ -1,0 +1,2351 @@
+﻿<Views:BaseView x:Class="SP.Parking.Terminal.Wpf.Views.AppViews.SubLaneConfigurationView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:Views="clr-namespace:SP.Parking.Terminal.Wpf.Views"
+             xmlns:common="clr-namespace:SP.Parking.Terminal.Wpf.Views.Common"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:w="clr-namespace:SP.Parking.Terminal.Wpf.Utility"
+             xmlns:enum="clr-namespace:SP.Parking.Terminal.Core.Models;assembly=SP.Parking.Terminal.Core"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"   
+             mc:Ignorable="d"
+             Height ="Auto"
+             d:DesignHeight="720" MinWidth="1024" Background="White">
+
+    <Views:BaseView.Resources>
+        <w:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />
+        <w:StringCodeToString x:Key="StringCodeToString" />
+        <w:EnumToFriendlyNameConverter x:Key="EnumItemsConverter"/>
+        <w:StringToEnableConverter x:Key="StringToEnableConverter"/>
+
+    </Views:BaseView.Resources>
+
+    <GroupBox Name="MainGroupBox" Header="{Binding LaneId}" Margin="10" Height="700">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="16*"/>
+                <ColumnDefinition Width="159*"/>
+                <ColumnDefinition Width="189*"/>
+                <ColumnDefinition Width="242*"/>
+                <ColumnDefinition Width="197*"/>
+                <ColumnDefinition Width="221*"/>
+                <ColumnDefinition Width="175*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="15*" />
+                <RowDefinition Height="95*" />
+                <RowDefinition Height="0*" />
+                <!--<RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1.6*" />-->
+            </Grid.RowDefinitions>
+            
+            <Grid Grid.Row="0" Grid.ColumnSpan="7">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.2*"/>
+                    <ColumnDefinition Width="0.17*"/>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="0.4*"/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBlock Grid.Column="0" Grid.ColumnSpan="5"
+                           Height="30"
+                           Width="400"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Top"
+                           FontSize="14" FontWeight="Bold"
+                           TextWrapping="NoWrap"
+                           TextAlignment="Center"
+                           Text="{Binding SaveResultMessage, Converter={StaticResource StringCodeToString}}"
+                           Foreground="{StaticResource VietPark.Brushes.WayIn}"/>
+
+                <Button Grid.Column="0" Style="{StaticResource MaterialDesignRaisedLightButton}" 
+                        VerticalAlignment="Center" HorizontalAlignment="Center" 
+                        Content="SAVE CHANGE" 
+                        Width="140" Height="40"
+                        Command="{Binding SaveCommand}" />
+                
+                <TextBlock Grid.Column="1" 
+                           FontWeight="Normal" FontSize="14"
+                           Text="LANE NAME"
+                           TextAlignment="Right"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Foreground="{StaticResource VietPark.Brushes.WayIn}"
+                                             />
+                <TextBox Grid.Column="2" Margin="15 0 15 0" FontWeight="Normal" FontSize="16" TextAlignment="Center" VerticalAlignment="Center" 
+                         Foreground="DarkRed" HorizontalAlignment="Stretch" 
+                         Text="{Binding LaneName, Mode=TwoWay}" 
+                         BorderBrush="{StaticResource VietPark.Brushes.WayIn}"></TextBox>
+
+                <Border Grid.Column="3" BorderBrush="{StaticResource VietPark.Brushes.WayIn}" BorderThickness="1" Margin="5 -5 10 5">
+                    <Grid >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.5*"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" Background="{StaticResource VietPark.Brushes.WayIn}">
+                            <TextBlock VerticalAlignment="Center"
+                            Foreground="White" 
+                            TextAlignment="Center"
+                            Text="DEFAULT LANE"
+                            FontSize="14"/>
+                        </Grid>
+
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <RadioButton Grid.Column="0" x:Name="rdB_WayIn"
+                                         Margin="5"
+                                 VerticalAlignment="Center" HorizontalAlignment="Center"
+                                IsChecked="{Binding Direction, ConverterParameter={x:Static enum:LaneDirection.In}, Converter={StaticResource EnumToBooleanConverter}, Mode=TwoWay}" 
+                                GroupName="{Binding LaneId}" 
+                                Content="WAY IN"
+                                FontSize="14"
+                                Style="{StaticResource MaterialDesignLightRadioButton}"
+                                Foreground="{StaticResource VietPark.Brushes.WayIn}" Checked="rdB_WayIn_Checked"
+                                />
+                            <RadioButton Grid.Column="1" x:Name="rdB_WayOut"
+                                IsChecked="{Binding Path=Direction, Mode=TwoWay, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter={x:Static enum:LaneDirection.Out}}" 
+                                GroupName="{Binding LaneId}"  
+                                HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                Content="WAY OUT"
+                                FontSize="14"
+                                         Margin="5"
+                                Style="{StaticResource MaterialDesignLightRadioButton}"
+                                Foreground="{StaticResource VietPark.Brushes.WayIn}" Checked="rdB_WayOut_Checked"/>
+                        </Grid>
+                        
+                    </Grid>
+                </Border>
+            </Grid>
+
+            <Grid Grid.Row="1" Grid.ColumnSpan="7" >
+
+                <materialDesign:Card Background="{DynamicResource MaterialDesignBackground}">
+                    <StackPanel>
+                        <Expander
+                                  HorizontalAlignment="Stretch"
+                                  Header="CAMERA" Foreground="{StaticResource VietPark.Brushes.WayIn}">
+                            <StackPanel
+                                            Orientation="Vertical"
+                                            TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+                                            Margin="24,8,24,16">
+                                <StackPanel/>
+                                <Grid Height="400">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.4*"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Grid Grid.Column="1">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+
+                                        <Grid Grid.Row="0" Name="gWayIn">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition/>
+                                                <RowDefinition/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition Width="0.5*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <TextBlock Grid.Row="0" Grid.Column="0" Text="WAY IN 1" 
+                                                        FontSize="14" Margin="5 0"
+                                                        Foreground="{StaticResource VietPark.Brushes.WayIn}" 
+                                                        VerticalAlignment="Center" HorizontalAlignment="Right"></TextBlock>
+
+                                            <TextBox Name="ipcamewayin1" Grid.Row="0" Grid.Column="1" Foreground="DarkBlue" Margin="5 0"
+                                                    TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                    FontSize="14" Controls:TextBoxHelper.Watermark="IP"
+                                                    Text="{Binding FrontInCamera, Mode=TwoWay}" 
+                                                    materialDesign:HintAssist.Hint="IP"
+                                                    BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                    VerticalAlignment="Center"></TextBox>
+                                            <TextBox Name="portcamewayin1" Grid.Row="0" Grid.Column="2" Foreground="DarkBlue" Margin="5 0" 
+                                                    TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                    FontSize="14" Controls:TextBoxHelper.Watermark="Port"
+                                                    materialDesign:HintAssist.Hint="PORT"
+                                                    BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                    VerticalAlignment="Center"
+                                                    Text="{Binding FrontInPort, Mode=TwoWay}"></TextBox>
+                                            <TextBox Name="usercamewayin1" Grid.Row="0" Grid.Column="3" Foreground="DarkBlue" Margin="5 0" VerticalAlignment="Center"
+                                                    TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                    FontSize="14" Controls:TextBoxHelper.Watermark="User"
+                                                    Text="{Binding FrontInUserName, Mode=TwoWay}"
+                                                    materialDesign:HintAssist.Hint="USER NAME"
+                                                    BorderBrush="{StaticResource VietPark.Brushes.WayIn}"></TextBox>
+                                            <TextBox Name="passcamewayin1" Grid.Row="0" Grid.Column="4" Foreground="DarkBlue" Margin="5 0" VerticalAlignment="Center"
+                                                    TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                    FontSize="14" Controls:TextBoxHelper.Watermark="Password"
+                                                    Text="{Binding FrontInPassword, Mode=TwoWay}"
+                                                    materialDesign:HintAssist.Hint="PASSWORD"
+                                                    BorderBrush="{StaticResource VietPark.Brushes.WayIn}"></TextBox>
+                                            <ComboBox Name="typecamewayin1" Grid.Row="0" Grid.Column="6" Margin="5 0" FontSize="14" Foreground="DarkBlue"
+                                                    IsEditable="True" VerticalAlignment="Center" 
+                                                    ItemsSource="{Binding Path=CameraTypes}" 
+                                                    SelectedItem="{Binding Path=FrontInType, Mode=TwoWay}"
+                                                    materialDesign:HintAssist.Hint="CHOOSE CAMERA TYPE"
+                                                    BorderBrush="{StaticResource VietPark.Brushes.WayIn}"/>
+
+                                            <TextBox Name="camerainchannel1" Grid.Row="0" Grid.Column="5" Foreground="DarkBlue" Margin="5 0" 
+                                                    TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                    FontSize="14" Controls:TextBoxHelper.Watermark="Channel"
+                                                    materialDesign:HintAssist.Hint="CHANNEL"
+                                                    BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                    VerticalAlignment="Center"
+                                                    Text="{Binding FrontInChannel, Mode=TwoWay}"/>
+
+                                            <!--<Button Grid.Row="0" Grid.Column="6"
+                                                    Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
+                                                    ToolTip="Review Camera">
+                                                <materialDesign:PackIcon
+                                                    Kind="CameraMeteringCenter"
+                                                    Height="27"
+                                                    Width="27" />
+                                            </Button>-->
+
+                                            <TextBlock Grid.Row="1" Grid.Column="0" Text="WAY IN 2" 
+                                                       FontSize="14" Margin="5 0"
+                                                       Foreground="{StaticResource VietPark.Brushes.WayIn}" 
+                                                       VerticalAlignment="Center" HorizontalAlignment="Right"></TextBlock>
+                                            <TextBox Name="ipcamewayin2" Grid.Row="1" Grid.Column="1" Foreground="DarkBlue" Margin="5 0" VerticalAlignment="Center"
+                                                     TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                     FontSize="14" Controls:TextBoxHelper.Watermark="IP"
+                                                     Text="{Binding BackInCamera, Mode=TwoWay}"
+                                                     materialDesign:HintAssist.Hint="IP"
+                                                     BorderBrush="{StaticResource VietPark.Brushes.WayIn}"></TextBox>
+                                            <TextBox Name="portcamewayin2" Grid.Row="1" Grid.Column="2" Foreground="DarkBlue" Margin="5 0" VerticalAlignment="Center"
+                                                     TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                     FontSize="14" Controls:TextBoxHelper.Watermark="Port"
+                                                     Text="{Binding BackInPort, Mode=TwoWay}"
+                                                     materialDesign:HintAssist.Hint="PORT"
+                                                     BorderBrush="{StaticResource VietPark.Brushes.WayIn}"></TextBox>
+                                            <TextBox Name="usercamewayin2" Grid.Row="1" Grid.Column="3" Foreground="DarkBlue" Margin="5 0" VerticalAlignment="Center"
+                                                     TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                     FontSize="14"  Controls:TextBoxHelper.Watermark="User"
+                                                     Text="{Binding BackInUserName, Mode=TwoWay}"
+                                                     materialDesign:HintAssist.Hint="USER NAME"
+                                                     BorderBrush="{StaticResource VietPark.Brushes.WayIn}"></TextBox>
+                                            <TextBox Name="passcamewayin2" Grid.Row="1" Grid.Column="4" Foreground="DarkBlue" Margin="5 0" VerticalAlignment="Center"
+                                                     TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                     FontSize="14" Controls:TextBoxHelper.Watermark="Password"
+                                                     Text="{Binding BackInPassword, Mode=TwoWay}"
+                                                     materialDesign:HintAssist.Hint="PASSWORD"
+                                                     BorderBrush="{StaticResource VietPark.Brushes.WayIn}"></TextBox>
+
+                                            <ComboBox Name="typecamewayin2" Grid.Row="1" Grid.Column="6" Margin="5 0" FontSize="14" Foreground="DarkBlue"
+                                                      IsEditable="True" VerticalAlignment="Center"
+                                                      ItemsSource="{Binding Path=CameraTypes}" 
+                                                      SelectedItem="{Binding Path=BackInType, Mode=TwoWay}"
+                                                      materialDesign:HintAssist.Hint="CHOOSE CAMERA TYPE"
+                                                      BorderBrush="{StaticResource VietPark.Brushes.WayIn}"/>
+
+                                            <TextBox Name="camerainchannel2" Grid.Row="1" Grid.Column="5" Foreground="DarkBlue" Margin="5 0" 
+                                                    TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                    FontSize="14" Controls:TextBoxHelper.Watermark="Channel"
+                                                    materialDesign:HintAssist.Hint="CHANNEL"
+                                                    BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                    VerticalAlignment="Center"
+                                                    Text="{Binding BackInChannel, Mode=TwoWay}"/>
+
+                                            <!--<Button Grid.Row="1" Grid.Column="6"
+                                                    Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
+                                                    ToolTip="Review Camera">
+                                                <materialDesign:PackIcon
+                                                    Kind="CameraMeteringCenter"
+                                                    Height="27"
+                                                    Width="27" />
+                                            </Button>-->
+
+                                        </Grid>
+
+                                        <Grid Grid.Row="1" Name="gWayOut">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition/>
+                                                <RowDefinition/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition Width="0.5*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <TextBlock Grid.Row="0" Grid.Column="0" Text="WAY OUT 1" 
+                                                        FontSize="14" Margin="5 0"
+                                                        Foreground="{StaticResource VietPark.Brushes.WayIn}" 
+                                                        VerticalAlignment="Center" HorizontalAlignment="Right"></TextBlock>
+
+                                            <TextBox Name="ipcamewayout1" Grid.Row="0" Grid.Column="1" Foreground="DarkBlue" Margin="5 0"
+                                                    TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                    FontSize="14" Controls:TextBoxHelper.Watermark="IP"
+                                                    Text="{Binding FrontOutCamera, Mode=TwoWay}" 
+                                                    materialDesign:HintAssist.Hint="IP"
+                                                    BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                    VerticalAlignment="Center"></TextBox>
+                                            <TextBox Name="portcamewayout1" Grid.Row="0" Grid.Column="2" Foreground="DarkBlue" Margin="5 0" 
+                                                    TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                    FontSize="14" Controls:TextBoxHelper.Watermark="Port"
+                                                    materialDesign:HintAssist.Hint="PORT"
+                                                    BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                    VerticalAlignment="Center"
+                                                    Text="{Binding FrontOutPort, Mode=TwoWay}"></TextBox>
+                                            <TextBox Name="usercamewayout1" Grid.Row="0" Grid.Column="3" Foreground="DarkBlue" Margin="5 0" VerticalAlignment="Center"
+                                                    TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                    FontSize="14" Controls:TextBoxHelper.Watermark="User"
+                                                    Text="{Binding FrontOutUserName, Mode=TwoWay}"
+                                                    materialDesign:HintAssist.Hint="USER NAME"
+                                                    BorderBrush="{StaticResource VietPark.Brushes.WayIn}"></TextBox>
+                                            <TextBox Name="passcamewayout1" Grid.Row="0" Grid.Column="4" Foreground="DarkBlue" Margin="5 0" VerticalAlignment="Center"
+                                                    TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                    FontSize="14" Controls:TextBoxHelper.Watermark="Password"
+                                                    Text="{Binding FrontOutPassword, Mode=TwoWay}"
+                                                    materialDesign:HintAssist.Hint="PASSWORD"
+                                                    BorderBrush="{StaticResource VietPark.Brushes.WayIn}"></TextBox>
+                                            <ComboBox Name="typecamewayout1" Grid.Row="0" Grid.Column="6" Margin="5 0" FontSize="14" Foreground="DarkBlue"
+                                                    IsEditable="True" VerticalAlignment="Center" 
+                                                    ItemsSource="{Binding Path=CameraTypes}" 
+                                                    SelectedItem="{Binding Path=FrontOutType, Mode=TwoWay}"
+                                                    materialDesign:HintAssist.Hint="CHOOSE CAMERA TYPE"
+                                                    BorderBrush="{StaticResource VietPark.Brushes.WayIn}"/>
+
+                                            <TextBox Name="camerachannelout1" Grid.Row="0" Grid.Column="5" Foreground="DarkBlue" Margin="5 0" 
+                                                    TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                    FontSize="14" Controls:TextBoxHelper.Watermark="Channel"
+                                                    materialDesign:HintAssist.Hint="CHANNEL"
+                                                    BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                    VerticalAlignment="Center"
+                                                    Text="{Binding FrontOutChannel, Mode=TwoWay}"/>
+
+                                            <!--<Button Grid.Row="0" Grid.Column="6"
+                                                    Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
+                                                    ToolTip="Review Camera">
+                                                <materialDesign:PackIcon
+                                                    Kind="CameraMeteringCenter"
+                                                    Height="27"
+                                                    Width="27" />
+                                            </Button>-->
+
+                                            <TextBlock Grid.Row="1" Grid.Column="0" Text="WAY OUT 2" 
+                                                       FontSize="14" Margin="5 0"
+                                                       Foreground="{StaticResource VietPark.Brushes.WayIn}" 
+                                                       VerticalAlignment="Center" HorizontalAlignment="Right"></TextBlock>
+                                            <TextBox Name="ipcamewayout2" Grid.Row="1" Grid.Column="1" Foreground="DarkBlue" Margin="5 0" VerticalAlignment="Center"
+                                                     TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                     FontSize="14" Controls:TextBoxHelper.Watermark="IP"
+                                                     Text="{Binding BackOutCamera, Mode=TwoWay}"
+                                                     materialDesign:HintAssist.Hint="IP"
+                                                     BorderBrush="{StaticResource VietPark.Brushes.WayIn}"></TextBox>
+                                            <TextBox Name="portcamewayout2" Grid.Row="1" Grid.Column="2" Foreground="DarkBlue" Margin="5 0" VerticalAlignment="Center"
+                                                     TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                     FontSize="14" Controls:TextBoxHelper.Watermark="Port"
+                                                     Text="{Binding BackOutPort, Mode=TwoWay}"
+                                                     materialDesign:HintAssist.Hint="PORT"
+                                                     BorderBrush="{StaticResource VietPark.Brushes.WayIn}"></TextBox>
+                                            <TextBox Name="usercamewayout2" Grid.Row="1" Grid.Column="3" Foreground="DarkBlue" Margin="5 0" VerticalAlignment="Center"
+                                                     TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                     FontSize="14"  Controls:TextBoxHelper.Watermark="User"
+                                                     Text="{Binding BackOutUserName, Mode=TwoWay}"
+                                                     materialDesign:HintAssist.Hint="USER NAME"
+                                                     BorderBrush="{StaticResource VietPark.Brushes.WayIn}"></TextBox>
+                                            <TextBox Name="passcamewayout2" Grid.Row="1" Grid.Column="4" Foreground="DarkBlue" Margin="5 0" VerticalAlignment="Center"
+                                                     TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                     FontSize="14" Controls:TextBoxHelper.Watermark="Password"
+                                                     Text="{Binding BackOutPassword, Mode=TwoWay}"
+                                                     materialDesign:HintAssist.Hint="PASSWORD"
+                                                     BorderBrush="{StaticResource VietPark.Brushes.WayIn}"></TextBox>
+
+                                            <ComboBox Name="typecamewayout2" Grid.Row="1" Grid.Column="6" Margin="5 0" FontSize="14" Foreground="DarkBlue"
+                                                      IsEditable="True" VerticalAlignment="Center"
+                                                      ItemsSource="{Binding Path=CameraTypes}" 
+                                                      SelectedItem="{Binding Path=BackOutType, Mode=TwoWay}"
+                                                      materialDesign:HintAssist.Hint="CHOOSE CAMERA TYPE"
+                                                      BorderBrush="{StaticResource VietPark.Brushes.WayIn}"/>
+
+                                            <TextBox Name="camerachannelout2" Grid.Row="1" Grid.Column="5" Foreground="DarkBlue" Margin="5 0" 
+                                                    TextAlignment="Center" HorizontalContentAlignment="Center"
+                                                    FontSize="14" Controls:TextBoxHelper.Watermark="Channel"
+                                                    materialDesign:HintAssist.Hint="CHANNEL"
+                                                    BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                    VerticalAlignment="Center"
+                                                    Text="{Binding BackOutChannel, Mode=TwoWay}"/>
+
+                                            <!--<Button Grid.Row="1" Grid.Column="6"
+                                                    Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
+                                                    ToolTip="Review Camera">
+                                                <materialDesign:PackIcon
+                                                    Kind="CameraMeteringCenter"
+                                                    Height="27"
+                                                    Width="27" />
+                                            </Button>-->
+
+                                        </Grid>
+
+                                    </Grid>
+
+                                </Grid>
+                            </StackPanel>
+                        </Expander>
+                        <Border
+                                    Background="{DynamicResource MaterialDesignDivider}"
+                                    Height="1"
+                                    HorizontalAlignment="Stretch"
+                                    SnapsToDevicePixels="True" />
+                        <Expander
+                                    HorizontalAlignment="Stretch"
+                                    Header="VEHICLE TYPE" Foreground="{StaticResource VietPark.Brushes.WayIn}">
+                            <StackPanel
+                                    Orientation="Vertical"
+                                    TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+                                    Margin="24,8,24,16">
+                                <ComboBox
+                                        materialDesign:HintAssist.Hint="CHOOSE VEHICLE TYPE" Margin="0 5 0 5" Width="870"
+                                        BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                        FontSize="14" HorizontalContentAlignment="Left"
+                                        HorizontalAlignment="Left"
+                                        ItemsSource="{Binding VehicleTypes}" SelectedItem="{Binding SelectedVehicleType, Mode=TwoWay}">
+                                    <ComboBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <Label  Content="{Binding  Path=.,Mode=OneWay, 
+                                                    Converter={StaticResource EnumItemsConverter}}"
+                                                    Height="Auto"
+                                                    Margin="0" 
+                                                    VerticalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </ComboBox.ItemTemplate>
+                                </ComboBox>
+                            </StackPanel>
+                        </Expander>
+                        <Border
+                                    Background="{DynamicResource MaterialDesignDivider}"
+                                    Height="1"
+                                    HorizontalAlignment="Stretch"
+                                    SnapsToDevicePixels="True" />
+                        <Expander
+                                    HorizontalAlignment="Stretch"
+                                    Header="CARD READER" Foreground="{StaticResource VietPark.Brushes.WayIn}">
+                            <StackPanel
+                                    Orientation="Vertical"
+                                    TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+                                    Margin="24,8,24,16">
+                                <Grid>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid Grid.Row="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+
+                                        <ComboBox Grid.Column="0"
+                                                  BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                  FontSize="14" HorizontalContentAlignment="Left"
+                                                  Name="CardTypeComboBox" SelectedIndex="0"
+                                                  ItemsSource="{Binding CardTypes}" 
+                                                  SelectedValue="{Binding CurrentCardType, Mode=TwoWay}" 
+                                                  SelectionChanged="CardTypeComboBox_SelectionChanged" Margin="0,4" 
+                                                  materialDesign:HintAssist.Hint="CHOOSE CARD READER TYPE" />
+                                        
+
+                                        <ComboBox Grid.Column="1" Grid.ColumnSpan="3"
+                                                  BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                  Margin="5,4"
+                                                  FontSize="14" DisplayMemberPath="SerialNumber"
+                                                  Name="AvilableModWinsComboBox"
+                                                  materialDesign:HintAssist.Hint="CHOOSE SERIAL CARD READER" 
+                                                  ItemsSource="{Binding AvilableModWinsCards, Mode=TwoWay}" SelectedValue="{Binding CurrentCardSelected, Mode=TwoWay}"/>
+
+                                        <ComboBox Grid.Column="1" Grid.ColumnSpan="3"
+                                                  BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                  Margin="5,4"
+                                                  FontSize="14" DisplayMemberPath="DeviceName"
+                                                  Name="AvailableNFCReader"
+                                                  materialDesign:HintAssist.Hint="CHOOSE NFC CARD READER" 
+                                                  ItemsSource="{Binding AvailableNFCCards, Mode=TwoWay}" SelectedValue="{Binding CurrentCardSelected, Mode=TwoWay}"
+                                                  Visibility="Hidden" />
+                                        
+                                        <ComboBox Grid.Column="1" Grid.ColumnSpan="3"
+                                                  BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                  Margin="5,4"
+                                                  FontSize="14" DisplayMemberPath="DeviceName"
+                                                  Name="AvailableProxiesCardReader"
+                                                  materialDesign:HintAssist.Hint="CHOOSE COM PORT" 
+                                                  ItemsSource="{Binding AvailableProxiesCards, Mode=TwoWay}" SelectedValue="{Binding CurrentCardSelected, Mode=TwoWay}"
+                                                  Visibility="Hidden" />
+                                        <WrapPanel Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                            <TextBlock>The same far card</TextBlock>
+                                            <ToggleButton Grid.Column="4"
+                                                 Style="{StaticResource MaterialDesignSwitchDarkToggleButton}"
+                                                 ToolTip="Turn on or off function"
+                                                 IsChecked="{Binding Path=UsageAsTheSameFarCard, Mode=TwoWay}"
+                                                 HorizontalAlignment="Center"
+                                                 VerticalAlignment="Center"
+                                                 Margin="30 0 0 0"/>    
+                                        </WrapPanel>
+                                           
+                                        <WrapPanel Visibility="Hidden" x:Name="tcpippannel" Grid.Column="1" Grid.ColumnSpan="3">
+                                            <TextBox Grid.Column="1" Grid.ColumnSpan="2"
+                                                     Margin="5,4"
+                                                     x:Name="txtTcpIp"
+                                                     FontSize="14" 
+                                                     TextWrapping="NoWrap" 
+                                                     Text="{Binding Path=CurrentIp, Mode=TwoWay}"
+                                                     materialDesign:HintAssist.Hint="IP ADDRESS ..."
+                                                     BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                     Controls:TextBoxHelper.Watermark="Ip"/>
+                                            <TextBox Grid.Column="3"
+                                                     Margin="5,4"
+                                                     x:Name="txtPort"
+                                                     FontSize="14"
+                                                     TextWrapping="NoWrap"  
+                                                     Text="{Binding Path=CurrentPort, Mode=TwoWay}"
+                                                     materialDesign:HintAssist.Hint="PORT ..."
+                                                     Controls:TextBoxHelper.Watermark="Port"
+                                                     BorderBrush="{StaticResource VietPark.Brushes.WayIn}"/>
+                                            <ComboBox  Grid.Column="3" 
+                                                       Visibility="Hidden" x:Name="cbAntenna" 
+                                                       Margin="5 4" FontSize="14" 
+                                                       SelectedIndex="0"
+                                                       SelectedValue="{Binding CurrentAntennaType, Mode=TwoWay}"
+                                                       ItemsSource="{Binding AntennaTypes}"
+                                                       BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                       Width="50"/>
+                                            <ComboBox Grid.Column="3" Visibility="Hidden" x:Name="cbDoor" 
+                                                      Margin="5 4" FontSize="14" 
+                                                      IsEditable="True"
+                                                      DisplayMemberPath="Name" SelectedValue="{Binding Door, Mode=TwoWay}"
+                                                      ItemsSource="{Binding DoorTypes}"
+                                                      BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                      Width="70"/>
+                                            <ComboBox Grid.Column="4"  Visibility="Hidden" x:Name="cbReader" Margin="5 4" FontSize="14" 
+                                                      IsEditable="True" 
+                                                      DisplayMemberPath="Name" SelectedValue="{Binding Reader, Mode=TwoWay}"
+                                                      ItemsSource="{Binding ReaderTypes}"
+                                                      BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                      Width="100"/>
+                                        </WrapPanel>
+
+                                        <Button x:Name="btnRefreshModWinsCard" Grid.Column="6" 
+                                            Width="100"
+                                            Margin="5 0"
+                                            Style="{StaticResource MaterialDesignRaisedLightButton}"
+                                            Content="REFRESH"
+                                            Command="{Binding RefreshModWInsCards}" />
+                                        <Button Grid.Column="7" 
+                                                Margin="5 0" Width="120" 
+                                                Style="{StaticResource MaterialDesignRaisedLightButton}"
+                                                Content="ADD READER"
+                                                Command="{Binding AddCurrentGreenCard}" />
+                                    </Grid>
+
+                                    <Grid Grid.Row="1" Height="70">
+                                        <ListView Visibility="Hidden" ItemsSource="{Binding CardReaders}" Background="Transparent">
+                                            <ListView.ItemContainerStyle>
+                                                <Style TargetType="{x:Type ListViewItem}">
+                                                    <Style.Triggers>
+                                                        <Trigger Property="IsSelected" Value="True">
+                                                            <Setter Property="Background" Value="{x:Null}" />
+                                                            <Setter Property="BorderBrush" Value="{x:Null}" />
+                                                        </Trigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </ListView.ItemContainerStyle>
+                                            <ListView.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid Background="White" Margin="5,5,5,5">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="Auto"/>
+                                                            <ColumnDefinition Width="Auto"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <TextBlock Text="{Binding SerialNumber}"  Margin="5 0" VerticalAlignment="Center" FontSize="14" 
+                                                                   Width="{Binding ElementName=CardReaderComboBox, Path=ActualWidth}" />
+
+                                                        <Button Grid.Column="1"  Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}" 
+                                                                Margin="5 0" 
+                                                                Foreground="White"
+                                                                ToolTip="Remove Reader"
+                                                                Click="Button_Click" >
+                                                            <materialDesign:PackIcon
+                                                                    Kind="CreditCardRemoveOutline"
+                                                                    Height="20"
+                                                                    Width="20" />
+                                                        </Button>
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </ListView.ItemTemplate>
+                                        </ListView>
+
+                                        <WrapPanel VerticalAlignment="Center">
+                                            <ListView  ItemsSource="{Binding ModWinsCards, Mode=TwoWay}" Background="Transparent">
+                                                <ListView.ItemContainerStyle>
+                                                    <Style TargetType="{x:Type ListViewItem}">
+                                                        <Style.Triggers>
+                                                            <Trigger Property="IsSelected" Value="True">
+                                                                <Setter Property="Background" Value="{x:Null}" />
+                                                                <Setter Property="BorderBrush" Value="{x:Null}" />
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </ListView.ItemContainerStyle>
+
+                                                <ListView.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Grid Background="Transparent" Margin="5,5,5,5">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <TextBlock Text="{Binding CallName}" Margin="5 0" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                                                            <TextBlock Text="{Binding SerialNumber}" Grid.Column="1"  Margin="5 0" VerticalAlignment="Center" FontSize="14"/>
+
+                                                            <Button Grid.Column="2"  Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}" 
+                                                                Margin="5 0" 
+                                                                Foreground="White"
+                                                                ToolTip="Remove Reader"
+                                                                Click="Button_Click" >
+                                                                <materialDesign:PackIcon
+                                                                    Kind="CreditCardRemoveOutline"
+                                                                    Height="20"
+                                                                    Width="20" />
+                                                            </Button>
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </ListView.ItemTemplate>
+                                            </ListView>
+
+                                            <ListView ItemsSource="{Binding TcpIpServerCards, Mode=TwoWay}" Background="Transparent">
+                                                <ListView.ItemContainerStyle>
+                                                    <Style TargetType="{x:Type ListViewItem}">
+                                                        <Style.Triggers>
+                                                            <Trigger Property="IsSelected" Value="True">
+                                                                <Setter Property="Background" Value="{x:Null}" />
+                                                                <Setter Property="BorderBrush" Value="{x:Null}" />
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </ListView.ItemContainerStyle>
+
+                                                <ListView.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Grid Background="Transparent" Margin="5,5,5,5">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="100"/>
+                                                                <ColumnDefinition Width="200"/>
+                                                                <ColumnDefinition Width="100"/>
+                                                                <ColumnDefinition />
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <TextBlock Text="{Binding CallName}" 
+                                                                       FontSize="14" 
+                                                                       Foreground="{StaticResource VietPark.Brushes.WayOut}" 
+                                                                       VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+
+                                                            <TextBox Text="{Binding TcpIp}"  Grid.Column="1" 
+                                                                     FontSize="14" Margin="5 0" VerticalAlignment="Center" 
+                                                                     BorderBrush="{StaticResource VietPark.Brushes.WayOut}"></TextBox>
+
+                                                            <TextBox Text="{Binding Port}" Grid.Column="2" FontSize="14" Margin="5 0" VerticalAlignment="Center" BorderBrush="{StaticResource VietPark.Brushes.WayOut}"></TextBox>
+
+                                                            <Button Grid.Column="3"  Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}" 
+                                                                Margin="5 0" VerticalAlignment="Center" 
+                                                                Foreground="White"
+                                                                ToolTip="Remove Reader"
+                                                                Click="Button_Click" >
+                                                                <materialDesign:PackIcon
+                                                                    Kind="CreditCardRemoveOutline"
+                                                                    Height="20"
+                                                                    Width="20" />
+                                                            </Button>
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </ListView.ItemTemplate>
+                                            </ListView>
+
+                                            <ListView  ItemsSource="{Binding TcpIpClientCards, Mode=TwoWay}" Background="Transparent">
+                                                <ListView.ItemContainerStyle>
+                                                    <Style TargetType="{x:Type ListViewItem}">
+                                                        <Style.Triggers>
+                                                            <Trigger Property="IsSelected" Value="True">
+                                                                <Setter Property="Background" Value="{x:Null}" />
+                                                                <Setter Property="BorderBrush" Value="{x:Null}" />
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </ListView.ItemContainerStyle>
+
+                                                <ListView.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Grid Background="Transparent" Margin="5,5,5,5">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                            </Grid.ColumnDefinitions>
+                                                            <TextBlock Text="{Binding CallName}" FontSize="14"  Margin="5 0" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                                                     Foreground="{StaticResource VietPark.Brushes.WayOut}"></TextBlock>
+                                                            <TextBox Text="{Binding TcpIp}"  Grid.Column="1" FontSize="14"  Margin="5 0" VerticalAlignment="Center" 
+                                                                     BorderBrush="{StaticResource VietPark.Brushes.WayOut}"></TextBox>
+                                                            <TextBox Text="{Binding Port}" Grid.Column="2" FontSize="14"  Margin="5 0" VerticalAlignment="Center" 
+                                                                     BorderBrush="{StaticResource VietPark.Brushes.WayOut}"></TextBox>
+
+                                                            <Button Grid.Column="3"  Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}" 
+                                                                Margin="5 0" 
+                                                                Foreground="White"
+                                                                ToolTip="Remove Reader"
+                                                                Click="Button_Click" >
+                                                                <materialDesign:PackIcon
+                                                                    Kind="CreditCardRemoveOutline"
+                                                                    Height="20"
+                                                                    Width="20" />
+                                                            </Button>
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </ListView.ItemTemplate>
+                                            </ListView>
+
+                                            <ListView  ItemsSource="{Binding ScannelCards, Mode=TwoWay}" Background="Transparent">
+                                                <ListView.ItemContainerStyle>
+                                                    <Style TargetType="{x:Type ListViewItem}">
+                                                        <Style.Triggers>
+                                                            <Trigger Property="IsSelected" Value="True">
+                                                                <Setter Property="Background" Value="{x:Null}" />
+                                                                <Setter Property="BorderBrush" Value="{x:Null}" />
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </ListView.ItemContainerStyle>
+
+                                                <ListView.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Grid Background="Transparent" Margin="5,5,5,5">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                            </Grid.ColumnDefinitions>
+                                                            <TextBlock Text="{Binding CallName}" FontSize="14"  Margin="5 0" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                                                                     Foreground="{StaticResource VietPark.Brushes.WayOut}"></TextBlock>
+                                                            <TextBox Text="{Binding TcpIp}"  Grid.Column="1" FontSize="14"  Margin="5 0" VerticalAlignment="Center" 
+                                                                     BorderBrush="{StaticResource VietPark.Brushes.WayOut}"></TextBox>
+                                                            <TextBox Text="{Binding Port}" Grid.Column="2" FontSize="14"  Margin="5 0" VerticalAlignment="Center" 
+                                                                     BorderBrush="{StaticResource VietPark.Brushes.WayOut}"></TextBox>
+                                                            <TextBox Text="{Binding Antenna}" Grid.Column="3" FontSize="14"  Margin="5 0" VerticalAlignment="Center" 
+                                                                     BorderBrush="{StaticResource VietPark.Brushes.WayOut}"></TextBox>
+
+                                                            <Button Grid.Column="4"  Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}" 
+                                                                Margin="5 0" 
+                                                                Foreground="White"
+                                                                ToolTip="Remove Reader"
+                                                                Click="Button_Click" >
+                                                                <materialDesign:PackIcon
+                                                                    Kind="CreditCardRemoveOutline"
+                                                                    Height="20"
+                                                                    Width="20" />
+                                                            </Button>
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </ListView.ItemTemplate>
+                                            </ListView>
+
+                                            <ListView  ItemsSource="{Binding TcpIpControllerCards, Mode=TwoWay}" Background="Transparent">
+                                                <ListView.ItemContainerStyle>
+                                                    <Style TargetType="{x:Type ListViewItem}">
+                                                        <Style.Triggers>
+                                                            <Trigger Property="IsSelected" Value="True">
+                                                                <Setter Property="Background" Value="{x:Null}" />
+                                                                <Setter Property="BorderBrush" Value="{x:Null}" />
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </ListView.ItemContainerStyle>
+
+                                                <ListView.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Grid Background="Transparent" Margin="5">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <TextBlock Text="{Binding CallName}" FontSize="14"  Margin="5 5" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                                                                     Foreground="{StaticResource VietPark.Brushes.WayOut}"></TextBlock>
+                                                            <TextBox Text="{Binding TcpIp}"  Grid.Column="1" FontSize="14"  Margin="5 0" VerticalAlignment="Center" 
+                                                                     BorderBrush="{StaticResource VietPark.Brushes.WayOut}"
+                                                                     Controls:TextBoxHelper.Watermark="IP">
+                                                            </TextBox>
+                                                            <TextBox Text="{Binding Port}" Grid.Column="2" FontSize="14"  Margin="5 0" VerticalAlignment="Center"
+                                                                     BorderBrush="{StaticResource VietPark.Brushes.WayOut}"
+                                                                     Controls:TextBoxHelper.Watermark="Port">
+                                                            </TextBox>
+                                                            <TextBox Text="{Binding ActiveCode}" Grid.Column="3" FontSize="14"  Margin="5 0" VerticalAlignment="Center"
+                                                                     BorderBrush="{StaticResource VietPark.Brushes.WayOut}"
+                                                                     Controls:TextBoxHelper.Watermark="Active Code">
+                                                            </TextBox>
+                                                            <TextBox Text="{Binding InactiveCode}" Grid.Column="4" FontSize="14"  Margin="5 0" VerticalAlignment="Center" 
+                                                                     BorderBrush="{StaticResource VietPark.Brushes.WayOut}"
+                                                                     Controls:TextBoxHelper.Watermark="Inactive Code">
+                                                            </TextBox>
+
+                                                            <Button Grid.Column="5"  Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}" 
+                                                                Margin="5 0" 
+                                                                Foreground="White"
+                                                                ToolTip="Remove Reader"
+                                                                Click="Button_Click" >
+                                                                <materialDesign:PackIcon
+                                                                    Kind="CreditCardRemoveOutline"
+                                                                    Height="20"
+                                                                    Width="20" />
+                                                            </Button>
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </ListView.ItemTemplate>
+                                            </ListView>
+
+                                            <ListView  ItemsSource="{Binding TcpIpRemoderCards, Mode=TwoWay}" Background="Transparent">
+                                                <ListView.ItemContainerStyle>
+                                                    <Style TargetType="{x:Type ListViewItem}">
+                                                        <Style.Triggers>
+                                                            <Trigger Property="IsSelected" Value="True">
+                                                                <Setter Property="Background" Value="{x:Null}" />
+                                                                <Setter Property="BorderBrush" Value="{x:Null}" />
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </ListView.ItemContainerStyle>
+
+                                                <ListView.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Grid Background="Transparent" Margin="5">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                            </Grid.ColumnDefinitions>
+                                                            <TextBlock Text="{Binding CallName}" FontSize="14"  Margin="5 0" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                                                                     Foreground="{StaticResource VietPark.Brushes.WayOut}"></TextBlock>
+                                                            <TextBox Text="{Binding TcpIp}"  Grid.Column="1" FontSize="14"  Margin="5 0" VerticalAlignment="Center" 
+                                                                     BorderBrush="{StaticResource VietPark.Brushes.WayOut}"></TextBox>
+                                                            <TextBox Text="{Binding Port}" Grid.Column="2" FontSize="14"  Margin="5 0" VerticalAlignment="Center" 
+                                                                     BorderBrush="{StaticResource VietPark.Brushes.WayOut}"></TextBox>
+
+                                                            <Button Grid.Column="3"  Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}" 
+                                                                Margin="5 0" 
+                                                                Foreground="White"
+                                                                ToolTip="Remove Reader"
+                                                                Click="Button_Click" >
+                                                                <materialDesign:PackIcon
+                                                                    Kind="CreditCardRemoveOutline"
+                                                                    Height="20"
+                                                                    Width="20" />
+                                                            </Button>
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </ListView.ItemTemplate>
+                                            </ListView>
+
+                                            <ListView  ItemsSource="{Binding NFCCards, Mode=TwoWay}" Background="Transparent">
+                                                <ListView.ItemContainerStyle>
+                                                    <Style TargetType="{x:Type ListViewItem}">
+                                                        <Style.Triggers>
+                                                            <Trigger Property="IsSelected" Value="True">
+                                                                <Setter Property="Background" Value="{x:Null}" />
+                                                                <Setter Property="BorderBrush" Value="{x:Null}" />
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </ListView.ItemContainerStyle>
+
+                                                <ListView.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Grid Background="Transparent" Margin="5,5,5,5">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <TextBlock Text="{Binding DeviceName}" Margin="5 0" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                                                            <TextBlock Text="{Binding SerialNumber}" Grid.Column="1"  Margin="5 0" VerticalAlignment="Center" FontSize="14"/>
+
+                                                            <Button Grid.Column="2"  Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}" 
+                                                                Margin="5 0" 
+                                                                Foreground="White"
+                                                                ToolTip="Remove Reader"
+                                                                Click="Button_Click" >
+                                                                <materialDesign:PackIcon
+                                                                    Kind="CreditCardRemoveOutline"
+                                                                    Height="20"
+                                                                    Width="20" />
+                                                            </Button>
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </ListView.ItemTemplate>
+                                            </ListView>
+
+                                            <ListView  ItemsSource="{Binding ProxiesCards, Mode=TwoWay}" Background="Transparent">
+                                                <ListView.ItemContainerStyle>
+                                                    <Style TargetType="{x:Type ListViewItem}">
+                                                        <Style.Triggers>
+                                                            <Trigger Property="IsSelected" Value="True">
+                                                                <Setter Property="Background" Value="{x:Null}" />
+                                                                <Setter Property="BorderBrush" Value="{x:Null}" />
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </ListView.ItemContainerStyle>
+
+                                                <ListView.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Grid Background="Transparent" Margin="5,5,5,5">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <TextBlock Text="{Binding DeviceName}" Margin="5 0" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                                                            <TextBlock Text="{Binding SerialNumber}" Grid.Column="1"  Margin="5 0" VerticalAlignment="Center" FontSize="14"/>
+
+                                                            <Button Grid.Column="2"  Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}" 
+                                                                Margin="5 0" 
+                                                                Foreground="White"
+                                                                ToolTip="Remove Reader"
+                                                                Click="Button_Click" >
+                                                                <materialDesign:PackIcon
+                                                                    Kind="CreditCardRemoveOutline"
+                                                                    Height="20"
+                                                                    Width="20" />
+                                                            </Button>
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </ListView.ItemTemplate>
+                                            </ListView>
+
+                                            <ListView  ItemsSource="{Binding ZKFarCards, Mode=TwoWay}" Background="Transparent">
+                                                <ListView.ItemContainerStyle>
+                                                    <Style TargetType="{x:Type ListViewItem}">
+                                                        <Style.Triggers>
+                                                            <Trigger Property="IsSelected" Value="True">
+                                                                <Setter Property="Background" Value="{x:Null}" />
+                                                                <Setter Property="BorderBrush" Value="{x:Null}" />
+                                                            </Trigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </ListView.ItemContainerStyle>
+
+                                                <ListView.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Grid Background="Transparent" Margin="5,5,5,5">
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                                <ColumnDefinition />
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <TextBlock Text="{Binding DeviceName}" Margin="5 0" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+                                                            <TextBlock Text="{Binding SerialNumber}" Grid.Column="1"  Margin="5 0" VerticalAlignment="Center" FontSize="14"/>
+
+                                                            <Button Grid.Column="2"  Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}" 
+                                                                Margin="5 0" 
+                                                                Foreground="White"
+                                                                ToolTip="Remove Reader"
+                                                                Click="Button_Click" >
+                                                                <materialDesign:PackIcon
+                                                                    Kind="CreditCardRemoveOutline"
+                                                                    Height="20"
+                                                                    Width="20" />
+                                                            </Button>
+                                                        </Grid>
+                                                    </DataTemplate>
+                                                </ListView.ItemTemplate>
+                                            </ListView>
+                                        </WrapPanel>
+                                    </Grid>
+                                </Grid>
+
+                            </StackPanel>
+                        </Expander>
+                        <Border
+                                Background="{DynamicResource MaterialDesignDivider}"
+                                Height="1"
+                                HorizontalAlignment="Stretch"
+                                SnapsToDevicePixels="True" />
+                        <Expander
+                                HorizontalAlignment="Stretch"
+                                Header="BARRIER" Foreground="{StaticResource VietPark.Brushes.WayIn}">
+                            <StackPanel
+                                    Orientation="Vertical"
+                                    TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+                                    Margin="24,8,24,16">
+
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid Grid.Row="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock Grid.Column="0" FontSize="14" Text="BARRIER COM" Margin="20 5"
+                                                   Foreground="{StaticResource VietPark.Brushes.WayIn}" 
+                                                   HorizontalAlignment="Left" 
+                                                   VerticalAlignment="Center"/>
+                                        <ComboBox Grid.Column="1" Margin="5"
+                                                  FontSize="14" Grid.ColumnSpan="2"
+                                                  ItemsSource="{Binding Barriers}" 
+                                                  SelectedItem="{Binding SelectedBarrier, Mode=TwoWay}"
+                                                  BorderBrush="{StaticResource VietPark.Brushes.WayIn}" 
+                                                  materialDesign:HintAssist.Hint="COM PORT"></ComboBox>
+                                        <TextBox Grid.Column="3"  Margin="5"
+                                                 FontSize="14"
+                                                 Text="{Binding Path=BarrierPort, Mode=TwoWay}" 
+                                                 BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                 materialDesign:HintAssist.Hint="INPUT COMMAND"></TextBox>
+                                        <Button Grid.Column="7" Width="100" FontSize="14"
+                                                Style="{StaticResource MaterialDesignRaisedLightButton}" 
+                                                Content="CHECK"
+                                                Margin="5 0" 
+                                                Command="{Binding DetectBarrierCommand}" />
+                                    </Grid>
+
+                                    <Grid Grid.Row="1" Margin="0 5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <CheckBox Grid.Column="0" IsChecked="{Binding UseBarrierIpController,Mode=TwoWay}" Margin="0 5"
+                                                  FontSize="14" HorizontalAlignment="Left"
+                                                  Style="{StaticResource MaterialDesignCheckBox}"
+                                                  Foreground="{StaticResource VietPark.Brushes.WayIn}">IP CONTROLLER</CheckBox>
+                                        <TextBox Grid.Column="1" Margin="5" 
+                                                 Width="auto" TextAlignment="Left" FontSize="14" Controls:TextBoxHelper.Watermark="IP"
+                                                 Text="{Binding Path=BarrierIpController, Mode=TwoWay}"
+                                                 BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                 materialDesign:HintAssist.Hint="IP"></TextBox>
+                                        <TextBox Grid.Column="2" Margin="5" 
+                                                 TextAlignment="Left" FontSize="16" Controls:TextBoxHelper.Watermark="Port"
+                                                 Text="{Binding Path=BarrierPortController, Mode=TwoWay}"
+                                                 BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                 materialDesign:HintAssist.Hint="PORT"></TextBox>
+                                        <TextBox Grid.Column="3" Margin="5" 
+                                                 TextAlignment="Left" FontSize="14" Controls:TextBoxHelper.Watermark="Doors"
+                                                 Text="{Binding Path=BarrierDoorsController, Mode=TwoWay}"
+                                                 BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                 materialDesign:HintAssist.Hint="DOORS"></TextBox>
+                                        <TextBox Grid.Column="4" Margin="5" TextAlignment="Left" IsEnabled="False"
+                                                 FontSize="14" Controls:TextBoxHelper.Watermark="Hard Button Code"
+                                                 Text="{Binding Path=BarrierHardButtonCode}"
+                                                 BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                 materialDesign:HintAssist.Hint="HARD BUTTON CODE"></TextBox>
+                                        <TextBox Grid.Column="5" Margin="5" TextAlignment="Left"
+                                                 FontSize="14" BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                 materialDesign:HintAssist.Hint="TIMETICK"
+                                                 Controls:TextBoxHelper.Watermark="TimeTick"
+                                                 Text="{Binding Path=TimeTick}"
+                                                 ></TextBox>
+                                        <Button IsEnabled="{Binding UseBarrierIpController}" 
+                                                Grid.Column="7" Width="100"  
+                                                Style="{StaticResource MaterialDesignRaisedLightButton}" 
+                                                Content="CHECK"
+                                                Margin="5 0" 
+                                                Command="{Binding DetectBarrierCommandIPController}" />
+                                    </Grid>
+
+                                    <Grid Grid.Row="2" Margin="0 5" DataContext="{Binding Path=BarrierByInternetControl}">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <CheckBox Grid.Column="0" IsChecked="{Binding Active,Mode=TwoWay}" 
+                                                  Margin="0 5" FontSize="14" HorizontalAlignment="Left"
+                                                  Style="{StaticResource MaterialDesignCheckBox}"
+                                                  Foreground="{StaticResource VietPark.Brushes.WayIn}">INTERNET CONTROL</CheckBox>
+                                        <TextBox Grid.Column="1" Margin="5" TextAlignment="Left"
+                                                 FontSize="14" BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                 materialDesign:HintAssist.Hint="IP"
+                                                 Controls:TextBoxHelper.Watermark="IP"
+                                                 Text="{Binding Path=IP, Mode=TwoWay}"></TextBox>
+                                        <TextBox Grid.Column="2" Margin="5" TextAlignment="Left"
+                                                 FontSize="14" BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                 materialDesign:HintAssist.Hint="PORT"
+                                                 Controls:TextBoxHelper.Watermark="Port"
+                                                 Text="{Binding Path=Port, Mode=TwoWay}"></TextBox>
+                                        <TextBox Grid.Column="3" Margin="5" TextAlignment="Left"
+                                                 FontSize="14" BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                 materialDesign:HintAssist.Hint="USER NAME"
+                                                 Controls:TextBoxHelper.Watermark="User Name"
+                                                 Text="{Binding Path=UserName, Mode=TwoWay}"></TextBox>
+                                        <TextBox Grid.Column="4" Margin="5" TextAlignment="Left"
+                                                 FontSize="14" BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                 materialDesign:HintAssist.Hint="PASSWORD"
+                                                 Controls:TextBoxHelper.Watermark="Password"
+                                                 Text="{Binding Path=Password, Mode=TwoWay}"></TextBox>
+                                        <TextBox Grid.Column="5" Margin="5" TextAlignment="Left"
+                                                 FontSize="14" BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                 materialDesign:HintAssist.Hint="COMMAND (1-4)"
+                                                 Controls:TextBoxHelper.Watermark="Command: 1,2,3,4"
+                                                 Text="{Binding Path=PortNumber, Mode=TwoWay}"></TextBox>
+                                        <TextBox Grid.Column="6" Margin="5" TextAlignment="Left"
+                                                 FontSize="14" BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                 materialDesign:HintAssist.Hint="BUTTON (5-8)"
+                                                 Controls:TextBoxHelper.Watermark="Nút bấm: 5->8"
+                                                 Text="{Binding Path=ButtonNumber, Mode=TwoWay}"></TextBox>
+                                        <Button IsEnabled="{Binding Active}" Grid.Column="7" Width="100"  
+                                                Style="{StaticResource MaterialDesignRaisedLightButton}" 
+                                                Content="CHECK"
+                                                Margin="5 0" 
+                                                Command="{Binding DetectControl}" />
+
+                                    </Grid>
+
+                                    <Grid Grid.Row="3" Margin="0 5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <CheckBox Grid.Column="0" IsChecked="{Binding Active,Mode=TwoWay}" 
+                                                  Margin="0 5" FontSize="14" HorizontalAlignment="Left"
+                                                  Style="{StaticResource MaterialDesignCheckBox}"
+                                                  Foreground="{StaticResource VietPark.Brushes.WayIn}" >SIEMENS CONTROL</CheckBox>
+                                        <TextBox Grid.Column="1" Grid.ColumnSpan="2" Margin="5" TextAlignment="Left"
+                                                 FontSize="14" BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                 materialDesign:HintAssist.Hint="IP"
+                                                 Controls:TextBoxHelper.Watermark="IP"
+                                                  Text="{Binding Path=BarrierIpController, Mode=TwoWay}"></TextBox>
+                                        <ComboBox Grid.Column="3" Grid.ColumnSpan="2" Margin="5" HorizontalContentAlignment="Left"
+                                                  FontSize="14" BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                  materialDesign:HintAssist.Hint="WAY OUT"  
+                                                  SelectedItem="{Binding TypeOut,Mode=TwoWay}" 
+                                                  ItemsSource="{Binding Path = TypeOuts}"
+                                                  Controls:TextBoxHelper.Watermark="Cổng ra"/>
+                                        <ComboBox Grid.Column="5" Grid.ColumnSpan="2" HorizontalContentAlignment="Left"
+                                                  FontSize="14" BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                  materialDesign:HintAssist.Hint="WAY IN" 
+                                                  SelectedItem="{Binding TypeIn,Mode=TwoWay}"    
+                                                  ItemsSource="{Binding Path = TypeIns}"
+                                                  Controls:TextBoxHelper.Watermark="Nút bấm"/>
+                                        <Button IsEnabled="{Binding Active}" Grid.Column="7" Width="100"  
+                                                Style="{StaticResource MaterialDesignRaisedLightButton}" 
+                                                Content="CHECK"
+                                                Margin="5 0" 
+                                                Command="{Binding DetectControl}" />
+                                    </Grid>
+
+                                    <Grid Grid.Row="4" Margin="0 5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <CheckBox Grid.Column="0" IsChecked="{Binding UseZKController,Mode=TwoWay}" Margin="0 5"
+                                                  FontSize="14" HorizontalAlignment="Left"
+                                                  Style="{StaticResource MaterialDesignCheckBox}"
+                                                  Foreground="{StaticResource VietPark.Brushes.WayIn}">ZK CONTROLLER</CheckBox>
+                                        <TextBox Grid.Column="1" Margin="5" 
+                                                 Width="auto" TextAlignment="Left" FontSize="14" Controls:TextBoxHelper.Watermark="IP"
+                                                 Text="{Binding Path=BarrierIpController, Mode=TwoWay}"
+                                                 BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                 materialDesign:HintAssist.Hint="IP"></TextBox>
+                                        <TextBox Grid.Column="2" Margin="5" 
+                                                 TextAlignment="Left" FontSize="16" Controls:TextBoxHelper.Watermark="Port"
+                                                 Text="{Binding Path=BarrierPortController, Mode=TwoWay}"
+                                                 BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                 materialDesign:HintAssist.Hint="PORT"></TextBox>
+                                        <TextBox Grid.Column="3" Margin="5" 
+                                                 TextAlignment="Left" FontSize="14" Controls:TextBoxHelper.Watermark="Doors"
+                                                 Text="{Binding Path=BarrierDoorsController, Mode=TwoWay}"
+                                                 BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                                 materialDesign:HintAssist.Hint="DOORS"></TextBox>
+                                        <Button IsEnabled="{Binding UseZKController}" 
+                                                Grid.Column="7" Width="100"  
+                                                Style="{StaticResource MaterialDesignRaisedLightButton}" 
+                                                Content="CHECK"
+                                                Margin="5 0" 
+                                                Command="{Binding DetectBarrierZKController}" />
+                                    </Grid>
+                                </Grid>
+                            </StackPanel>
+                        </Expander>
+                        <Border
+                                Background="{DynamicResource MaterialDesignDivider}"
+                                Height="1"
+                                HorizontalAlignment="Stretch"
+                                SnapsToDevicePixels="True" />
+                        <Expander
+                                HorizontalAlignment="Stretch"
+                                Header="PRINTER" Foreground="{StaticResource VietPark.Brushes.WayIn}">
+                            <StackPanel
+                                    Orientation="Vertical"
+                                    TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+                                    Margin="24,8,24,16">
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.2*"/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <CheckBox Grid.Column="0" Margin="5"
+                                              IsChecked="{Binding PrintComActive,Mode=TwoWay}" 
+                                              Foreground="{StaticResource VietPark.Brushes.WayIn}"
+                                              Style="{StaticResource MaterialDesignCheckBox}">USE COM</CheckBox>
+
+                                    <TextBox Grid.Column="1" x:Name="txtComPrinter" Margin="5"
+                                             Height="23" 
+                                             TextWrapping="NoWrap"  
+                                             IsEnabled="{Binding PrintComActive}"
+                                             Text="{Binding Path=ComPrint, Mode=TwoWay}"
+                                             Controls:TextBoxHelper.Watermark="Com Print"
+                                             BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                             materialDesign:HintAssist.Hint="COM PORT"/>
+                                    <TextBox Grid.Column="2" Margin="5"
+                                             Height="23" 
+                                             TextWrapping="NoWrap"
+                                             Text="{Binding Path=PrintAddressTitle, Mode=TwoWay}"
+                                             Controls:TextBoxHelper.Watermark="Contact Address"
+                                             BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                             materialDesign:HintAssist.Hint="CONTACT ADDRESS"/>
+                                    <TextBox Grid.Column="3" Margin="5"
+                                             Height="23" 
+                                             TextWrapping="NoWrap"
+                                             Text="{Binding Path=PrintCallTile, Mode=TwoWay}"
+                                             Controls:TextBoxHelper.Watermark="Tel and Fax infomation"
+                                             BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                             materialDesign:HintAssist.Hint="TEL AND FAX INFOMATION"/>
+                                </Grid>
+
+                            </StackPanel>
+                        </Expander>
+                        <Border
+                                Background="{DynamicResource MaterialDesignDivider}"
+                                Height="1"
+                                HorizontalAlignment="Stretch"
+                                SnapsToDevicePixels="True" />
+                        <Expander
+                                HorizontalAlignment="Stretch"
+                                Header="LED SIGN" Foreground="{StaticResource VietPark.Brushes.WayIn}">
+                            <StackPanel
+                                    Orientation="Vertical"
+                                    TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+                                    Margin="24,8,24,16">
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.1*"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBox x:Name="txtLed" Grid.Column="0"
+                                             Height="23" 
+                                             Margin="3"
+                                             TextWrapping="NoWrap"  
+                                             Text="{Binding Path=ComLed, Mode=TwoWay}"
+                                             Controls:TextBoxHelper.Watermark="Com Led"
+                                             BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                             materialDesign:HintAssist.Hint="COM PORT"/>
+                                    <ComboBox  Grid.Column="1" Margin="3" 
+                                               Width="300"
+                                               HorizontalAlignment="Left"
+                                               SelectedValue="{Binding LedStyle,Mode=TwoWay}"
+                                               ItemsSource="{Binding Path = LedStyles}"
+                                               Controls:TextBoxHelper.Watermark="Loại Led"
+                                               BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                               materialDesign:HintAssist.Hint="LED TYPE"/>
+                                </Grid>
+
+                            </StackPanel>
+                        </Expander>
+                        <Border
+                                Background="{DynamicResource MaterialDesignDivider}"
+                                Height="1"
+                                HorizontalAlignment="Stretch"
+                                SnapsToDevicePixels="True" />
+                        <Expander
+                                HorizontalAlignment="Stretch"
+                                Header="CASH HOLD" Foreground="{StaticResource VietPark.Brushes.WayIn}">
+                            <StackPanel
+                                    Orientation="Vertical"
+                                    TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+                                    Margin="24,8,24,16">
+
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.1*"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <CheckBox Grid.Column="0" 
+                                              IsChecked="{Binding ComIctCashierEnanble,Mode=TwoWay}" 
+                                              Foreground="{StaticResource VietPark.Brushes.WayIn}"
+                                              Style="{StaticResource MaterialDesignCheckBox}">USE CASH</CheckBox>
+                                    <TextBox Grid.Column="1" Margin="5"
+                                             Height="23" Width="300" 
+                                             HorizontalAlignment="Left"
+                                             TextWrapping="NoWrap"  
+                                             Text="{Binding Path=ComIctCashier, Mode=TwoWay}"
+                                             Controls:TextBoxHelper.Watermark="Com ICT Cashier"
+                                             materialDesign:HintAssist.Hint="COM PORT"
+                                             BorderBrush="{StaticResource VietPark.Brushes.WayIn}"/>
+                                </Grid>
+
+
+                            </StackPanel>
+                        </Expander>
+                        <Border
+                                Background="{DynamicResource MaterialDesignDivider}"
+                                Height="1"
+                                HorizontalAlignment="Stretch"
+                                SnapsToDevicePixels="True" />
+                        <Expander
+                                HorizontalAlignment="Stretch"
+                                Header="ALARM" Foreground="{StaticResource VietPark.Brushes.WayIn}">
+                            <StackPanel
+                                    Orientation="Vertical"
+                                    TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+                                    Margin="24,8,24,16">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBox  Grid.Column="0" Margin="5"
+                                             Height="23" 
+                                             TextWrapping="NoWrap"  
+                                             Text="{Binding Path=ComAlarm, Mode=TwoWay}"
+                                             Controls:TextBoxHelper.Watermark="ALARM PORT (COM)"
+                                              BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                              materialDesign:HintAssist.Hint="ALARM PORT (COM)"/>
+                                    <TextBox  Grid.Column="1"
+                                              Height="23" Margin="5"
+                                              TextWrapping="NoWrap"  
+                                              Text="{Binding Path=AlarmWarningKeys, Mode=TwoWay}"
+                                              Controls:TextBoxHelper.Watermark="NOTICE CODE"
+                                              BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                              materialDesign:HintAssist.Hint="NOTICE CODE"/>
+                                    <TextBox  Grid.Column="2"
+                                              Height="23" Margin="5"
+                                              TextWrapping="NoWrap"  
+                                              Text="{Binding Path=AlarmSuccessKeys, Mode=TwoWay}"
+                                              Controls:TextBoxHelper.Watermark="APPROVED CODE"
+                                              BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                                              materialDesign:HintAssist.Hint="APPROVED CODE"/>
+
+                                </Grid>
+
+                            </StackPanel>
+                        </Expander>
+                        <Border
+                            Background="{DynamicResource MaterialDesignDivider}"
+                            Height="1"
+                            HorizontalAlignment="Stretch"
+                            SnapsToDevicePixels="True" />
+                        <Expander
+                            HorizontalAlignment="Stretch"
+                            Header="OPTIONS" Foreground="{StaticResource VietPark.Brushes.WayIn}">
+                            <StackPanel  Orientation="Vertical"
+                                 TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+                                 Margin="24,8,24,16">
+                                <Grid DataContext="{Binding Path=OptionByLane}">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <WrapPanel Grid.Column="0" VerticalAlignment="Center">
+                                        <TextBlock Text="Auto ProcessIn By VehicleRecognition"></TextBlock>
+                                        <ToggleButton 
+                                           Style="{StaticResource MaterialDesignSwitchDarkToggleButton}"
+                                           ToolTip="Turn on or off function"
+                                           IsChecked="{Binding Path=AutoInByVehicleRecognition, Mode=TwoWay}"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"
+                                           Margin="30 0 0 0"/>
+                                    </WrapPanel>
+                                    <WrapPanel Grid.Column="1" VerticalAlignment="Center">
+                                        <TextBlock Text="Auto ProcessOut By VehicleRecognition"></TextBlock>
+                                        <ToggleButton 
+                                           Style="{StaticResource MaterialDesignSwitchDarkToggleButton}"
+                                           ToolTip="Turn on or off function"
+                                           IsChecked="{Binding Path=AutoOutByVehicleRecognition, Mode=TwoWay}"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"
+                                           Margin="30 0 0 0"/>
+                                    </WrapPanel>
+                                    <WrapPanel Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="1" VerticalAlignment="Center">
+                                        <TextBlock VerticalAlignment="Center" Text="Usage tracker method"></TextBlock>
+                                        <ComboBox  Grid.Column="2" Margin="5" 
+                                            VerticalAlignment="Center"
+                                            ItemsSource="{Binding Path=TrackerMethods}" 
+                                            SelectedItem="{Binding Path=MethodTracker, Mode=TwoWay}"
+                                            materialDesign:HintAssist.Hint="CHOOSE METHOD TRACKER USAGE"
+                                            BorderBrush="{StaticResource VietPark.Brushes.WayIn}"/>
+                                    </WrapPanel>
+                                    <WrapPanel Grid.Column="0" Grid.Row="1" VerticalAlignment="Center">
+                                        <TextBlock VerticalAlignment="Center" Margin="5" Text="Amount Seconds Delay For Next"></TextBlock>
+                                        <TextBox VerticalAlignment="Center" Margin="5" Width="100"
+                                             Text="{Binding AmountSecondsDelayForNext, Mode=TwoWay}" 
+                                             BorderBrush="{StaticResource VietPark.Brushes.WayIn}">
+                                        </TextBox>
+                                    </WrapPanel>
+                                    <WrapPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center">
+                                        <TextBlock VerticalAlignment="Center" Margin="5" Text="Ignored Duration For Processed Plate"></TextBlock>
+                                        <TextBox VerticalAlignment="Center" Margin="5" Width="100"
+                                             Text="{Binding IgnoredDurationForProcessedPlate, Mode=TwoWay}" 
+                                             BorderBrush="{StaticResource VietPark.Brushes.WayIn}">
+                                        </TextBox>
+                                    </WrapPanel>
+                                    <WrapPanel Grid.Column="2" VerticalAlignment="Center">
+                                        <TextBlock Text="Check With Only Serial of Plate"></TextBlock>
+                                        <ToggleButton 
+                                       Style="{StaticResource MaterialDesignSwitchDarkToggleButton}"
+                                       ToolTip="Turn on or off function"
+                                       IsChecked="{Binding Path=CompareWithOnlySerialNumberOfPlate, Mode=TwoWay}"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Center"
+                                       Margin="30 0 0 0"/>
+                                    </WrapPanel>
+                                    <WrapPanel Grid.Column="3" VerticalAlignment="Center">
+                                        <TextBlock Text="Allow Confirm To Collect Visitor Plate"></TextBlock>
+                                        <ToggleButton 
+                                           Style="{StaticResource MaterialDesignSwitchDarkToggleButton}"
+                                           ToolTip="Turn on or off function"
+                                           IsChecked="{Binding Path=AllowConfirmToCollectVisitorPlate, Mode=TwoWay}"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"
+                                           Margin="30 0 0 0"/>
+                                    </WrapPanel>
+                                </Grid>
+                            </StackPanel>
+                        </Expander>
+                    </StackPanel>
+                </materialDesign:Card>
+
+            </Grid>
+
+            <!--OLD DATA-->
+            <Grid Grid.Row="2" >
+                <common:StreachableTextBlock FontSize="14" Margin="0,8,16,8" FontWeight="Normal" Grid.Column="2" Grid.Row="0" TBContent="Tên làn" HorizontalAlignment="Right"
+                                         TextAlignment="Right"/>
+                <TextBox Margin="0,5,0,5" FontWeight="Bold" FontSize="16" TextAlignment="Center" VerticalAlignment="Center" Grid.Column="3" Grid.Row="0" 
+                     Foreground="DarkRed" HorizontalAlignment="Stretch" Text="{Binding LaneName, Mode=TwoWay}"></TextBox>
+
+                <Grid Grid.ColumnSpan="7" Grid.Row="1" Grid.RowSpan="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="10"/>
+
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+
+                    <!--<common:StreachableTextBlock FontSize="18" TextAlignment="Right" Margin="8,8,16,8" Grid.Column="0" Grid.Row="1" TBContent="Camera 1" HorizontalAlignment="Right"/>
+                    <common:StreachableTextBlock FontSize="18" TextAlignment="Right" Margin="8,8,16,8" Grid.Column="0" Grid.Row="2" TBContent="Camera 2" HorizontalAlignment="Right"/>-->
+                    <!--<common:StreachableTextBlock FontSize="18" TextAlignment="Right" Margin="8,8,16,8" Grid.Row="0" Grid.Column="0" TBContent="Chiều mặc định" HorizontalAlignment="Right" />-->
+                    <WrapPanel Grid.Row="0" Grid.Column="1" >
+                        <!--<RadioButton Margin="5" IsChecked="{Binding Path=Direction, Mode=TwoWay, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter={x:Static enum:LaneDirection.In}}" GroupName="{Binding LaneId}" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Hướng vào" FontSize="16"/>
+                        <CheckBox IsChecked="{Binding IsInExtra}" FontSize="16">Active 4</CheckBox>-->
+                    </WrapPanel>
+                    <WrapPanel Grid.Row="0" Grid.Column="3">
+                        <!--<RadioButton Margin="5" IsChecked="{Binding Path=Direction, Mode=TwoWay, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter={x:Static enum:LaneDirection.Out}}" GroupName="{Binding LaneId}"  HorizontalAlignment="Left" VerticalAlignment="Center" Content="Hướng ra" FontSize="16"/>
+                        <CheckBox IsChecked="{Binding IsOutExtra}" FontSize="16">Active 4</CheckBox>-->
+                    </WrapPanel>
+                    <!--<RadioButton Margin="5" IsChecked="{Binding Path=Direction, Mode=TwoWay, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter={x:Static enum:LaneDirection.In}}" GroupName="{Binding LaneId}" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Hướng vào" FontSize="16"/>
+            <RadioButton Margin="5" IsChecked="{Binding Path=Direction, Mode=TwoWay, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter={x:Static enum:LaneDirection.Out}}" GroupName="{Binding LaneId}" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Left" VerticalAlignment="Center" Content="Hướng ra" FontSize="16"/>-->
+                    <WrapPanel Grid.Column="1" Grid.Row="1">
+                        <!--<TextBox Foreground="DarkBlue" Margin="0,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="120" TextAlignment="Center" HorizontalContentAlignment="Left"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="IP"
+                         Text="{Binding FrontInCamera, Mode=TwoWay}"></TextBox>
+                        <TextBox Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="60" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Port"
+                         Text="{Binding FrontInPort, Mode=TwoWay}"></TextBox>
+                        <TextBox Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="90" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="User"
+                         Text="{Binding FrontInUserName, Mode=TwoWay}"></TextBox>
+                        <TextBox Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="90" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Password"
+                         Text="{Binding FrontInPassword, Mode=TwoWay}"></TextBox>
+
+                        <ComboBox Margin="5,5,0,5"  FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" Foreground="DarkBlue"
+                      IsEditable="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MinWidth="120" 
+                              ItemsSource="{Binding Path=CameraTypes}" SelectedItem="{Binding Path=FrontInType, Mode=TwoWay}"/>-->
+                    </WrapPanel>
+                    <WrapPanel Grid.Column="1" Grid.Row="2">
+                        <!--<TextBox Foreground="DarkBlue" Margin="0,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="120" TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="IP"
+                         Text="{Binding BackInCamera, Mode=TwoWay}"></TextBox>
+                        <TextBox Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="60" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Port"
+                         Text="{Binding BackInPort, Mode=TwoWay}"></TextBox>
+                        <TextBox Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="90" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="User"
+                         Text="{Binding BackInUserName, Mode=TwoWay}"></TextBox>
+                        <TextBox Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="90" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Password"
+                         Text="{Binding BackInPassword, Mode=TwoWay}"></TextBox>
+
+                        <ComboBox Margin="5,5,0,5"  FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" Foreground="DarkBlue"
+                      IsEditable="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MinWidth="120"
+                      ItemsSource="{Binding Path=CameraTypes}" SelectedItem="{Binding Path=BackInType, Mode=TwoWay}"/>-->
+                    </WrapPanel>
+                    <WrapPanel Grid.Column="3" Grid.Row="1">
+                        <!--<TextBox Foreground="DarkBlue" Margin="0,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="120" TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="IP"
+                         Text="{Binding FrontOutCamera, Mode=TwoWay}"></TextBox>
+                        <TextBox Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="60" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Port"
+                         Text="{Binding FrontOutPort, Mode=TwoWay}"></TextBox>
+                        <TextBox Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="90" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="User"
+                         Text="{Binding FrontOutUserName, Mode=TwoWay}"></TextBox>
+                        <TextBox Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="90" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Password"
+                         Text="{Binding FrontOutPassword, Mode=TwoWay}"></TextBox>
+                        <ComboBox Margin="5,5,0,5"  FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" Foreground="DarkBlue"
+                      IsEditable="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MinWidth="120"
+                      ItemsSource="{Binding Path=CameraTypes}" SelectedItem="{Binding Path=FrontOutType, Mode=TwoWay}"/>-->
+                    </WrapPanel>
+                    <WrapPanel Grid.Column="3" Grid.Row="2">
+                        <!--<TextBox Foreground="DarkBlue" Margin="0,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="120" TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="IP"
+                         Text="{Binding BackOutCamera, Mode=TwoWay}"></TextBox>
+                        <TextBox Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="60" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Port"
+                         Text="{Binding BackOutPort, Mode=TwoWay}"></TextBox>
+                        <TextBox Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="90" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="User"
+                         Text="{Binding BackOutUserName, Mode=TwoWay}"></TextBox>
+                        <TextBox Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="90" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Password"
+                         Text="{Binding BackOutPassword, Mode=TwoWay}"></TextBox>
+                        <ComboBox Margin="5,5,0,5"  FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" Foreground="DarkBlue"
+                      IsEditable="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MinWidth="120"
+                      ItemsSource="{Binding Path=CameraTypes}" SelectedItem="{Binding Path=BackOutType, Mode=TwoWay}"/>-->
+                    </WrapPanel>
+
+                    <!--<common:StreachableTextBlock FontSize="18" TextAlignment="Right" Margin="8,8,16,8" Grid.Column="0" Grid.Row="3" TBContent="Camera Extra 1" HorizontalAlignment="Right"/>
+                    <common:StreachableTextBlock FontSize="18" TextAlignment="Right" Margin="8,8,16,8" Grid.Column="0" Grid.Row="4" TBContent="Camera Extra 2" HorizontalAlignment="Right"/>-->
+                    <WrapPanel Grid.Column="1" Grid.Row="3">
+                        <!--<TextBox IsEnabled="{Binding IsInExtra}" Foreground="DarkBlue" Margin="0,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="120" TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="IP"
+                         Text="{Binding ExtraIn1Camera, Mode=TwoWay}"></TextBox>
+                        <TextBox IsEnabled="{Binding IsInExtra}" Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="60" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Port"
+                         Text="{Binding ExtraIn1Port, Mode=TwoWay}"></TextBox>
+                        <TextBox IsEnabled="{Binding IsInExtra}" Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="90" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="User"
+                         Text="{Binding ExtraIn1UserName, Mode=TwoWay}"></TextBox>
+                        <TextBox IsEnabled="{Binding IsInExtra}" Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="90" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Password"
+                         Text="{Binding ExtraIn1Password, Mode=TwoWay}"></TextBox>
+                        <ComboBox IsEnabled="{Binding IsInExtra}" Margin="5,5,0,5"  FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" Foreground="DarkBlue"
+                      IsEditable="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MinWidth="120"
+                     ItemsSource="{Binding Path=CameraTypes}" SelectedItem="{Binding Path=ExtraIn1Type, Mode=TwoWay}"/>-->
+                    </WrapPanel>
+                    <WrapPanel Grid.Column="1" Grid.Row="4">
+                        <!--<TextBox IsEnabled="{Binding IsInExtra}" Foreground="DarkBlue" Margin="0,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="120" TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="IP"
+                         Text="{Binding ExtraIn2Camera, Mode=TwoWay}"></TextBox>
+                        <TextBox IsEnabled="{Binding IsInExtra}" Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="60" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Port"
+                         Text="{Binding ExtraIn2Port, Mode=TwoWay}"></TextBox>
+                        <TextBox IsEnabled="{Binding IsInExtra}" Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="90" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="User"
+                         Text="{Binding ExtraIn2UserName, Mode=TwoWay}"></TextBox>
+                        <TextBox IsEnabled="{Binding IsInExtra}" Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="90" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Password"
+                         Text="{Binding ExtraIn2Password, Mode=TwoWay}"></TextBox>
+                        <ComboBox IsEnabled="{Binding IsInExtra}" Margin="5,5,0,5"  FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" Foreground="DarkBlue"
+                      IsEditable="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MinWidth="120"
+                      ItemsSource="{Binding Path=CameraTypes}" SelectedItem="{Binding Path=ExtraIn2Type, Mode=TwoWay}"/>-->
+                    </WrapPanel>
+                    <WrapPanel Grid.Column="3" Grid.Row="3">
+                        <!--<TextBox IsEnabled="{Binding IsOutExtra}" Foreground="DarkBlue" Margin="0,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="120" TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="IP"
+                         Text="{Binding ExtraOut1Camera, Mode=TwoWay}"></TextBox>
+                        <TextBox IsEnabled="{Binding IsOutExtra}" Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="60" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Port"
+                         Text="{Binding ExtraOut1Port, Mode=TwoWay}"></TextBox>
+                        <TextBox IsEnabled="{Binding IsOutExtra}" Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="90" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="User"
+                         Text="{Binding ExtraOut1UserName, Mode=TwoWay}"></TextBox>
+                        <TextBox IsEnabled="{Binding IsOutExtra}" Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="90" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Password"
+                         Text="{Binding ExtraOut1Password, Mode=TwoWay}"></TextBox>
+                        <ComboBox IsEnabled="{Binding IsOutExtra}" Margin="5,5,0,5"  FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" Foreground="DarkBlue"
+                      IsEditable="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MinWidth="120"
+                      ItemsSource="{Binding Path=CameraTypes}" SelectedItem="{Binding Path=ExtraOut1Type, Mode=TwoWay}"/>-->
+                    </WrapPanel>
+                    <WrapPanel Grid.Column="3" Grid.Row="4">
+                        <!--<TextBox IsEnabled="{Binding IsOutExtra}" Foreground="DarkBlue" Margin="0,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="120" TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="IP"
+                         Text="{Binding ExtraOut2Camera, Mode=TwoWay}"></TextBox>
+                        <TextBox IsEnabled="{Binding IsOutExtra}" Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="60" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Port"
+                         Text="{Binding ExtraOut2Port, Mode=TwoWay}"></TextBox>
+                        <TextBox IsEnabled="{Binding IsOutExtra}" Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="90" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="User"
+                         Text="{Binding ExtraOut2UserName, Mode=TwoWay}"></TextBox>
+                        <TextBox IsEnabled="{Binding IsOutExtra}" Foreground="DarkBlue" Margin="5,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="90" TextAlignment="Center" HorizontalContentAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Password"
+                         Text="{Binding ExtraOut2Password, Mode=TwoWay}"></TextBox>
+                        <ComboBox IsEnabled="{Binding IsOutExtra}" Margin="5,5,0,5"  FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" Foreground="DarkBlue"
+                      IsEditable="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MinWidth="120"
+                      ItemsSource="{Binding Path=CameraTypes}" SelectedItem="{Binding Path=ExtraOut2Type, Mode=TwoWay}"/>-->
+                    </WrapPanel>
+                </Grid>
+
+                <!--<common:StreachableTextBlock TextAlignment="Right" Margin="0,8,16,8" Grid.Column="2" Grid.Row="6" TBContent="Barrier Com" HorizontalAlignment="Right"/>-->
+
+                <Grid Grid.Column="3"  Grid.Row="6" HorizontalAlignment="Stretch">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <!--<ComboBox Grid.Column="0" Margin="0,5,0,5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                    FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center" Width="Auto"
+                    ItemsSource="{Binding Barriers}" SelectedItem="{Binding SelectedBarrier, Mode=TwoWay}"></ComboBox>
+                    <TextBox Grid.Column="1" Margin="10,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="80" TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold"
+                         Text="{Binding Path=BarrierPort, Mode=TwoWay}"></TextBox>-->
+                </Grid>
+
+                <!--<Button Grid.Row="6" Grid.Column="5" Width="100"  Style="{DynamicResource AccentedSquareButtonStyle}" Content="Kiểm tra" HorizontalAlignment="Left" VerticalAlignment="Stretch"
+                    Margin="5,5,0,5" Command="{Binding DetectBarrierCommand}" />
+                <CheckBox IsChecked="{Binding UseBarrierIpController,Mode=TwoWay}" VerticalAlignment="Stretch" HorizontalAlignment="Right" Grid.Column="2" Grid.Row="7" >Barrier TCPIP</CheckBox>-->
+                <Grid Grid.Column="3" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Stretch">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <!--<TextBox Grid.Column="0" Margin="0,5,0,5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                         Width="auto" TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="IP"
+                         Text="{Binding Path=BarrierIpController, Mode=TwoWay}"></TextBox>
+                    <TextBox Grid.Column="1" Margin="10,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="60" TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Port"
+                         Text="{Binding Path=BarrierPortController, Mode=TwoWay}"></TextBox>
+                    <TextBox Grid.Column="2" Margin="10,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="60" TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Doors"
+                         Text="{Binding Path=BarrierDoorsController, Mode=TwoWay}"></TextBox>
+                    <TextBox Grid.Column="3" Margin="10,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="60" TextAlignment="Center" IsEnabled="False"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Hard Button Code"
+                         Text="{Binding Path=BarrierHardButtonCode}"></TextBox>
+                    <TextBox Grid.Column="4" Margin="10,5,0,5" VerticalAlignment="Stretch"
+                         HorizontalAlignment="Right" Width="60" TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="TimeTick"
+                         Text="{Binding Path=TimeTick}"></TextBox>-->
+                </Grid>
+
+                <!--<Button IsEnabled="{Binding UseBarrierIpController}" Grid.Row="7" Grid.Column="5" Width="100"  Style="{DynamicResource AccentedSquareButtonStyle}" Content="Kiểm tra" HorizontalAlignment="Left" VerticalAlignment="Stretch"
+                    Margin="5,5,0,5" Command="{Binding DetectBarrierCommandIPController}" />-->
+                <!--<Grid Grid.Row="7" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+            </Grid>-->
+                <!--BARRIER-->
+                <Grid Grid.Row="8" Grid.ColumnSpan="7" DataContext="{Binding Path=BarrierByInternetControl}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.2*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="1.5*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <!--<CheckBox IsChecked="{Binding Active,Mode=TwoWay}" VerticalAlignment="Stretch" HorizontalAlignment="Right" Grid.Column="0" Grid.Row="7" >Barrier by internet control</CheckBox>
+                    <TextBox Grid.Column="1" Margin="5,5,0,5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                         TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="IP"
+                         Text="{Binding Path=IP, Mode=TwoWay}"></TextBox>
+                    <TextBox Grid.Column="2" Margin="5,5,0,5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                         TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Port"
+                         Text="{Binding Path=Port, Mode=TwoWay}"></TextBox>
+                    <TextBox Grid.Column="3" Margin="5,5,0,5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                         TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="User Name"
+                         Text="{Binding Path=UserName, Mode=TwoWay}"></TextBox>
+                    <TextBox Grid.Column="4" Margin="5,5,0,5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                         TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Password"
+                         Text="{Binding Path=Password, Mode=TwoWay}"></TextBox>
+                    <TextBox Grid.Column="5" Margin="5,5,0,5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                         TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Command: 1,2,3,4"
+                         Text="{Binding Path=PortNumber, Mode=TwoWay}"></TextBox>
+                    <TextBox Grid.Column="6" Margin="5,5,0,5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                         TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="Nút bấm: 5->8"
+                         Text="{Binding Path=ButtonNumber, Mode=TwoWay}"></TextBox>
+                    <Button IsEnabled="{Binding Active}" Grid.Column="7" Width="100"  Style="{DynamicResource AccentedSquareButtonStyle}" Content="Kiểm tra" HorizontalAlignment="Left" VerticalAlignment="Stretch"
+                    Margin="5,5,0,5" Command="{Binding DetectControl}" />-->
+                </Grid>
+                <Grid Grid.Row="9" Grid.ColumnSpan="7" DataContext="{Binding Path=BarrierBySiemensControl}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <!--<CheckBox IsChecked="{Binding Active,Mode=TwoWay}" VerticalAlignment="Stretch" HorizontalAlignment="Right" Grid.Column="0" Grid.Row="7" >Barrier by Siemens control</CheckBox>
+                    <TextBox Grid.Column="1" Margin="5,5,0,5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                         TextAlignment="Center"
+                         FontSize="16" FontWeight="Bold" Controls:TextBoxHelper.Watermark="IP"
+                         Text="{Binding Path=IP, Mode=TwoWay}"></TextBox>
+                    <ComboBox  Grid.Column="2" Margin="3" 
+                      VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  SelectedItem="{Binding TypeOut,Mode=TwoWay}"   
+                      
+                      ItemsSource="{Binding Path = TypeOuts}"
+                        Controls:TextBoxHelper.Watermark="Cổng ra"/>
+                    <ComboBox  Grid.Column="3" Margin="3" 
+                      VerticalAlignment="Stretch" HorizontalAlignment="Stretch" SelectedItem="{Binding TypeIn,Mode=TwoWay}"    
+                      ItemsSource="{Binding Path = TypeIns}"
+                        Controls:TextBoxHelper.Watermark="Nút bấm"/>
+                    <Button IsEnabled="{Binding Active}" Grid.Column="4" Width="100"  Style="{DynamicResource AccentedSquareButtonStyle}" Content="Kiểm tra" HorizontalAlignment="Left" VerticalAlignment="Stretch"
+                    Margin="5,5,0,5" Command="{Binding DetectControl}" />-->
+                </Grid>
+                <!--<common:StreachableTextBlock TextAlignment="Right" Margin="0,8,16,8" Grid.Column="2" Grid.Row="10" TBContent="Loại xe" HorizontalAlignment="Right"/>-->
+                <!--<ComboBox Margin="0,5,0,5" Grid.Column="3" VerticalAlignment="Stretch" Grid.Row="10" HorizontalAlignment="Stretch" 
+                      FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center" 
+                      ItemsSource="{Binding VehicleTypes}" SelectedItem="{Binding SelectedVehicleType, Mode=TwoWay}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <Label  Content="{Binding  Path=.,Mode=OneWay, 
+                                Converter={StaticResource EnumItemsConverter}}"
+                        Height="Auto"
+                        Margin="0" 
+                        VerticalAlignment="Center"/>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>-->
+                <Grid  Grid.Column="0" Grid.Row="11" Grid.ColumnSpan="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!--<TextBlock Text="Đầu đọc thẻ:" Grid.Column="0"
+                           HorizontalAlignment="Right"   
+                           VerticalAlignment="Center" 
+                           TextAlignment="Right"   
+                           FontSize="16"/>
+                    <ComboBox Margin="0,5,0,5" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
+                      FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center"
+                      Name="CardTypeComboBox1" SelectedIndex="0"
+                      ItemsSource="{Binding CardTypes}" SelectedValue="{Binding CurrentCardType, Mode=TwoWay}" SelectionChanged="CardTypeComboBox_SelectionChanged" />-->
+                </Grid>
+                <Grid Grid.Column="3" Grid.Row="11" Grid.ColumnSpan="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <WrapPanel Visibility="Hidden" x:Name="tcpippannel1" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,5,5,0">
+                        <!--<TextBox  x:Name="txtTcpIp1" HorizontalAlignment="Center"
+                             Height="23" 
+                             TextWrapping="NoWrap" 
+                             Margin="5,0,0,0"
+                             VerticalAlignment="Center" 
+                             Width="100"
+                             Text="{Binding Path=CurrentIp, Mode=TwoWay}"
+                             Controls:TextBoxHelper.Watermark="Ip"/>
+                        <TextBox x:Name="txtPort1" HorizontalAlignment="Center"  Margin="5,0,0,0" 
+                             Height="23" 
+                             TextWrapping="NoWrap"  
+                             VerticalAlignment="Center" 
+                             Width="60"
+                             Text="{Binding Path=CurrentPort, Mode=TwoWay}"
+                             Controls:TextBoxHelper.Watermark="Port"/>
+                        <ComboBox  Width="100" Visibility="Hidden" x:Name="cbAntenna1" Margin="5,0,0,0" FontWeight="Bold" FontSize="14" HorizontalContentAlignment="Center" Foreground="DarkBlue"
+                      SelectedIndex="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                        SelectedValue="{Binding CurrentAntennaType, Mode=TwoWay}"
+                      ItemsSource="{Binding AntennaTypes}"/>
+                        <ComboBox  Width="100" Visibility="Hidden" x:Name="cbDoor1" Margin="5,0,0,0" FontWeight="Bold" FontSize="14" HorizontalContentAlignment="Center" Foreground="DarkBlue"
+                      IsEditable="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                      DisplayMemberPath="Name" SelectedValue="{Binding Door, Mode=TwoWay}"
+                      ItemsSource="{Binding DoorTypes}"/>
+                        <ComboBox Width="110" Visibility="Hidden" x:Name="cbReader1" Margin="5,0,0,0" FontWeight="Bold" FontSize="14" HorizontalContentAlignment="Center" Foreground="DarkBlue"
+                      IsEditable="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                      DisplayMemberPath="Name" SelectedValue="{Binding Reader, Mode=TwoWay}"
+                      ItemsSource="{Binding ReaderTypes}"/>-->
+                    </WrapPanel>
+
+                    <ComboBox Margin="0,5,0,5" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
+                      FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center" DisplayMemberPath="SerialNumber"
+                      Name="AvilableModWinsComboBox1"
+                      ItemsSource="{Binding AvilableModWinsCards, Mode=TwoWay}" SelectedValue="{Binding CurrentCardSelected, Mode=TwoWay}"/>
+                    <Button Grid.Column="2" Margin="10,5,10,5" Width="140" HorizontalAlignment="Right"
+                    Style="{DynamicResource AccentedSquareButtonStyle}" Content="thêm đầu đọc thẻ"
+                    Command="{Binding AddCurrentGreenCard}" />
+                    <Button x:Name="btnRefreshModWinsCard1" Grid.Column="1" Margin="10,5,10,5" Width="140" HorizontalAlignment="Right"
+                    Style="{DynamicResource AccentedSquareButtonStyle}" Content="Refresh"
+                    Command="{Binding RefreshModWInsCards}" />
+                </Grid>
+                <WrapPanel Grid.Row="12" Grid.ColumnSpan="7" >
+                    <ListView   ItemsSource="{Binding ModWinsCards, Mode=TwoWay}" Background="Transparent">
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="{x:Type ListViewItem}">
+                                <Style.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="{x:Null}" />
+                                        <Setter Property="BorderBrush" Value="{x:Null}" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+
+                        <ListView.ItemTemplate>
+
+                            <DataTemplate>
+                                <Grid Background="White" Margin="5,5,5,5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="{Binding CallName}"></TextBlock>
+                                    <TextBlock Text="{Binding SerialNumber}" Grid.Column="1" Margin="8,8,0,8" FontSize="16" FontWeight="Bold"/>
+
+                                    <Button Grid.Column="2"  Style="{DynamicResource AccentedSquareButtonStyle}" Margin="0,5,0,5" Content="X"
+                                        Click="Button_Click"  Width="30"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+
+                    </ListView>
+                    <ListView ItemsSource="{Binding TcpIpServerCards, Mode=TwoWay}" Background="Transparent">
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="{x:Type ListViewItem}">
+                                <Style.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="{x:Null}" />
+                                        <Setter Property="BorderBrush" Value="{x:Null}" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+
+                        <ListView.ItemTemplate>
+
+                            <DataTemplate>
+                                <Grid Background="White" Margin="5,5,5,5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <!--<TextBlock Text="{Binding CallName}" FontSize="16"></TextBlock>
+                                    <TextBox Text="{Binding TcpIp}"  Grid.Column="1" FontSize="16"></TextBox>
+
+                                    <TextBox Text="{Binding Port}" Grid.Column="2" FontSize="16"></TextBox>
+                                    <Button Grid.Column="3"  Style="{DynamicResource AccentedSquareButtonStyle}" Margin="0,5,0,5" Content="X"
+                                        Click="Button_Click"  Width="30"/>-->
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+
+                    </ListView>
+                    <ListView  ItemsSource="{Binding TcpIpClientCards, Mode=TwoWay}" Background="Transparent">
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="{x:Type ListViewItem}">
+                                <Style.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="{x:Null}" />
+                                        <Setter Property="BorderBrush" Value="{x:Null}" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+
+                        <ListView.ItemTemplate>
+
+                            <DataTemplate>
+                                <Grid Background="White" Margin="5,5,5,5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <!--<TextBlock Text="{Binding CallName}" FontSize="16"></TextBlock>
+                                    <TextBox Text="{Binding TcpIp}"  Grid.Column="1" FontSize="16"></TextBox>
+                                    <TextBox Text="{Binding Port}" Grid.Column="2" FontSize="16"></TextBox>
+                                    <Button Grid.Column="3"  Style="{DynamicResource AccentedSquareButtonStyle}" Margin="0,5,0,5" Content="X"
+                                    Click="Button_Click"  Width="30"/>-->
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+
+                    </ListView>
+                    <ListView  ItemsSource="{Binding ScannelCards, Mode=TwoWay}" Background="Transparent">
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="{x:Type ListViewItem}">
+                                <Style.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="{x:Null}" />
+                                        <Setter Property="BorderBrush" Value="{x:Null}" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+
+                        <ListView.ItemTemplate>
+
+                            <DataTemplate>
+                                <Grid Background="White" Margin="5,5,5,5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <!--<TextBlock Text="{Binding CallName}" FontSize="16"></TextBlock>
+                                    <TextBox Text="{Binding TcpIp}"  Grid.Column="1" FontSize="16"></TextBox>
+                                    <TextBox Text="{Binding Port}" Grid.Column="2" FontSize="16"></TextBox>
+                                    <TextBox Text="{Binding Antenna}" Grid.Column="3" FontSize="16"></TextBox>
+                                    <Button Grid.Column="4"  Style="{DynamicResource AccentedSquareButtonStyle}" Margin="0,5,0,5" Content="X"
+                                    Click="Button_Click"  Width="30"/>-->
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+
+                    </ListView>
+                    <ListView  ItemsSource="{Binding TcpIpControllerCards, Mode=TwoWay}" Background="Transparent">
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="{x:Type ListViewItem}">
+                                <Style.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="{x:Null}" />
+                                        <Setter Property="BorderBrush" Value="{x:Null}" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+
+                        <ListView.ItemTemplate>
+
+                            <DataTemplate>
+                                <Grid Background="White" Margin="5,5,5,5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <!--<TextBlock Text="{Binding CallName}" FontSize="16"></TextBlock>
+                                    <TextBox Text="{Binding TcpIp}"  Grid.Column="1" FontSize="16"
+                                         Controls:TextBoxHelper.Watermark="IP">
+                                    </TextBox>
+                                    <TextBox Text="{Binding Port}" Grid.Column="2" FontSize="16"
+                                         Controls:TextBoxHelper.Watermark="Port">
+                                    </TextBox>
+                                    <TextBox Text="{Binding ActiveCode}" Grid.Column="3" FontSize="16"
+                                         Controls:TextBoxHelper.Watermark="Active Code">
+                                    </TextBox>
+                                    <TextBox Text="{Binding InactiveCode}" Grid.Column="4" FontSize="16"
+                                         Controls:TextBoxHelper.Watermark="Inactive Code">
+                                    </TextBox>
+                                    <Button Grid.Column="5"  Style="{DynamicResource AccentedSquareButtonStyle}" Margin="0,5,0,5" Content="X"
+                                    Click="Button_Click"  Width="30"/>-->
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+
+                    </ListView>
+                    <ListView  ItemsSource="{Binding TcpIpRemoderCards, Mode=TwoWay}" Background="Transparent">
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="{x:Type ListViewItem}">
+                                <Style.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="{x:Null}" />
+                                        <Setter Property="BorderBrush" Value="{x:Null}" />
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+
+                        <ListView.ItemTemplate>
+
+                            <DataTemplate>
+                                <Grid Background="White" Margin="5,5,5,5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                        <ColumnDefinition Width="1.*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <!--<TextBlock Text="{Binding CallName}" FontSize="16"></TextBlock>
+                                    <TextBox Text="{Binding TcpIp}"  Grid.Column="1" FontSize="16"></TextBox>
+                                    <TextBox Text="{Binding Port}" Grid.Column="2" FontSize="16"></TextBox>
+                                    <Button Grid.Column="3"  Style="{DynamicResource AccentedSquareButtonStyle}" Margin="0,5,0,5" Content="X"
+                                    Click="Button_Click"  Width="30"/>-->
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+
+                    </ListView>
+                </WrapPanel>
+                <!--<Grid  Grid.Row="9" Grid.ColumnSpan="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.*"></ColumnDefinition>
+                    <ColumnDefinition Width="1.*"></ColumnDefinition>
+                    <ColumnDefinition Width="1.*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+               
+            </Grid>-->
+                <!--<common:StreachableTextBlock Grid.Row="8" Grid.Column="0" Margin="8,8,16,8" TBContent="Đầu đọc thẻ"
+                                         TextAlignment="Right" HorizontalAlignment="Right" VerticalAlignment="Top"/>-->
+
+                <Grid Visibility="Hidden" Grid.Row="11" Grid.Column="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <!--<ComboBox Margin="0,5,0,5" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
+                      FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center" DisplayMemberPath="SerialNumber" SelectedValuePath="SerialNumber"
+                      Name="CardReaderComboBox"
+                      ItemsSource="{Binding AvailableCardReaders}" SelectedValue="{Binding CurrentCardReader, Mode=TwoWay}"/>
+                    <Button Grid.Column="1" Margin="10,5,10,5" Width="140" HorizontalAlignment="Right"
+                    Style="{DynamicResource AccentedSquareButtonStyle}" Content="thêm đầu đọc thẻ"
+                    Command="{Binding AddCurrentCardReader}" />-->
+                </Grid>
+                <Grid Visibility="Hidden" Grid.Row="11" Grid.Column="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Name="DetectButton" Width="100"  Style="{DynamicResource AccentedSquareButtonStyle}" Content="Tap thẻ"
+                    Margin="0,5,0,5" Command="{Binding DetectCardCommand}"/>
+                    <common:StreachableTextBlock x:Name="IpTextBlock" Grid.Column="0" TBContent="IP" TextAlignment="Right" Margin="8,8,10,8" />
+                    <TextBox Name="IpTextBox" Grid.Column="1" Margin="5,5,0,5" FontWeight="Bold" FontSize="16" TextAlignment="Center" HorizontalContentAlignment="Stretch"
+                         Foreground="DarkRed" HorizontalAlignment="Stretch" Text="{Binding CardReaderIP, Mode=TwoWay}"/>
+                </Grid>
+
+                <ListView Visibility="Hidden" Grid.Row="12" Grid.Column="3" Grid.ColumnSpan="2" ItemsSource="{Binding CardReaders}" Background="Transparent">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="{x:Type ListViewItem}">
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="{x:Null}" />
+                                    <Setter Property="BorderBrush" Value="{x:Null}" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Background="White" Margin="5,5,5,5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <!--<TextBlock Text="{Binding SerialNumber}" Margin="8,8,0,8" FontSize="16" FontWeight="Bold"
+                                       Width="{Binding ElementName=CardReaderComboBox, Path=ActualWidth}" />
+                                <Button Grid.Column="1" Style="{DynamicResource AccentedSquareButtonStyle}" Margin="0,5,0,5" Content="X"
+                                    Click="RemoveCardReader_OnClick" Width="30"/>-->
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <Grid Grid.Row="13" Grid.ColumnSpan="7">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"></ColumnDefinition>
+                        <ColumnDefinition Width="130"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <!--<TextBlock Text="Máy in:" Grid.Column="0" Grid.Row="0"
+                           HorizontalAlignment="Right"   
+                           VerticalAlignment="Center" 
+                           TextAlignment="Right"   
+                           FontSize="16"/>-->
+                    <!--<TextBlock Text="Máy in:" Grid.Column="0" Grid.Row="0"
+                           HorizontalAlignment="Right"   
+                           VerticalAlignment="Center" 
+                           TextAlignment="Right"   
+                           FontSize="16"/>
+                    <CheckBox IsChecked="{Binding PrintComActive,Mode=TwoWay}" VerticalAlignment="Stretch" HorizontalAlignment="Right" Grid.Column="1"  >Sử dụng cổng com</CheckBox>-->
+                    <WrapPanel Grid.Column="2">
+                        <!--<TextBox x:Name="txtComPrinter1" HorizontalAlignment="Left" Margin="5,0,0,0"
+                             Height="23" 
+                             TextWrapping="NoWrap"  
+                             VerticalAlignment="Center" 
+                             Width="80" IsEnabled="{Binding PrintComActive}"
+                             Text="{Binding Path=ComPrint, Mode=TwoWay}"
+                             Controls:TextBoxHelper.Watermark="Com Print"/>
+                        <TextBox HorizontalAlignment="Left" Margin="5,0,0,0"
+                             Height="23" 
+                             TextWrapping="NoWrap"  
+                             VerticalAlignment="Center" 
+                             MinWidth="250"
+                             Width="auto" 
+                             Text="{Binding Path=PrintAddressTitle, Mode=TwoWay}"
+                             Controls:TextBoxHelper.Watermark="Contact Address"/>
+                        <TextBox HorizontalAlignment="Left" Margin="5,0,0,0"
+                             Height="23" 
+                             TextWrapping="NoWrap"  
+                             VerticalAlignment="Center" 
+                             MinWidth="250"
+                             Width="auto" 
+                             Text="{Binding Path=PrintCallTile, Mode=TwoWay}"
+                             Controls:TextBoxHelper.Watermark="Tel and Fax infomation"/>-->
+                    </WrapPanel>
+
+                </Grid>
+                <Grid Grid.Row="14" Grid.ColumnSpan="7">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="120"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="140"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <!--<TextBlock Text="Đèn Led:" Grid.Column="0" Grid.Row="0"
+                           HorizontalAlignment="Right"   
+                           VerticalAlignment="Center" 
+                           TextAlignment="Right"   
+                           FontSize="16"/>
+                    <TextBox x:Name="txtLed1" HorizontalAlignment="Stretch" Grid.Column="1"
+                             Height="23" 
+                             Margin="3"
+                             TextWrapping="NoWrap"  
+                             VerticalAlignment="Stretch"    
+                             Text="{Binding Path=ComLed, Mode=TwoWay}"
+                             Controls:TextBoxHelper.Watermark="Com Led"/>
+                    <ComboBox  Grid.Column="2" Margin="3" 
+                      VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
+                      SelectedValue="{Binding LedStyle,Mode=TwoWay}"
+                      ItemsSource="{Binding Path = LedStyles}"
+                        Controls:TextBoxHelper.Watermark="Loại Led"/>
+                    <CheckBox IsChecked="{Binding ComIctCashierEnanble,Mode=TwoWay}" VerticalAlignment="Stretch" HorizontalAlignment="Right" Grid.Column="3" Grid.Row="0" >Dùng máy tính tiền</CheckBox>
+                    <TextBox HorizontalAlignment="Stretch" Grid.Column="4"
+                             Height="23" Margin="3"
+                             TextWrapping="NoWrap"  
+                             VerticalAlignment="Stretch"   
+                             Text="{Binding Path=ComIctCashier, Mode=TwoWay}"
+                             Controls:TextBoxHelper.Watermark="Com ICT Cashier"/>
+                    <TextBlock Visibility="Hidden" Text="Két tính tiền:" Grid.Column="3" Grid.Row="0"
+                           HorizontalAlignment="Right"   
+                           VerticalAlignment="Center" 
+                           TextAlignment="Right"   
+                           FontSize="16"/>
+                    <TextBox Visibility="Hidden"  HorizontalAlignment="Stretch" Grid.Column="4"
+                             Height="23" Margin="3"
+                             TextWrapping="NoWrap"  
+                             VerticalAlignment="Stretch"   
+                             Text="{Binding Path=ComCash, Mode=TwoWay}"
+                             Controls:TextBoxHelper.Watermark="Com Cash"/>
+                    <TextBlock Text="Đèn cảnh báo:" Grid.Column="5" Grid.Row="0"
+                           HorizontalAlignment="Right"   
+                           VerticalAlignment="Center" 
+                           TextAlignment="Right"   
+                           FontSize="16"/>
+                    <TextBox  HorizontalAlignment="Stretch" Grid.Column="6" Margin="3"
+                             Height="23" 
+                             TextWrapping="NoWrap"  
+                             VerticalAlignment="Stretch"     
+                             Text="{Binding Path=ComAlarm, Mode=TwoWay}"
+                             Controls:TextBoxHelper.Watermark="Com Alarm"/>
+                    <TextBox  HorizontalAlignment="Stretch" Grid.Column="7"
+                             Height="23" Margin="3"
+                             TextWrapping="NoWrap"  
+                             VerticalAlignment="Stretch"     
+                             Text="{Binding Path=AlarmWarningKeys, Mode=TwoWay}"
+                             Controls:TextBoxHelper.Watermark="Mã cảnh báo"/>
+                    <TextBox  HorizontalAlignment="Stretch" Grid.Column="8"
+                             Height="23" Margin="3"
+                             TextWrapping="NoWrap"  
+                             VerticalAlignment="Stretch"     
+                             Text="{Binding Path=AlarmSuccessKeys, Mode=TwoWay}"
+                             Controls:TextBoxHelper.Watermark="Mã thành công"/>-->
+                </Grid>
+                <Grid Grid.Row="15"  Grid.ColumnSpan="7">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="793*"/>
+                        <ColumnDefinition Width="77*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <!--<Button Style="{StaticResource MaterialDesignRaisedLightButton}" 
+                            Content="SAVE CHANGE" HorizontalAlignment="Center" VerticalAlignment="Center"
+                            Width="120"
+                            Height="30"
+                            Command="{Binding SaveCommand}" />
+                    <TextBlock Grid.Row="1"
+                           HorizontalAlignment ="Center"
+                           VerticalAlignment="Bottom" 
+                           FontSize="14"
+                           TextWrapping="NoWrap"
+                           TextAlignment="Center"
+                           FontWeight="Bold"     
+                           Width="400" Text="{Binding SaveResultMessage, Converter={StaticResource StringCodeToString}}"
+                           Foreground="DarkBlue"/>-->
+                </Grid>
+            </Grid>
+            
+        </Grid>
+
+    </GroupBox>
+
+</Views:BaseView>

@@ -1,0 +1,324 @@
+﻿<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+
+    <!--#region Vietnamese -->
+
+    <system:String x:Key="button.ok">ĐỒNG Ý</system:String>
+    <system:String x:Key="button.cancel">HỦY</system:String>
+    
+    <!--Main Form-->
+    <system:String x:Key="button.server1">Máy chủ 1</system:String>
+    <system:String x:Key="button.server2">Máy chủ 2</system:String>
+    <system:String x:Key="button.reconnect-reader">Kiểm tra kết nối đầu đọc</system:String>
+    <system:String x:Key="button.config">Cấu hình hệ thống</system:String>
+
+    <!--Login View-->
+    <system:String x:Key="textHint.username">Nhập người dùng ...</system:String>
+    <system:String x:Key="textHint.password">Nhập mật khẩu ...</system:String>
+    <system:String x:Key="button.login">ĐĂNG NHẬP</system:String>
+
+    <!--Lane view-->
+    <system:String x:Key="button.logout">ĐĂNG XUẤT</system:String>
+    <system:String x:Key="label.wayin">LÀN XE VÀO</system:String>
+    <system:String x:Key="label.wayout">LÀN XE RA</system:String>
+    <system:String x:Key="label.countdown">Thời gian cập nhật</system:String>
+    <system:String x:Key="label.timein">Giờ VÀO</system:String>
+    <system:String x:Key="label.timeout">Giờ RA</system:String>
+    <system:String x:Key="label.ticketcode">Mã thẻ</system:String>
+    <system:String x:Key="label.tickettype">Loại thẻ</system:String>
+    <system:String x:Key="label.vehicletype">Phương tiện</system:String>
+    <system:String x:Key="label.customer_name">Khách hàng</system:String>
+    <system:String x:Key="label.driver">Tên</system:String>
+    <system:String x:Key="label.vehicle_brand">Thương hiệu</system:String>
+    <system:String x:Key="label.vehicle_color">Màu sắc</system:String>
+    <system:String x:Key="label.vehicle_number_plate">Biển số đăng ký</system:String>
+    <system:String x:Key="tootip.change_way_type">Đổi chức năng làn</system:String>
+    <system:String x:Key="tootip.save_camera_config">Lưu thay đổi Camera</system:String>
+    <system:String x:Key="tootip.search">Tìm kiếm</system:String>
+    <system:String x:Key="tootip.logout">Đăng xuất</system:String>
+    <system:String x:Key="label.vehicle_number">Biển số: </system:String>
+
+    <!--Way Out-->
+    <system:String x:Key="label.total_parking_time">Thời gian lưu bãi</system:String>
+    <system:String x:Key="label.parking_charges">Phí giữ xe</system:String>
+    <system:String x:Key="label.registation_status">Hạn đăng ký tháng</system:String>
+    <system:String x:Key="label.permit_time">Thời gian còn lại</system:String>
+    <system:String x:Key="label.permit_warning">CẢNH BÁO HẠN ĐĂNG KÝ</system:String>
+    <system:String x:Key="label.valid_permit_over">Xe chưa tới hoặc đã quá hạn đăng ký tháng</system:String>
+
+
+    <!--Search view-->
+    <system:String x:Key="label.face_picture_in">Hình mặt vào</system:String>
+    <system:String x:Key="label.numberplate_picture_in">Hình biển số vào</system:String>
+    <system:String x:Key="label.face_picture_out">Hình mặt ra</system:String>
+    <system:String x:Key="label.numberplate_picture_out">Hình biển số ra</system:String>
+    <system:String x:Key="label.from">Từ</system:String>
+    <system:String x:Key="label.to">Đến</system:String>
+    <system:String x:Key="label.numberplate">Biển số xe</system:String>
+    <system:String x:Key="label.vehicleinfo">Trạng thái</system:String>
+    <system:String x:Key="label.gate">Cổng kiểm soát</system:String>
+    <system:String x:Key="label.searchdisplay">Số lượng hiển thị</system:String>
+    <system:String x:Key="label.searchresult">KẾT QUẢ TÌM KIẾM</system:String> <!--SEARCH PAGE RESULT-->
+    <system:String x:Key="label.page">Trang</system:String>
+    <system:String x:Key="gridheader.ticketcode">MÃ THẺ</system:String>
+    <system:String x:Key="gridheader.tickettype">LOẠI THẺ</system:String>
+    <system:String x:Key="gridheader.ticketcharges">PHÍ</system:String><!--Ticket Charges-->
+    <system:String x:Key="gridheader.timein">GIỜ VÀO</system:String>
+    <system:String x:Key="gridheader.timeout">GIỜ RA</system:String>
+    <system:String x:Key="tooltip.search">Tìm kiếm</system:String>
+    <system:String x:Key="tooltip.closesearch">Đóng tìm kiếm</system:String>
+    <system:String x:Key="contextmenu.checkoutexception">CHO RA NGOẠI LỆ</system:String>
+    <system:String x:Key="contextmenu.printbill">IN PHIẾU TÍNH TIỀN</system:String>
+    
+    <!-- Dialog -->
+    <system:String x:Key="dialog.title-confirm">Xác nhận</system:String>
+
+    <!-- Messages -->
+    <system:String x:Key="login.invalid">Người dùng hoặc mật khẩu đăng nhập sai</system:String>
+
+    <system:String x:Key="system.invalid_master_password">Sai mật khẩu</system:String>
+    <system:String x:Key="system.password_empty">Mật khẩu không được để trống</system:String>
+    <system:String x:Key="system.passwords_not_matched">Mật khẩu không chính xác</system:String>
+    <system:String x:Key="system.password_changed_success">Đổi mật khẩu thành công!</system:String>
+    <system:String x:Key="system.other_options_changed_success">Đổi chức năng thành công!</system:String>
+    <system:String x:Key="system.vehicle_number_empty">Bển số sxe không được để trống</system:String>
+    <system:String x:Key="system.error_occured">Có lỗi xảy ra, vui lòng thử lại</system:String>
+
+    <system:String x:Key="system.primary_server_unreachable">Máy chủ chính không thể truy cập được. Vui lòng liên hệ bộ phận kỹ thuật.</system:String>
+
+    <system:String x:Key="error.cardreader_disconnect">Không thể kết nối đầu đọc. Vui lòng kiểm tra kết nối!.</system:String>
+    <system:String x:Key="error.server_error">Lỗi máy chủ</system:String>
+    <system:String x:Key="error.server_disconnect">Mất kết nối máy chủ. Vui lòng kểm tra kết nối mạng!</system:String>
+    <system:String x:Key="error.settings_sync">Lỗi đồng bộ hóa cài đặt.</system:String>
+    <system:String x:Key="message.saved">Đã lưu thông báo</system:String>
+    <system:String x:Key="message.connecting">Đang kết nối máy chủ...</system:String>
+
+    <system:String x:Key="checkserver.fail_ip_1">Không thể truy cập máy chủ chính.</system:String>
+    <system:String x:Key="checkserver.fail_ip_2">Không thể truy cập máy chủ phụ.</system:String>
+    <system:String x:Key="checkserver.success">Kết nối máy chủ thành công</system:String>
+    <system:String x:Key="checkserver.invalid_ip_1">Địa chỉ máy chủ không hợp lệ</system:String>
+    <system:String x:Key="checkserver.invalid_ip_2">Địa chỉ máy chủ không hợp lệ</system:String>
+    <system:String x:Key="checkserver.checking">Đang kiểm tra...</system:String>
+    <system:String x:Key="checkclient.success">Cấu hình thành công</system:String>
+    <system:String x:Key="checkclient.invalid_storage_path">Đường dẫn lưu trữ không hợp lệ</system:String>
+
+    <system:String x:Key="checkin.left_room">Chỗ đậu xe còn lại {0}</system:String>
+    <system:String x:Key="checkin.out_of_room">Hết chỗ đậu xe {0}</system:String>
+    <system:String x:Key="checkin.same_vehicle_number">Trùng biển số xe, vui lòng kiểm tra lại.</system:String>
+    <system:String x:Key="checkin.not_exist_card">Thẻ không tồn tại trong hệ thống, Vui lòng liên hệ ban quản lý"</system:String>
+    <system:String x:Key="checkin.already_check_in">Thẻ đã dùng cho xe khác vào bãi</system:String>
+    <system:String x:Key="checkin.not_check_in_yet">Thẻ không có thông tin đầu vào.</system:String>
+    <system:String x:Key="checkin.not_match_vehicle_type">Loại thẻ không hợp lệ {0} cho làn xe {1}</system:String>
+    <system:String x:Key="checkin.not_match_vehicle_number">Biển số xe không khớp với thông tin đầu vào!.</system:String>
+    <system:String x:Key="checkin.something_wrong">Có lỗi trong quá trình xử lý</system:String>
+    <system:String x:Key="checkin.something_wrong_update">Cập nhập thất bại</system:String>
+    <system:String x:Key="checkin.card_not_found">Thẻ chưa được kích hoạt!</system:String>
+    <system:String x:Key="checkin.card_is_disable">Thẻ đã bị vô hiệu hóa!</system:String>
+    <system:String x:Key="checkin.card_is_locked">Thẻ đã bị khóa</system:String>
+    <system:String x:Key="checkin.update_success">Cập nhật thành công</system:String>
+    <system:String x:Key="checkin.success">Đăng ký xe vào thành công</system:String>
+    <system:String x:Key="checkin.blacklist_plate_detected">-Biển số trong danh sách đen-! ---Đăng ký vào bãi bị từ chối---</system:String>
+    <system:String x:Key="checkin.vehicle_number_not_found">Không tìm thấy biển số xe {0}.</system:String>
+    
+    <system:String x:Key="checkout.guide">{0}: Xác nhận cho xe ra {1}{2}: Hủy cho xe ra</system:String>
+    <system:String x:Key="checkoutwithcashier.guide">{0}: Xác nhận cho xe ra {1}{2}: Hủy cho xe ra {1}{3}:Mở két tính tiền</system:String>
+    <system:String x:Key="checkin.guide">{0}: Sao chép biển số xe {1}{2}: Cho xe vào bãi {3}{4}: Hủy cho xe vào</system:String>
+    <system:String x:Key="checkout.something_wrong">Có lỗi khi cho xe ra</system:String>
+    <system:String x:Key="checkout.force_update_plate_number">Vui lòng nhập đúng biển số xe trước khi cho ra!</system:String>
+    <system:String x:Key="checkout.success">Cho xe ra thành công</system:String>
+
+    <system:String x:Key="exceptional_checkout.success">Cho xe ra thành công</system:String>
+    <system:String x:Key="exceptional_checkout.error">Có lỗi khi cho xe ra</system:String>
+    <system:String x:Key="exceptional_checkout.reason_missing">Vui lòng nhập lý do!</system:String>
+    <system:String x:Key="exceptional_checkout.information_missing">Thông tin bị thiếu. Vui lòng quay lại màn hình trước!</system:String>
+
+    <system:String x:Key="createcard.duplicate_data">Mã thẻ bị trùng. Vui lòng kiểm tra trước khi tiếp tục!</system:String>
+    <system:String x:Key="createcard.error_cards">{0} thẻ đã tồn tại trong hệ thống. Vui lòng kiểm tra lại!</system:String>
+
+    <system:String x:Key="logout.title">Xác nhận đăng xuất</system:String>
+    <system:String x:Key="logout.message">Bạn thật sự muốn đăng xuất?</system:String>
+    <system:String x:Key="logout.cancel">HỦY</system:String>
+    <system:String x:Key="logout.ok">ĐỒNG Ý</system:String>
+
+    <system:String x:Key="anpr.init_fail">Truy cập máy chủ thất bại</system:String>
+    <system:String x:Key="anpr.cannot_connect">Không thể kết nối đến máy chủ</system:String>
+    <system:String x:Key="anpr.connecting">Đã kết nối máy chủ</system:String>
+
+    <system:String x:Key="search.not_found">Vui lòng kiểm tra lại</system:String>
+    <system:String x:Key="search.number_of_results">Kết quả: {0}</system:String>
+
+    <system:String x:Key="keyconfigure.success">Cấu hình phím tắt thành công</system:String>
+
+    <system:String x:Key="something_wrong">Vui lòng tab thẻ lại!</system:String>
+    <system:String x:Key="missing_field">Vui lòng nhập thông vào bảng ...</system:String>
+    <system:String x:Key="card_is_not_effective">Thẻ hết hạn</system:String>
+    <system:String x:Key="cannot_read_card">Không thể đọc được thẻ</system:String>
+
+    <system:String x:Key="camera.capture_null_image">Không thể chụp hình. Vui lòng kiểm tra lại.</system:String>
+    <system:String x:Key="camera.capture_same_image">Camera bị lỗi. Vui lòng kiểm tra lại.</system:String>
+
+    <system:String x:Key="All">Tất cả</system:String>
+
+    <system:String x:Key="VehicleType.All">Tất cả</system:String>
+    <system:String x:Key="VehicleType.Car">Xe hơi</system:String>
+    <system:String x:Key="VehicleType.Van">Xe van</system:String>
+    <system:String x:Key="VehicleType.CarConten">Xe tải</system:String>
+    <system:String x:Key="VehicleType.Bike">Xe máy</system:String>
+    <system:String x:Key="VehicleType.DeliverryMobi">Xe giao hàng</system:String>
+    <system:String x:Key="VehicleType.ElectricBicycle">Xe đạp điện</system:String>
+
+    <system:String x:Key="ParkingSession.OnlyOut">Xe đã ra khỏi bãi</system:String>
+    <system:String x:Key="ParkingSession.InParking">Xe còn trong bãi</system:String>
+
+    <system:String x:Key="CardType.Guest">Khách vãng lai</system:String>
+    <system:String x:Key="CardType.Staff">Nhân viên bãi xe</system:String>
+    <system:String x:Key="CardType.AEON_Staff">Nhân viên cơ quan</system:String>
+
+    <!--#endregion-->
+
+
+    <!--#region English-->
+    <!-- String resource that can be localized -->
+    <!--<system:String x:Key="button.ok">OK</system:String>-->
+    <!--<system:String x:Key="button.cancel">Cancel</system:String>-->
+
+    <!--Main Form-->
+    <!--<system:String x:Key="button.server1">Server 1</system:String>
+    <system:String x:Key="button.server2">Server 2</system:String>
+    <system:String x:Key="button.reconnect-reader">Reconnect Reader</system:String>
+    <system:String x:Key="button.config">Configuration</system:String>-->
+    
+   <!--Lane view-->
+    <!--<system:String x:Key="button.logout">LOG OUT</system:String>
+    <system:String x:Key="label.wayin">WAY IN LANE</system:String>
+    <system:String x:Key="label.wayout">WAY OUT LANE</system:String>
+    <system:String x:Key="label.countdown">Time for update</system:String>
+    <system:String x:Key="label.timein">Time IN</system:String>
+    <system:String x:Key="label.timeout">Time OUT</system:String>
+    <system:String x:Key="label.ticketcode">Ticket code</system:String>
+    <system:String x:Key="label.tickettype">Ticket type</system:String>
+    <system:String x:Key="label.vehicletype">Vehicle type</system:String>
+    <system:String x:Key="label.customer_name">Customer name</system:String>
+    <system:String x:Key="label.driver">Driver</system:String>
+    <system:String x:Key="label.vehicle_brand">Vehicle brand</system:String>
+    <system:String x:Key="label.vehicle_color">Vehicle color</system:String>
+    <system:String x:Key="label.vehicle_number_plate">Vehicle number plate</system:String>
+    <system:String x:Key="tootip.change_way_type">Change Lane Type</system:String>
+    <system:String x:Key="tootip.save_camera_config">Save Camera Changes</system:String>
+    <system:String x:Key="tootip.search">Search</system:String>
+    <system:String x:Key="tootip.logout">Log out</system:String>-->
+    
+    <!--Way Out-->
+    <!--<system:String x:Key="label.total_parking_time">Total Parking Time</system:String>
+    <system:String x:Key="label.parking_charges">Total Parking Charges</system:String>
+    <system:String x:Key="label.registation_status">Parking Registation Status</system:String>
+    <system:String x:Key="label.permit_time">Parking Permit Time</system:String>
+    <system:String x:Key="label.permit_warning">PERMIT WARNING</system:String>
+    <system:String x:Key="label.valid_permit_over">Vehicle without valid permit</system:String>-->
+
+    <!-- Dialog -->
+    <!--<system:String x:Key="dialog.title-confirm">Confirm</system:String>-->
+
+    <!-- Messages -->
+    <!--<system:String x:Key="login.invalid">Login invalid user id or password</system:String>-->
+
+    <!--<system:String x:Key="system.invalid_master_password">Password invalid</system:String>
+    <system:String x:Key="system.password_empty">Password empty</system:String>
+    <system:String x:Key="system.passwords_not_matched">Passwords not matched</system:String>
+    <system:String x:Key="system.password_changed_success">Your password has been changed successfully!</system:String>
+    <system:String x:Key="system.other_options_changed_success">Options changed success</system:String>
+
+    <system:String x:Key="system.primary_server_unreachable">The main server is not reachable. Please report it to technical support.</system:String>
+
+    <system:String x:Key="error.cardreader_disconnect">Reader is disconnected. Please check connection!.</system:String>
+    <system:String x:Key="error.server_error">Server error</system:String>
+    <system:String x:Key="error.server_disconnect">Server disconnected. Please check connection!</system:String>
+    <system:String x:Key="error.settings_sync">Problem with Settings Sync.</system:String>
+    <system:String x:Key="message.saved">Message saved</system:String>
+    <system:String x:Key="message.connecting">Server connecting ...</system:String>
+
+    <system:String x:Key="checkserver.fail_ip_1">The main server is not reachable.</system:String>
+    <system:String x:Key="checkserver.fail_ip_2">The sub server is not reachable.</system:String>
+    <system:String x:Key="checkserver.success">Server connect success</system:String>
+    <system:String x:Key="checkserver.invalid_ip_1">Invalid main server ip</system:String>
+    <system:String x:Key="checkserver.invalid_ip_2">Invalid sub server ip</system:String>
+    <system:String x:Key="checkserver.checking">Checking ...</system:String>
+    <system:String x:Key="checkclient.success">Configuration Complete</system:String>
+    <system:String x:Key="checkclient.invalid_storage_path">Invalid storage path</system:String>
+
+    <system:String x:Key="checkin.left_room">Parking spaces available {0}</system:String>
+    <system:String x:Key="checkin.out_of_room">Parking spaces full {0}</system:String>
+    <system:String x:Key="checkin.same_vehicle_number">Duplicate number plate, pls check.</system:String>
+    <system:String x:Key="checkin.not_exist_card">This card is not exist, Please contact PM"</system:String>
+    <system:String x:Key="checkin.already_check_in">This card is exist (check in). Please check out.</system:String>
+    <system:String x:Key="checkin.not_check_in_yet">This card does not check-in.</system:String>
+    <system:String x:Key="checkin.not_match_vehicle_type">Does not match the card type {0} for vehicle lane {1}</system:String>
+    <system:String x:Key="checkin.not_match_vehicle_number">Does not match (check-in) vehicle number plate!.</system:String>
+    <system:String x:Key="checkin.something_wrong">Somthing wrong when check-in</system:String>
+    <system:String x:Key="checkin.something_wrong_update">Check-in wrong update</system:String>
+    <system:String x:Key="checkin.card_not_found">The card hasn't been activated!</system:String>
+    <system:String x:Key="checkin.card_is_disable">The card is disabled!</system:String>
+    <system:String x:Key="checkin.card_is_locked">The card is locked</system:String>
+    <system:String x:Key="checkin.update_success">Update success</system:String>
+    <system:String x:Key="checkin.success">Checkin  success</system:String>
+    <system:String x:Key="checkin.blacklist_plate_detected">-Blacklist plate detected-! Check-in denied</system:String>
+
+    <system:String x:Key="checkout.guide">{0}: Confirm check-out{1}{2}: Cancel check-out</system:String>
+    <system:String x:Key="checkoutwithcashier.guide">{0}: Confirm check-out{1}{2}: Cancel check-out{1}{3}:Open Cashier</system:String>
+    <system:String x:Key="checkin.guide">{0}: Check-in Coppy vehicle{1}{2}: Check-in {3}{4}: Cancel check-in</system:String>
+    <system:String x:Key="checkout.something_wrong">Check-out wrong</system:String>
+    <system:String x:Key="checkout.force_update_plate_number">Please fill in the number plate before check out!</system:String>
+    <system:String x:Key="checkout.success">Checkout SUCCESS</system:String>
+
+    <system:String x:Key="exceptional_checkout.success">Checkout SUCCESS</system:String>
+    <system:String x:Key="exceptional_checkout.error">The card checkout ERROR</system:String>
+    <system:String x:Key="exceptional_checkout.reason_missing">Fill in reasons please!</system:String>
+    <system:String x:Key="exceptional_checkout.information_missing">Information missing. Return previous screen pls!</system:String>
+
+    <system:String x:Key="createcard.duplicate_data">Card label is duplicated. Please check before continue!</system:String>
+    <system:String x:Key="createcard.error_cards">{0} cards exist in database. Please check!</system:String>
+
+    <system:String x:Key="logout.title">Logout confirm</system:String>
+    <system:String x:Key="logout.message">Do you want to checkout?</system:String>
+    <system:String x:Key="logout.cancel">Cancel</system:String>
+    <system:String x:Key="logout.ok">OK</system:String>
+
+    <system:String x:Key="anpr.init_fail">Troubleshooting Identity Server</system:String>
+    <system:String x:Key="anpr.cannot_connect">Disconnecting with Identity Server</system:String>
+    <system:String x:Key="anpr.connecting">Connecting with Identity Server</system:String>
+
+    <system:String x:Key="search.not_found">Please check</system:String>
+    <system:String x:Key="search.number_of_results">Result: {0}</system:String>
+
+    <system:String x:Key="keyconfigure.success">Shortcut key configure success</system:String>
+
+    <system:String x:Key="something_wrong">Please tag card again!</system:String>
+    <system:String x:Key="missing_field">Please fill in searching form ...</system:String>
+    <system:String x:Key="card_is_not_effective">This card expire</system:String>
+    <system:String x:Key="cannot_read_card">This card cannot read</system:String>
+
+    <system:String x:Key="camera.capture_null_image">Camera cannot capture. Please check.</system:String>
+    <system:String x:Key="camera.capture_same_image">Camera error. Please check.</system:String>
+
+    <system:String x:Key="All">All</system:String>
+
+    <system:String x:Key="VehicleType.All">All</system:String>
+    <system:String x:Key="VehicleType.Car">Car</system:String>
+    <system:String x:Key="VehicleType.Van">Van</system:String>
+    <system:String x:Key="VehicleType.CarConten">Truck</system:String>
+    <system:String x:Key="VehicleType.Bike">Bike</system:String>
+    <system:String x:Key="VehicleType.DeliverryMobi">Shipper</system:String>
+    <system:String x:Key="VehicleType.ElectricBicycle">Electric Bicycle</system:String>
+
+    <system:String x:Key="ParkingSession.OnlyOut">Vehicle on this site do not exist</system:String>
+    <system:String x:Key="ParkingSession.InParking">Vehicle exist on site</system:String>
+
+    <system:String x:Key="CardType.Guest">Hourly Visitor</system:String>
+    <system:String x:Key="CardType.Staff">Parking Staffs</system:String>
+    <system:String x:Key="CardType.AEON_Staff">AEON Mall Staffs</system:String>-->
+    <!--#endregion-->
+    
+</ResourceDictionary>

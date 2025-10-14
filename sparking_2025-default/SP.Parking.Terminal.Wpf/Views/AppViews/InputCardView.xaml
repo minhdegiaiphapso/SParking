@@ -1,0 +1,340 @@
+﻿<Views:BaseView x:Class="SP.Parking.Terminal.Wpf.Views.AppViews.InputCardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:Views="clr-namespace:SP.Parking.Terminal.Wpf.Views"
+             xmlns:common="clr-namespace:SP.Parking.Terminal.Wpf.Views.Common"
+             xmlns:w="clr-namespace:SP.Parking.Terminal.Wpf.Utility" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+                mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800" Background="White">
+
+    <Views:BaseView.Resources>
+        <w:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />
+        <w:StringCodeToString x:Key="StringCodeToString" />
+        <w:EnumToFriendlyNameConverter x:Key="enumItemsConverter"/>
+    </Views:BaseView.Resources>
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="32"/>
+            <RowDefinition Height="0.78*" MinHeight="32"/>
+            <RowDefinition Height="0.22*" MinHeight="32"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <common:StreachableTextBlock Grid.Column="0" TBContent="CARD LABEL" FontSize="14"
+                                         Margin="3" FontWeight="Normal"
+                                         Background="{StaticResource VietPark.Brushes.WayIn}"
+                                         Foreground="White"
+                                         TextAlignment="Center"/>
+            <TextBox Margin="3" FontSize="14" TextAlignment="Center" 
+                     Name="tbCardLabel" Grid.Column="1" 
+                     Text="{Binding Path=IncrementalString, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     BorderBrush="{StaticResource VietPark.Brushes.WayIn}"/>
+
+            <common:StreachableTextBlock Grid.Column="2" TBContent="CARD TYPE" Margin="3" TextAlignment="Center"
+                                         FontSize="14" FontWeight="Normal" Foreground="White"
+                                         Background="{StaticResource VietPark.Brushes.WayIn}"
+                                         />
+            <ComboBox Margin="3" Grid.Column="3"
+                      FontSize="14"
+                      ItemsSource="{Binding Path=CardTypes, Mode=TwoWay}" 
+                      SelectedItem="{Binding Path=SelectedCardType, Mode=TwoWay}"
+                      BorderBrush="{StaticResource VietPark.Brushes.WayIn}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <Label  Content="{Binding  Path=Name, Mode=OneWay}"
+                        Height="Auto"
+                        Margin="0" 
+                        VerticalAlignment="Center"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+            <common:StreachableTextBlock Grid.Column="4" TBContent="VEHICLE TYPE" Margin="3" TextAlignment="Center"  
+                                         FontSize="14" FontWeight="Normal" Foreground="White"
+                                         Background="{StaticResource VietPark.Brushes.WayIn}"/>
+            <ComboBox Margin="3" Grid.Column="5" 
+                      FontSize="14"
+                      ItemsSource="{Binding Path=VehicleTypes, Mode=TwoWay}" 
+                      SelectedItem="{Binding Path=SelectedVehicleType, Mode=TwoWay}"
+                      BorderBrush="{StaticResource VietPark.Brushes.WayIn}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <Label  Content="{Binding  Path=., Mode=OneWay, 
+                                Converter={StaticResource enumItemsConverter}}"
+                        Height="Auto"
+                        Margin="0" 
+                        VerticalAlignment="Center"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+            <common:StreachableTextBlock Grid.Column="0" TBContent="UHF READER" FontSize="14" Grid.Row="1"
+                                         Margin="3" TextAlignment="Center" FontWeight="Normal"
+                                         Background="{StaticResource VietPark.Brushes.WayIn}"
+                                         Foreground="White"/>
+            <TextBox Margin="3" FontSize="14" 
+                     Grid.Row="1"
+                     Name="aaaa" Grid.Column="1" 
+                     Text="{Binding Path=CardReaderIP, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     BorderBrush="{StaticResource VietPark.Brushes.WayIn}"
+                     materialDesign:HintAssist.Hint="INPUT IP ADDRESS"/>
+            <Button Grid.Row="1"  Grid.Column="2"
+                    x:Name="btnSave" 
+            		Margin="3" 
+            		FontSize="14"
+                    Width="35"
+                    Height="35"
+            		Command="{Binding ConnectCardReaderCommand}"
+            		Style="{StaticResource MaterialDesignFloatingActionLightButton}"
+                    ToolTip="Connect Reader"
+                    HorizontalAlignment="Left">
+                    
+                    <materialDesign:PackIcon
+                        Kind="CastConnected"
+                        Height="22"
+                        Width="22" />
+            </Button>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="0,0,0,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="64*"/>
+                <ColumnDefinition Width="11*"/>
+                <ColumnDefinition Width="81*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <common:StreachableTextBlock Grid.Row="0" Margin="5,5,0,5" TBContent="LIST CARDS" 
+                                         HorizontalAlignment="Left" TextAlignment="Left" Height="25" 
+                                         Foreground="{StaticResource VietPark.Brushes.WayIn}"/>
+            <DataGrid Grid.Row="1" Margin="0" ItemsSource="{Binding Path=CardList}"
+                      Name="CardGrid"
+                      AutoGenerateColumns="False" 
+                      HorizontalAlignment="Stretch" 
+                      VerticalAlignment="Stretch"
+                      ScrollViewer.CanContentScroll="True"
+                      ScrollViewer.VerticalScrollBarVisibility="Visible"
+                      SelectedItem="{Binding Path=SelectedCard, Mode=TwoWay}"
+                      RenderOptions.ClearTypeHint="Enabled"
+                      CanUserAddRows="False"
+                      CanUserDeleteRows="False"
+                      TextOptions.TextFormattingMode="Display" Grid.ColumnSpan="3">
+                <DataGrid.RowStyle>
+                    <Style TargetType="DataGridRow">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="{DynamicResource AccentColorBrush3}" />
+                            </Trigger>
+                        </Style.Triggers>
+                        <Setter Property="BorderBrush" Value="Transparent" />
+                        <Setter Property="BorderThickness" Value="1" />
+                    </Style>
+                </DataGrid.RowStyle>
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding RelativeSource={RelativeSource FindAncestor, 
+                                                        AncestorType={x:Type UserControl}}, 
+                                                        Path=DataContext.CheckAll, 
+                                                        Mode=TwoWay, 
+                                                        UpdateSourceTrigger=PropertyChanged}" 
+                                          Command="{Binding RelativeSource={RelativeSource FindAncestor, 
+                                                    AncestorType={x:Type UserControl}}, 
+                                                    Path=DataContext.CheckCommand}"
+                                          CommandParameter="all"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.HeaderTemplate>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding Path=IsChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                          Command="{Binding RelativeSource={RelativeSource FindAncestor, 
+                                                    AncestorType={x:Type UserControl}}, 
+                                                    Path=DataContext.CheckCommand}"
+                                          CommandParameter="item"
+                                          Margin="8,0,0,0"
+                                          />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="CARD CODE">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <!--<Controls:NumericUpDown Value="{Binding Path=Label, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />-->
+                                <TextBox Text="{Binding Path=Id, 
+                                                Mode=TwoWay, 
+                                                UpdateSourceTrigger=PropertyChanged}"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="CARD LABEL">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <!--<Controls:NumericUpDown Value="{Binding Path=Label, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />-->
+                                <TextBox Text="{Binding Path=Label, 
+                                                Mode=TwoWay, 
+                                                UpdateSourceTrigger=PropertyChanged}"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="CARD TYPE">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <ComboBox ItemsSource="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}}, Path=DataContext.CardTypes, Mode=OneWay}"
+                                            SelectedItem="{Binding Path=CardType, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                                    <ComboBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <Label  Content="{Binding Path=Name,Mode=TwoWay}"
+                                                    Height="Auto"
+                                                    Margin="0" 
+                                                    VerticalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </ComboBox.ItemTemplate>
+                                </ComboBox>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="VEHICLE TYPE">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <ComboBox ItemsSource="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}}, Path=DataContext.VehicleTypes, Mode=OneWay}"
+                                            SelectedValue="{Binding Path=VehicleTypeEnum, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                                    <ComboBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <Label  Content="{Binding Path=.,Mode=OneWay, Converter={StaticResource enumItemsConverter}}"
+                                                    Height="Auto"
+                                                    Margin="0" 
+                                                    VerticalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </ComboBox.ItemTemplate>
+                                </ComboBox>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="TIME CREATE">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding Path=CreatedTime, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="False"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Horizontal"
+                        Grid.Column="1"
+                        Margin="0 20 0 0"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Center">
+
+                <!-- Delete selected cards locally-->
+                <Button HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Margin="10"
+                    Width="55"
+                    Height="55"
+                    Grid.Column="1"
+                    Command="{Binding DeleteCommand}"
+                    Style="{StaticResource MaterialDesignFloatingActionLightButton}"
+                    ToolTip="Delete selected cards from list">
+                    <materialDesign:PackIcon
+                        Kind="CreditCardRemoveOutline"
+                        Height="30"
+                        Width="30" />
+                    <!--<Rectangle Width="22"
+                           Height="28"
+                           Fill="{Binding Path=Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill"
+                                     Visual="{StaticResource appbar_delete}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>-->
+                </Button>
+
+                <!-- Save to server-->
+                <Button HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Margin="10"
+                    Width="55"
+                    Height="55"
+                    Name="SaveButton"
+                    Grid.Column="1"
+                    Command="{Binding SaveCommand}"
+                    Style="{StaticResource MaterialDesignFloatingActionLightButton}"
+                    ToolTip="Save to Server">
+                    <materialDesign:PackIcon
+                        Kind="DatabasePlus"
+                        Height="30"
+                        Width="30" />
+                    <!--<Rectangle Width="26"
+                           Height="26"
+                           Fill="{Binding Path=Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill"
+                                     Visual="{StaticResource appbar_save}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>-->
+                    
+                </Button>
+                <!-- Download -->
+                <Button HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Margin="10"
+                    Width="55"
+                    Height="55"
+                    Name="Downloadbutton"
+                    Grid.Column="1"
+                    Click="Downloadbutton_Click"
+                    Style="{StaticResource MaterialDesignFloatingActionLightButton}"
+                    ToolTip="Export to file">
+                    <materialDesign:PackIcon
+                        Kind="FileExport"
+                        Height="30"
+                        Width="30" />
+                    <!--<Rectangle Width="40"
+                               Height="26"
+                               Fill="{Binding Path=Foreground, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Button}}}">
+                        <Rectangle.OpacityMask>
+                            <VisualBrush Stretch="Fill"
+                                         Visual="{StaticResource appbar_cloud_download}" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>-->
+                </Button>
+            </StackPanel>
+            <TextBlock Grid.Column="1"
+                       VerticalAlignment="Top"
+                       FontSize="14"
+                       Foreground="{StaticResource VietPark.Brushes.WayIn}"
+                       FontWeight="Bold"
+                       TextAlignment="Center" 
+                       Text="{Binding Path=ErrorMessage}"/>
+        </Grid>
+    </Grid>
+</Views:BaseView>

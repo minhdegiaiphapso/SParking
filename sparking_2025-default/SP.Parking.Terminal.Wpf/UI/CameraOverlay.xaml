@@ -1,0 +1,21 @@
+﻿<Window x:Class="SP.Parking.Terminal.Wpf.UI.CameraOverlay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="{DynamicResource WindowBackground}"
+        IsHitTestVisible="False"
+        Height="30"
+        Width="100"
+        SizeToContent="WidthAndHeight"
+        ShowInTaskbar="False"
+        Focusable="False"
+        ShowActivated="False">
+    <Window.Resources>
+        <SolidColorBrush x:Key="WindowBackground" 
+                        Color="Black"
+                        Opacity="0.0"/>
+    </Window.Resources>
+    <Label Name="lbContent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="LightGreen" FontWeight="Bold">
+    </Label>
+</Window>

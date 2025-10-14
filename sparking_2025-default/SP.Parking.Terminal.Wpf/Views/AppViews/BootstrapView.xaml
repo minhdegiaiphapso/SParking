@@ -1,0 +1,45 @@
+﻿<Views:BaseView x:Class="SP.Parking.Terminal.Wpf.Views.AppViews.BootstrapView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:Views="clr-namespace:SP.Parking.Terminal.Wpf.Views"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      xmlns:w="clr-namespace:SP.Parking.Terminal.Wpf.Utility"
+      d:DesignHeight="300" d:DesignWidth="400" Background="White">
+    <Views:BaseView.Resources>
+        <w:BoolVisiblilityConverter x:Key="BoolVisibility" />
+        <w:StringCodeToString x:Key="StringCodeToString" />
+    </Views:BaseView.Resources>
+    <Grid>
+        <Border HorizontalAlignment="Stretch" 
+                        BorderBrush="{x:Null}" 
+                        Margin="0,20,0,0"  
+                        Height="100"
+                        Width="400"
+                        Visibility="{Binding HasError, Converter={StaticResource BoolVisibility}}"
+                        Background="LightGreen"
+                        Opacity=".7">
+            <StackPanel>
+                <TextBlock HorizontalAlignment ="Center"
+                            Margin="5"
+                            VerticalAlignment="Center" 
+                            Foreground="Red"
+                            FontSize="18"
+                            TextWrapping="Wrap"
+                            TextAlignment="Center"
+                            FontWeight="Medium"
+                            Text="{Binding ErrorMessage, Converter={StaticResource StringCodeToString}}"/>
+                <TextBlock HorizontalAlignment ="Center"
+                            Margin="5"
+                            VerticalAlignment="Center" 
+                            Foreground="Red"
+                            FontSize="14"
+                            TextWrapping="Wrap"
+                            TextAlignment="Center"
+                            FontWeight="Normal"
+                            Text="{Binding ErrorDetail}"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Views:BaseView>

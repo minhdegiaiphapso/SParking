@@ -1,0 +1,32 @@
+﻿<Views:BaseView x:Class="SP.Parking.Terminal.Wpf.Views.AppViews.LaneContainerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+                xmlns:local="clr-namespace:SP.Parking.Terminal.Wpf.Views.AppViews"
+                xmlns:common="clr-namespace:SP.Parking.Terminal.Wpf.Views.Common"
+                xmlns:customui="clr-namespace:SP.Parking.Terminal.Wpf.UI"                
+             xmlns:Views="clr-namespace:SP.Parking.Terminal.Wpf.Views"
+             xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls" Background="White">
+
+    <Grid Name="ContentGrid"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <!--<Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="40*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="0" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <common:StreachableTextBlock Margin="10,0,0,0" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top"
+                                         TBContent="{Binding Path=UserNameAndId}"/>
+            --><!--<common:StreachableTextBlock Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Top"
+                                         TBContent="{Binding Path=Username}" />--><!--
+        </Grid>
+        <Grid Name="ContentGrid" Grid.Column="0" Grid.Row="1">
+            
+        </Grid>-->
+    </Grid>
+</Views:BaseView>

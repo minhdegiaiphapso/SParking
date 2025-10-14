@@ -1,0 +1,152 @@
+﻿<Views:BaseView x:Class="SP.Parking.Terminal.Wpf.Views.AppViews.GetCheckedInformationView"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                mc:Ignorable="d" 
+                xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+                xmlns:local="clr-namespace:SP.Parking.Terminal.Wpf.Views.AppViews"
+                xmlns:common="clr-namespace:SP.Parking.Terminal.Wpf.Views.Common"
+                xmlns:customui="clr-namespace:SP.Parking.Terminal.Wpf.UI"
+                xmlns:Views="clr-namespace:SP.Parking.Terminal.Wpf.Views"
+                xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+                Height="600" d:DesignWidth="800">
+
+    <Grid Margin="10" 
+          KeyUp="Grid_KeyUp">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0"
+              Grid.Row="0"
+              Grid.ColumnSpan="2"
+              Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Địa chỉ IP " 
+                       Margin="0,0,20,0"
+                       FontSize="20"
+                       HorizontalAlignment="Right"                   
+                       VerticalAlignment="Center"/>
+            <TextBox Name="tbIPAddresses"
+                     Width="540"
+                     HorizontalAlignment="Left"
+                     Grid.Column="1"
+                     VerticalAlignment="Center"
+                     Focusable="True"
+                     Text="{Binding Path=IpAddresses, Mode=TwoWay,
+                            UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBlock Text="Tên thẻ" 
+                       Margin="0,0,20,0"
+                       FontSize="20"
+                       Grid.Row="1"
+                       HorizontalAlignment="Right"
+                       VerticalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal"
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Grid.ColumnSpan="2"
+                        HorizontalAlignment="Left">
+                <TextBox Name="tbCardLabel"
+                         Width="200"
+                         VerticalAlignment="Center"
+                         Focusable="True"
+                         Text="{Binding Path=CardLabel, 
+                                UpdateSourceTrigger=PropertyChanged}"/>
+                <DatePicker Width="200"
+                            Margin="20,0,16,0"
+                            HorizontalContentAlignment="Center"
+                            Language="vi-VN"
+                            MinHeight="30"
+                            VerticalAlignment="Center"
+                            SelectedDateFormat="Short"
+                            SelectedDate="{Binding Path=SearchingDate, Mode=TwoWay}"/>
+                <Button HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    FontWeight="Bold"
+                    Margin="10"
+                    Width="40"
+                    Height="40"
+                    Grid.Column="1"
+                    Content="Go"
+                    Background="{DynamicResource AccentColorBrush}"
+                    Command="{Binding Path=FindCommand}"
+                    Style="{DynamicResource MetroCircleButtonStyle}"/>
+                <Controls:ProgressRing Grid.Column="1"
+                                   IsActive="{Binding Path=IsSearching}"
+                                   Width="40"
+                                   Height="40"
+                                   Name="SearchProgressRing"/>
+            </StackPanel>
+
+            <TextBlock Text="Mã thẻ" 
+                       Margin="0,0,20,0"
+                       FontSize="20"
+                       Grid.Row="2"
+                       HorizontalAlignment="Right" />
+            <StackPanel Orientation="Horizontal"
+                        Grid.Column="1"
+                        Margin="0,0,0,20"
+                        Grid.Row="2"
+                        Grid.ColumnSpan="2"
+                        HorizontalAlignment="Left">
+                <TextBox Name="tbCardId"         
+                         
+                         Width="200"
+                         VerticalAlignment="Center"
+                         Focusable="True"
+                         Text="{Binding Path=CardId, 
+                                UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+
+            <TextBlock  Text="{Binding Path=ResultMessage}"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        Grid.Row="2"
+                        HorizontalAlignment="Center"
+                        FontSize="14"
+                        Foreground="Red"
+                        FontWeight="Bold"
+                        VerticalAlignment="Bottom"/>
+        </Grid>
+
+        <Image Grid.Row="2"
+               Grid.Column="0"
+               Stretch="Uniform"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch"
+               Source="{Binding Path=FrontImage}"/>
+        <Image Grid.Row="2"
+               Grid.Column="1"
+               Stretch="Uniform"
+               HorizontalAlignment="Stretch"
+               VerticalAlignment="Stretch"
+               Source="{Binding Path=BackImage}"/>
+
+        <TextBlock Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Margin="0,30,0,0"
+                   Grid.Row="3"
+                   Text="{Binding Path=ImageDateTime}"
+                   FontSize="18"
+                   Foreground="Green"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom"/>
+    </Grid>
+</Views:BaseView>

@@ -1,0 +1,553 @@
+﻿<Views:BaseLaneView x:Class="SP.Parking.Terminal.Wpf.Views.AppViews.CheckInLaneView"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:Views="clr-namespace:SP.Parking.Terminal.Wpf.Views"
+                xmlns:main="clr-namespace:SP.Parking.Terminal.Wpf"
+                xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:ui="clr-namespace:SP.Parking.Terminal.Wpf.UI"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                xmlns:Converters="clr-namespace:SP.Parking.Terminal.Wpf.Utility"
+                xmlns:common="clr-namespace:SP.Parking.Terminal.Wpf.Views.Common"
+                xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+                mc:Ignorable="d" 
+                x:Name="uc" Background="White">
+    <Views:BaseLaneView.Resources>
+        <Converters:NativeByteImageConverter x:Key="ByteImage" />
+        <Converters:LevelColorConverter x:Key="LevelColorConverter" />
+    </Views:BaseLaneView.Resources>
+    <Grid Background="White" Margin="2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="110" />
+            <RowDefinition Height="95" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="0" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Grid.Row="0" Padding="0" Style="{DynamicResource MahApps.Styles.Button.Flat}" Background="White"
+                    Command="{Binding Path=ChangeLaneDirectionCommand}" ToolTip="{StaticResource tootip.change_way_type}" Cursor="Hand"><!--Command="{Binding Path=ChangeLaneDirectionCommand}"-->
+                <Image Source="/Images/way_in_icon.png" />
+            </Button>
+            <Border Grid.Column="1" Grid.Row="0" BorderBrush="{StaticResource VietPark.Brushes.WayIn}" BorderThickness="1" Margin="2 0 0 0">
+                <Grid Margin="5 0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="160"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Grid.Row="0" Foreground="{StaticResource VietPark.Brushes.WayIn}" Text="{StaticResource label.wayin}" VerticalAlignment="Center" FontWeight="Bold" FontSize="19"
+                                       Margin="10,12,10,9" Grid.RowSpan="2"/>
+                    <TextBlock Grid.Column="1" Grid.Row="0" Text="{Binding Path=UserNameAndId}" VerticalAlignment="Center" FontSize="15" Grid.RowSpan="2" />
+                    <StackPanel Grid.Column="2" Grid.Row="0" Orientation="Horizontal" Grid.RowSpan="2">
+                        <Button Content="{iconPacks:FontAwesome Kind=SaveRegular, Width=28, Height=28}" Foreground="{StaticResource VietPark.Brushes.WayIn}"
+                                Background="White" Style="{StaticResource MahApps.Styles.Button.Flat}"
+                                Command="{Binding Path=ChangeSessionConfig}"  ToolTip="{StaticResource tootip.save_camera_config}" Cursor="Hand"/>
+                        <Button Content="{iconPacks:FontAwesome SearchSolid, Width=28, Height=28}" Foreground="{StaticResource VietPark.Brushes.WayIn}"
+                                Background="White" Style="{StaticResource MahApps.Styles.Button.Flat}" Command="{Binding Path=ShowSearchCommand}" 
+                                ToolTip="{StaticResource tootip.search}" Cursor="Hand"/>
+                        <Button Content="{iconPacks:FontAwesome BugSolid, Width=28, Height=28}" Foreground="{StaticResource VietPark.Brushes.WayIn}"
+                                Background="White" Style="{StaticResource MahApps.Styles.Button.Flat}"
+                                ToolTip="{StaticResource tootip.search}" Cursor="Hand" Click="Button_Click" 
+                                Name="btTest" Visibility="Collapsed"/>
+                        <Button Content="{iconPacks:JamIcons VideoCamera, Width=40, Height=30}" Foreground="{StaticResource VietPark.Brushes.WayIn}"
+                                Background="White" Style="{StaticResource MahApps.Styles.Button.Flat}"
+                                ToolTip="Vào bằng biển số xe" Cursor="Hand" Command="{Binding Path=AutoCheckInCommand}" CommandParameter="{Binding ManualAutoVehicleNumberCheck}"
+                                Visibility="Collapsed" />
+                        <Button Content="{StaticResource button.logout}" Style="{StaticResource MahApps.Styles.Button.Flat}" 
+                                Background="{StaticResource VietPark.Brushes.WayIn}" Foreground="White"
+                                FontSize="14" Width="100" Height="30"
+                                Command="{Binding Path=ConfirmLogoutCommand}"
+                                ToolTip="{StaticResource tootip.logout}"
+                                Cursor="Hand"/>
+
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Orientation="Horizontal"
+                        Margin="5"
+                        Visibility="{Binding AllowManualInputVehicleNumber, Converter={StaticResource BooleanToVisibilityConverter}}">
+                <Label Content="{StaticResource label.vehicle_number}" VerticalAlignment="Center"></Label>
+                <TextBox x:Name="txt_vehicle_number" Text="{Binding ManualAutoVehicleNumberCheck}" Width="300" KeyUp="TextBox_KeyUp"/>
+            </StackPanel>
+        </Grid>
+        <Border Grid.Column="0" Grid.Row="1" BorderBrush="{StaticResource VietPark.Brushes.WayIn}" BorderThickness="1" Padding="0 3 0 0" Margin="0 2 0 0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="1.1*"/>
+                    <ColumnDefinition  Width="0.8*"/>
+                    <ColumnDefinition Width="0.8*"/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Grid.Row="0" Height="138" VerticalAlignment="Bottom">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.60*"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <StackPanel Name="CountdownPanel" Grid.Column="0">
+                            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" Text="{StaticResource label.countdown}" 
+                               FontWeight="Bold"
+                               VerticalAlignment="Center" FontSize="14"
+                               TextAlignment="Center" Foreground="{StaticResource VietPark.Brushes.WayIn}"/>
+                            <common:StreachableTextBlock HorizontalAlignment="Center" Margin="0,12,0,0" TBContent="{Binding Path=Countdown}" 
+                                                 VerticalAlignment="Center" FontWeight="Bold" FontSize="10"
+                                                 TextAlignment="Center" Foreground="{StaticResource VietPark.Brushes.WayOut}"/>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.55*"/>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" Grid.Row="1" Margin="3 3 3 3">
+                            <TextBlock Text ="{StaticResource label.timein}" Height="19" TextAlignment="Right"/>
+                            <TextBlock Text ="{StaticResource label.ticketcode}" Height="19" TextAlignment="Right"/>
+                            <TextBlock Text ="{StaticResource label.tickettype}" Height="20" TextAlignment="Right" />
+                            <TextBlock Text ="{StaticResource label.vehicletype}" Height="19" TextAlignment="Right" Typography.Capitals="PetiteCaps" />
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Grid.Row="1" Margin="3 3 3 3">
+                            <TextBlock Text ="{Binding Path=CheckInData.StrCheckInTime}" Height="19" FontWeight="Bold" Foreground="{StaticResource VietPark.Brushes.WayIn}"/>
+                            <TextBlock Text ="{Binding Path=CheckInData.CardLabel}" Height="19" FontWeight="Bold"/>
+                            <TextBlock Text ="{Binding Path=CardType.Name}" Height="20" FontWeight="Bold" FontSize="15" Foreground="{StaticResource VietPark.Brushes.WayOut}"/>
+                            <TextBlock Text ="{Binding Path=CheckInData.VehicleType.Name}" Height="18"/>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Column="1" Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Border Grid.Column="0" Grid.Row="0" BorderBrush="{StaticResource VietPark.Brushes.WayIn}" BorderThickness="1" Margin="0 0 2 5">
+                        <TextBlock x:Name="PrefixVehicleTextBox" Text="{Binding Path=CheckInData.PrefixNumberVehicle, Mode=TwoWay}" 
+                                   Foreground="{StaticResource VietPark.Brushes.WayIn}"
+                                   FontSize="40" TextAlignment="Center" FontWeight="Bold"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                    </Border>
+                    <Border Grid.Column="0" Grid.Row="1" BorderBrush="{StaticResource VietPark.Brushes.WayIn}" BorderThickness="1" Margin="0 0 2 5">
+                        <TextBlock x:Name="VehicleTextBox" Text="{Binding Path=CheckInData.VehicleNumber, Mode=TwoWay}" 
+                                   Foreground="{StaticResource VietPark.Brushes.WayIn}"
+                                   FontSize="40" TextAlignment="Center" FontWeight="Bold"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                    </Border>
+                </Grid>
+                <Grid Grid.Column="2" Grid.Row="0" Visibility="Hidden">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Border Grid.Column="0" Grid.Row="0" BorderBrush="{StaticResource VietPark.Brushes.WayIn}" BorderThickness="1" Margin="0 0 2 5"></Border>
+                    <Border Grid.Column="0" Grid.Row="1" BorderBrush="{StaticResource VietPark.Brushes.WayIn}" BorderThickness="1" Margin="0 0 2 5"></Border>
+                </Grid>
+                <Grid Grid.Column="3" Grid.Row="0" Margin="5 0 0 0" Visibility="Hidden">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Column="0" Grid.Row="0">
+                        <TextBlock Text="Total Parking Time" />
+                        <TextBlock Background="{StaticResource VietPark.Brushes.WayIn}" Height="45" Margin="0 5 2 0"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="0" Grid.Row="1">
+                        <TextBlock Text="Total Parking Charges" />
+                        <TextBlock Background="{StaticResource VietPark.Brushes.WayIn}" Height="45" Margin="0 5 2 0"/>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Border>
+        <Border Grid.Column="0" Grid.Row="3" BorderBrush="{StaticResource VietPark.Brushes.WayIn}" BorderThickness="1" Margin="0 2 0 0">
+            <Grid x:Name="CameraGrid">
+               
+                <Image x:Name="imgLogo"  Source="/Images/capture_view_wayin.png" Width="200" VerticalAlignment="Center"/>
+                <Border x:Name="imgFont" Grid.Column="0" Grid.Row="0">
+                    <Image Name="CIFrontImage" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Stretch="Fill" />
+                </Border>
+                <Border x:Name="imgBack" Grid.Column="0" Grid.Row="1">
+                    <Image Name="CIBackImage" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Stretch="Fill" />
+                </Border>
+                <Border x:Name="camFont" Grid.Column="0" Grid.Row="0">
+                    <Views:CameraView x:Name="FrontCamera" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch"/>
+                </Border>
+                <Border x:Name="camBack" Grid.Column="0" Grid.Row="1">
+                    <Views:CameraView x:Name="BackCamera" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch"/>
+                </Border>
+            </Grid>
+        </Border>
+        <Border Grid.Column="0" Grid.Row="2" BorderBrush="{StaticResource VietPark.Brushes.WayIn}" BorderThickness="1" Margin="0 2 0 0">
+            <Grid Visibility="{Binding Path=IsCustomer, Converter={StaticResource BooleanToVisibilityConverter}}" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.85*" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.3*" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0" Grid.Row="0" Margin="0 3 0 3">
+                            <Image Source="/Images/customer_photo.png" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                        </Grid>
+                        <Grid Grid.Column="1" Grid.Row="0" Margin="0 3 0 3">
+                            <Image Source="/Images/vihicle_photo.png" VerticalAlignment="Center" Margin="0,0,0,0"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Column="1" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition  Width="0.35*" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" Grid.Row="0" Margin="3 0 3 0">
+                            <TextBlock Text ="{StaticResource label.customer_name}" Height="17" TextAlignment="Right"/>
+                            <TextBlock Text="{StaticResource label.driver}" Height="17" TextAlignment="Right"/>
+                            <TextBlock Text="{StaticResource label.vehicle_brand}" Height="17" TextAlignment="Right"/>
+                            <TextBlock Text="{StaticResource label.vehicle_color}" Height="17" TextAlignment="Right"/>
+                            <TextBlock Text="{StaticResource label.vehicle_number_plate}" Height="18" TextAlignment="Right"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Grid.Row="0" Margin="3 0 3 0">
+                            <TextBlock Text="{Binding Path=CustomerInfo.CustomerName}" Height="17" FontWeight="Bold" FontSize="14"/>
+                            <TextBlock Text="{Binding Path=CustomerInfo.VehicleRegistrationInfo.vehicle_driver_name}" Height="17" FontWeight="Bold" FontSize="14"/>
+                            <TextBlock Text="{Binding Path=CustomerInfo.VehicleRegistrationInfo.VehicleBrand}" Height="17" FontWeight="Bold" FontSize="14"/>
+                            <TextBlock Text="{Binding Path=CustomerInfo.VehicleRegistrationInfo.VehicleColor}" Height="17" FontWeight="Bold" FontSize="14"/>
+                            <TextBlock Text="{Binding Path=CustomerInfo.VehicleRegistrationInfo.VehicleNumber}" Height="18" FontWeight="Bold" FontSize="16" Foreground="{StaticResource VietPark.Brushes.WayOut}"/>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Column="1" Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.4*"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Column="0" Grid.Row="0" Margin="3 3 3 3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="1.6*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <TextBlock Text ="{StaticResource label.registation_status}" FontWeight="Bold" Foreground="{StaticResource VietPark.Brushes.WayIn}"/>
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.9*" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0">
+                                <TextBlock Text ="{StaticResource label.permit_time}"/>
+                            </Grid>
+                            <Grid Grid.Column="1">
+                                <TextBlock Text ="{Binding Path=CustomerInfo.VehicleRegistrationInfo.StrRemainDay}" FontSize="15" FontWeight="Bold" Foreground="{StaticResource VietPark.Brushes.WayIn}" HorizontalAlignment="Left"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="1" Visibility="{Binding Path=IsExpiredSubscription, Converter={StaticResource BooleanToVisibilityConverter}}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="294*"/>
+                            <ColumnDefinition Width="17*"/>
+                        </Grid.ColumnDefinitions>
+                        <Border 
+                            CornerRadius="6"
+                            Background="{StaticResource VietPark.Brushes.WayIn}"
+                            Margin="0,-3,3,3"
+                            Opacity="0.7" Grid.ColumnSpan="2">
+                            <Label 
+                                Content="{iconPacks:FontAwesome ExclamationSolid, Width=40, Height=55}"
+                                Foreground="Red"
+                                Margin="10 0 0 0">
+                            </Label>
+                        </Border>
+                        <TextBlock Text="{StaticResource label.permit_warning}" Foreground="Red" FontWeight="Bold" FontSize="18" Margin="60,5,0,30" Grid.ColumnSpan="2"></TextBlock>
+                        <TextBlock Text="{StaticResource label.valid_permit_over}" Margin="60,30,0,19" Grid.ColumnSpan="2"></TextBlock>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Border>
+
+        <!--<Grid  Grid.Column="0" Grid.Row="4" Margin="5" Visibility="Collapsed" Height="500">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="40*"/>
+            </Grid.RowDefinitions>
+            -->
+        <!--<Grid Grid.Row="0" >
+                <DockPanel>
+                    <common:StreachableTextBlock Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"
+                                         TBContent="{Binding Path=UserNameAndId}"/>
+                    <Viewbox VerticalAlignment="Stretch" Margin="1" HorizontalAlignment="Right">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Margin="10,5,0,5">
+                            <Hyperlink Name="cflink" Command="{Binding Path=ChangeSessionConfig}">Lưu cấu hình làn xe</Hyperlink>
+                            </TextBlock>
+                            <TextBlock Grid.Column="1" Margin="15,5,10,5">
+                            <Hyperlink Name="hplink" Command="{Binding Path=ConfirmLogoutCommand}">Đăng xuất</Hyperlink>
+                            </TextBlock>
+
+                        </Grid>
+                    </Viewbox>
+                </DockPanel>
+            </Grid>-->
+        <!--
+            <Grid Grid.Row="1" Margin="0,5,0,0" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="0.8*"/>
+                </Grid.RowDefinitions>
+
+                <GroupBox Margin="0,0,-0.4,0.2" Grid.Column="0" 
+                      Grid.Row="0" Grid.ColumnSpan="2" 
+                      Header="THÔNG TIN XE VÀO"
+                      Name="MainGroupBox" >
+                    -->
+        <!--<TextBlock Grid.Column="1" HorizontalAlignment="Stretch" 
+                           Margin="0,0,5,0" TextWrapping="Wrap" 
+                           Text="LÀN XE VÀO" VerticalAlignment="Center"
+                           FontSize="30" Padding="8" TextAlignment="Center" 
+                           Foreground="DarkGreen" FontWeight="Bold"/>-->
+        <!--
+                    <Grid Margin="0,0,0,0" VerticalAlignment="Stretch" 
+                      HorizontalAlignment="Stretch">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1.5*"/>
+                            <RowDefinition Height="3*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="4*"/>
+                            <ColumnDefinition Width="4*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <common:StreachableTextBlock TextAlignment="Left" HorizontalAlignment="Left" Margin="4,6,0,4.6" VerticalAlignment="Center" FontSize="25" FontWeight="Normal" 
+                                             Grid.Row="0" Grid.Column="0" TBContent="{Binding Path=CustomerInfo.CustomerName}" Height="39" Width="443" Grid.ColumnSpan="2"/>
+
+                        <common:StreachableTextBlock HorizontalAlignment="Left" Margin="55.8,0,0,4.6" TBContent="{Binding Path=CustomerInfo.VehicleRegistrationInfo.StrRemainDay}" VerticalAlignment="Stretch"
+                                                 FontSize="25" TextAlignment="Left"
+                                                 Foreground="{Binding Path=CustomerInfo.VehicleRegistrationInfo.MessageLevel, Converter={StaticResource LevelColorConverter}}"
+                                                 Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Width="171"/>
+                        -->
+        <!--<Grid Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Row="0" Grid.Column="1" Margin="19,4,0,-4" Width="250" FontFamily="Times New Roman" FontSize="28" HorizontalAlignment="Left">
+                                <TextBlock TextWrapping="WrapWithOverflow"  FontSize="30" FontWeight="Bold" Text="{Binding Path=CustomerInfo.VehicleRegistrationInfo.VehicleNumber}"/>
+                            </Label>
+                            <Label Grid.Row="0" Grid.Column="1" Margin="235,4,-173,-4" Width="250" FontFamily="Times New Roman" FontSize="28" HorizontalAlignment="Left">
+                                <TextBlock TextWrapping="WrapWithOverflow"  FontSize="30" FontWeight="Bold" Text="{Binding Path=CustomerInfo.VehicleRegistrationInfo.VehicleColor}"/>
+                            </Label>
+                            <Label Grid.Row="0" Margin="0,4,0,-3.2" Width="264" RenderTransformOrigin="0.276,0.49" Grid.ColumnSpan="2" HorizontalAlignment="Left">
+                                <TextBlock TextWrapping="WrapWithOverflow"  FontSize="20" Text="{Binding Path=CustomerInfo.VehicleRegistrationInfo.vehicle_driver_name}"/>
+                            </Label>
+                            <Label Grid.Row="0" Margin="443,1,-250,-1" Width="119" RenderTransformOrigin="0.276,0.49" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Left">
+                                <TextBlock TextWrapping="WrapWithOverflow"  FontSize="20" Text="{Binding Path=CustomerInfo.VehicleRegistrationInfo.VehicleBrand}"/>
+                            </Label>
+                        </Grid>-->
+        <!--
+                    </Grid>
+                </GroupBox>
+
+                -->
+        <!--<Grid Margin="0,0,0,0" Grid.ColumnSpan="2" Grid.RowSpan="1" Grid.Row="1" Name="CardInfo">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    -->
+        <!--<Grid Grid.Row="0" Grid.Column="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <common:StreachableTextBlock TextAlignment="Left" HorizontalAlignment="Left" Margin="10,4,0,0" TBContent="Tên thẻ" 
+                                                 VerticalAlignment="Top" FontSize="28" FontWeight="Normal" />
+                        <common:StreachableTextBlock Margin="0,4,10,0" VerticalAlignment="Center" 
+                                                 HorizontalAlignment="Stretch"
+                                                 FontSize="28" Foreground="Purple" FontWeight="Bold" 
+                                                 Grid.Column="1"
+                                                 TextAlignment="Left" TBContent="{Binding Path=CheckInData.CardLabel}" />
+                        <common:StreachableTextBlock Margin="0,4,10,0" VerticalAlignment="Center" 
+                                                 HorizontalAlignment="Stretch"
+                                                 FontSize="28" Foreground="Purple" FontWeight="Bold" 
+                                                 Grid.Column="2"
+                                                 TextAlignment="Left" TBContent="{Binding Path=CheckInData.VehicleType.Name}" />
+                    </Grid>
+
+                    <Grid Grid.Column="1" Grid.Row="0"
+                            Grid.ColumnSpan="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <common:StreachableTextBlock TextAlignment="Left" HorizontalAlignment="Stretch" Margin="0,4,10,0" 
+                                                 TBContent="Loại thẻ" VerticalAlignment="Center" 
+                                                 FontSize="40" FontWeight="Normal"
+                                                 Grid.Column="0"/>
+                        <common:StreachableTextBlock Margin="0,4,10,0" VerticalAlignment="Center" 
+                                                 HorizontalAlignment="Stretch" 
+                                                 FontWeight="Bold" FontSize="40"
+                                                 TextAlignment="Left" TBContent="{Binding Path=CardType.Name}" 
+                                                 Grid.Column="1"/>
+                    </Grid>-->
+
+        <!--<common:StreachableTextBlock HorizontalAlignment="Left"
+                                             Margin="10,5,0,5" 
+                                             FontSize="24" MaxWidth="200"
+                                             Grid.Row="1" 
+                                             TBContent="{Binding Path=CheckInData.StrCheckInTime}" />-->
+        <!--
+                    <CheckBox IsChecked="{Binding Path=CheckCameraDoNotWork}"
+                          Grid.Row="1"
+                          Content="Kiểm tra đứng hình"
+                          Grid.Column="1" Grid.ColumnSpan="2" IsEnabled="False" Visibility="Hidden"/>
+
+                    -->
+        <!--<Grid Grid.Column="3" Grid.RowSpan="2">
+                        <StackPanel  Orientation="Horizontal" HorizontalAlignment="Right">
+                            -->
+        <!--Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}}, Path=DataContext.ShowSearchCommand}"-->
+        <!--
+                            <Button Visibility="{Binding CanShowPrinter}"  Margin="0,0,5,0" Width="54" Height="54" Command="{Binding Path=CommandPrintToPrinter}"
+                                ToolTip="Hóa đơn" >
+                                <Rectangle Margin="0"  HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="40" Fill="Black">
+                                    <Rectangle.OpacityMask>
+                                        <VisualBrush Stretch="Uniform" Visual="{StaticResource appbar_money}" />
+                                    </Rectangle.OpacityMask>
+                                </Rectangle>
+                            </Button>
+                            <Button Margin="0,0,5,0" Command="{Binding Path=ShowSearchCommand}" Width="54" Height="54"
+                            ToolTip="Tìm kiếm">
+                                <Rectangle Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="40" Fill="Black">
+                                    <Rectangle.OpacityMask>
+                                        <VisualBrush Stretch="Uniform" Visual="{StaticResource appbar_magnify}" />
+                                    </Rectangle.OpacityMask>
+                                </Rectangle>
+                            </Button>
+                            <Button Command="{Binding Path=ChangeLaneDirectionCommand}" 
+                            Width="54" Height="54"
+                            ToolTip="Chuyển hướng" Background="Green">
+                                <Rectangle Margin="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="40" Width="40" Fill="White">
+                                    <Rectangle.OpacityMask>
+                                        <VisualBrush Stretch="Uniform" Visual="{StaticResource appbar_arrow_down}" />
+                                    </Rectangle.OpacityMask>
+                                </Rectangle>
+                            </Button>
+                        </StackPanel>
+                    </Grid>-->
+        <!--
+
+                </Grid>-->
+
+        <!--<Border Grid.RowSpan="2" Grid.Row="2" Grid.ColumnSpan="2" BorderThickness="3" BorderBrush="YellowGreen">
+                    <Grid Margin="0,0,0,0" Background="WhiteSmoke" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Image x:Name="groundImg" Opacity="0.5" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" Source="/Images/gp_logo.png" Margin="20" 
+                           MaxHeight="256"  MaxWidth="256" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        -->
+        <!--<Views:CameraView x:Name="FrontCamera" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="0"/>
+                        <Views:CameraView x:Name="BackCamera" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="1"/>-->
+        <!--<Views:CameraView x:Name="Extra1Camera" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="0"/>
+                        <Views:CameraView x:Name="Extra2Camera" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="1"/>-->
+        <!--<Image Name="CIFrontImage" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Stretch="Fill" />
+                        <Image Name="CIBackImage" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch" Stretch="Fill" />-->
+        <!--
+                    </Grid>
+                </Border>-->
+        <!--
+
+                <Grid Margin="0,0,0,0" Grid.ColumnSpan="2" Grid.Row="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Horizontal" 
+                            Grid.Column="2"
+                            Grid.ColumnSpan="2"
+                            HorizontalAlignment="Right" Margin="0,0,26,0">
+                        -->
+        <!--<common:StreachableTextBlock  HorizontalAlignment="Right" Margin="0,5,5,0" 
+                                                 Background="SeaGreen" FontWeight="Bold" Foreground="Yellow" 
+                                                 VerticalAlignment="Center" Grid.Column="1" MaxWidth="150" 
+                                                 MinWidth="150" TextAlignment="Center"
+                                                 Opacity="0.5"
+                                                 x:Name="PrefixVehicleTextBox" TBContent="{Binding Path=CheckInData.PrefixNumberVehicle, Mode=TwoWay}" FontSize="40" />
+                        <common:StreachableTextBlock x:Name="VehicleTextBox" HorizontalAlignment="Left" Margin="0,5,5,0" 
+                                                 Background="SeaGreen" FontWeight="Bold" Foreground="Yellow" 
+                                                 VerticalAlignment="Center" Grid.Column="1" MaxWidth="150" 
+                                                 MinWidth="150" TextAlignment="Center"
+                                                 TBContent="{Binding Path=CheckInData.VehicleNumber, Mode=TwoWay}" FontSize="40" />-->
+        <!--
+                    </StackPanel>
+
+                    -->
+        <!--<StackPanel Orientation="Vertical"
+                            HorizontalAlignment="Right" 
+                            Name="CountdownPanel_o"
+                            Margin="0,0,28,6" Grid.Column="1">
+                        <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" Text="Thời gian đếm ngược" 
+                               FontWeight="Bold"
+                               VerticalAlignment="Center" FontSize="14"
+                               TextAlignment="Center" />
+                        <common:StreachableTextBlock HorizontalAlignment="Center" Margin="0,0,0,0" TBContent="{Binding Path=Countdown}" 
+                                                 VerticalAlignment="Center" FontSize="26" FontWeight="Normal" 
+                                                 TextAlignment="Center" />
+                    </StackPanel>-->
+        <!--
+                    <Button Margin="22,6,112,0" Command="{Binding cmdDisplayNumber}" Height="54"
+                	ToolTip=" Biển số " Visibility="Hidden">
+                        <Rectangle Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="40" Width="40" Fill="Black">
+                            <Rectangle.OpacityMask>
+                                <VisualBrush Stretch="Uniform" Visual="{StaticResource appbar_add}" />
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+                    </Button>
+                </Grid>
+            </Grid>
+        </Grid>-->
+    </Grid>
+</Views:BaseLaneView>

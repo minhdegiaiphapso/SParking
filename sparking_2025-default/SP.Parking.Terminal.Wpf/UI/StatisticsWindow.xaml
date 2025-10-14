@@ -1,0 +1,19 @@
+﻿<controls:MetroWindow x:Class="SP.Parking.Terminal.Wpf.UI.StatisticsWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                      xmlns:w="clr-namespace:SP.Parking.Terminal.Wpf.Utility"
+                      WindowStyle="SingleBorderWindow"
+                      Width="1600"
+                      Background="#FFE5E5E5"
+                      Height="800"
+                      Name="StatisticsWindowName"
+                      WindowStartupLocation="CenterOwner"
+                      ResizeMode="NoResize"
+                      ShowInTaskbar="False"
+                      BorderThickness="2"
+                      BorderBrush="{DynamicResource AccentColorBrush}">
+    <Grid Name="MainGrid">
+
+    </Grid>
+</controls:MetroWindow>

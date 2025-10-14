@@ -1,0 +1,33 @@
+﻿<Window x:Class="SP.Parking.Terminal.Wpf.UI.CollectPlateToOut"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SP.Parking.Terminal.Wpf.UI"
+        BorderBrush="{StaticResource VietPark.Brushes.WayOut}"
+        BorderThickness="2"
+        IsHitTestVisible="True"
+        Width="500" 
+        SizeToContent="Height"
+        ShowInTaskbar="False"
+        Focusable="False"
+        ShowActivated="False"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        WindowStyle="None">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+            <RowDefinition Height="35"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" FontSize="18" Grid.ColumnSpan ="2"  HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{StaticResource VietPark.Brushes.WayOut}">COLLECT PLATE TO CHECK-IN</TextBlock>
+        <TextBlock Margin="3" FontSize="18"  x:Name="lblTitle" FontFamily="tahoma" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="1" Grid.Column="0" Foreground="{StaticResource VietPark.Brushes.WayOut}">LANE</TextBlock>
+        <TextBox BorderBrush="{StaticResource VietPark.Brushes.WayOut}" KeyUp="txtPlate_KeyUp" Margin="5" FontSize="16" Text="51H-12345" FontFamily="tahoma" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center"  Grid.Row="1" Grid.Column="1" x:Name="txtPlate"></TextBox>
+        <Button Background="{StaticResource VietPark.Brushes.WayOut}" Margin="5" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0" x:Name="btnOk" Click="btnOk_Click">Confirm (Enter)</Button>
+        <Button Background="{StaticResource VietPark.Brushes.WayOut}" Margin="5" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" x:Name="btnCancel" Click="btnCancel_Click">Cancel (Esc)</Button>
+    </Grid>
+</Window>
