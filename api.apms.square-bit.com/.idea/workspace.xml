@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="77ef091a-e9eb-4ee2-8c17-7de7bd02746b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="33XTkrOSUOxUCM790VB3gQHRXRN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="D:/MinhDe/Projects/FYN/FOM" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.admin">
+    <configuration name="admin" type="PythonConfigurationType" factoryName="Python">
+      <module name="api.apms.square-bit.com" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\AHuy\api.apms.square-bit.com\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/parking" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parking/manage.py" />
+      <option name="PARAMETERS" value="runserver 0.0.0.0:8866" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="api" type="PythonConfigurationType" factoryName="Python">
+      <module name="api.apms.square-bit.com" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\AHuy\api.apms.square-bit.com\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/webapi" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/webapi/manage.py" />
+      <option name="PARAMETERS" value="runserver 0.0.0.0:9192" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.api" />
+      <item itemvalue="Python.admin" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77ef091a-e9eb-4ee2-8c17-7de7bd02746b" name="Default Changelist" comment="" />
+      <created>1759462562520</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759462562520</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="177" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1759462970874">
+      <screen x="0" y="0" width="1440" height="852" />
+    </state>
+    <state x="177" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.852@0.0.1440.852" timestamp="1759462970874" />
+    <state x="502" y="182" key="FileChooserDialogImpl" timestamp="1759828641605">
+      <screen x="0" y="0" width="1440" height="852" />
+    </state>
+    <state x="502" y="182" key="FileChooserDialogImpl/0.0.1440.852@0.0.1440.852" timestamp="1759828641605" />
+    <state width="1420" height="241" key="GridCell.Tab.0.bottom" timestamp="1760243261955">
+      <screen x="0" y="0" width="1440" height="852" />
+    </state>
+    <state width="1420" height="241" key="GridCell.Tab.0.bottom/0.0.1440.852@0.0.1440.852" timestamp="1760243261955" />
+    <state width="1420" height="241" key="GridCell.Tab.0.center" timestamp="1760243261955">
+      <screen x="0" y="0" width="1440" height="852" />
+    </state>
+    <state width="1420" height="241" key="GridCell.Tab.0.center/0.0.1440.852@0.0.1440.852" timestamp="1760243261955" />
+    <state width="1420" height="241" key="GridCell.Tab.0.left" timestamp="1760243261955">
+      <screen x="0" y="0" width="1440" height="852" />
+    </state>
+    <state width="1420" height="241" key="GridCell.Tab.0.left/0.0.1440.852@0.0.1440.852" timestamp="1760243261955" />
+    <state width="1420" height="241" key="GridCell.Tab.0.right" timestamp="1760243261955">
+      <screen x="0" y="0" width="1440" height="852" />
+    </state>
+    <state width="1420" height="241" key="GridCell.Tab.0.right/0.0.1440.852@0.0.1440.852" timestamp="1760243261955" />
+    <state width="1420" height="221" key="GridCell.Tab.1.bottom" timestamp="1759742198380">
+      <screen x="0" y="0" width="1440" height="852" />
+    </state>
+    <state width="1420" height="221" key="GridCell.Tab.1.bottom/0.0.1440.852@0.0.1440.852" timestamp="1759742198380" />
+    <state width="1420" height="221" key="GridCell.Tab.1.center" timestamp="1759742198380">
+      <screen x="0" y="0" width="1440" height="852" />
+    </state>
+    <state width="1420" height="221" key="GridCell.Tab.1.center/0.0.1440.852@0.0.1440.852" timestamp="1759742198380" />
+    <state width="1420" height="221" key="GridCell.Tab.1.left" timestamp="1759742198380">
+      <screen x="0" y="0" width="1440" height="852" />
+    </state>
+    <state width="1420" height="221" key="GridCell.Tab.1.left/0.0.1440.852@0.0.1440.852" timestamp="1759742198380" />
+    <state width="1420" height="221" key="GridCell.Tab.1.right" timestamp="1759742198380">
+      <screen x="0" y="0" width="1440" height="852" />
+    </state>
+    <state width="1420" height="221" key="GridCell.Tab.1.right/0.0.1440.852@0.0.1440.852" timestamp="1759742198380" />
+    <state x="223" y="69" key="SettingsEditor" timestamp="1759463362641">
+      <screen x="0" y="0" width="1440" height="852" />
+    </state>
+    <state x="223" y="69" key="SettingsEditor/0.0.1440.852@0.0.1440.852" timestamp="1759463362641" />
+    <state x="421" y="251" key="com.intellij.ide.util.TipDialog" timestamp="1760240007723">
+      <screen x="0" y="0" width="1440" height="852" />
+    </state>
+    <state x="421" y="251" key="com.intellij.ide.util.TipDialog/0.0.1440.852@0.0.1440.852" timestamp="1760240007723" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webapi/app/mobile_views.py</url>
+          <line>848</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/webapi/app/mobile_views.py</url>
+          <line>967</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/parking/parking/models.py</url>
+          <line>275</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
