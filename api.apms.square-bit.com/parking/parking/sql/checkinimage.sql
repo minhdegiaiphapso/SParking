@@ -1,1 +1,0 @@
-ALTER TABLE parking_checkinimage ADD CONSTRAINT checkinimage_parking_session_id_refs_id FOREIGN KEY (parking_session_id) REFERENCES parking_parkingsession(id) ON DELETE CASCADE ON UPDATE CASCADE;
