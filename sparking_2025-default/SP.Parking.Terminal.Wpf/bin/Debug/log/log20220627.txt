@@ -1,0 +1,4 @@
+2022-06-27 15:03:27.530 +07:00 [INF] {"utc_time": "2022-06-27T08:03:27Z", "local_time": "2022-06-27T15:03:27Z"}
+2022-06-27 15:03:28.606 +07:00 [INF] {"log_server": "192.168.1.41", "parking_name": "CHARM CITY"}
+2022-06-27 15:03:30.705 +07:00 [INF] {"id": 10, "terminal_id": "a2e6c097-21d5-4c58-8725-9bf53d99188f", "name": "LAPTOP-C3THMFVP", "status": 1, "version": "2.1.2.4", "ip": "127.0.0.1", "timeout": false, "last_check_health_time": 252144210.0}
+2022-06-27 15:03:32.246 +07:00 [INF] [{"id": 19, "name": "l2", "vehicle_type": 7000001, "direction": 0, "enabled": true, "terminal_id": 10}]

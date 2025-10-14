@@ -1,0 +1,52 @@
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\ProxiesReader\MasterCom.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\ProxiesReader\MasterRD.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\plcommpro.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\plcomms.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\plrscagent.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\plrscomm.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\pltcpcomm.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\plusbcomm.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\Green.Devices.Vivotek.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\Green.Devices.Vivotek.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\BoardControl.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\Green.Devices.Dal.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\MR6100Api.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\PCSC.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\Newtonsoft.Json.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\Sharp7.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\Green.Devices.Dal.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\PCSC.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\PCSC.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\Newtonsoft.Json.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\bin\Release\Sharp7.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\obj\Release\Green.Devices.Vivotek.csproj.AssemblyReference.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\obj\Release\Green.Devices.Vivotek.csproj.CoreCompileInputs.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\obj\Release\Green.Devices.Vivotek.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\obj\Release\Green.Devices.Vivotek.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Green.Devices.Vivotek\obj\Release\Green.De.41CAE44E.Up2Date
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\ProxiesReader\MasterCom.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\ProxiesReader\MasterRD.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\plcommpro.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\plcomms.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\plrscagent.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\plrscomm.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\pltcpcomm.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\plusbcomm.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\Green.Devices.Vivotek.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\Green.Devices.Vivotek.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\BoardControl.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\Green.Devices.Dal.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\MR6100Api.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\PCSC.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\Newtonsoft.Json.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\Sharp7.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\Green.Devices.Dal.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\PCSC.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\PCSC.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\Newtonsoft.Json.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\bin\Release\Sharp7.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\obj\Release\Green.Devices.Vivotek.csproj.AssemblyReference.cache
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\obj\Release\Green.Devices.Vivotek.csproj.CoreCompileInputs.cache
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\obj\Release\Green.De.41CAE44E.Up2Date
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\obj\Release\Green.Devices.Vivotek.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Green.Devices.Vivotek\obj\Release\Green.Devices.Vivotek.pdb

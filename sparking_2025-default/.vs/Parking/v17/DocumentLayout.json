@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dinht\\Downloads\\sparking_20220125-default (1)\\sparking_20220125-default\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E2D8F3F3-BC2B-4639-AADD-87790FADC66C}|Green.Apms.Terminal.Core\\Green.Apms.Terminal.Core.csproj|C:\\Users\\dinht\\Downloads\\sparking_20220125-default (1)\\sparking_20220125-default\\green.apms.terminal.core\\viewmodels\\checkoutlaneviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2D8F3F3-BC2B-4639-AADD-87790FADC66C}|Green.Apms.Terminal.Core\\Green.Apms.Terminal.Core.csproj|solutionrelative:green.apms.terminal.core\\viewmodels\\checkoutlaneviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2D8F3F3-BC2B-4639-AADD-87790FADC66C}|Green.Apms.Terminal.Core\\Green.Apms.Terminal.Core.csproj|c:\\users\\dinht\\downloads\\sparking_20220125-default (1)\\sparking_20220125-default\\green.apms.terminal.core\\viewmodels\\checkinlaneviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2D8F3F3-BC2B-4639-AADD-87790FADC66C}|Green.Apms.Terminal.Core\\Green.Apms.Terminal.Core.csproj|solutionrelative:green.apms.terminal.core\\viewmodels\\checkinlaneviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2D8F3F3-BC2B-4639-AADD-87790FADC66C}|Green.Apms.Terminal.Core\\Green.Apms.Terminal.Core.csproj|C:\\Users\\dinht\\Downloads\\sparking_20220125-default (1)\\sparking_20220125-default\\green.apms.terminal.core\\viewmodels\\exceptionalcheckoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2D8F3F3-BC2B-4639-AADD-87790FADC66C}|Green.Apms.Terminal.Core\\Green.Apms.Terminal.Core.csproj|solutionrelative:green.apms.terminal.core\\viewmodels\\exceptionalcheckoutviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D65B126-A5FE-4B1C-BE74-536201D671A3}|Green.Apms.Terminal.Wpf\\Green.Apms.Terminal.Wpf.csproj|C:\\Users\\dinht\\Downloads\\sparking_20220125-default (1)\\sparking_20220125-default\\green.apms.terminal.wpf\\views\\appviews\\checkoutlaneview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8D65B126-A5FE-4B1C-BE74-536201D671A3}|Green.Apms.Terminal.Wpf\\Green.Apms.Terminal.Wpf.csproj|solutionrelative:green.apms.terminal.wpf\\views\\appviews\\checkoutlaneview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D65B126-A5FE-4B1C-BE74-536201D671A3}|Green.Apms.Terminal.Wpf\\Green.Apms.Terminal.Wpf.csproj|C:\\Users\\dinht\\Downloads\\sparking_20220125-default (1)\\sparking_20220125-default\\green.apms.terminal.wpf\\views\\appviews\\checkinlaneview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8D65B126-A5FE-4B1C-BE74-536201D671A3}|Green.Apms.Terminal.Wpf\\Green.Apms.Terminal.Wpf.csproj|solutionrelative:green.apms.terminal.wpf\\views\\appviews\\checkinlaneview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExceptionalCheckOutViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\dinht\\Downloads\\sparking_20220125-default (1)\\sparking_20220125-default\\Green.Apms.Terminal.Core\\ViewModels\\ExceptionalCheckOutViewModel.cs",
+              "RelativeDocumentMoniker": "Green.Apms.Terminal.Core\\ViewModels\\ExceptionalCheckOutViewModel.cs",
+              "ToolTip": "C:\\Users\\dinht\\Downloads\\sparking_20220125-default (1)\\sparking_20220125-default\\Green.Apms.Terminal.Core\\ViewModels\\ExceptionalCheckOutViewModel.cs",
+              "RelativeToolTip": "Green.Apms.Terminal.Core\\ViewModels\\ExceptionalCheckOutViewModel.cs",
+              "ViewState": "AQIAAJ0AAAAAAAAAAAAwwKoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T12:16:57.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CheckInLaneView.xaml",
+              "DocumentMoniker": "C:\\Users\\dinht\\Downloads\\sparking_20220125-default (1)\\sparking_20220125-default\\Green.Apms.Terminal.Wpf\\Views\\AppViews\\CheckInLaneView.xaml",
+              "RelativeDocumentMoniker": "Green.Apms.Terminal.Wpf\\Views\\AppViews\\CheckInLaneView.xaml",
+              "ToolTip": "C:\\Users\\dinht\\Downloads\\sparking_20220125-default (1)\\sparking_20220125-default\\Green.Apms.Terminal.Wpf\\Views\\AppViews\\CheckInLaneView.xaml",
+              "RelativeToolTip": "Green.Apms.Terminal.Wpf\\Views\\AppViews\\CheckInLaneView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-26T12:32:07.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CheckOutLaneViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\dinht\\Downloads\\sparking_20220125-default (1)\\sparking_20220125-default\\Green.Apms.Terminal.Core\\ViewModels\\CheckOutLaneViewModel.cs",
+              "RelativeDocumentMoniker": "Green.Apms.Terminal.Core\\ViewModels\\CheckOutLaneViewModel.cs",
+              "ToolTip": "C:\\Users\\dinht\\Downloads\\sparking_20220125-default (1)\\sparking_20220125-default\\Green.Apms.Terminal.Core\\ViewModels\\CheckOutLaneViewModel.cs",
+              "RelativeToolTip": "Green.Apms.Terminal.Core\\ViewModels\\CheckOutLaneViewModel.cs",
+              "ViewState": "AQIAAHICAAAAAAAAAAAnwIACAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T04:10:59.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CheckOutLaneView.xaml",
+              "DocumentMoniker": "C:\\Users\\dinht\\Downloads\\sparking_20220125-default (1)\\sparking_20220125-default\\Green.Apms.Terminal.Wpf\\Views\\AppViews\\CheckOutLaneView.xaml",
+              "RelativeDocumentMoniker": "Green.Apms.Terminal.Wpf\\Views\\AppViews\\CheckOutLaneView.xaml",
+              "ToolTip": "C:\\Users\\dinht\\Downloads\\sparking_20220125-default (1)\\sparking_20220125-default\\Green.Apms.Terminal.Wpf\\Views\\AppViews\\CheckOutLaneView.xaml",
+              "RelativeToolTip": "Green.Apms.Terminal.Wpf\\Views\\AppViews\\CheckOutLaneView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-26T12:37:26.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CheckInLaneViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\dinht\\Downloads\\sparking_20220125-default (1)\\sparking_20220125-default\\Green.Apms.Terminal.Core\\ViewModels\\CheckInLaneViewModel.cs",
+              "RelativeDocumentMoniker": "Green.Apms.Terminal.Core\\ViewModels\\CheckInLaneViewModel.cs",
+              "ToolTip": "C:\\Users\\dinht\\Downloads\\sparking_20220125-default (1)\\sparking_20220125-default\\Green.Apms.Terminal.Core\\ViewModels\\CheckInLaneViewModel.cs",
+              "RelativeToolTip": "Green.Apms.Terminal.Core\\ViewModels\\CheckInLaneViewModel.cs",
+              "ViewState": "AQIAAOcAAAAAAAAAAAAwwPwAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T13:53:05.795Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
