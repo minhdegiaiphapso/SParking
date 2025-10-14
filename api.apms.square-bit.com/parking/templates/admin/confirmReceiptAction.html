@@ -1,0 +1,52 @@
+{% extends "admin/base.html" %}
+{% block title %}
+| Hủy/Tạo mới phiếu thu
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+    xmlns="http://www.w3.org/1999/html">
+</h1>
+{% endblock %}
+
+{% block extrahead %}
+<!--custom view style-->
+<link rel="stylesheet" type="text/css" href="/static/css/page.css"/>
+
+<!--datetimepicker-->
+<link rel="stylesheet" type="text/css" href="/static/css/jquery.datetimepicker.css"/>
+
+<!--datatable-->
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/jquery.dataTables.min.css"/>
+
+{% endblock %}
+
+{% block content %}
+<div class="containerRPS">
+    <h2>Hủy/Tạo mới phiếu thu</h2>
+    <span>Trong trường hợp thao tác sai có mong muốn hủy phiếu thu đã lập.</span><br />
+    <span>Hủy phiếu thu hiện tại, phiếu thu đã bị hủy sẽ không thể in được, nếu chọn "Tạo mới phiếu thu" thì sẽ tạo mới phiếu thu và cấp mã số phiếu thu kế tiếp do hệ thống tính.</span><br />
+    <span><b>Mẹo</b>: Để linh động, các tình huống nối sổ,.. có thể đặt số phiếu thu kế tiếp theo ý muốn trong Cấu hình - Thiết lập chung - Số phiếu thu tiếp theo. Đây là mã số phiếu thu được cấp tự động tăng dần mỗi khi tạo một phiếu thu mới.</span><br /><br />
+
+    <form action="/admin/receipt/action/{{type}}/{{payment_id}}/" method="post">
+    {% csrf_token %}
+        {{ form.as_p }}
+
+        <!--<br style="clear:both"/>-->
+
+        <div class="form-field">
+            <label>Tạo mới phiếu thu</label>
+            <input type="checkbox" checked="checked" name="add_new_receipt" />
+        </div>
+
+        <br style="clear:both"/>
+        <button type="submit" name="btn_OK"  style="font-size: 13px; color: white;background-color: rgb(207, 73, 68); width: 77px; height: 28px; border: 1px solid #ccc;">Xác nhận</button>
+        <button name="btn_CANCEL" style="font-size: 13px; color: white;background-color: rgb(207, 73, 68); width: 77px; height: 28px; border: 1px solid #ccc;">Hủy bỏ</button>
+    </form>
+</div>
+
+<!--script for datimepicker-->
+<script src="/static/jquery/jquery.js"></script>
+<script src="/static/jquery/jquery.datetimepicker.js"></script>
+{% endblock %}

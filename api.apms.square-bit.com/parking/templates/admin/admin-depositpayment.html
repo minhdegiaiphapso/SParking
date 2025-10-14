@@ -1,0 +1,411 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls admin_static admin_modify %}
+
+{% block extrahead %}{{ block.super }}
+<script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
+{{ media }}
+{% endblock %}
+
+{% block extrastyle %}{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}" />{% endblock %}
+
+{% block coltype %}colM{% endblock %}
+
+{% block bodyclass %}{{ opts.app_label }}-{{ opts.object_name.lower }} change-form{% endblock %}
+
+{% if not is_popup %}
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    &rsaquo; <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ app_label|capfirst|escape }}</a>
+    &rsaquo; {% if has_change_permission %}<a href="{% url opts|admin_urlname:'changelist' %}">{{
+    opts.verbose_name_plural|capfirst }}</a>{% else %}{{ opts.verbose_name_plural|capfirst }}{% endif %}
+    &rsaquo; {% if add %}{% trans 'Add' %} {{ opts.verbose_name }}{% else %}{{ original|truncatewords:"18" }}{% endif %}
+</div>
+{% endblock %}
+{% endif %}
+
+{% block content %}
+<div id="content-main">
+    {% block object-tools %}
+    {% if change %}{% if not is_popup %}
+    <ul class="object-tools">
+        {% block object-tools-items %}
+        <li>
+            {% url opts|admin_urlname:'history' original.pk|admin_urlquote as history_url %}
+            <a href="{% add_preserved_filters history_url %}" class="historylink">{% trans "History" %}</a>
+        </li>
+        {% if has_absolute_url %}
+        <li><a href="{% url 'admin:view_on_site' content_type_id original.pk %}" class="viewsitelink">{% trans "View on
+            site" %}</a></li>
+        {% endif%}
+        {% endblock %}
+    </ul>
+    {% endif %}{% endif %}
+    {% endblock %}
+    <form {% if has_file_field %}enctype="multipart/form-data" {% endif %}action="{{ form_url }}" method="post"
+          id="{{ opts.model_name }}_form">{% csrf_token %}{% block form_top %}{% endblock %}
+        <div>
+            {% if is_popup %}<input type="hidden" name="_popup" value="1"/>{% endif %}
+            {% if errors %}
+            <p class="errornote">
+                {% if errors|length == 1 %}{% trans "Please correct the error below." %}{% else %}{% trans "Please
+                correct the errors below." %}{% endif %}
+            </p>
+            {{ adminform.form.non_field_errors }}
+            {% endif %}
+
+            {% block field_sets %}
+            {% for fieldset in adminform %}
+            {% include "admin/includes/fieldset.html" %}
+            {% endfor %}
+            {% endblock %}
+
+            {% block after_field_sets %}{% endblock %}
+
+            {% block inline_field_sets %}
+            {% for inline_admin_formset in inline_admin_formsets %}
+            {% include inline_admin_formset.opts.template %}
+            {% endfor %}
+            {% endblock %}
+
+            {% block after_related_objects %}{% endblock %}
+
+            {% block submit_buttons_bottom %}{% submit_row %}{% endblock %}
+
+            {% if adminform.first_field and add %}
+            <script type="text/javascript">document.getElementById("{{ adminform.first_field.id_for_label }}").focus();</script>
+            {% endif %}
+
+            {# JavaScript for prepopulated fields #}
+            {% prepopulated_fields_js %}
+
+        </div>
+    </form>
+</div>
+<script>
+    var id_customer = document.getElementById('id_customer');
+    var id_staff = document.getElementById('id_staff');
+
+    // Khong cho them dong moi
+
+    var tr_add_row = document.getElementsByClassName('add-row')[0];
+    if (tr_add_row) {
+        tr_add_row.remove();
+    }
+
+
+    // Readonly tong tien
+    var payment_fee = document.getElementById('id_payment_fee');
+    payment_fee.readOnly = true;
+    payment_fee.style.color = "red";
+    payment_fee.style.fontWeight = "bold";
+    payment_fee.style.fontSize = "120%";
+    //"font-weight: bold; color:
+    //; font-size: 120%";
+
+    // Chi cho chon duy nhat khach hang hien tai
+    if (id_customer.baseURI.indexOf("add") != id_customer.baseURI.length - 4) {
+        var options = id_customer.options;
+        var length = options.length;
+        var selected = id_customer.value;
+
+        var records = [];
+
+        for (var i = 0; i < length; i++) {
+            if (options[i] && options[i].value != selected) {
+                records[records.length] = options[i];
+            }
+        }
+
+        for (var j = 0; j < records.length; j++) {
+            records[j].remove();
+        }
+    }
+
+    // Chi cho chon duy nhat nhan vien hien tai
+    if (id_customer.baseURI.indexOf('staff=') != -1) {
+        console.log("Khong cho chon nhan vien ne.");
+        var options = id_staff.options;
+        var length = options.length;
+        var selected = id_staff.value;
+
+        var records = [];
+
+        for (var i = 0; i < length; i++) {
+            if (options[i] && options[i].value != selected) {
+                records[records.length] = options[i];
+            }
+        }
+
+        for (var j = 0; j < records.length; j++) {
+            records[j].remove();
+        }
+    }
+    else {
+        var staff_id = '';
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", "/get/currentuser/", false);
+        xmlhttp.send();
+        if (xmlhttp.status == '200') {
+            staff_id = xmlhttp.responseText;
+
+            var options = id_staff.options;
+            for (var i = 0; i < options.length; i++) {
+                if (options[i] && options[i].value == staff_id) {
+                    options[i].setAttribute('selected', 'selected');
+                }
+            }
+
+            // Xoa cac nhan vien khong phai nhan vien hien tai
+            var length = options.length;
+            var selected = id_staff.value;
+
+            var records = [];
+
+            for (var i = 0; i < length; i++) {
+                if (options[i] && options[i].value != selected) {
+                    records[records.length] = options[i];
+                }
+            }
+
+            for (var j = 0; j < records.length; j++) {
+                records[j].remove();
+            }
+        }
+    }
+
+    /////////////////////////////////////////
+    function getVehicleRegistrationInfo(id) {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", "/get/vehicleregistration/" + id + "/", false);
+        xmlhttp.send();
+
+        if (xmlhttp.status == '200') {
+            info = xmlhttp.responseText;
+            console.log(info);
+            return info;
+        }
+        return "";
+    }
+
+    /////////////////////////////////////////
+    function getDepositActionFee(id) {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", "/get/depositactionfee/" + id + "/", false);
+        xmlhttp.send();
+
+        if (xmlhttp.status == '200') {
+            info = xmlhttp.responseText;
+            console.log(info);
+            return info;
+        }
+        return "";
+    }
+
+    /////////////////////////////////////////
+    function getDepositActionFeeList(id) {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", "/get/depositactionfeelist/" + id + "/", false);
+        xmlhttp.send();
+
+        if (xmlhttp.status == '200') {
+            info = xmlhttp.responseText;
+            console.log(info);
+            return info;
+        }
+        return "";
+    }
+
+    ///////////////////////////////////////////////////////////////////////////
+    // Cap nhat tong so tien luot thanh toan
+    function updateTotalPaymentFee() {
+        var total = 0.0;
+        for (var t = 0; t <= idx; t++) {
+            var level_fee_i = document.getElementById('id_depositpaymentdetail_set-' + t + '-deposit_payment_detail_fee');
+            if (level_fee_i) {
+                total = total + parseFloat(level_fee_i.value);
+            }
+        }
+
+        if (payment_fee) {
+            console.log(">>> Tong so tien: " + total);
+            payment_fee.value = total;
+        }
+    }
+
+
+    function updatePaymentDetail(i) {
+        console.log("------------------------------------------------------------------------------------------------------");
+        console.log("onchange row: " + i);
+        var current_row = document.getElementById('depositpaymentdetail_set-' + i);
+        console.log("current row: " + current_row);
+
+        if (current_row) {
+            //id_depositpaymentdetail_set-0-vehicle_registration
+            var select_vehicle_registration = document.getElementById('id_depositpaymentdetail_set-' + i + '-vehicle_registration');
+            var input_deposit_payment_detail_fee = document.getElementById('id_depositpaymentdetail_set-' + i + '-deposit_payment_detail_fee');
+            var input_deposit_payment_vehicle_number = document.getElementById('id_depositpaymentdetail_set-' + i + '-vehicle_number');
+            var select_payment_action_fee = document.getElementById('id_depositpaymentdetail_set-' + i + '-deposit_action_fee');
+
+            console.log("Khong cho chon xe khac.");
+            var options = select_vehicle_registration.options;
+            var length = options.length;
+            var selected = select_vehicle_registration.value;
+
+            var records = [];
+
+            for (var l = 0; l < length; l++) {
+                if (options[l] && options[l].value != selected) {
+                    records[records.length] = options[l];
+                }
+            }
+
+            for(var j = 0; j < records.length; j++) {
+                records[j].remove();
+            }
+
+            // Khoi tao cac phi coc the tuong ung voi loai xe va loai cu dan
+            var final_deposit_action_fee_list = getDepositActionFeeList(select_vehicle_registration.value)
+            if (final_deposit_action_fee_list.length > 0) {
+                var deposit_action_fee_list = final_deposit_action_fee_list.split('@');
+
+                var deposit_action_fee_options = select_payment_action_fee.options;
+                var records2 = [];
+
+                console.log("final " + final_deposit_action_fee_list);
+                console.log("list " + deposit_action_fee_list);
+                console.log(deposit_action_fee_options);
+
+                for (var h = 0; h < deposit_action_fee_options.length; h++) {
+                    temp_value = deposit_action_fee_options[h].value;
+                    if (deposit_action_fee_options[h] && deposit_action_fee_list && temp_value!= "" && deposit_action_fee_list.indexOf(temp_value) == -1 ) {
+                        console.log("different " + deposit_action_fee_options[h].value);
+                        records2[records2.length] = deposit_action_fee_options[h];
+                    }
+                }
+
+
+                console.log(records2);
+                for(var j = 0; j < records2.length; j++) {
+                    records2[j].remove();
+                }
+            }
+
+            if (input_deposit_payment_vehicle_number.value.length > 0)
+            {
+                input_deposit_payment_vehicle_number.readOnly = true;
+                input_deposit_payment_vehicle_number.style.border = "none";
+            }
+
+            // Neu la them moi thanh toan (add)
+            // Cap nhat loai xe, tinh trang
+            if (document.baseURI.indexOf('add') != -1) {
+                var info = getVehicleRegistrationInfo(select_vehicle_registration.value);
+                console.log("Cap nhat loai xe, tinh trang, muc phi");
+                console.log(" info " + info);
+                if (info.length > 0) {
+                    var infos = info.split('@');
+
+                    var p_get_vehicle_type = current_row.getElementsByClassName('field-get_vehicle_type')[0].getElementsByTagName('p')[0];
+                    var p_get_status = current_row.getElementsByClassName('field-get_status')[0].getElementsByTagName('p')[0];
+
+                    if (p_get_vehicle_type.innerHTML != infos[0] || p_get_status.innerHTML != infos[1]) {
+                        console.log("@@@DBG: Co thay doi");
+
+                        p_get_vehicle_type.innerHTML = infos[0];
+                        p_get_status.innerHTML = infos[1];
+
+                        new_color = "gray";
+                        switch(p_get_status.innerHTML) {
+                            case "Đang dùng":
+                                new_color = "green";
+                                break;
+                            case "Hủy":
+                                new_color = "gray";
+                                break;
+                            case "Tạm ngưng":
+                                new_color = "blue";
+                                break;
+                            case "Chưa đăng ký":
+                                new_color = "red";
+                                break;
+                            default:
+                                new_color = "red";
+                                break;
+                        }
+
+                        p_get_status.style.color = new_color;
+                        }
+
+                    // Readonly thanh tien chi tiet thanh toan
+                    input_deposit_payment_detail_fee.readOnly = true;
+                    input_deposit_payment_detail_fee.style.color = "red";
+                    input_deposit_payment_detail_fee.style.fontSize = "110%";
+                }
+
+            }
+        // Onchange thoi gian gia han
+        select_payment_action_fee.onchange = function() {
+            var final_deposit_action_fee = getDepositActionFee(select_payment_action_fee.value)
+            if (final_deposit_action_fee.length > 0) {
+                input_deposit_payment_detail_fee.value = final_deposit_action_fee
+            }
+            else {
+                input_deposit_payment_detail_fee.value = "0";
+            }
+            updateTotalPaymentFee(idx);
+            }
+        }
+    }
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //var e = document.getElementById('ticketpaymentdetail_set-group');
+
+    // Lay so dong chi tiet thanh toan hien tai
+    var idx = -1;
+
+    var re = /(depositpaymentdetail_set-(\d+))/g;
+    var markup = document.documentElement.innerHTML;
+    while ((m = re.exec(markup)) != null) {
+        if (m.index === re.lastIndex) {
+            re.lastIndex++;
+        }
+        var s = m[0];
+        var num = parseInt(s.substring(s.lastIndexOf('-') + 1, s.length));
+        if (idx < num) {
+            idx = num;
+        }
+    }
+
+    console.log(idx);
+
+    console.log('Do it');
+
+    function doIt() {
+        for (var i = 0; i <= idx; i++) {
+            updatePaymentDetail(i);
+            var select_vehicle = document.getElementById('id_depositpaymentdetail_set-' + i + '-vehicle_registration');
+            select_vehicle.onchange = function () {
+                var order = this.id.split('-')[1];
+                updatePaymentDetail(order);
+                updateTotalPaymentFee();
+                console.log("Coc the - xe dang ky - onchange order " + order + "  this " + this.id);
+            }
+        }
+        updateTotalPaymentFee(idx);
+    }
+
+    doIt();
+
+
+    //setInterval(function() {
+    //  for(var i = 0; i <= idx; i++) {
+    //    updatePaymentDetail(i);
+    //
+    //      var select_vehicle = document.getElementById('id_ticketpaymentdetail_set-' + i + '-vehicle_registration');
+    //    console.log(select_vehicle);
+    // }
+    // },3000);
+</script>
+{% endblock %}

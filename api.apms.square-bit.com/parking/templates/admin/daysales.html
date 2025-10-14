@@ -1,0 +1,440 @@
+{% extends "admin/base.html" %}
+{% block title %}
+Báo cáo doanh thu gửi xe theo ngày
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+    xmlns="http://www.w3.org/1999/html">
+</h1>
+{% endblock %}
+
+{% block extrahead %}
+<!--custom view style-->
+<link rel="stylesheet" type="text/css" href="/static/css/page.css"/>
+
+<!--datetimepicker-->
+<link rel="stylesheet" type="text/css" href="/static/css/jquery.datetimepicker.css"/>
+
+<!--datatable-->
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/jquery.dataTables.min.css"/>
+
+{% endblock %}
+
+{% block content %}
+<div class="containerRPS">
+
+
+    <form method="post" id="formRPS">
+        {% csrf_token %}
+        <div class="form-field">
+            <label>Ngày báo cáo</label>
+            <div>
+                <input style="height: 30px; width: 150px;" type="text" value="{{ report_date }}"
+                       id="datetimepicker_start" name="report_date"/>
+            </div>
+        </div>
+
+        <!--<div class="form-field">-->
+            <!--<label></label>-->
+            <!--&lt;!&ndash;<div>&ndash;&gt;-->
+            <!--&lt;!&ndash;&lt;!&ndash;<input style="height: 30px;margin-top:5px;" class="form-field" type="submit" name="btn_REPORT" value="Báo cáo" />&ndash;&gt;&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--</div>-->
+
+        <div class="form-field">
+            <label>Tổng doanh thu</label>
+
+            <div>
+              <input style="height:30px" name="total_sales" type="text" value="{{total_sales}}" readonly/><span>đ</span>
+            </div>
+        </div>
+
+        <div class="form-field">
+            <table>
+                <tr>
+                    {% for value in card_type_data.values %}
+                    <th>{{value.name}}</th>
+                    {% endfor %}
+                </tr>
+
+                <tr>
+                    {% for value in card_type_data.values %}
+                    <td>{{value.count}}</td>
+                    {% endfor %}
+                </tr>
+
+            </table>
+        </div>
+        <br style="clear:both;"/>
+
+
+
+
+        <div class="form-field">
+            <label id="report_detail_label" style="display:inline; text-decoration:underline">Báo cáo chi tiết theo loại thẻ</label>
+
+            <div>
+           <input type="hidden" value="{{cardtype_select}}" name="cardtype_select_hidden" id="cardtype_select_hidden"/>
+           <select id="cardtype_select" name="cardtype_select" style="height: 30px; width:150px">
+               {% for value in card_type_data.values %}
+               <option value="{{ value.id }}" name="cardtype_select">{{ value.name }}</option>
+
+               {% endfor %}
+           </select>
+
+            <input style="float:right; height: 30px;" class="form-field" type="submit" id="report_detail_button" name="btn_REPORT_DETAIL" value="Báo cáo chi tiết" />
+                </div>
+
+        </div>
+
+        </form>
+
+
+    <br style="clear:both;"/>
+    <br />
+
+            <div id="report_detail_div">
+    <!--<table>-->
+        <!--<thead>-->
+        <!--<tr>-->
+            <!--<th colspan="4">THEO THỜI GIAN LƯU BÃI</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tr>-->
+            <!--<td>< 2h</td>-->
+            <!--<td>0</td>-->
+            <!--<td>2h - 4h</td>-->
+            <!--<td>0</td>-->
+        <!--</tr>-->
+
+        <!--<tr>-->
+            <!--<td>4h - 10h</td>-->
+            <!--<td>0</td>-->
+            <!--<td>< 10h</td>-->
+            <!--<td>0</td>-->
+        <!--</tr>-->
+    <!--</table>-->
+
+    <!--<table>-->
+        <!--<thead>-->
+        <!--<tr>-->
+            <!--<th colspan="4">THEO DOANH THU / LƯỢT</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+
+
+        <!--{% for turn_fee in turn_fee_data.values %}-->
+        <!--{% if turn_fee.order|divisibleby:"2" %}-->
+        <!--<tr>-->
+            <!--<td>{{turn_fee.fee}}</td>-->
+            <!--<td>{{turn_fee.count}}</td>-->
+        <!--{% else %}-->
+            <!--<td>{{turn_fee.fee}}</td>-->
+            <!--<td>{{turn_fee.count}}</td>-->
+            <!--</tr>-->
+        <!--{% endif %}-->
+
+        <!--{% endfor %}-->
+
+
+    <!--</table>-->
+
+
+    <!--<table>-->
+        <!--<thead>-->
+        <!--<tr>-->
+            <!--<th colspan="4">THEO DOANH THU / BLOCK</th>-->
+        <!--</tr>-->
+        <!--</thead>-->
+        <!--<tr>-->
+            <!--<td>50000đ/block đầu + 40000đ/block sau</td>-->
+            <!--<td>0</td>-->
+            <!--<td> </td>-->
+            <!--<td> </td>-->
+        <!--</tr>-->
+    <!--</table>-->
+
+
+    <br style="clear:both;"/>
+    <hr/>
+    <table id="datatable" style="width: 100%">
+        <thead>
+        <tr>
+            <th>Tên thẻ</th>
+            <th>Số xe</th>
+            <th>Loại xe</th>
+            <th>Thời gian vào</th>
+            <th>Thời gian ra</th>
+            <th>Thời gian lưu bãi</th>
+            <th>Thành tiền</th>
+            <th>Thu ngân</th>
+        </tr>
+        </thead>
+
+        {% if report_detail_data %}
+        <tbody>
+        {% for item in report_detail_data %}
+        <tr>
+            <td>{{ item.card_label }}</td>
+            <td>{{ item.vehicle_number }}</td>
+            <td>{{ item.vehicle_type }}</td>
+            <td>{{ item.check_in_time }}</td>
+            <td>{{ item.check_out_time}}</td>
+            <td>{{ item.duration}}</td>
+            <td>{{ item.parking_fee}}</td>
+            <td>{{ item.staff}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+        {% endif %}
+    </table>
+                </div>
+
+
+</div>
+
+
+<!--script for datimepicker-->
+<script src="/static/jquery/jquery.js"></script>
+<script src="/static/jquery/jquery.datetimepicker.js"></script>
+<script>
+    jQuery('#datetimepicker_start').datetimepicker({
+        format:'d-m-Y',
+        timepicker:false,
+        lang:'vi',
+        i18n:{
+            vi:{
+                months:[
+                    'Tháng Một','Tháng Hai','Tháng Ba','Tháng Tư',
+                    'Tháng Năm','Tháng Sáu','Tháng Bảy','Tháng Tám',
+                    'Tháng Chín','Tháng Mười','Tháng Mười Một','Tháng Mười Hai',
+                    ],
+                dayOfWeek:[
+                    "Chủ Nhật", "Hai", "Ba", "Tư",
+                    "Năm", "Sáu", "Bảy.",
+                ]
+            }
+        },
+        onShow:function( ct ){
+            this.setOptions({
+                maxDate:jQuery('#datetimepicker_end').val()?jQuery('#datetimepicker_end').val():false
+            })
+        }
+    });
+    jQuery('#datetimepicker_end').datetimepicker({
+        format:'d-m-Y H:i',
+        timepicker:true,
+        lang:'vi',
+        i18n:{
+            vi:{
+                months:[
+                    'Tháng Một','Tháng Hai','Tháng Ba','Tháng Tư',
+                    'Tháng Năm','Tháng Sáu','Tháng Bảy','Tháng Tám',
+                    'Tháng Chín','Tháng Mười','Tháng Mười Một','Tháng Mười Hai',
+                    ],
+                dayOfWeek:[
+                    "Chủ Nhật", "Hai", "Ba", "Tư",
+                    "Năm", "Sáu", "Bảy.",
+                ]
+            }
+        },
+        onShow:function( ct ){
+            this.setOptions({
+
+            })
+        }
+    });
+
+
+</script>
+
+<!--script for sort-table-->
+<script src="/static/jquery/jquery.js"></script>
+<script src="/static/jquery/jquery.dataTables.min.js"></script>
+<script>
+//
+// Pipelining function for DataTables. To be used to the `ajax` option of DataTables
+//
+$.fn.dataTable.pipeline = function ( opts ) {
+    // Configuration options
+    var conf = $.extend( {
+        pages: 1,     // number of pages to cache
+        url: '',      // script url
+        data: null,   // function or object with parameters to send to the server
+                      // matching how `ajax.data` works in DataTables
+        method: 'GET' // Ajax HTTP method
+    }, opts );
+
+    // Private variables for storing the cache
+    var cacheLower = -1;
+    var cacheUpper = null;
+    var cacheLastRequest = null;
+    var cacheLastJson = null;
+
+    return function ( request, drawCallback, settings ) {
+        var ajax          = false;
+        var requestStart  = request.start;
+        var drawStart     = request.start;
+        var requestLength = request.length;
+        var requestEnd    = requestStart + requestLength;
+
+        if ( settings.clearCache ) {
+            // API requested that the cache be cleared
+            ajax = true;
+            settings.clearCache = false;
+        }
+        else if ( cacheLower < 0 || requestStart < cacheLower || requestEnd > cacheUpper ) {
+            // outside cached data - need to make a request
+            ajax = true;
+        }
+        else if ( JSON.stringify( request.order )   !== JSON.stringify( cacheLastRequest.order ) ||
+                  JSON.stringify( request.columns ) !== JSON.stringify( cacheLastRequest.columns ) ||
+                  JSON.stringify( request.search )  !== JSON.stringify( cacheLastRequest.search )
+        ) {
+            // properties changed (ordering, columns, searching)
+            ajax = true;
+        }
+
+        // Store the request for checking next time around
+        cacheLastRequest = $.extend( true, {}, request );
+
+        if ( ajax ) {
+            // Need data from the server
+            if ( requestStart < cacheLower ) {
+                requestStart = requestStart - (requestLength*(conf.pages-1));
+
+                if ( requestStart < 0 ) {
+                    requestStart = 0;
+                }
+            }
+
+            cacheLower = requestStart;
+            cacheUpper = requestStart + (requestLength * conf.pages);
+
+            request.start = requestStart;
+            request.length = requestLength*conf.pages;
+
+            // Provide the same `data` options as DataTables.
+            if ( $.isFunction ( conf.data ) ) {
+                // As a function it is executed with the data object as an arg
+                // for manipulation. If an object is returned, it is used as the
+                // data object to submit
+                var d = conf.data( request );
+                if ( d ) {
+                    $.extend( request, d );
+                }
+            }
+            else if ( $.isPlainObject( conf.data ) ) {
+                // As an object, the data given extends the default
+                $.extend( request, conf.data );
+            }
+
+            settings.jqXHR = $.ajax( {
+                "type":     conf.method,
+                "url":      conf.url,
+                "data":     request,
+                "dataType": "json",
+                "cache":    false,
+                "success":  function ( json ) {
+                    cacheLastJson = $.extend(true, {}, json);
+
+                    if ( cacheLower != drawStart ) {
+                        json.data.splice( 0, drawStart-cacheLower );
+                    }
+                    json.data.splice( requestLength, json.data.length );
+
+                    drawCallback( json );
+                }
+            } );
+        }
+        else {
+            json = $.extend( true, {}, cacheLastJson );
+            json.draw = request.draw; // Update the echo for each response
+            json.data.splice( 0, requestStart-cacheLower );
+            json.data.splice( requestLength, json.data.length );
+
+            drawCallback(json);
+        }
+    }
+};
+
+// Register an API method that will empty the pipelined data, forcing an Ajax
+// fetch on the next draw (i.e. `table.clearPipeline().draw()`)
+$.fn.dataTable.Api.register( 'clearPipeline()', function () {
+    return this.iterator( 'table', function ( settings ) {
+        settings.clearCache = true;
+    } );
+} );
+
+
+$(document).ready(function () {
+    var t = document.getElementById('cardtype_select_hidden').value;
+    var s = document.getElementById('cardtype_select');
+    s.value = t;
+
+    var r = document.getElementById('datetimepicker_start').value;
+
+    var table = $('#datatable').dataTable( {
+        //"order": [[3, "desc"]],
+        //"oLanguage": {
+        //    "sProcessing":   "Đang xử lý...",
+        //    "sLengthMenu":   "Xem _MENU_ mục",
+        //    "sZeroRecords":  "Không tìm thấy dòng nào phù hợp",
+        //    "sInfo":         "Đang xem _START_ đến _END_ trong tổng số _TOTAL_ mục",
+        //    "sInfoEmpty":    "Đang xem 0 đến 0 trong tổng số 0 mục",
+        //    "sInfoFiltered": "(được lọc từ _MAX_ mục)",
+        //    "sInfoPostFix":  "",
+        //    "sSearch":       "",
+        //    "sUrl":          "",
+        //    "oPaginate": {
+        //    "sFirst":    "Đầu",
+        //    "sPrevious": "Trước",
+        //    "sNext":     "Sau",
+        //    "sLast":     "Cuối",
+        //    },
+
+        //},
+        "processing": true,
+        "serverSide": true,
+        "ajax": $.fn.dataTable.pipeline({url: "/ajax_day_sales/" + t + "/" + r + "/", pages:1}),
+    });
+});
+</script>
+
+<!--//"ajax": $.fn.dataTable.pipeline( {"url": "?ajax=true" + "&card_type_id=" + t + "&report_date=" + r, "pages":1} ),-->
+<link rel="stylesheet" href="/static/css/1.8.18/jquery-ui.css" type="text/css" media="all"/>
+<script src="/static/jquery/jquery.min.js" type="text/javascript"></script>
+<script src="/static/jquery/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+<script>
+    var $j = jQuery.noConflict();
+    $j(function() {
+        $j("#card_label").autocomplete({
+            source: "/admin/get_card_labels",
+
+            });
+        });
+
+
+</script>
+
+<script>
+
+        var report_detail_label = document.getElementById('report_detail_label');
+        var report_detail_div = document.getElementById('report_detail_div');
+
+        report_detail_label.onclick = function() {
+            if (report_detail_div.style.display == "none") {
+                report_detail_div.style.display = "block";
+            }
+            else {
+                report_detail_div.style.display = "none";
+            }
+
+        }
+
+</script>
+<link rel="stylesheet" href="/static/css/page.css">
+{% endblock %}
+<!--minLength: 2-->

@@ -1,0 +1,50 @@
+
+<div ng-controller="NNdetail" ng-init="getdetail(sf.id)">
+    <table style="width:99%" class="table-bordered">
+        <thead>
+            <tr>
+                <th>Điểm khởi đầu ngày</th>
+                <th>Điểm khởi đầu đêm</th>
+                <th>Thời gian không tính phí</th>
+                <th>Mức phí 24h trọn 1 ngày đêm</th>
+                <th>Mức phí tối đa</th>
+                <th>Định mức phí ngày</th>
+                <th>Định mức phí đêm</th>
+                <th>Trường hợp giao thoa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="dt in detail">
+                <td>
+                    [[dt.startday]]
+                </td>
+                <td>
+                    [[dt.startnight]]
+                </td>
+                <td>
+                    [[dt.freetime]]<span class="text-info"> phút</span>
+                </td>
+                <td>
+                    <span ng-if="dt.maxfee>0">[[dt.maxfee]]</span>
+                </td>
+                <td>
+                    <span ng-if="dt.fee24h>0">[[dt.fee24h]]</span>
+                </td>
+                <td title="[[dt.formuladaydetail]]">
+                    [[dt.formuladay]]
+                </td>
+                <td title="[[dt.formuladaydetail]]">
+                    [[dt.formulanight]]
+                </td>
+                <td title="[[dt.optioncasedetail]]">
+                    Trường hợp [[dt.optioncase]]
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+
+

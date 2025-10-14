@@ -1,0 +1,1007 @@
+{% extends "admin/base.html" %}
+{% block title %}
+| Tìm đăng ký xe
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+    xmlns="http://www.w3.org/1999/html">
+</h1>
+{% endblock %}
+
+{% block extrahead %}
+
+<link rel="stylesheet" type="text/css" href="/static/css/page.css" />
+<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+<!--datetimepicker-->
+<link rel="stylesheet" type="text/css" href="/static/css/jquery.datetimepicker.css"/>
+<link rel="stylesheet" type="text/css" href="/static/css/jquery.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="/static/css/1.8.18/jquery-ui.css" media="all"/>
+<style>
+    .loading{
+        position: fixed;
+        left:45%;
+        top:45%;
+        display:none;
+    }
+    .hide{
+        display:none;
+    }
+    .grey{
+        background-color:#cdcdcd;
+    }
+    .reddd{
+        background-color:#ff6347;
+    }
+    .myul{
+            list-style-type: none !important;
+      }
+        .myul li{
+            padding:left 15px;
+            margin:5px;
+            list-style-type: none !important;
+        }
+            .myul li:hover{
+                background-color:#cdcdcd;
+            }
+    .aa{
+        font-weight: bold;
+        margin:1px;
+        padding-left:7px;
+        padding-right:7px;
+        padding-top:1px;
+        padding-bottom:1px;
+
+        background-color:#cdcdcd;
+        color:green;
+    }
+    .aa:hover{
+         background-color:green;
+         color:#ffffff;
+    }
+    .pp {
+        font-weight: bold;
+
+        padding-left:7px;
+        padding-right:7px;
+        padding-top:1px;
+        padding-bottom:1px;
+        background-color:#cdcdcd;
+        color:#000000;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="containerRPS">
+    <img src="/static/image/loading.gif" height="64px;" class="loading"/>
+    <h2>Đăng ký xe</h2>
+    <form method="post" id="formRPS">
+        {% csrf_token %}
+        <div class="row" style="background-color:#f1f1f1; overflow-y:auto;">
+            <div class="col-md-3 col-sm-6 form-group" >
+                <label>Khách hàng<span style="color:red">*</span>
+                    <a href="/admin/parking/customer/add/" class="add-another" target="_blank" onclick="return showAddAnotherPopup(this);">
+                        <img src="/static/admin/img/icon_addlink.gif" alt="Add">
+                    </a>
+                </label>
+                <input type="hidden" id="hdfUser" value="{{staff}}"/>
+                <input type="hidden" id="hdfCus" value="{{cusid}}"/>
+                <input type="text" value="{{cusname}}" id="txtCustomer" name="customer" class="form-control txt-cus"  onkeyup="filterCus(this);">
+                <ul class="customer-lst form-control myul" style=" list-style-type: none;height:200px;width:250px;background-color:#fafafa;display:none;z-index:1; position:fixed;overflow-y:auto;">
+                {%if customer%}
+                    {%for cus in customer%}
+                    <li onclick="selectCus(this);" >{{cus.customer_name}}</li>
+                    {%endfor%}
+                {%endif%}
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 form-group">
+                <label>Tên thẻ<span style="color:red">*</span>
+                    <a href="/admin/parking/card/add/" class="add-another" target="_blank" onclick="return showAddAnotherPopup(this);">
+                        <img src="/static/admin/img/icon_addlink.gif" alt="Add">
+                    </a>
+                </label>
+                <input type="text" id="txtCard" name="card" class="form-control txt-card"  onkeyup="filterCard(this);">
+                <ul class="card-num form-control myul" style="list-style-type: none;height:200px;width:250px;background-color:#fafafa;display:none;z-index:1; position:fixed;overflow-y:auto;">
+                {%if card%}
+                    {%for c in card%}
+                    <li onclick="selectCard(this);" >{{c.cardLable}}</li>
+                    {%endfor%}
+                {%endif%}
+                </ul>
+
+            </div>
+            <div class="col-md-3 col-sm-6 form-group">
+                <label>Mức phí<span style="color:red">*</span>
+                    <a href="/admin/parking/levelfee/add/" class="add-another" target="_blank" onclick="return showAddAnotherPopup(this);">
+                        <img src="/static/admin/img/icon_addlink.gif" alt="Add">
+                    </a>
+                </label>
+                <select class="form-control" name="feelevel" id="ddlFee">
+                {%if feelevel%}
+                    {%for f in feelevel%}
+                    <option name="feelevel" value="{{f.id}}">{{f.name}} - {{f.fee}}</option>
+                    {%endfor%}
+                {%endif%}
+                </select>
+            </div>
+            <div class="col-md-3 col-sm-6 form-group">
+                <label>Loại xe<span style="color:red">*</span>
+                    <a href="/admin/parking/vehicletype/add/" class="add-another" target="_blank" onclick="return showAddAnotherPopup(this);">
+                        <img src="/static/admin/img/icon_addlink.gif" alt="Add">
+                    </a>
+                </label>
+                <select class="form-control" name="vehecletype" id="ddlVehecle">
+                {%if vehecletype%}
+                    {%for v in vehecletype%}
+                    <option name="vehecletype" value="{{v.id}}">{{v.name}}</option>
+                    {%endfor%}
+                {%endif%}
+                </select>
+            </div>
+            <!--<div class="col-md-3 col-sm-6 form-group">-->
+                <!--<label>Biển số<span style="color:red" >*</span></label>-->
+                <!--<input class="form-control" name="vehecle_number" id="txtLicience">-->
+            <!--</div>-->
+            <!--<div class="col-md-3 col-sm-6 form-group">-->
+                <!--<label>Biển số phụ</label>-->
+                <!--<input class="form-control" name="vehecle_paint">-->
+            <!--</div>-->
+            <!--<div class="col-md-3 col-sm-6 form-group">-->
+                <!--<label>Nhãn hiệu</label>-->
+                <!--<input class="form-control" name="vehecle_brand">-->
+            <!--</div>-->
+            <!--<div class="col-md-3 col-sm-6 form-group">-->
+                <!--<label>Ghi chú</label>-->
+                <!--<input type="text" class="form-control" name="note">-->
+            <!--</div>-->
+            <!--<div class="col-md-3 col-sm-6 form-group">-->
+                <!--<label>Tên lái xe</label>-->
+                <!--<input type="text" class="form-control" name="drive_name">-->
+            <!--</div>-->
+            <!--<div class="col-md-3 col-sm-6 form-group">-->
+                <!--<label>SĐT lái xe</label>-->
+                <!--<input type="text" class="form-control" name="drive_phone">-->
+            <!--</div>-->
+             <!--<div class="col-md-3 col-sm-6 form-group">-->
+                <!--<label>Từ ngày<span style="color:red">*</span></label>-->
+                 <!--<input class="form-control" type="text" id="datetimepicker_start" name="from_date">-->
+            <!--</div>-->
+            <!--<div class="col-md-3 col-sm-6 form-group">-->
+                <!--<label>Đến ngày<span style="color:red">*</span></label>-->
+                <!--<input class="form-control" type="text" id="datetimepicker_end" name="to_date">-->
+            <!--</div>-->
+            <div class="btn-group">
+                <button onclick="return addregissss();" class="btn btn-primary" type="button" id="txtadd">Thêm mới</button>
+                <!--<button onclick="return validateform();" class="btn btn-primary" type="submit" name="btn_save" id="txtTo">Đăng ký</button>-->
+            </div>
+            <h2>Chi tiết đăng ký vé tháng</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Số thẻ</th>
+                        <th>Loại xe</th>
+                        <th>Mức phí</th>
+                        <th>Biển số</th>
+                        <th>Biển số phụ</th>
+                        <th>Nhãn hiệu</th>
+                        <th>Tên lái xe</th>
+                        <th>SĐT lái xe</th>
+                        <th>Từ ngày
+                            <input  type="text" id="txtfromdate" onchange="validatefrom();" class="form-control fromdate"/>
+                        </th>
+                        <th>Đến ngày
+                            <input  type="text" id="txttodate" onchange="validateto();" onload="setdate(this);" class="form-control todate"/>
+                        </th>
+                        <th>Thành tiền</th>
+                        <th>#</th>
+                    </tr>
+                </thead>
+                <tbody class="bddetail"></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="100%">
+                            <input class="btn btn-primary hide"   type="button" value="Đăng ký" id="txtajax" onclick="regisAjax();"/>
+                            <div class="col-md-12 col-sm-12 form-group">
+                                <label>Tồng tiền</label>
+                                <input class="form-control" readonly="readonly" style="color:red; font-size:14px; font-weight:bold; width:200px" value="0" id="txtTotalFee"/>
+                            </div>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </form>
+
+    <br style="clear:both;"/>
+    <hr/>
+    <div>
+        <h2>Danh mục xe đã đăng ký</h2>
+        <div >
+            <div >
+                <p>
+                    {%if totalpages%}
+                        {%for i in totalpages%}
+                            {%if pageindex%}
+                                {%ifequal i pageindex%}
+                                     <span class="pp">{{i}}</span>
+                                {%else%}
+                                    <a class="aa" onclick="aclick(this);">{{i}}</a>
+                                {%endifequal%}
+                            {%else%}
+                                <a class="aa" onclick="aclick(this);">{{i}}</a>
+                            {%endif%}
+                        {%endfor%}
+                    {%endif%}
+
+                </p>
+            </div>
+        </div>
+        <table class="grid">
+            <thead>
+            <tr>
+                 <th>Tên thẻ
+                    <input type="text" class="form-control searchcard" placeholder="Tìm kiếm thẻ xe" onkeyup="searchRegistration();"/>
+                </th>
+                <th>Khách hàng
+                    <input type="text" class="form-control searchcustomer" placeholder="Khách hàng" onkeyup="searchRegistration();"/>
+                </th>
+                <th>Chủ xe
+                    <input type="text" class="form-control searchdrive" placeholder="Người lái" onkeyup="searchRegistration();"/>
+                </th>
+                <th>Loại xe
+                    <input type="text" class="form-control searchvehecletype" placeholder="loại xe" onkeyup="searchRegistration();"/>
+                </th>
+                <th>Biển số
+                    <input ype="text" class="form-control searchveheclenumber" placeholder="Biển số" onkeyup="searchRegistration();"/>
+                </th>
+                <th>Nhãn hiệu</th>
+                <th>Ngày đăng ký</th>
+                <th>Ngày bắt đầu</th>
+                <th>Ngày hết hạn</th>
+                <th>Tình trạng
+                     <input type="text" class="form-control searchstatus" placeholder="Tình trạng" onkeyup="searchRegistration();"/>
+                </th>
+                <th>Số Phiếu thu
+                     <input type="text" class="form-control searchreceipt" placeholder="Số Phiếu thu" onkeyup="searchRegistration();"/>
+                </th>
+                <th>Số ngày
+                     <input type="text" class="form-control searchday" placeholder="Số ngày" onkeyup="searchRegistration();"/>
+                </th>
+                <th>Tổng phí
+
+                </th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody class="myBody">
+                 {%if registations%}
+                    {%for re in registations%}
+                        <tr>
+                            <td>{{re.card}}</td>
+                            <td>{{re.customer}}</td>
+                            <td>{{re.drivename}}</td>
+                            <td>{{re.vehecletype}}</td>
+                            <td>{{re.vehecelnumber}}</td>
+                            <td>{{re.veheclebrand}}</td>
+                            <td>{{re.registiondate}}</td>
+                            <td>{{re.startdate}}</td>
+                            <td>{{re.expiratedate}}</td>
+                            <td>{{re.status}}</td>
+                            <td>{{re.receipt_number}}</td>
+                            <td>{{re.duration}}</td>
+                            <td>{{re.totalfee}}</td>
+                            <td>
+                                <a onclick="
+                                    var w = (screen.width/2);
+                                    var h = (screen.height/2);
+                                    var top = h - h/2;
+                                    var left = w - w/2;
+                                    return !window.open(this.href, name, 'scrollbars=yes, resizable=yes, width='+w+', height='+h+ ', top='+top+', left='+left);"
+                                   style="font-size:120%; color: orange" class="fa fa-print" href="/pdf/ticket-payment/{{re.paymentid}}/1/?_popup=1"></a>
+                           </td>
+                        </tr>
+                    {%endfor%}
+                {%endif%}
+            </tbody>
+        </table>
+        <div >
+            <div >
+                <p>
+                    {%if totalpages%}
+                        {%for i in totalpages%}
+                            {%if pageindex%}
+                                {%ifequal i pageindex%}
+                                     <span class="pp">{{i}}</span>
+                                {%else%}
+                                    <a class="aa" onclick="aclick(this);">{{i}}</a>
+                                {%endifequal%}
+                            {%else%}
+                                <a class="aa" onclick="aclick(this);">{{i}}</a>
+                            {%endif%}
+                        {%endfor%}
+                    {%endif%}
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/static/jquery/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+<script src="/static/jquery/jquery.min.js" type="text/javascript"></script>
+
+
+<script src="/static/jquery/jquery.js"></script>
+<script src="/static/jquery/jquery.dataTables.min.js"></script>
+
+<script src="/static/jquery/jquery.min.js" type="text/javascript"></script>
+<script src="/static/jquery/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+
+<!--script for datimepicker-->
+<script src="/static/jquery/jquery.js"></script>
+<script src="/static/jquery/jquery.datetimepicker.js"></script>
+<script>
+   function regisAjax(){
+        $('.loading').show();
+        var cardnums = [];
+        var vehicletypes=[];
+        var feelevels=[];
+        var vehiclenums=[];
+        var vehiclepaints=[];
+        var vehiclebrands=[];
+        var drivenames=[];
+        var drivephones=[];
+        $('.bddetail').find('tr').each(
+            function(index,val){
+                //$(this).show();
+                var len = $(this).find('td:eq(3)').find('input').val().length;
+                if(len > 0 )//&& fee!='0')
+                {
+                    cardnums.push($(this).find('td:eq(0)').text());
+                    vehicletypes.push($(this).find('td:eq(1)').find('input:hidden').val());
+                    feelevels.push($(this).find('td:eq(2)').find('input:hidden').val());
+                    vehiclenums.push($(this).find('td:eq(3)').find('input').val());
+                    vehiclepaints.push($(this).find('td:eq(4)').find('input').val());
+                    vehiclebrands.push($(this).find('td:eq(5)').find('input').val());
+                    drivenames.push($(this).find('td:eq(6)').find('input').val());
+                    drivephones.push($(this).find('td:eq(7)').find('input').val());
+                }
+            }
+        );
+        //console.log(ids);
+        if(cardnums.length>0)
+        {
+        $.ajax({
+                 type:"POST",
+                 url:"/post/registry/",
+                 data: {
+                        'customer': $('#hdfCus').val(), // from form
+                        'staff':$('#hdfUser').val(),
+                        'fromdate':$('#txtfromdate').val(),
+                        'todate':$('#txttodate').val(),
+                        'cardnums[]':cardnums,
+                        'vehicletypes[]':vehicletypes,
+                        'feelevels[]':feelevels,
+                        'vehiclenums[]':vehiclenums,
+                        'vehiclepaints[]':vehiclepaints,
+                        'vehiclebrands[]':vehiclebrands,
+                        'drivenames[]':drivenames,
+                        'drivephones[]':drivephones
+                        },
+                 success: function(data){
+                     if(data=="not excute")
+                         alert('Không thể thực thi tại server. Vui lòng thử lại');
+                     else
+                     {
+                        hr="#";
+                        if(data=="onlyregis")
+                        {
+                            hr="/admin/vehecleregistry/?customer="+$('#hdfCus').val();
+                        }
+                        else
+                         {
+                            hr="/pdf/ticket-payment/"+data+"/";
+                         }
+                         alert('thêm mới thành công');
+                         console.log(data);
+                         window.location.href = hr;
+                     }
+                 },
+                 error:function(err)
+                 {
+                    alert('error');
+                    console.log(err);
+                 }
+            }).complete(function(){$('.loading').hide();});
+        }
+        else
+        {
+            $('.loading').hide();
+        }
+    }
+    function validatefrom()
+    {
+        if(validate())
+        {
+            var from=$('#txtfromdate').val();
+            $('.bddetail').find('tr').each(
+                function(index,val){
+                    $(this).find('td:eq(8)').text(from);
+                    calfee($(this).find('td:eq(3)').find('input'));
+                }
+            );
+        }
+        else
+        {
+            $('#txttodate').val('');
+            $('.bddetail').find('tr').each(
+                function(index,val){
+                    $(this).find('td:eq(9)').text('');
+                    calfee($(this).find('td:eq(3)').find('input'));
+                }
+            );
+        }
+    }
+    function validateto()
+    {
+         if(validate())
+         {
+            var from=$('#txtfromdate').val();
+            if(from.length==0)
+            {
+                $('#txttodate').val('');
+                $('.bddetail').find('tr').each(
+                    function(index,val){
+                        $(this).find('td:eq(9)').text('');
+                        calfee($(this).find('td:eq(3)').find('input'));
+                    }
+                );
+            }
+            else
+            {
+                var to=$('#txttodate').val();
+                $('.bddetail').find('tr').each(
+                    function(index,val){
+                        $(this).find('td:eq(9)').text(to);
+                        calfee($(this).find('td:eq(3)').find('input'));
+                    }
+                );
+            }
+         }
+         else
+         {
+            $('#txttodate').val('');
+            $('.bddetail').find('tr').each(
+                function(index,val){
+                    $(this).find('td:eq(9)').text('');
+                    calfee($(this).find('td:eq(3)').find('input'));
+                }
+            );
+         }
+    }
+    function validate()
+    {
+       var from=$('#txtfromdate').val();
+       if(from.length==0)
+       {
+            return true;
+       }
+       var to=$('#txttodate').val();
+       if(to.length==0)
+       {
+            return true;
+       }
+       else
+       {
+            var date=to.split("/");
+            var dd=date[0];
+            var mm=parseInt(date[1])-1;
+            var yy=date[2];
+            var datef=from.split("/");
+            var ddf=datef[0];
+            var mmf=parseInt(datef[1])-1;
+            var yyf=datef[2];
+            ddd=new Date(yyf,mmf,ddf);
+            if(new Date(yy,mm,dd)<=ddd)
+            {
+                ddd.setDate(ddd.getDate() + 1);
+                $('#txttodate').val(ddd.getDate() + '/' + ddd.getMonth() + '/' +  ddd.getYear())
+                $('#txttodate').focus();
+                alert('Ngày hết hạn phải lớn hơn ngày bắt đầu.');
+                return false;
+            }
+       }
+       return true;
+    }
+    function addregissss(){
+
+        var tr='';
+        var cus=$('#txtCustomer').val();
+
+        var cardno=$('#txtCard').val();
+
+        var feelv=$('#ddlFee').val();
+
+        var feelvText=$('#ddlFee option:selected').text();
+
+        var vtype=$('#ddlVehecle').val();
+
+        var vtypeText=$('#ddlVehecle option:selected').text();
+
+        if(cus!='' && cardno!='' && feelv!='' && vtype !='')
+        {
+            $('#txtCard').val('');
+            var con=1;
+            $('.bddetail').find('tr').each(
+                function(index,val){
+                    if($(this).find('td:eq(0)').text()==cardno)
+                    {
+                        con=0;
+                         return false;
+                    }
+                }
+            );
+            if(con==1)
+            {
+                //alert('456');
+
+                tr='<tr class="grey"><td>'+cardno+'</td>';
+                tr=tr+'<td><input type="hidden" value="'+vtype+'"/>'+vtypeText+'</td>';
+                tr=tr+'<td> <input type="hidden" value="'+feelv+'"/>'+feelvText+'</td>';
+                tr=tr+'<td class="reddd"><input  onchange="changevehiclenum(this);"  type="text" class="form-control reddd"/></td>'
+                tr=tr+'<td><input  type="text" class="form-control"/></td>'
+                tr=tr+'<td><input  type="text" class="form-control"/></td>'
+                tr=tr+'<td class="reddd"><input onchange="changevehiclenum(this);"  type="text" class="form-control reddd"/></td>'
+                tr=tr+'<td><input  type="text" class="form-control"/></td>'
+                tr=tr+'<td>'+$('#txtfromdate').val()+'</td>'
+                tr=tr+'<td>'+$('#txttodate').val()+'</td>'
+                tr=tr+'<td style="color:red;font-size:14;font-weight:bold;">0</td>'
+                tr=tr+'<td><input  type="button" class="link" value="hủy" onclick="delrowsss(this);"/></td></tr>'
+                //alert(tr);
+                $('.bddetail').append(tr);
+            }
+        }
+    }
+    var from='';
+    var to='';
+    var feemonth='0';
+    var fee='0'
+    function calfee(elm){
+         var fromdate = $('#txtfromdate').val();
+         var todate = $('#txttodate').val();
+
+         if(fromdate.length>0 && todate.length>0)
+         {
+            var splstr=$(elm).parent('td').parent('tr').find('td:eq(2)').text().split(' - ');
+            var fm=splstr[splstr.length-1];
+             var date=fromdate.split("/");
+             var dd=date[0];
+             var mm=date[1];
+             var yy=date[2];
+             fromdate=dd+mm+yy;
+             date=todate.split("/");
+             dd=date[0];
+             mm=date[1];
+             yy=date[2];
+             todate=dd+mm+yy;
+            if(fromdate==from && todate==to && fm==feemonth)
+            {
+               $(elm).parent('td').parent('tr').find('td:eq(10)').text(fee);
+               caltotalfee();
+            }
+            else
+            {
+                $.ajax({
+                    type:"GET",
+                    url: "/get/get_fee/"+fromdate+"/"+todate+"/"+fm+"/",
+                    success: function( data )
+                    {
+                        $(elm).parent('td').parent('tr').find('td:eq(10)').text(data);
+                        from=fromdate;
+                        to= todate;
+                        feemonth=fm;
+                        fee=data;
+                        caltotalfee();
+                    },
+                    error:function(err)
+                    {
+                         $(elm).parent('td').parent('tr').find('td:eq(10)').text('0');
+                         caltotalfee();
+                    }
+                 });
+            }
+         }
+         else
+         {
+            $(elm).parent('td').parent('tr').find('td:eq(10)').text('0');
+            caltotalfee();
+         }
+    }
+    function changevehiclenum(elm){
+         if($(elm).val().length==0)
+         {
+            $(elm).parent('td').addClass('reddd');
+            $(elm).parent('td').parent('tr').addClass('grey');
+         }
+         else
+         {
+             $(elm).parent('td').removeClass('reddd');
+             $(elm).parent('td').parent('tr').removeClass('grey');
+
+             //
+         }
+         calfee(elm);
+         chkrg();
+    }
+    function caltotalfee(){
+         var ttf=0;
+         $('.bddetail').find('tr').each(
+            function(index,val){
+                if($(this).find('td:eq(3)').find('input').val().length>0)
+                {
+                   ttf=ttf+parseInt($(this).find('td:eq(10)').text());
+                }
+            }
+        );
+        $('#txtTotalFee').val(ttf);
+    }
+    function chkrg(){
+         var con=1;
+         $('.bddetail').find('tr').each(
+            function(index,val){
+                if($(this).find('td:eq(3)').find('input').val().length>0 && $(this).find('td:eq(6)').find('input').val().length>0)
+                {
+                    con=0;
+                    return false;
+                }
+            }
+        );
+        if(con==1)
+        {
+            $('#txtajax').addClass('hide');
+        }
+        else
+        {
+            $('#txtajax').removeClass('hide');
+        }
+    }
+    function delrowsss(elm){
+        $(elm).parent('td').parent('tr').remove();
+        chkrg();
+        caltotalfee();
+    }
+    function aclick(el)
+    {
+        var page = $(el).text();
+        var cus=$('#hdfCus').val();
+        window.location.href = "/admin/vehecleregistry/?customer="+cus+"&pageindex="+page;
+    }
+    function searchRegistration(){
+        var s0, s1,s2,s3,s4,s5,s6,s7,cp0,cp1,cp2,cp3,cp4,cp5,cp6,cp7;
+        s0= $('.searchcard').val();
+        s1= $('.searchcustomer').val();
+        s2= $('.searchdrive').val();
+        s3= $('.searchvehecletype').val();
+        s4= $('.searchveheclenumber').val();
+        s5= $('.searchstatus').val();
+        s6= $('.searchreceipt').val();
+        s7= $('.searchday').val();
+        $(".myBody > tr").each(function()
+        {
+          cp0=$(this).find('td:eq(0)').text();
+          cp1=$(this).find('td:eq(1)').text();
+          cp2=$(this).find('td:eq(2)').text();
+          cp3=$(this).find('td:eq(3)').text();
+          cp4=$(this).find('td:eq(4)').text();
+          cp5=$(this).find('td:eq(9)').text();
+          cp6=$(this).find('td:eq(10)').text();
+          cp7=$(this).find('td:eq(11)').text();
+          if (cp0.toUpperCase().includes(s0.toUpperCase()) && cp1.toUpperCase().includes(s1.toUpperCase()) && cp2.toUpperCase().includes(s2.toUpperCase())
+            && cp3.toUpperCase().includes(s3.toUpperCase())&& cp4.toUpperCase().includes(s4.toUpperCase())
+            && cp5.toUpperCase().includes(s5.toUpperCase()) && cp6.toUpperCase().includes(s6.toUpperCase()) && cp7.toUpperCase().includes(s7.toUpperCase())
+          )
+          {
+            $(this).show();
+          }
+          else {
+            $(this).hide();
+          }
+        });
+    }
+    function filterCard(element)
+    {
+         $('.loading').show();
+        $('.card-num').show();
+        var value = $(element).val().toUpperCase();
+        var i=0;
+        $(".card-num > li").each(function()
+            {
+              i++;
+              if(i>15000)
+                return false;
+              if ($(this).text().toUpperCase().includes(value)){
+                $(this).show();
+              }
+              else {
+                $(this).hide();
+              }
+            });
+         $('.loading').hide();
+    }
+    function sowListCard(element){
+        filterCard(element);
+        $('.card-num').toggle();
+    }
+    function selectCard(element)
+    {
+        $('.card-num').hide();
+
+        $('.txt-card').val( $(element).text());
+    }
+    function filterCus(element)
+    {
+        $('.customer-lst').show();
+        var value = $(element).val().toUpperCase();
+        var i=0;
+        $(".customer-lst > li").each(function()
+            {
+              i++;
+              if(i>5000)
+                return false;
+              if ($(this).text().toUpperCase().includes(value)){
+                $(this).show();
+              }
+              else {
+                $(this).hide();
+              }
+            });
+    }
+
+    function sowListCus(element){
+        filterCard(element);
+        $('.customer-lst').toggle();
+    }
+    function selectCus(element)
+    {
+        $('.customer-lst').hide();
+
+        $('.txt-cus').val( $(element).text());
+    }
+    function validateform()
+    {
+       var valcus = $('#txtCustomer').val();
+        if(valcus.length==0)
+        {
+            alert('Vui lòng chọn khách hàng hợp lệ.');
+            $('#txtCustomer').focus();
+            return false;
+        }
+        var rescus =false;
+        $(".customer-lst > li").each(function()
+            {
+              if ($(this).text()==valcus){
+                rescus=true;
+                return false;
+              }
+            });
+        if(rescus==false)
+        {
+            alert('Vui lòng chọn khách hàng hợp lệ.');
+            $('#txtCustomer').focus();
+            return false;
+        }
+        var value = $('#txtCard').val();
+        if(value.length==0)
+        {
+            alert('Vui lòng chọn số thẻ hợp lệ.');
+            $('#txtCard').focus();
+            return false;
+        }
+        var res =false;
+        $(".card-num > li").each(function()
+            {
+              if ($(this).text()==value){
+                res=true;
+                return false;
+              }
+            });
+        if(res==false)
+        {
+            alert('Vui lòng chọn số thẻ hợp lệ.');
+            $('#txtCard').focus();
+            return false;
+        }
+       var licence=$('#txtLicience').val();
+       if(licence.length==0)
+       {
+            alert('Vui lòng nhập biển số xe.')
+            $('#txtLicience').focus();
+            return false;
+       }
+       var from=$('#datetimepicker_start').val();
+       if(from.length==0)
+       {
+            alert('Vui lòng chọn ngày bắt đầu.')
+            $('#datetimepicker_start').focus();
+            return false;
+       }
+
+       var to=$('#datetimepicker_end').val();
+       if(to.length==0)
+       {
+            alert('Vui lòng chọn ngày hết hạn.')
+            $('#datetimepicker_end').focus();
+            return false;
+       }
+       else
+       {
+            var date=to.split("/");
+            var dd=date[0];
+            var mm=parseInt(date[1])-1;
+            var yy=date[2];
+            var datef=from.split("/");
+            var ddf=datef[0];
+            var mmf=parseInt(datef[1])-1;
+            var yyf=datef[2];
+            ddd=new Date(yyf,mmf,ddf);
+            if(new Date(yy,mm,dd)<=ddd)
+            {
+                ddd.setDate(ddd.getDate() + 1);
+                $('#datetimepicker_end').val(ddd.getDate() + '/' + ddd.getMonth() + '/' +  ddd.getYear())
+                $('#datetimepicker_end').focus();
+                alert('Ngày hết hạn phải lớn hơn ngày bắt đầu.');
+                return false;
+            }
+       }
+       return true;
+    }
+    function showAddAnotherPopup(href)
+    {
+
+        var w = (screen.width/2);
+        var h = (screen.height/2);
+
+        var top = h - h/2;
+        var left = w - w/2;
+
+        console.log(href);
+        return !window.open(href, '', 'scrollbars=yes, resizable=yes, width='+w+', height='+h+ ', top='+top+', left='+left);
+    }
+    jQuery('#datetimepicker_start').datetimepicker({
+        format:'d/m/Y',
+        timepicker:false,
+        lang:'vi',
+        i18n:{
+            vi:{
+                months:[
+                    'Tháng Một','Tháng Hai','Tháng Ba','Tháng Tư',
+                    'Tháng Năm','Tháng Sáu','Tháng Bảy','Tháng Tám',
+                    'Tháng Chín','Tháng Mười','Tháng Mười Một','Tháng Mười Hai',
+                    ],
+                dayOfWeek:[
+                    "Chủ Nhật", "Hai", "Ba", "Tư",
+                    "Năm", "Sáu", "Bảy.",
+                ]
+            }
+        }
+//        onShow:function( ct ){
+//            this.setOptions({
+//                maxDate:jQuery('#datetimepicker_end').val()?jQuery('#datetimepicker_end').val():false
+//            })
+//        }
+    });
+    jQuery('#datetimepicker_end').datetimepicker({
+        format:'d/m/Y',
+        timepicker:false,
+        lang:'vi',
+        i18n:{
+            vi:{
+                months:[
+                    'Tháng Một','Tháng Hai','Tháng Ba','Tháng Tư',
+                    'Tháng Năm','Tháng Sáu','Tháng Bảy','Tháng Tám',
+                    'Tháng Chín','Tháng Mười','Tháng Mười Một','Tháng Mười Hai',
+                    ],
+                dayOfWeek:[
+                    "Chủ Nhật", "Hai", "Ba", "Tư",
+                    "Năm", "Sáu", "Bảy.",
+                ]
+            }
+        },
+        onShow:function( ct ){
+            this.setOptions({
+
+            })
+        }
+    });
+    jQuery('.fromdate').datetimepicker({
+        format:'d/m/Y',
+        timepicker:false,
+        lang:'vi',
+        i18n:{
+            vi:{
+                months:[
+                    'Tháng Một','Tháng Hai','Tháng Ba','Tháng Tư',
+                    'Tháng Năm','Tháng Sáu','Tháng Bảy','Tháng Tám',
+                    'Tháng Chín','Tháng Mười','Tháng Mười Một','Tháng Mười Hai',
+                    ],
+                dayOfWeek:[
+                    "Chủ Nhật", "Hai", "Ba", "Tư",
+                    "Năm", "Sáu", "Bảy.",
+                ]
+            }
+        },
+        onShow:function( ct ){
+            this.setOptions({
+
+            })
+        }
+    });
+    jQuery('.todate').datetimepicker({
+        format:'d/m/Y',
+        timepicker:false,
+        lang:'vi',
+        i18n:{
+            vi:{
+                months:[
+                    'Tháng Một','Tháng Hai','Tháng Ba','Tháng Tư',
+                    'Tháng Năm','Tháng Sáu','Tháng Bảy','Tháng Tám',
+                    'Tháng Chín','Tháng Mười','Tháng Mười Một','Tháng Mười Hai',
+                    ],
+                dayOfWeek:[
+                    "Chủ Nhật", "Hai", "Ba", "Tư",
+                    "Năm", "Sáu", "Bảy.",
+                ]
+            }
+        },
+        onShow:function( ct ){
+            this.setOptions({
+
+            })
+        }
+    });
+
+
+</script>
+
+<script>
+    $(document).ready(function () {
+        var table = $('#datatable').dataTable( {
+            "order": [[0, "asc"]],
+            "iDisplayLength" : 50,
+            "oLanguage": {
+                "sProcessing":   "Đang xử lý...",
+                "sLengthMenu":   "Xem _MENU_ mục",
+                "sZeroRecords":  "Không tìm thấy dòng nào phù hợp",
+                "sInfo":         "Đang xem _START_ đến _END_ trong tổng số _TOTAL_ mục",
+                "sInfoEmpty":    "Đang xem 0 đến 0 trong tổng số 0 mục",
+                "sInfoFiltered": "(được lọc từ _MAX_ mục)",
+                "sInfoPostFix":  "",
+                "sSearch":       "",
+                "sUrl":          "",
+                "oPaginate": {
+                "sFirst":    "Đầu",
+                 "sPrevious": "Trước ",
+                 "sNext":     " Sau",
+                 "sLast":     "Cuối"
+                 }
+            }
+        } );
+    });
+
+    var $j = jQuery.noConflict();
+    $j(function() {
+        $j("#card_label").autocomplete({
+            source: "/admin/get_card_labels"
+            });
+        });
+</script>
+<script>
+    $(document).ready(function () {
+       var startdate = $('#datetimepicker_start')
+    });
+</script>
+
+{% endblock %}

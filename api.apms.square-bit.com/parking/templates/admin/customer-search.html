@@ -1,0 +1,231 @@
+{% extends "admin/base.html" %}
+{% block title %}
+| Tìm kiếm khách hàng
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+    xmlns="http://www.w3.org/1999/html">
+</h1>
+{% endblock %}
+
+{% block extrahead %}
+
+<link rel="stylesheet" type="text/css" href="/static/css/page.css"/>
+<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/static/css/jquery.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="/static/css/1.8.18/jquery-ui.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="/static/css/greenparking.css">
+{% endblock %}
+
+{% block content %}
+<div class="containerRPS">
+
+    <h2>Tìm kiếm khách hàng</h2>
+    <form method="post" id="formRPS">
+        {% csrf_token %}
+
+        <div class="form-field">
+            <label>Thẻ</label>
+
+            <div>
+                <input style="height: 30px; width: 150px;" type="text"
+                       placeholder="Mã thẻ, tên thẻ"
+                       id="card_query" name="card_query" value="{{card_query}}"/>
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label>Tòa nhà</label>
+
+            <div>
+                <input style="height: 30px; width: 150px;" type="text"
+                       placeholder="Tên, địa chỉ tòa nhà"
+                       id="building_query" name="building_query" value="{{building_query}}"/>
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label>Căn hộ</label>
+
+
+            <div>
+                <input style="height: 30px; width: 150px;" type="text"
+                       placeholder="Căn hộ: địa chỉ, tên, sđt chủ hộ"
+                       name="apartment_query" value="{{apartment_query}}"/>
+            </div>
+        </div>
+
+
+
+        <div class="form-field">
+            <label>Tên công ty</label>
+
+            <div>
+                <input style="height: 30px; width: 150px;" type="text"
+                       placeholder="Tên công ty"
+                       name="company_name" value="{{company_name}}"/>
+            </div>
+        </div>
+
+        <br style="clear:both;"/>
+
+        <div class="form-field">
+            <label>Biển số xe</label>
+
+            <div>
+                <input style="height: 30px; width: 150px;" type="text"y
+                       placeholder="Biển số"
+                       name="vehicle_number" value="{{vehicle_number}}"/>
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label>Tên khách hàng</label>
+
+            <div>
+                <input style="height: 30px; width: 150px;" type="text"
+                       placeholder="Tên khách hàng"
+                       name="customer_name" value="{{customer_name}}"/>
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label>Nhóm khách hàng</label>
+            <div>
+            {% if customer_type_data %}
+            <select title="Nhom khach hang" name="customer_type" style="height: 30px; width: 150px;">
+                {% for item in customer_type_data %}
+                    {% if item.value == customer_type %}
+                    <option name="vehicle_type" value="{{item.value}}" selected>{{item.name}}</option>
+                    {% else %}
+                    <option name="vehicle_type" value="{{item.value}}">{{item.name}}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+            {% endif %}
+                </div>
+        </div>
+
+        <br style="clear:both;"/>
+
+        <div class="form-field">
+            <button class="form-field my-button-color" type="submit" name="btn_SEARCH" style="text-align: center;height: 30px; width: 150px; color: white; font-weight:bold; margin-top: 8px;">
+                Tìm kiếm
+            </button>
+        </div>
+        <div class="form-field">
+            <a id="dlink"  style="display:none;"></a>
+            <button class="form-field my-button-color" type="submit" name="btn_EXPORT" style="text-align: center;height: 30px; width: 150px; color: white; font-weight:bold; margin-top: 8px; margin-left:3px;">
+                Xuất Excel
+            </button>
+        </div>
+    </form>
+
+    <br style="clear:both;"/>
+    <br/>
+    <div class="containerRPS">
+    <table id="datatable">
+        <thead>
+        <tr>
+            <th style="width:300px">Tên khách hàng</th>
+            <th>Biển số xe</th>
+            <th style="width:90px">Loại xe</th>
+            <th>Tình trạng</th>
+            <th>Loại khách hàng</th>
+            <th>Căn hộ</th>
+            <th>Tòa nhà</th>
+            <th>Công ty</th>
+            <th style="width:90px">Gia hạn</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% if customer_data %}
+        {% for item in customer_data %}
+        <tr>
+            <td style="width:250px"><a href="/admin/parking/customer/{{item.customer.id}}" target='_blank' style='vertical-align: top;font-weight: bold;'>{{ item.customer.name }}</a></td>
+            <td><p style="width:200px">{{ item.vehicle_number }}</p></td>
+            <td>{{ item.vehicle_type }}</td>
+            <td>{{ item.vehicle_status }}</td>
+            <td>{{ item.customer_type }}</td>
+            <td>{{ item.apartment }}</td>
+            <td>{{ item.building }}</td>
+            <td>{{ item.company }}</td>
+            <td><div style="text-align: center"><a class="fa fa-money" onclick="var w = (screen.width/2); var h = (screen.height/2); var top = h - h/2; var left = w - w/2; return !window.open(href, name, 'scrollbars=yes, resizable=yes, width='+w+', height='+h+ ', top='+top+', left='+left);" href="/admin/parking/ticketpayment/add/?customer={{item.customer.id}}&view_customer_search=1&_popup=1" target='_blank' style='text-decoration:underline'></a></div></td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+        </tbody>
+           </table>
+        </div>
+</div>
+
+
+<script src="/static/jquery/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+<script src="/static/jquery/jquery.min.js" type="text/javascript"></script>
+
+
+<script src="/static/jquery/jquery.js"></script>
+<script src="/static/jquery/jquery.dataTables.min.js"></script>
+
+<script src="/static/jquery/jquery.min.js" type="text/javascript"></script>
+<script src="/static/jquery/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+
+<script>
+    $(document).ready(function () {
+        var table = $('#datatable').dataTable( {
+            "order": [[0, "asc"]],
+            "iDisplayLength" : 25,
+            "oLanguage": {
+                "sProcessing":   "Đang xử lý...",
+                "sLengthMenu":   "Xem _MENU_ mục",
+                "sZeroRecords":  "Không tìm thấy dòng nào phù hợp",
+                "sInfo":         "Đang xem _START_ đến _END_ trong tổng số _TOTAL_ mục",
+                "sInfoEmpty":    "Đang xem 0 đến 0 trong tổng số 0 mục",
+                "sInfoFiltered": "(được lọc từ _MAX_ mục)",
+                "sInfoPostFix":  "",
+                "sSearch":       "",
+                "sUrl":          "",
+                "oPaginate": {
+                "sFirst":    "Đầu",
+                 "sPrevious": "Trước ",
+                 "sNext":     " Sau",
+                 "sLast":     "Cuối"
+                 }
+            }
+        } );
+    });
+
+    var $j = jQuery.noConflict();
+    $j(function() {
+        $j("#card_label").autocomplete({
+            source: "/admin/get_card_labels"
+
+            });
+        });
+</script>
+
+<script>
+    function showAddAnotherPopup2(triggeringLink) {
+        var name = triggeringLink.id.replace(/^add_/, '');
+        name = id_to_windowname(name);
+        href = triggeringLink.href
+        if (href.indexOf('?') == -1) {
+            href += '?_popup=1';
+        } else {
+            href  += '&_popup=1';
+        }
+        //var win = window.open(href, name, 'height=500,width=800,resizable=yes,scrollbars=yes');
+        var w = (screen.width/2);
+        var h = (screen.height/2);
+
+        var top = h - h/2;
+        var left = w - w/2;
+
+        var win = window.open(href, name, 'scrollbars=yes, resizable=yes, width='+w+', height='+h+ ', top='+top+', left='+left);
+
+        win.focus();
+        return false;
+    }
+</script>
+{% endblock %}
