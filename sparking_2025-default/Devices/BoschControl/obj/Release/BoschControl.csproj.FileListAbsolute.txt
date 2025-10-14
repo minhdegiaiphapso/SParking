@@ -1,0 +1,26 @@
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\BoschControl\bin\Release\BoschControl.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\BoschControl\bin\Release\BoschControl.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\BoschControl\bin\Release\Bosch.VideoSDK.AxCameoLib.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\BoschControl\bin\Release\Bosch.VideoSDK.CameoLib.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\BoschControl\bin\Release\Bosch.VideoSDK.GCALib.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\BoschControl\bin\Release\stdole.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\BoschControl\obj\Release\BoschControl.csproj.AssemblyReference.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\BoschControl\obj\Release\BoschControl.CamCtrol.resources
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\BoschControl\obj\Release\BoschControl.csproj.GenerateResource.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\BoschControl\obj\Release\BoschControl.csproj.CoreCompileInputs.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\BoschControl\obj\Release\BoschControl.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\BoschControl\obj\Release\BoschControl.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\BoschControl\obj\Release\BoschCon.01DC209B.Up2Date
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\BoschControl\bin\Release\BoschControl.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\BoschControl\bin\Release\BoschControl.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\BoschControl\bin\Release\Bosch.VideoSDK.AxCameoLib.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\BoschControl\bin\Release\Bosch.VideoSDK.CameoLib.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\BoschControl\bin\Release\Bosch.VideoSDK.GCALib.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\BoschControl\bin\Release\stdole.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\BoschControl\obj\Release\BoschControl.csproj.AssemblyReference.cache
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\BoschControl\obj\Release\BoschControl.CamCtrol.resources
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\BoschControl\obj\Release\BoschControl.csproj.GenerateResource.cache
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\BoschControl\obj\Release\BoschControl.csproj.CoreCompileInputs.cache
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\BoschControl\obj\Release\BoschCon.01DC209B.Up2Date
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\BoschControl\obj\Release\BoschControl.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\BoschControl\obj\Release\BoschControl.pdb

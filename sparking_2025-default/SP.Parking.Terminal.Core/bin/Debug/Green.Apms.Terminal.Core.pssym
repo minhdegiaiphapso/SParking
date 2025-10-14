@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbols LinesOfCode="15003" PostSharpLinesOfCode="0" EnhancedTypesCount="2" SchemaVersion="1" PostSharpVersion="5.0.30.0" xmlns="http://schemas.postsharp.org/2.0/symbols">
+  <Class Class="#1=T:[PostSharp]PostSharp.Serialization.PSerializableAttribute">
+    <Instance Declaration="#2=T:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.Utilities.SerilogTraceAttribute" Id="1318d0fca652ed32">
+      <Target />
+    </Instance>
+  </Class>
+  <Class Class="#2">
+    <Instance Declaration="#3=M:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.ViewModels.CheckInLaneViewModel::Start()" Id="1318d0fc0a785447">
+      <Target>
+        <JoinPoint Description="#4=Wrapped by advice(s) OnEntry, OnSuccess, OnException, OnExit" Ordinal="0" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#5=M:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.ViewModels.CheckInLaneViewModel::HandleCheckIn([Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.Models.CheckIn, System.Action{[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.Models.CheckIn,[mscorlib]System.Exception})" Id="1318d0fc476f962a">
+      <Target>
+        <JoinPoint Description="#4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#6=M:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.ViewModels.CheckInLaneViewModel::AffterProcess([Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.Models.CheckIn)" Id="1318d0fc9aea932a">
+      <Target>
+        <JoinPoint Description="#4" Ordinal="2" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#7=M:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.ViewModels.CheckInLaneViewModel::RecognizePlate([Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.Models.CheckIn)" Id="1318d0fc23330198">
+      <Target>
+        <JoinPoint Description="#4" Ordinal="3" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#8=M:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.ViewModels.CheckInLaneViewModel::CheckIn([Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.Models.CheckIn, System.Action{[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.Models.CheckIn,[mscorlib]System.Exception})" Id="1318d0fc4c65bea1">
+      <Target>
+        <JoinPoint Description="#4" Ordinal="4" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#9=M:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.ViewModels.CheckInLaneViewModel::OpenBarrier()" Id="1318d0fcfa40a9c1">
+      <Target>
+        <JoinPoint Description="#4" Ordinal="5" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#10=M:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.ViewModels.CheckInLaneViewModel::ProcessAfterCheckInSuccess([Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.Models.CheckIn, [Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.Models.CheckIn)" Id="1318d0fc1c19970f">
+      <Target>
+        <JoinPoint Description="#4" Ordinal="6" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#11=M:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.ViewModels.CheckInLaneViewModel::GreenHandButtonClicked(System.Object, Green.Devices.Dal.GreenHandButtonEventArgs)" Id="1318d0fcab67efe2">
+      <Target>
+        <JoinPoint Description="#4" Ordinal="7" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#12=M:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.ViewModels.CheckInLaneViewModel::HandForcedBarier()" Id="1318d0fc6205ea1d">
+      <Target>
+        <JoinPoint Description="#4" Ordinal="8" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#13=M:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.ViewModels.CheckInLaneViewModel::GreenReadingCompleted(System.Object, Green.Devices.Dal.GreenCardReaderEventArgs)" Id="1318d0fc6f24c83c">
+      <Target>
+        <JoinPoint Description="#4" Ordinal="9" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#14=M:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.ViewModels.CheckInLaneViewModel::GreenTakingOffCompleted(System.Object, Green.Devices.Dal.GreenCardReaderEventArgs)" Id="1318d0fcc7e51e80">
+      <Target>
+        <JoinPoint Description="#4" Ordinal="10" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#15=M:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.ViewModels.CheckInLaneViewModel::UpdateCheckIn([Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.Models.CheckIn, System.Action{[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.Models.CheckIn,[mscorlib]System.Exception})" Id="1318d0fc4ca2da28">
+      <Target>
+        <JoinPoint Description="#4" Ordinal="11" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#16=M:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.ViewModels.CheckInLaneViewModel::ForcedBarier(System.String)" Id="1318d0fc35a3f689">
+      <Target>
+        <JoinPoint Description="#4" Ordinal="12" />
+      </Target>
+    </Instance>
+    <Instance Declaration="#17=M:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.ViewModels.CheckInLaneViewModel::CancelCheckIn()" Id="1318d0fc01791515">
+      <Target>
+        <JoinPoint Description="#4" Ordinal="13" />
+      </Target>
+    </Instance>
+  </Class>
+  <Annotation Target="#18=M:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.Utilities.SerilogTraceAttribute::OnEntry(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#19=2" Description="#20=PostSharp estimates that 2 line(s) of code are saved every time this advice is applied. Use the [LinesOfCodeAvoided] attribute on the aspect or specify the LinesOfCodeAvoided property on the advice attribute to override this value." />
+  <Annotation Target="#21=M:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.Utilities.SerilogTraceAttribute::OnSuccess(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#19" Description="#20" />
+  <Annotation Target="#22=M:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.Utilities.SerilogTraceAttribute::OnExit(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#19" Description="#20" />
+  <Annotation Target="#23=M:[Green.Apms.Terminal.Core]Green.Apms.Terminal.Core.Utilities.SerilogTraceAttribute::OnException(PostSharp.Aspects.MethodExecutionArgs)" Arguments="#19" Description="#20" />
+</Symbols>

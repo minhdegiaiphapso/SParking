@@ -1,0 +1,191 @@
+﻿<controls:MetroWindow x:Class="SP.Parking.Terminal.Wpf.MainWindow"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                      xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+                      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+                      KeyUp="MetroWindow_KeyUp"
+                      WindowState="Maximized"
+                      IgnoreTaskbarOnMaximize="True"
+                      
+                      Icon="vietpark_icon.ico" 
+                      TitleBarHeight="40" 
+                      ShowMaxRestoreButton="False" 
+                      ShowCloseButton="False" 
+                      ShowMinButton="False" 
+                      Background="White"
+                      
+                      
+                      >
+    <!--Topmost="True"-->
+    <!--<controls:MetroWindow.WindowButtonCommands>
+        <controls:WindowButtonCommands/>
+    </controls:MetroWindow.WindowButtonCommands>-->
+    <controls:MetroWindow.IconTemplate>
+        <DataTemplate>
+            <Image 
+                Source="sparking-logo.png" 
+                Height="30" 
+                Margin="30 0 20 0"
+                >
+            </Image>
+        </DataTemplate>
+    </controls:MetroWindow.IconTemplate>
+    <controls:MetroWindow.TitleTemplate>
+        <DataTemplate>
+            <Image Source="sparking_menubar.png" Height="30" 
+                   Cursor="Hand"
+                   ToolTip="PMS 22.2.22"></Image><!--MouseDown="Image_MouseDown_1"-->
+            
+        </DataTemplate>
+    </controls:MetroWindow.TitleTemplate>
+    <controls:MetroWindow.LeftWindowCommands >
+        <controls:WindowCommands>
+            <Label Name="lblTime" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="19" Foreground="White" FontWeight="Regular" Content="01/01/2014  00:00 AM"/>
+            
+        </controls:WindowCommands>
+    </controls:MetroWindow.LeftWindowCommands>
+
+    <controls:MetroWindow.RightWindowCommands>
+        <controls:WindowCommands SeparatorHeight="40">
+           
+            <!--#region Old ver -->
+            <!--<Button Name="primaryServer" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Máy chủ chính*" Foreground="Black" FontWeight="Bold" FontSize="20" Click="primaryServer_Click"/>
+            <Button Name="secondaryServer" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Máy chủ phụ*" Foreground="Black" FontSize="14" Click="secondaryServer_Click"/>-->
+            
+            <!--<Button Name="btnAbout" HorizontalAlignment="Right" VerticalAlignment="Center" Content="About" FontSize="14" Foreground="Pink" Click="btnAbout_Click"/>-->
+            <!--<Button Click="ButtonConfigClick"
+                    ToolTip="CẤU HÌNH HỆ THỐNG">
+                <Rectangle Width="22"
+                           Height="22"
+                           Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Uniform"
+                                     Visual="{StaticResource appbar_settings}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+            </Button>
+
+            --><!--find images view--><!--
+            <Button Click="ButtonFindClick"
+                    ToolTip="TÌM KIẾM">
+                <Rectangle Width="22"
+                           Height="22"
+                           Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Uniform"
+                                     Visual="{StaticResource appbar_magnify}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+            </Button>
+            <Button x:Name="Refreshcardreader"  Click="Refreshcardreader_Click"
+                     ToolTip="KẾT NỐI LẠI ĐẦU ĐỌC THẺ">
+                <Rectangle Width="22"
+                           Height="22"
+                           Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Uniform"
+                                     Visual="{StaticResource appbar_refresh}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+            </Button>
+            --><!--statistics view--><!--
+            <Button Click="ButtonStatisticsClick" Visibility="Hidden"
+                    ToolTip="THỐNG KÊ">
+                <Rectangle Width="22"
+                           Height="22"
+                           Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Uniform"
+                                     Visual="{StaticResource appbar_book_perspective_help}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+            </Button>-->
+            <!--#endregion-->
+            
+            <StackPanel Orientation="Horizontal" Margin="10 0 0 0">
+                <Button Margin="-5 0 10 0" Cursor="Hand" ToolTip="Alarm">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Alarms" Foreground="White" Margin="0 8 5 0" FontSize="16" ></Label>
+                        <iconPacks:PackIconBootstrapIcons Kind="PhoneVibrate"  Height="40" Width="30"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 0 10 0">
+                <!--<Button Content="{iconPacks:FontAwesome SyncAltSolid, Height=50, Width=20}" Foreground="White" Margin="0 0 5 0" Cursor="Hand" ToolTip="Reconnect Reader"  Click="Refreshcardreader_Click"/>-->
+
+                <Menu IsMainMenu="True" Background="{StaticResource VietPark.Brushes.WayIn}">
+                    <MenuItem Width="50" Height="50" VerticalAlignment="Center" Margin="5 0 0 0">
+                        <MenuItem.Icon>
+                            <materialDesign:PackIcon
+                                Kind="MenuOpen"
+                                VerticalAlignment="Center" HorizontalAlignment="Center"
+                                Foreground="White" Height="20" Width="20"/>
+                        </MenuItem.Icon>
+                        <MenuItem Name="primaryServer" Header="{StaticResource button.server1}" Click="primaryServer_Click" Foreground="White">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="ServerNetwork"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Name="secondaryServer" Header="{StaticResource button.server2}" Click="secondaryServer_Click" Foreground="White">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="ServerNetwork" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator />
+                        <MenuItem Header="{StaticResource button.reconnect-reader}" Click="Refreshcardreader_Click" Foreground="White">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="Refresh" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator />
+                        <MenuItem Header="{StaticResource button.config}" Click="btnConfig_Click" Foreground="White">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon Kind="Cog" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+                    
+                </Menu>
+
+                <!--<Button Content="{iconPacks:FontAwesome CogSolid, Height=50, Width=20}" Foreground="White" Margin="-5 0 0 0" Name="btnConfig" Click="btnConfig_Click" Cursor="Hand" ToolTip="Config"/>-->
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 0 20 0">
+                <Button x:Name="btnMin" Content="{iconPacks:FontAwesome MinusSolid, Height=40, Width=15}" Foreground="White" Click="btnMin_Click" Cursor="Hand" ToolTip="Minimize"/>
+                <Button x:Name="btnClose" Content="{iconPacks:FontAwesome PowerOffSolid, Height=40, Width=20}" Foreground="White" Margin="-5 0 0 0" Click="btnClose_Click" Cursor="Hand" ToolTip="Close"/>
+            </StackPanel>
+           
+        </controls:WindowCommands>
+    </controls:MetroWindow.RightWindowCommands>
+
+    <controls:MetroWindow.Flyouts>
+        <controls:FlyoutsControl>
+            <controls:Flyout Header="Modal"
+                             Position="Right"
+                             IsModal="True">
+                <StackPanel Height="80"
+                            Margin="5,5,5,5"
+                            Orientation="Horizontal">
+                    <TextBlock>Modal Flyout</TextBlock>
+                </StackPanel>
+            </controls:Flyout>
+        </controls:FlyoutsControl>
+    </controls:MetroWindow.Flyouts>
+    <Grid x:Name="MainView"
+          Focusable="True">
+        
+    </Grid>
+    <!--<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid x:Name="MainView"
+          Focusable="True">
+
+        </Grid>
+        <Grid x:Name="grdCam" Grid.Row="1" Loaded="grdCam_Loaded">
+            <WindowsFormsHost x:Name="host"></WindowsFormsHost>
+        </Grid>
+    </Grid>-->
+</controls:MetroWindow>

@@ -1,0 +1,12 @@
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Sharp7\bin\Release\Sharp7.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Sharp7\bin\Release\Sharp7.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Sharp7\obj\Release\Sharp7.csproj.AssemblyReference.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Sharp7\obj\Release\Sharp7.csproj.CoreCompileInputs.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Sharp7\obj\Release\Sharp7.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Devices\Sharp7\obj\Release\Sharp7.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Sharp7\bin\Release\Sharp7.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Sharp7\bin\Release\Sharp7.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Sharp7\obj\Release\Sharp7.csproj.AssemblyReference.cache
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Sharp7\obj\Release\Sharp7.csproj.CoreCompileInputs.cache
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Sharp7\obj\Release\Sharp7.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Devices\Sharp7\obj\Release\Sharp7.pdb

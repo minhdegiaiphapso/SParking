@@ -1,0 +1,50 @@
+2025-05-14 15:19:01 2.1.2.4 System.IO.FileLoadException: Could not load file or assembly 'RestSharp, Version=112.1.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'RestSharp, Version=112.1.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75'
+   at ND.ANPR.Service.APICaller..ctor()
+   at ND.ANPR.Service.Server.AnprEngine..ctor() in E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\ND.ANPR.Service\Server\AnprEngine.cs:line 24
+   at Green.Apms.Terminal.Core.Utilities.AnprV8Engine..ctor() in E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\Utilities\AnprV8Engine.cs:line 18
+   at Green.Apms.Terminal.Core.Utilities.AnprV8Engine.get_Instance() in E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\Utilities\AnprV8Engine.cs:line 27
+   at Green.Apms.Terminal.Core.Services.BaseSettings`1.startAnpr(String anprHost) in E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\Services\Settings\BaseSettings.cs:line 148
+   at Green.Apms.Terminal.Core.Services.BaseSettings`1.Load() in E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\Services\Settings\BaseSettings.cs:line 172
+
+=== Pre-bind state information ===
+LOG: DisplayName = RestSharp, Version=112.1.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75
+ (Fully-specified)
+LOG: Appbase = file:///E:/Projects/Apps/H/sparking_2025-default/sparking_2025-default/Green.Apms.Terminal.Wpf/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : ND.ANPR.Service, Version=2024.4.16.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Wpf.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: RestSharp, Version=112.1.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75
+LOG: Attempting download of new URL file:///E:/Projects/Apps/H/sparking_2025-default/sparking_2025-default/Green.Apms.Terminal.Wpf/bin/Debug/RestSharp.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+ 
+2025-05-14 15:19:01 2.1.2.4 System.IO.FileLoadException: Could not load file or assembly 'RestSharp, Version=112.1.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'RestSharp, Version=112.1.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75'
+   at ND.ANPR.Service.APICaller..ctor()
+   at ND.ANPR.Service.Server.AnprEngine..ctor() in E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\ND.ANPR.Service\Server\AnprEngine.cs:line 24
+   at Green.Apms.Terminal.Core.Utilities.AnprV8Engine..ctor() in E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\Utilities\AnprV8Engine.cs:line 18
+   at Green.Apms.Terminal.Core.Utilities.AnprV8Engine.get_Instance() in E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\Utilities\AnprV8Engine.cs:line 27
+   at Green.Apms.Terminal.Core.Services.BaseSettings`1.startAnpr(String anprHost) in E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\Services\Settings\BaseSettings.cs:line 148
+   at Green.Apms.Terminal.Core.Services.BaseSettings`1.Load() in E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\Services\Settings\BaseSettings.cs:line 172
+
+=== Pre-bind state information ===
+LOG: DisplayName = RestSharp, Version=112.1.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75
+ (Fully-specified)
+LOG: Appbase = file:///E:/Projects/Apps/H/sparking_2025-default/sparking_2025-default/Green.Apms.Terminal.Wpf/bin/Debug/
+LOG: Initial PrivatePath = NULL
+Calling assembly : ND.ANPR.Service, Version=2024.4.16.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Wpf.exe.Config
+LOG: Using host configuration file: 
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: RestSharp, Version=112.1.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75
+LOG: Attempting download of new URL file:///E:/Projects/Apps/H/sparking_2025-default/sparking_2025-default/Green.Apms.Terminal.Wpf/bin/Debug/RestSharp.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Major Version
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+ 

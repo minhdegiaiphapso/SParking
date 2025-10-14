@@ -1,0 +1,266 @@
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\ProxiesReader\MasterCom.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\ProxiesReader\MasterRD.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\plcommpro.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\plcomms.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\plrscagent.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\plrscomm.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\pltcpcomm.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\plusbcomm.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\ResultTrain\carplate.cfg
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\ResultTrain\carplate_292000.weights
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\ResultTrain\motobike.backup
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\ResultTrain\motobike.cfg
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\ResultTrain\pkvehicle.cfg
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\ResultTrain\pkvehicle_200000.weights
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Green.Apms.Terminal.Core.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Green.Apms.Terminal.Core.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.CrossCore.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.CrossCore.Wpf.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.MvvmCross.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.MvvmCross.Localization.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.MvvmCross.Plugins.Messenger.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.MvvmCross.Wpf.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\com.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\CommandLine.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\DirectShowLib-2005.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Emgu.CV.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Emgu.CV.UI.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Emgu.Util.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\FileHelpers.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.CardReader.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.Dal.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.HikVision.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.Vivotek.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\HtmlAgilityPack.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\IPSSbike.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\IPSScar.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\log4net.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\NLog.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.Blob.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.Extensions.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.UserInterface.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\RestSharp.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Serilog.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Serilog.Sinks.File.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Sfactors.ParkingApp.VehiclePlateService.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\SilverSea.Sockets.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\MR6100Api.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\PCSC.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Sharp7.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.Dal.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.HikVision.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.Vivotek.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.CardReader.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.MvvmCross.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.MvvmCross.Wpf.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\HtmlAgilityPack.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.Blob.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.Blob.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.Extensions.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.Extensions.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.UserInterface.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.UserInterface.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\PostSharp.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Serilog.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Serilog.Sinks.File.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\PCSC.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\PCSC.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Sharp7.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.csproj.AssemblyReference.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core_MarkupCompile.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core_MarkupCompile.lref
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\obj\Debug\Themes\Generic.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.g.resources
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.MsgBox.resources
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.Properties.Resources.resources
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.csproj.GenerateResource.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.csproj.CoreCompileInputs.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\dll\x86\opencv_ffmpeg400.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\dll\x64\opencv_ffmpeg400_64.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\bin\Debug\Green.Apms.Terminal.Core.pssym
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.dll.postsharp
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\obj\Debug\PostSharpHost.config
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Core\obj\Debug\Green.Ap.EE4EA46E.Up2Date
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.csproj.AssemblyReference.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core_MarkupCompile.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core_MarkupCompile.lref
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\ProxiesReader\MasterCom.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\ProxiesReader\MasterRD.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\dll\x86\opencv_ffmpeg400.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\dll\x64\opencv_ffmpeg400_64.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\plcommpro.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\plcomms.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\plrscagent.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\plrscomm.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\pltcpcomm.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\plusbcomm.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Apms.Terminal.Core.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Apms.Terminal.Core.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.CrossCore.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.CrossCore.Wpf.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.MvvmCross.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.MvvmCross.Localization.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.MvvmCross.Plugins.Messenger.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.MvvmCross.Wpf.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\com.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\CommandLine.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\DirectShowLib-2005.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Emgu.CV.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Emgu.CV.UI.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Emgu.Util.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\FileHelpers.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.CardReader.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.Dal.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.HikVision.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.Vivotek.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\HtmlAgilityPack.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\IPSSbike.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\IPSScar.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\log4net.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\NLog.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.Blob.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.Extensions.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.UserInterface.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\RestSharp.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Serilog.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Serilog.Sinks.File.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\SilverSea.Sockets.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\MR6100Api.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\PCSC.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Sharp7.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.Dal.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.HikVision.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.Vivotek.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.CardReader.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.MvvmCross.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.MvvmCross.Wpf.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\HtmlAgilityPack.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.Blob.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.Blob.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.Extensions.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.Extensions.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.UserInterface.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.UserInterface.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\PostSharp.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Serilog.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Serilog.Sinks.File.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\PCSC.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\PCSC.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Sharp7.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Apms.Terminal.Core.pssym
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Themes\Generic.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.g.resources
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.MsgBox.resources
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.Properties.Resources.resources
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.csproj.GenerateResource.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.csproj.CoreCompileInputs.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Ap.EE4EA46E.Up2Date
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.dll.postsharp
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\PostSharpHost.config
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.CrossCore.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.CrossCore.Wpf.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.MvvmCross.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.MvvmCross.Localization.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.MvvmCross.Plugins.Messenger.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.MvvmCross.Wpf.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\com.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\CommandLine.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\DirectShowLib-2005.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Emgu.CV.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Emgu.CV.UI.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Emgu.Util.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\FileHelpers.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.CardReader.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.Dal.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.HikVision.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.Vivotek.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\HtmlAgilityPack.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\IPSSbike.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\IPSScar.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\log4net.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\NLog.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.Blob.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.Extensions.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.UserInterface.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\RestSharp.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Serilog.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Serilog.Sinks.File.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\SilverSea.Sockets.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\MR6100Api.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\PCSC.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Sharp7.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.Dal.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.HikVision.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.Vivotek.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Devices.CardReader.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.MvvmCross.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Cirrious.MvvmCross.Wpf.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\HtmlAgilityPack.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\HtmlAgilityPack.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Newtonsoft.Json.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.Blob.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.Blob.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.Extensions.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.Extensions.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.UserInterface.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\OpenCvSharp.UserInterface.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Serilog.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Serilog.Sinks.File.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\PCSC.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\PCSC.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Sharp7.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.csproj.AssemblyReference.cache
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core_MarkupCompile.cache
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core_MarkupCompile.lref
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Themes\Generic.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.g.resources
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.MsgBox.resources
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.Properties.Resources.resources
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.csproj.GenerateResource.cache
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.csproj.CoreCompileInputs.cache
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Ap.EE4EA46E.Up2Date
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\ProxiesReader\MasterCom.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\ProxiesReader\MasterRD.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\dll\x86\opencv_ffmpeg400.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\dll\x64\opencv_ffmpeg400_64.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\plcommpro.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\plcomms.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\plrscagent.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\plrscomm.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\pltcpcomm.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\plusbcomm.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Apms.Terminal.Core.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\Green.Apms.Terminal.Core.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\PostSharp.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\PostSharp.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\obj\Debug\Green.Apms.Terminal.Core.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\ND.ANPR.Service.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\ND.ANPR.Service.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Core\bin\Debug\ND.ANPR.Service.dll.config

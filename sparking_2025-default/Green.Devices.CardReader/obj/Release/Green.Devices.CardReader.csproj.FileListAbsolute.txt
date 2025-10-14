@@ -1,0 +1,50 @@
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\ProxiesReader\MasterCom.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\ProxiesReader\MasterRD.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\plcommpro.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\plcomms.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\plrscagent.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\plrscomm.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\pltcpcomm.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\plusbcomm.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\Green.Devices.CardReader.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\Green.Devices.CardReader.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\Green.Devices.Dal.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\MR6100Api.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\PCSC.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\Newtonsoft.Json.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\Sharp7.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\Green.Devices.Dal.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\PCSC.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\PCSC.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\Newtonsoft.Json.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\bin\Release\Sharp7.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\obj\Release\Green.Devices.CardReader.csproj.AssemblyReference.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\obj\Release\Green.Devices.CardReader.csproj.CoreCompileInputs.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\obj\Release\Green.Devices.CardReader.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\obj\Release\Green.Devices.CardReader.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Devices.CardReader\obj\Release\Green.De.88D59EF2.Up2Date
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\ProxiesReader\MasterCom.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\ProxiesReader\MasterRD.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\plcommpro.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\plcomms.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\plrscagent.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\plrscomm.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\pltcpcomm.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\plusbcomm.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\Green.Devices.CardReader.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\Green.Devices.CardReader.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\Green.Devices.Dal.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\MR6100Api.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\PCSC.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\Newtonsoft.Json.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\Sharp7.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\Green.Devices.Dal.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\PCSC.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\PCSC.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\Newtonsoft.Json.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\bin\Release\Sharp7.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\obj\Release\Green.Devices.CardReader.csproj.AssemblyReference.cache
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\obj\Release\Green.Devices.CardReader.csproj.CoreCompileInputs.cache
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\obj\Release\Green.De.88D59EF2.Up2Date
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\obj\Release\Green.Devices.CardReader.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Devices.CardReader\obj\Release\Green.Devices.CardReader.pdb

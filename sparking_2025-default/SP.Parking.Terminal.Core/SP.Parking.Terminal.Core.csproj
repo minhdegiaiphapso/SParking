@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props" Condition="Exists('..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2D8F3F3-BC2B-4639-AADD-87790FADC66C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SP.Parking.Terminal.Core</RootNamespace>
+    <AssemblyName>SP.Parking.Terminal.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cirrious.CrossCore">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.2.1-beta1b\lib\net45\Cirrious.CrossCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.CrossCore.Wpf">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.2.1-beta1b\lib\net45\Cirrious.CrossCore.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross">
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.2.1-beta1a\lib\net45\Cirrious.MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Localization">
+      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.2.1-beta1b\lib\net45\Cirrious.MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Messenger.3.1.1\lib\net45\Cirrious.MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Wpf">
+      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.2.1-beta1a\lib\net45\Cirrious.MvvmCross.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="com">
+      <HintPath>.\com.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandLine">
+      <HintPath>.\CommandLine.dll</HintPath>
+    </Reference>
+    <Reference Include="DirectShowLib-2005">
+      <HintPath>.\DirectShowLib-2005.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV">
+      <HintPath>..\packages\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="FileHelpers">
+      <HintPath>.\FileHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="IPSSbike">
+      <HintPath>.\IPSSbike.dll</HintPath>
+    </Reference>
+    <Reference Include="IPSScar">
+      <HintPath>.\IPSScar.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>.\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>.\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net40\OpenCvSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.Blob, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net40\OpenCvSharp.Blob.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net40\OpenCvSharp.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.UserInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net40\OpenCvSharp.UserInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="PostSharp, Version=2025.1.2.0, Culture=neutral, PublicKeyToken=b13fd38b8f9c99d7, processorArchitecture=MSIL">
+      <HintPath>..\packages\PostSharp.Redist.2025.1.2\lib\net45\PostSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.104.5.0\lib\net4\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serilog.2.3.0\lib\net45\Serilog.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.File, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serilog.Sinks.File.3.2.0\lib\net45\Serilog.Sinks.File.dll</HintPath>
+    </Reference>
+    <Reference Include="SilverSea.Sockets, Version=3.0.0.4, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\SilverSea.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Primitives.4.3.0\lib\net45\System.Drawing.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.1\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.8.0.1\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\AvailableCard.cs" />
+    <Compile Include="Models\CustomCombo.cs" />
+    <Compile Include="Models\Custom\ResultModel.cs" />
+    <Compile Include="Models\FarCards.cs" />
+    <Compile Include="Models\FarCardUsageRules.cs" />
+    <Compile Include="Models\ForcedInfo.cs" />
+    <Compile Include="Models\InternetControl.cs" />
+    <Compile Include="Models\OptionByLane.cs" />
+    <Compile Include="Models\PreCheckIn.cs" />
+    <Compile Include="Models\ServerTimeInfo.cs" />
+    <Compile Include="Models\Statistics.cs" />
+    <Compile Include="Models\TimeMapInfo.cs" />
+    <Compile Include="Models\Voucher.cs" />
+    <Compile Include="MsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Services\ANPRService.cs" />
+    <Compile Include="AppConfig.cs" />
+    <Compile Include="ApmsApp.cs" />
+    <Compile Include="Bootstrap\MessengerPluginBootstrap.cs" />
+    <Compile Include="DebugTrace.cs" />
+    <Compile Include="Models\ArgumentParameter.cs" />
+    <Compile Include="Models\BulkCreateCardResult.cs" />
+    <Compile Include="Models\ParkingSession.cs" />
+    <Compile Include="Models\GlobalConfig.cs" />
+    <Compile Include="Models\UserShift.cs" />
+    <Compile Include="Models\Camera.cs" />
+    <Compile Include="Models\Card.cs" />
+    <Compile Include="Models\CardReader.cs" />
+    <Compile Include="Models\Check.cs" />
+    <Compile Include="Models\CheckIn.cs" />
+    <Compile Include="Models\CheckOut.cs" />
+    <Compile Include="Models\Lane.cs" />
+    <Compile Include="Models\Passenger.cs" />
+    <Compile Include="Models\ApmsUser.cs" />
+    <Compile Include="Models\RequestException.cs" />
+    <Compile Include="Models\Section.cs" />
+    <Compile Include="Models\Terminal.cs" />
+    <Compile Include="Services\PlateRecognizeService.cs" />
+    <Compile Include="Services\BikePlate.cs" />
+    <Compile Include="Services\BugSenderService.cs" />
+    <Compile Include="Services\CameraFactoryService.cs" />
+    <Compile Include="Services\IKeyService.cs" />
+    <Compile Include="Portal\IPortalClient.cs" />
+    <Compile Include="Portal\IWebClient.cs" />
+    <Compile Include="Portal\PortalClient.cs" />
+    <Compile Include="Portal\WebClient.cs" />
+    <Compile Include="Services\DataService.cs" />
+    <Compile Include="Services\Interface\IALPRService.cs" />
+    <Compile Include="Services\Interface\ICardReaderService.cs" />
+    <Compile Include="Services\Interface\IDataService.cs" />
+    <Compile Include="Services\Interface\ILocalizeService.cs" />
+    <Compile Include="Services\Interface\IServer.cs" />
+    <Compile Include="Services\Interface\IStorageService.cs" />
+    <Compile Include="Services\Interface\IUserServiceLocator.cs" />
+    <Compile Include="Services\Interface\IWebClient.cs" />
+    <Compile Include="Services\IRunModeManager.cs" />
+    <Compile Include="Services\Interface\IParameterService.cs" />
+    <Compile Include="Services\Interface\IUIService.cs" />
+    <Compile Include="Services\Interface\IUserPreferenceService.cs" />
+    <Compile Include="Services\Interface\IUserService.cs" />
+    <Compile Include="Services\Interface\IViewModelServiceLocator.cs" />
+    <Compile Include="Services\ILogService.cs" />
+    <Compile Include="Services\LogService.cs" />
+    <Compile Include="Services\Settings\BaseSettings.cs" />
+    <Compile Include="Services\ParameterService.cs" />
+    <Compile Include="Services\IResourceLocatorService.cs" />
+    <Compile Include="Services\Settings\OptionsSettings.cs" />
+    <Compile Include="Services\Settings\SystemSettings.cs" />
+    <Compile Include="Services\Settings\TestingSettings.cs" />
+    <Compile Include="Services\StorageService.cs" />
+    <Compile Include="Services\TestingService.cs" />
+    <Compile Include="Services\UserPreferenceService.cs" />
+    <Compile Include="Services\UserService.cs" />
+    <Compile Include="Services\UserServiceLocator.cs" />
+    <Compile Include="Services\ViewModelServiceLocator.cs" />
+    <Compile Include="Services\WebClient.cs" />
+    <Compile Include="Services\WebAPIServer.cs" />
+    <Compile Include="Services\Settings\HostSettings.cs" />
+    <Compile Include="Services\WebClientBasic.cs" />
+    <Compile Include="Utilities\AnprV8Engine.cs" />
+    <Compile Include="Utilities\ArgumentParameters.cs" />
+    <Compile Include="Utilities\Bool2VisibilityConverter.cs" />
+    <Compile Include="Utilities\ByteImageConverter.cs" />
+    <Compile Include="Utilities\DateTimeExtensions.cs" />
+    <Compile Include="Utilities\EncryptionUtility.cs" />
+    <Compile Include="Utilities\Exceptions\NoConnectionException.cs" />
+    <Compile Include="Utilities\Exceptions\NotFoundException.cs" />
+    <Compile Include="Utilities\FormatHelper.cs" />
+    <Compile Include="Utilities\HttpUtility.cs" />
+    <Compile Include="Utilities\IconEnums.cs" />
+    <Compile Include="Utilities\ImagingUtil.cs" />
+    <Compile Include="Utilities\ImageComparison\Histogram.cs" />
+    <Compile Include="Utilities\ImageComparison\ImageTool.cs" />
+    <Compile Include="Utilities\ImageUtility.cs" />
+    <Compile Include="Utilities\IStatusUpdate.cs" />
+    <Compile Include="Utilities\KeyUtil.cs" />
+    <Compile Include="Utilities\LocalizableDescriptionAttribute.cs" />
+    <Compile Include="Utilities\MailSender.cs" />
+    <Compile Include="Utilities\OtherUtilities.cs" />
+    <Compile Include="Utilities\ScreenCapture.cs" />
+    <Compile Include="Utilities\SerilogTrace.cs" />
+    <Compile Include="Utilities\StringRes.cs" />
+    <Compile Include="Utilities\NaturalComparer.cs" />
+    <Compile Include="Utilities\StringExtensions.cs" />
+    <Compile Include="Utilities\TimeAgo.cs" />
+    <Compile Include="Utilities\TimestampConverter.cs" />
+    <Compile Include="Utilities\ValueComparer.cs" />
+    <Compile Include="ViewModels\BaseLaneViewModel.cs" />
+    <Compile Include="ViewModels\BaseTestViewModel.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\BootstrapViewModel.cs" />
+    <Compile Include="ViewModels\CheckInLaneViewModel.cs" />
+    <Compile Include="ViewModels\CheckOutLaneViewModel.cs" />
+    <Compile Include="ViewModels\ConfigViewModel.cs" />
+    <Compile Include="ViewModels\EndingShiftInformationViewModel.cs" />
+    <Compile Include="ViewModels\EntryCheckViewModel.cs" />
+    <Compile Include="ViewModels\ExceptionalCheckOutViewModel.cs" />
+    <Compile Include="ViewModels\FindImagesViewModel.cs" />
+    <Compile Include="ViewModels\GetCheckedInformationViewModel.cs" />
+    <Compile Include="ViewModels\HomeViewModel.cs" />
+    <Compile Include="ViewModels\InputCardViewModel.cs" />
+    <Compile Include="ViewModels\KeyConfigurationViewModel.cs" />
+    <Compile Include="ViewModels\LaneConfigurationViewModel.cs" />
+    <Compile Include="ViewModels\LaneContainerViewModel.cs" />
+    <Compile Include="ViewModels\LaneKeyConfigurationViewModel.cs" />
+    <Compile Include="ViewModels\OptionsConfigurationViewModel.cs" />
+    <Compile Include="ViewModels\GeneralConfigViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\ManagementViewModel.cs" />
+    <Compile Include="ViewModels\SearchViewModel.cs" />
+    <Compile Include="ViewModels\StatisticsViewModel.cs" />
+    <Compile Include="ViewModels\SubLaneConfigurationViewModel.cs" />
+    <Compile Include="ViewModels\SystemConfigViewModel.cs" />
+    <Compile Include="ViewModels\TestViewModel.cs" />
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="MsgBox.resx">
+      <DependentUpon>MsgBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Models\CashierITC.cs" />
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Devices\Green.Devices.Dal\Green.Devices.Dal.csproj">
+      <Project>{2520d88f-51af-423d-ae22-796ad747b953}</Project>
+      <Name>Green.Devices.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Devices\Green.Devices.HikVision\Green.Devices.HikVision.csproj">
+      <Project>{7c34ed3a-9bc3-4b96-812b-c9d7fae7f1a6}</Project>
+      <Name>Green.Devices.HikVision</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Devices\Green.Devices.Vivotek\Green.Devices.Vivotek.csproj">
+      <Project>{003f114d-cdcf-42c7-adb8-9a8e28c9f264}</Project>
+      <Name>Green.Devices.Vivotek</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Green.Devices.CardReader\Green.Devices.CardReader.csproj">
+      <Project>{8866d937-98db-452e-ad44-a702ec7672a5}</Project>
+      <Name>Green.Devices.CardReader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ND.ANPR.Service\ND.ANPR.Service.csproj">
+      <Project>{d9b29f16-a3b5-4c6e-b7e6-cac3a09dc1a4}</Project>
+      <Name>ND.ANPR.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1048 @@
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\ProxiesReader\MasterCom.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\ProxiesReader\MasterRD.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\plcommpro.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\plcomms.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\plrscagent.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\plrscomm.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\pltcpcomm.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\plusbcomm.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MasterCom.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MasterRD.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Sounds\checkout.wav
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Sounds\checkout.mp3
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Images\gp_logo.png
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Images\capture_view_wayin1.png
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\ResultTrain\carplate.cfg
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\ResultTrain\carplate_292000.weights
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\ResultTrain\motobike.backup
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\ResultTrain\motobike.cfg
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\ResultTrain\pkvehicle.cfg
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\ResultTrain\pkvehicle_200000.weights
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\AxInterop.VITAMINDECODERLib.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Interop.VITAMINDECODERLib.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\SilverSea.Sockets.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\NLog.config
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Images\Car_MaskCar_Plate_637620756716689852.jpg
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Wpf.exe.config
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Wpf.exe
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Wpf.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\BoschControl.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.CrossCore.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.CrossCore.Wpf.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.Binding.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.BindingEx.Wpf.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.Localization.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.Plugins.Messenger.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.Wpf.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\com.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\CommandLine.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\ControlzEx.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\CrashReporter.NET.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\DirectShowLib-2005.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Emgu.CV.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Emgu.CV.UI.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Emgu.Util.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Core.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.CardReader.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.Dal.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.HikVision.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\log4net.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Codicons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Core.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Entypo.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FileIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Ionicons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.JamIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Material.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Microns.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Modern.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Octicons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Typicons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Unicons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Zondicons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MaterialDesignColors.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\NBug.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\NLog.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\PostSharp.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\RestSharp.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Serilog.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Serilog.Sinks.File.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Sfactors.ParkingApp.VehiclePlateService.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Bosch.VideoSDK.GCALib.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Bosch.VideoSDK.AxCameoLib.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Bosch.VideoSDK.CameoLib.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MR6100Api.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\PCSC.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Sharp7.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.Vivotek.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\HtmlAgilityPack.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\OpenCvSharp.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\IPSSbike.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\IPSScar.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\stdole.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\BoschControl.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.Dal.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.HikVision.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Core.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.CardReader.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.Wpf.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\CommandLine.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\ControlzEx.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\ControlzEx.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\CrashReporter.NET.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\CrashReporter.NET.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\CrashReporter.NET.dll.config
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\log4net.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Codicons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Codicons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Core.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Core.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Entypo.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Entypo.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FileIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FileIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Ionicons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Ionicons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.JamIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.JamIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Material.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Material.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Microns.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Microns.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Modern.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Modern.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Octicons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Octicons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Typicons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Typicons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Unicons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Unicons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Zondicons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Zondicons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MaterialDesignColors.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\NBug.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\NLog.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\PostSharp.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Serilog.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Serilog.Sinks.File.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\PCSC.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\PCSC.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Sharp7.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.Vivotek.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\HtmlAgilityPack.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\OpenCvSharp.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\OpenCvSharp.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\da\CrashReporter.NET.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\de\CrashReporter.NET.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\es\CrashReporter.NET.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\fr\CrashReporter.NET.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\it\CrashReporter.NET.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\nl\CrashReporter.NET.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\pl\CrashReporter.NET.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\ru\CrashReporter.NET.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\sv\CrashReporter.NET.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\de\MahApps.Metro.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.csproj.AssemblyReference.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.csproj.ResolveComReference.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\App.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\MainWindow.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Resources\VietPark.Colors.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Resources\Icons.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Resources\Light.CustomTheme.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Resources\StringResources.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\CameraOverlay.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\VehicleTypeUI.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\Common\IPTextBox.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\Common\StreachableTextBlock.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\Common\StreachableTextBox.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\App.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\MainWindow.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Resources\Icons.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\AboutView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\CameraOverlay.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\ChooseVehicleType.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\ConfirmWindow.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\EntryCheck.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\FindImagesWindow.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\NotificationOverlay.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\CashierPopupOverlay.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\OpenBarrierPopupOverlay.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\PasswordConfirm.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\AddRegisteredCard.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\PasswordWindow.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\StatisticsWindow.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\SystemNotificationOverlay.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\VehicleInfoUI.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\VehicleTypeUI.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\ZoomConfigCamera.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\BootstrapView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\CameraView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\CheckInLaneView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\CheckOutLaneView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\ConfigView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\EndingShiftInformationView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\ExceptionalCheckOutView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\FindImagesView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\GetCheckedInformationView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\HomeView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\InputCardView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\KeyConfigurationView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LaneConfigurationView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LaneContainerView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LaneKeyConfigurationView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LoginView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\ManagementView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\OptionsConfigurationView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\SearchView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\StatisticsView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\SubLaneConfigurationView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\GeneralConfigView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\SystemConfigView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\TestView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\VoucherView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\Common\IPTextBox.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\Common\StreachableTextBlock.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\Common\StreachableTextBox.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf_Content.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf_MarkupCompile.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf_MarkupCompile.lref
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\AboutView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\ChooseVehicleType.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\ConfirmWindow.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\EntryCheck.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\FindImagesWindow.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\NotificationOverlay.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\CashierPopupOverlay.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\OpenBarrierPopupOverlay.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\PasswordConfirm.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\AddRegisteredCard.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\PasswordWindow.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\StatisticsWindow.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\SystemNotificationOverlay.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\VehicleInfoUI.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\ZoomConfigCamera.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\BootstrapView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\CameraView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\CheckInLaneView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\CheckOutLaneView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\ConfigView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\EndingShiftInformationView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\ExceptionalCheckOutView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\FindImagesView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\GetCheckedInformationView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\HomeView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\InputCardView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\KeyConfigurationView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LaneConfigurationView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LaneContainerView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LaneKeyConfigurationView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LoginView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\ManagementView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\OptionsConfigurationView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\SearchView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\StatisticsView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\SubLaneConfigurationView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\GeneralConfigView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\SystemConfigView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\TestView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\VoucherView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.g.resources
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.MsgBox.resources
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.Properties.Resources.resources
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.csproj.GenerateResource.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.csproj.CoreCompileInputs.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.exe
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\OpenCvSharp.Extensions.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\OpenCvSharp.Extensions.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\OpenCvSharp.Extensions.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\dll\x86\opencv_ffmpeg400.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\dll\x64\opencv_ffmpeg400_64.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Wpf.pssym
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.exe.postsharp
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\PostSharpHost.config
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_20220125-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Ap.BF766AEF.Up2Date
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ProxiesReader\MasterCom.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ProxiesReader\MasterRD.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\dll\x86\opencv_ffmpeg400.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\dll\x64\opencv_ffmpeg400_64.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MasterCom.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MasterRD.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Sounds\checkout.wav
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Sounds\checkout.mp3
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Images\gp_logo.png
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Images\capture_view_wayin1.png
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\plcommpro.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\plcomms.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\plrscagent.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\plrscomm.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\pltcpcomm.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\plusbcomm.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\AxInterop.VITAMINDECODERLib.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Interop.VITAMINDECODERLib.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\SilverSea.Sockets.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\NLog.config
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Images\Car_MaskCar_Plate_637620756716689852.jpg
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Wpf.exe.config
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Wpf.exe
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Wpf.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\BoschControl.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.CrossCore.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.CrossCore.Wpf.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.Binding.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.BindingEx.Wpf.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.Localization.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.Plugins.Messenger.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.Wpf.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\com.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\CommandLine.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ControlzEx.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\CrashReporter.NET.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\DirectShowLib-2005.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Emgu.CV.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Emgu.CV.UI.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Emgu.Util.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Core.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.CardReader.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.Dal.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.HikVision.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\log4net.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Codicons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Core.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Entypo.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FileIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Ionicons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.JamIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Material.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Microns.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Modern.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Octicons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Typicons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Unicons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Zondicons.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MaterialDesignColors.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\NBug.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\NLog.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\PostSharp.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\RestSharp.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Serilog.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Serilog.Sinks.File.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Bosch.VideoSDK.GCALib.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Bosch.VideoSDK.AxCameoLib.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Bosch.VideoSDK.CameoLib.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MR6100Api.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\PCSC.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Sharp7.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\IPSSbike.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\IPSScar.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.Vivotek.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\OpenCvSharp.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\HtmlAgilityPack.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\stdole.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\BoschControl.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.Dal.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.HikVision.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Core.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.CardReader.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.Wpf.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\CommandLine.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ControlzEx.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ControlzEx.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\CrashReporter.NET.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\CrashReporter.NET.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\CrashReporter.NET.dll.config
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\log4net.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Codicons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Codicons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Core.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Core.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Entypo.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Entypo.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FileIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FileIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Ionicons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Ionicons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.JamIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.JamIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Material.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Material.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Microns.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Microns.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Modern.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Modern.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Octicons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Octicons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Typicons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Typicons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Unicons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Unicons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Zondicons.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Zondicons.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MaterialDesignColors.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\NBug.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\NLog.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\PostSharp.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Serilog.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Serilog.Sinks.File.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\PCSC.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\PCSC.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Sharp7.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.Vivotek.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\OpenCvSharp.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\OpenCvSharp.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\HtmlAgilityPack.xml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\da\CrashReporter.NET.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\de\CrashReporter.NET.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\es\CrashReporter.NET.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\fr\CrashReporter.NET.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\it\CrashReporter.NET.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\nl\CrashReporter.NET.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\pl\CrashReporter.NET.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ru\CrashReporter.NET.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\sv\CrashReporter.NET.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\de\MahApps.Metro.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Wpf.pssym
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.csproj.AssemblyReference.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.csproj.ResolveComReference.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\App.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\MainWindow.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Resources\VietPark.Colors.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Resources\Icons.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Resources\Light.CustomTheme.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Resources\StringResources.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\CameraOverlay.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\VehicleTypeUI.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\Common\IPTextBox.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\Common\StreachableTextBlock.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\Common\StreachableTextBox.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\App.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\MainWindow.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Resources\Icons.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\AboutView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\CameraOverlay.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\ChooseVehicleType.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\ConfirmWindow.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\EntryCheck.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\FindImagesWindow.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\NotificationOverlay.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\CashierPopupOverlay.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\OpenBarrierPopupOverlay.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\PasswordConfirm.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\AddRegisteredCard.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\PasswordWindow.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\StatisticsWindow.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\SystemNotificationOverlay.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\VehicleInfoUI.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\VehicleTypeUI.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\ZoomConfigCamera.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\BootstrapView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\CameraView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\CheckInLaneView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\CheckOutLaneView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\ConfigView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\EndingShiftInformationView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\ExceptionalCheckOutView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\FindImagesView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\GetCheckedInformationView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\HomeView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\InputCardView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\KeyConfigurationView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LaneConfigurationView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LaneContainerView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LaneKeyConfigurationView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LoginView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\ManagementView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\OptionsConfigurationView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\SearchView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\StatisticsView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\SubLaneConfigurationView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\GeneralConfigView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\SystemConfigView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\TestView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\VoucherView.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\Common\IPTextBox.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\Common\StreachableTextBlock.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\Common\StreachableTextBox.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf_Content.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf_MarkupCompile.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf_MarkupCompile.lref
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\AboutView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\ChooseVehicleType.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\ConfirmWindow.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\EntryCheck.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\FindImagesWindow.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\NotificationOverlay.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\CashierPopupOverlay.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\OpenBarrierPopupOverlay.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\PasswordConfirm.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\AddRegisteredCard.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\PasswordWindow.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\StatisticsWindow.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\SystemNotificationOverlay.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\VehicleInfoUI.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\ZoomConfigCamera.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\BootstrapView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\CameraView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\CheckInLaneView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\CheckOutLaneView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\ConfigView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\EndingShiftInformationView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\ExceptionalCheckOutView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\FindImagesView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\GetCheckedInformationView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\HomeView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\InputCardView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\KeyConfigurationView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LaneConfigurationView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LaneContainerView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LaneKeyConfigurationView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LoginView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\ManagementView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\OptionsConfigurationView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\SearchView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\StatisticsView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\SubLaneConfigurationView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\GeneralConfigView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\SystemConfigView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\TestView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\VoucherView.baml
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.g.resources
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.MsgBox.resources
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.Properties.Resources.resources
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.csproj.GenerateResource.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.csproj.CoreCompileInputs.cache
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Ap.BF766AEF.Up2Date
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.exe.postsharp
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.exe
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.pdb
+C:\Users\dinht\Downloads\sparking_20220125-default (1)\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\PostSharpHost.config
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ProxiesReader\MasterCom.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ProxiesReader\MasterRD.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\dll\x86\opencv_ffmpeg400.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\dll\x64\opencv_ffmpeg400_64.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MasterCom.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MasterRD.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Sounds\checkout.wav
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Sounds\checkout.mp3
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Images\gp_logo.png
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Images\capture_view_wayin1.png
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\plcommpro.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\plcomms.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\plrscagent.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\plrscomm.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\pltcpcomm.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\plusbcomm.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\AxInterop.VITAMINDECODERLib.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Interop.VITAMINDECODERLib.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\SilverSea.Sockets.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\NLog.config
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Images\Car_MaskCar_Plate_637620756716689852.jpg
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Wpf.exe.config
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Wpf.exe
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Wpf.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\BoschControl.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.CrossCore.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.CrossCore.Wpf.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.Binding.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.BindingEx.Wpf.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.Localization.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.Plugins.Messenger.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.Wpf.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\com.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\CommandLine.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ControlzEx.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\CrashReporter.NET.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\DirectShowLib-2005.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Emgu.CV.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Emgu.Util.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Core.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.CardReader.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.Dal.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.HikVision.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\log4net.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Codicons.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Core.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Entypo.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FileIcons.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Ionicons.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.JamIcons.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Material.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Microns.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Modern.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Octicons.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Typicons.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Unicons.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Zondicons.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MaterialDesignColors.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Microsoft.Xaml.Behaviors.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\NBug.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\NLog.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\PostSharp.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\RestSharp.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Serilog.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Serilog.Sinks.File.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Xceed.Wpf.AvalonDock.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Xceed.Wpf.DataGrid.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Xceed.Wpf.Toolkit.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Bosch.VideoSDK.GCALib.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Bosch.VideoSDK.AxCameoLib.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Bosch.VideoSDK.CameoLib.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MR6100Api.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\PCSC.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Sharp7.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\IPSSbike.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\IPSScar.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.Vivotek.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\OpenCvSharp.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\HtmlAgilityPack.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\stdole.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\BoschControl.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.Dal.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.HikVision.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Core.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.CardReader.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Cirrious.MvvmCross.Wpf.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\CommandLine.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ControlzEx.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ControlzEx.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\CrashReporter.NET.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\CrashReporter.NET.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\CrashReporter.NET.dll.config
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\log4net.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.BootstrapIcons.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.BoxIcons.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Codicons.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Codicons.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Core.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Core.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Entypo.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Entypo.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.EvaIcons.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FeatherIcons.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FileIcons.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FileIcons.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Fontaudio.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.FontAwesome.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.ForkAwesome.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Ionicons.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Ionicons.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.JamIcons.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.JamIcons.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Material.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Material.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.MaterialDesign.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.MaterialLight.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Microns.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Microns.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Modern.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Modern.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Octicons.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Octicons.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.PicolIcons.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.PixelartIcons.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RadixIcons.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RemixIcon.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.RPGAwesome.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.SimpleIcons.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Typicons.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Typicons.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Unicons.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Unicons.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.VaadinIcons.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.WeatherIcons.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Zondicons.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MahApps.Metro.IconPacks.Zondicons.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MaterialDesignColors.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Microsoft.Xaml.Behaviors.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\NBug.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\NLog.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\PostSharp.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Serilog.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Serilog.Sinks.File.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\PCSC.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\PCSC.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Sharp7.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Devices.Vivotek.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\OpenCvSharp.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\OpenCvSharp.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\HtmlAgilityPack.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\HtmlAgilityPack.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\da\CrashReporter.NET.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\de\CrashReporter.NET.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\es\CrashReporter.NET.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\fr\CrashReporter.NET.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\it\CrashReporter.NET.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\nl\CrashReporter.NET.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\pl\CrashReporter.NET.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ru\CrashReporter.NET.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\sv\CrashReporter.NET.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\de\MahApps.Metro.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Green.Apms.Terminal.Wpf.pssym
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.csproj.AssemblyReference.cache
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.csproj.ResolveComReference.cache
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\App.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\MainWindow.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Resources\VietPark.Colors.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Resources\Icons.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Resources\Light.CustomTheme.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Resources\StringResources.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\CameraOverlay.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\VehicleTypeUI.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\Common\IPTextBox.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\Common\StreachableTextBlock.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\Common\StreachableTextBox.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\App.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\MainWindow.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Resources\Icons.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\AboutView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\CameraOverlay.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\ChooseVehicleType.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\ConfirmWindow.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\EntryCheck.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\FindImagesWindow.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\NotificationOverlay.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\CashierPopupOverlay.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\OpenBarrierPopupOverlay.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\PasswordConfirm.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\AddRegisteredCard.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\PasswordWindow.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\StatisticsWindow.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\SystemNotificationOverlay.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\VehicleInfoUI.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\VehicleTypeUI.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\ZoomConfigCamera.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\BootstrapView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\CameraView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\CheckInLaneView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\CheckOutLaneView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\ConfigView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\EndingShiftInformationView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\ExceptionalCheckOutView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\FindImagesView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\GetCheckedInformationView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\HomeView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\InputCardView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\KeyConfigurationView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LaneConfigurationView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LaneContainerView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LaneKeyConfigurationView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LoginView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\ManagementView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\OptionsConfigurationView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\SearchView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\StatisticsView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\SubLaneConfigurationView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\GeneralConfigView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\SystemConfigView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\TestView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\VoucherView.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\Common\IPTextBox.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\Common\StreachableTextBlock.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\Common\StreachableTextBox.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf_Content.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf_MarkupCompile.cache
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf_MarkupCompile.lref
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\AboutView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\ChooseVehicleType.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\ConfirmWindow.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\EntryCheck.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\FindImagesWindow.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\NotificationOverlay.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\CashierPopupOverlay.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\OpenBarrierPopupOverlay.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\PasswordConfirm.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\AddRegisteredCard.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\PasswordWindow.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\StatisticsWindow.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\SystemNotificationOverlay.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\VehicleInfoUI.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\UI\ZoomConfigCamera.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\BootstrapView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\CameraView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\CheckInLaneView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\CheckOutLaneView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\ConfigView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\EndingShiftInformationView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\ExceptionalCheckOutView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\FindImagesView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\GetCheckedInformationView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\HomeView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\InputCardView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\KeyConfigurationView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LaneConfigurationView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LaneContainerView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LaneKeyConfigurationView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\LoginView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\ManagementView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\OptionsConfigurationView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\SearchView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\StatisticsView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\SubLaneConfigurationView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\GeneralConfigView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\SystemConfigView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\TestView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Views\AppViews\VoucherView.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.g.resources
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.MsgBox.resources
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.Properties.Resources.resources
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.csproj.GenerateResource.cache
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.csproj.CoreCompileInputs.cache
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Ap.BF766AEF.Up2Date
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.exe.postsharp
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.exe
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\Green.Apms.Terminal.Wpf.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\PostSharpHost.config
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ND.ANPR.Service.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ND.ANPR.Service.pdb
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\ND.ANPR.Service.dll.config
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Newtonsoft.Json.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\rtspsupport\RtspFrame.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\rtspsupport\RtspPlayer.g.cs
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Emgu.CV.Bitmap.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Emgu.CV.Platform.NetFramework.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Emgu.CV.Platform.NetStandard.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\RtspClientSharp.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\System.Drawing.Common.dll
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Emgu.CV.Bitmap.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Emgu.CV.Platform.NetFramework.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\Emgu.CV.Platform.NetStandard.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\bin\Debug\RtspClientSharp.xml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\rtspsupport\RtspFrame.baml
+E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\Green.Apms.Terminal.Wpf\obj\Debug\rtspsupport\RtspPlayer.baml

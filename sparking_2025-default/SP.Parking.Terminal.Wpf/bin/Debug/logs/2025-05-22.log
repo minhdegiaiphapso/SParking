@@ -1,0 +1,74 @@
+2025-05-22 13:51:29 2.1.2.4 Newtonsoft.Json.JsonSerializationException: Error resolving type specified in JSON 'Green.Apms.Terminal.Core.Services.OptionsSettingsData, Green.Apms.Terminal.Core'. Path '$type', line 2, position 93. ---> Newtonsoft.Json.JsonSerializationException: Could not load assembly 'Green.Apms.Terminal.Core'.
+   at Newtonsoft.Json.Serialization.DefaultSerializationBinder.GetTypeFromTypeNameKey(TypeNameKey typeNameKey)
+   at Newtonsoft.Json.Utilities.ThreadSafeStore`2.AddValue(TKey key)
+   at Newtonsoft.Json.Utilities.ThreadSafeStore`2.Get(TKey key)
+   at Newtonsoft.Json.Serialization.DefaultSerializationBinder.BindToType(String assemblyName, String typeName)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolveTypeName(JsonReader reader, Type& objectType, JsonContract& contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, String qualifiedTypeName)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolveTypeName(JsonReader reader, Type& objectType, JsonContract& contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, String qualifiedTypeName)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadMetadataProperties(JsonReader reader, Type& objectType, JsonContract& contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue, Object& newValue, String& id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at SP.Parking.Terminal.Core.Services.BaseSettings`1.Load() in E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\SP.Parking.Terminal.Core\Services\Settings\BaseSettings.cs:line 168 
+2025-05-22 13:51:48.7845 FATAL 2.1.2.4 - Current_DispatcherUnhandledException occur. 
+ Object = System.Windows.Threading.Dispatcher. 
+ Exception = System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at SP.Parking.Terminal.Core.Services.OptionsSettings.get_CameraType() in E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\SP.Parking.Terminal.Core\Services\Settings\OptionsSettings.cs:line 328
+   --- End of inner exception stack trace ---
+   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   at System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   at System.Activator.CreateInstance(Type type)
+   at Cirrious.MvvmCross.Wpf.Views.MvxWpfViewsContainer.CreateView(MvxViewModelRequest request) in c:\Projects\Misc\MVVMCROSS\Cirrious\Cirrious.MvvmCross.Wpf\Views\MvxWpfViewsContainer.cs:line 28
+   at SP.Parking.Terminal.Wpf.Views.ApmsPresenter.Show(MvxViewModelRequest request) in E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\SP.Parking.Terminal.Wpf\Views\Presenter\ApmsPresenter.cs:line 96
+   at Cirrious.MvvmCross.Wpf.Views.MvxWpfViewDispatcher.<>c__DisplayClass1.<ShowViewModel>b__0() in c:\Projects\Misc\MVVMCROSS\Cirrious\Cirrious.MvvmCross.Wpf\Views\MvxWpfViewDispatcher.cs:line 29
+   at Cirrious.MvvmCross.Wpf.Views.MvxWpfUIThreadDispatcher.RequestMainThreadAction(Action action) in c:\Projects\Misc\MVVMCROSS\Cirrious\Cirrious.MvvmCross.Wpf\Views\MvxWpfUIThreadDispatcher.cs:line 28
+   at Cirrious.MvvmCross.Wpf.Views.MvxWpfViewDispatcher.ShowViewModel(MvxViewModelRequest request) in c:\Projects\Misc\MVVMCROSS\Cirrious\Cirrious.MvvmCross.Wpf\Views\MvxWpfViewDispatcher.cs:line 29
+   at Cirrious.MvvmCross.ViewModels.MvxNavigatingObject.ShowViewModelImpl(Type viewModelType, IMvxBundle parameterBundle, IMvxBundle presentationBundle, MvxRequestedBy requestedBy) in c:\Projects\Misc\MVVMCROSS\Cirrious\Cirrious.MvvmCross\ViewModels\MvxNavigatingObject.cs:line 113
+   at Cirrious.MvvmCross.ViewModels.MvxNavigatingObject.ShowViewModel[TViewModel](IMvxBundle parameterBundle, IMvxBundle presentationBundle, MvxRequestedBy requestedBy) in c:\Projects\Misc\MVVMCROSS\Cirrious\Cirrious.MvvmCross\ViewModels\MvxNavigatingObject.cs:line 68
+   at Cirrious.MvvmCross.ViewModels.MvxAppStart`1.Start(Object hint) in c:\Projects\Misc\MVVMCROSS\Cirrious\Cirrious.MvvmCross\ViewModels\MvxAppStart.cs:line 23
+   at SP.Parking.Terminal.Wpf.App.DoSetup() in E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\SP.Parking.Terminal.Wpf\App.xaml.cs:line 143
+   at SP.Parking.Terminal.Wpf.App.OnActivated(EventArgs e) in E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\SP.Parking.Terminal.Wpf\App.xaml.cs:line 152
+   at System.Windows.Application.WmActivateApp(Int32 wParam)
+   at System.Windows.Application.AppFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+2025-05-22 13:51:29 2.1.2.4 Newtonsoft.Json.JsonSerializationException: Error resolving type specified in JSON 'Green.Apms.Terminal.Core.Services.SystemSettingsData, Green.Apms.Terminal.Core'. Path '$type', line 2, position 92. ---> Newtonsoft.Json.JsonSerializationException: Could not load assembly 'Green.Apms.Terminal.Core'.
+   at Newtonsoft.Json.Serialization.DefaultSerializationBinder.GetTypeFromTypeNameKey(TypeNameKey typeNameKey)
+   at Newtonsoft.Json.Utilities.ThreadSafeStore`2.AddValue(TKey key)
+   at Newtonsoft.Json.Utilities.ThreadSafeStore`2.Get(TKey key)
+   at Newtonsoft.Json.Serialization.DefaultSerializationBinder.BindToType(String assemblyName, String typeName)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolveTypeName(JsonReader reader, Type& objectType, JsonContract& contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, String qualifiedTypeName)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolveTypeName(JsonReader reader, Type& objectType, JsonContract& contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, String qualifiedTypeName)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadMetadataProperties(JsonReader reader, Type& objectType, JsonContract& contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue, Object& newValue, String& id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at SP.Parking.Terminal.Core.Services.BaseSettings`1.Load() in E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\SP.Parking.Terminal.Core\Services\Settings\BaseSettings.cs:line 168 
+2025-05-22 13:54:11 2.1.2.4 Newtonsoft.Json.JsonSerializationException: Error resolving type specified in JSON 'Green.Apms.Terminal.Core.Services.OptionsSettingsData, Green.Apms.Terminal.Core'. Path '$type', line 2, position 93. ---> Newtonsoft.Json.JsonSerializationException: Could not load assembly 'Green.Apms.Terminal.Core'.
+   at Newtonsoft.Json.Serialization.DefaultSerializationBinder.GetTypeFromTypeNameKey(TypeNameKey typeNameKey)
+   at Newtonsoft.Json.Utilities.ThreadSafeStore`2.AddValue(TKey key)
+   at Newtonsoft.Json.Utilities.ThreadSafeStore`2.Get(TKey key)
+   at Newtonsoft.Json.Serialization.DefaultSerializationBinder.BindToType(String assemblyName, String typeName)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolveTypeName(JsonReader reader, Type& objectType, JsonContract& contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, String qualifiedTypeName)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolveTypeName(JsonReader reader, Type& objectType, JsonContract& contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, String qualifiedTypeName)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadMetadataProperties(JsonReader reader, Type& objectType, JsonContract& contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue, Object& newValue, String& id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at SP.Parking.Terminal.Core.Services.BaseSettings`1.Load() in E:\Projects\Apps\H\sparking_2025-default\sparking_2025-default\SP.Parking.Terminal.Core\Services\Settings\BaseSettings.cs:line 168 
