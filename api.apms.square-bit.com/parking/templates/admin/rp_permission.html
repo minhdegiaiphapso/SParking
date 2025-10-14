@@ -1,0 +1,61 @@
+{% extends "admin/base.html" %}
+{% block title %}
+| Permission report
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+    xmlns="http://www.w3.org/1999/html">
+</h1>
+{% endblock %}
+
+{% block extrahead %}
+<!--custom view style-->
+<link rel="stylesheet" type="text/css" href="/static/css/page.css"/>
+
+<!--datetimepicker-->
+<link rel="stylesheet" type="text/css" href="/static/css/jquery.datetimepicker.css" />
+
+<!--datatable-->
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/jquery.dataTables.min.css"/>
+
+{% endblock %}
+
+{% block content %}
+<div class="containerRPS">
+    <h2>Permission report</h2>
+
+    <p>Báo cáo phân quyền.</p>
+
+    <form method="post" id="formRPS">
+        {% csrf_token %}
+        <div class="form-field">
+            <label>Nhóm</label>
+
+            <div>
+                {% if group_data %}
+                <select name="group" style="height: 30px; width:150px">
+                    {% for group in group_data %}
+                        <option name="group" value="{{group.value}}">{{group.name}}</option>
+                    {% endfor %}
+                </select>
+                {% endif %}
+            </div>
+        </div>
+        <br style="clear:both;"/>
+        <div class="form-field" style="margin-top: 15px">
+            <div>
+                <button style="height: 30px; width: 150px; background-color: #26C281;color:white;font-weight:bold;text-align:center"
+                        class="form-field" type="submit" name="btn_REPORT">
+                    Báo cáo
+                </button>
+
+            </div>
+        </div>
+    </form>
+</div>
+<script src="/static/jquery/jquery.js"></script>
+<script src="/static/jquery/jquery.datetimepicker.js"></script>
+<link rel="stylesheet" href="/static/css/page.css">
+{% endblock %}

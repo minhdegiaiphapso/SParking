@@ -1,0 +1,184 @@
+{% extends "admin/base.html" %}
+{% block title %}
+| Báo cáo khách hàng
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+    xmlns="http://www.w3.org/1999/html">
+</h1>
+{% endblock %}
+
+{% block extrahead %}
+<!--custom view style-->
+<link rel="stylesheet" type="text/css" href="/static/css/page.css"/>
+
+<!--datetimepicker-->
+<link rel="stylesheet" type="text/css" href="/static/css/jquery.datetimepicker.css"/>
+
+<!--datatable-->
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/jquery.dataTables.min.css"/>
+
+{% endblock %}
+
+{% block content %}
+<div class="containerRPS">
+    <h2>Báo cáo khách hàng</h2>
+
+    <form method="post" id="formRPS">
+        {% csrf_token %}
+
+        <!--<div class="form-field">-->
+            <!--<label>Từ</label>-->
+
+            <!--<div>-->
+                <!--<input style="height: 30px; width: 150px;" type="text" value="{{from_time}}"-->
+                       <!--id="datetimepicker_start" name="from_time"/>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="form-field">-->
+            <!--<label>Đến</label>-->
+
+            <!--<div>-->
+                <!--<input style="height: 30px; width: 150px;" type="text"-->
+                       <!--value='{{to_time}}'-->
+                       <!--id="datetimepicker_end"-->
+                       <!--name="to_time"/>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<br style="clear:both" />-->
+
+        <div class="form-field">
+            <label>Loại xe</label>
+
+            <div>
+                {% if vehicle_type_data %}
+                <select name="vehicle_type" style="height: 30px; width:150px" >
+                    {% for vehicle_type in vehicle_type_data %}
+                        {% if vehicle_type.selected %}
+                        <option name="vehicle_type" value="{{vehicle_type.value}}" selected>{{vehicle_type.name}}</option>
+                        {% else %}
+                        <option name="vehicle_type" value="{{vehicle_type.value}}">{{vehicle_type.name}}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label>Biển số xe</label>
+
+            <div>
+                <input style="height: 30px; width: 150px;" type="text"
+                       placeholder="Biển số xe"
+                       name="vehicle_number" value="{{vehicle_number}}"/>
+            </div>
+        </div>
+
+        <br style="clear:both" />
+
+        <div class="form-field">
+            <label>Loại khách hàng</label>
+            <div>
+            {% if customer_type_data %}
+            <select name="customer_type" style="height: 30px; width: 150px;">
+                {% for item in customer_type_data %}
+                    {% if item.value == customer_type %}
+                    <option name="vehicle_type" value="{{item.value}}" selected>{{item.name}}</option>
+                    {% else %}
+                    <option name="vehicle_type" value="{{item.value}}">{{item.name}}</option>
+                    {% endif %}
+                {% endfor %}
+            </select>
+            {% endif %}
+                </div>
+        </div>
+
+         <div class="form-field">
+            <label>Tên khách hàng</label>
+
+            <div>
+                <input style="height: 30px; width: 150px;" type="text"
+                       placeholder="Tên khách hàng"
+                       name="customer_name" value="{{customer_name}}"/>
+            </div>
+        </div>
+
+        <br style="clear:both" />
+
+        <div class="form-field">
+            <label>Tòa nhà</label>
+
+            <div>
+                <input style="height: 30px; width: 150px;" type="text"
+                       placeholder="Tên, địa chỉ tòa nhà"
+                       id="building_query" name="building_query" value="{{building_query}}"/>
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label>Căn hộ</label>
+
+
+            <div>
+                <input style="height: 30px; width: 150px;" type="text"
+                       placeholder="Căn hộ: địa chỉ, tên, sđt chủ hộ"
+                       name="apartment_query" value="{{apartment_query}}"/>
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label>Công ty</label>
+
+            <div>
+                <input style="height: 30px; width: 150px;" type="text"
+                       placeholder="Tên công ty"
+                       name="company_name" value="{{company_name}}"/>
+            </div>
+        </div>
+
+        <br style="clear:both;"/>
+        <div class="form-field" style="margin-top: 20px;">
+            <!--<label style="font-size:1.1em; font-weight:bold"></label>-->
+            <p style="font-size: 1.4em; color:DarkGreen; font-weight: 400">Tiêu chí đặc biệt</p>
+
+            <div>
+                <b>Số ngày nhắc phí trước khi hết hạn:</b><br />
+                <input style="text-align: right; height: 30px; width: 150px;" type="number" name="num_parking_fee_collection_day_before_expired" value="{{num_parking_fee_collection_day_before_expired}}" min="0" max="180"/>
+            </div>
+
+            {% if special_criteria_data %}
+            {% for item in special_criteria_data %}
+            <div>
+                <input style="margin: 0px 5px 0px 0px" type="radio" name="special_criteria" value="{{ item.value }}"/><span style="margin: 0px 10px 0px 0px;color: DarkGreen; font-weight: bold">{{ item.name}}</span>
+            </div>
+            {% endfor %}
+            {% endif %}
+
+        </div>
+        <br style="clear:both;"/>
+
+
+        <div class="form-field" style="margin-top:15px">
+            <div>
+                <button style="height: 30px; width: 150px; background-color: #26C281;color:white;font-weight:bold;text-align:center" class="form-field" type="submit" name="btn_REPORT">
+                    Báo cáo
+                </button>
+                <div style="display: inline; margin-left: 10px">
+                    <input style="margin: 0" type="checkbox" name="unprotected_report" value="unprotected_report"/>
+                    <span style="color: red; font-weight:bold">Báo cáo sửa đuợc</span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--script for datimepicker-->
+<script src="/static/jquery/jquery.js"></script>
+<link rel="stylesheet" href="/static/css/page.css">
+{% endblock %}
+<!--minLength: 2-->

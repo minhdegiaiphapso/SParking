@@ -1,0 +1,114 @@
+<div ng-controller="redemptiondetail" ng-init="getdetail(sf.id)">
+    <form name="detailredemptionform">
+    <img ng-show="loading" class="loading-inner" src="/static/image/loading.gif">
+    <table style="width:99%" class="table table-bordered ">
+        <tbody>
+            <tr>
+                <div class="row" >
+                    <div class="form-group col-md-8">
+                       <label>Điểm khởi đầu:</label>
+                       <span>[[sf.startdate]]</span>
+                    </div>
+                </div>
+            </tr>
+            <tr ng-repeat-start="dt in detailsredempt">
+                <th>
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <input ng-disabled="!(sf.ischange && (mypermission.iseditall || (mypermission.isedit && mypermission.userid==sf.userid)));" type="text" required class="form-control" placeholder="Tên dạng ngày"  ng-model="dt.callname">
+                        </div>
+                        <div class="form-group col-md-8">
+                            [[dt.weekmap]]
+                        </div>
+                    </div>
+
+                </th>
+            </tr>
+            <tr ng-repeat-end>
+                <td>
+                    <table class="table table-bordered">
+                        <tr>
+                             <th>Loại khung</th>
+                            <th>Điểm khởi đầu</th>
+                            <th>Điểm kết thúc</th>
+                            <th>Ngạch hóa đơn</th>
+                        </tr>
+                        <tr ng-repeat="nm in dt.cycletimes">
+                             <td>[[nm.cyclename]]</td>
+                            <td>
+                                <input ng-disabled="!(sf.ischange && (mypermission.iseditall || (mypermission.isedit && mypermission.userid==sf.userid)));" class="form-control" pattern="([0-1]?[0-9]|2[0-3]):([0-5][0-9]):([0-5][0-9])" required type="text" placeholder="HH:mm:ss" ng-model="nm.fromtime">
+                            </td>
+                            <td>
+                                <input ng-disabled="!(sf.ischange && (mypermission.iseditall || (mypermission.isedit && mypermission.userid==sf.userid)));" class="form-control" pattern="([0-1]?[0-9]|2[0-3]):([0-5][0-9]):([0-5][0-9])" required type="text" placeholder="HH:mm:ss" ng-model="nm.totime">
+                            </td>
+                            <td>
+                                <div ng-click="nm.fiterformula='';nm.overflow='auto'; nm.showlistfolmurla=!nm.showlistfolmurla" ng-mouseover="mn.showdetail=true&&!showlistfolmurla" ng-mouseout="mn.showdetail=false">
+                                    <span  class="form-control" ng-class="formulavalidclass(nm.formulaselected.id)" style="cursor:pointer;">
+                                        [[nm.formulaselected.callname]]
+                                    </span>
+                                    <input ng-hide="true" type="text" ensure-expression="formulavalid(nm.formulaselected.id)" ng-model="nm.formulaselected.id"></input>
+                                    <div style="position:absolute;z-index:999" ng-show="mn.showdetail" ng-if="nm.formulaselected.id!=-1">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Hạn mức hóa đơn</th>
+                                                    <th>Mức khấu trừ</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr ng-repeat="dt in nm.formulaselected.detail">
+                                                    <td>
+                                                        <span ng-if="($first||$middle) && (!$last)">[[(dt.billamount| number:0)]]<span style="font-size:x-small;vertical-align: text-top;">đ</span></span>
+                                                        <span ng-if="$last">Từ [[(dt.billamount| number:0)]]<span style="font-size:x-small;vertical-align: text-top;">đ</span> trở lên</span>
+                                                    </td>
+                                                    <td class="text-info">[[(dt.deductionamount | number:0)]]<span style="font-size:x-small;vertical-align: text-top;">đ</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <ul ng-mouseover="nm.showlistfolmurla=true;" ng-mouseout="nm.showlistfolmurla=false;" ng-if="(sf.ischange && (mypermission.iseditall || (mypermission.isedit && mypermission.userid==sf.userid)));" class="fomurla" style="position:absolute;z-index:9999;height: 150px;overflow:[[nm.overflow]];" ng-show="nm.showlistfolmurla">
+                                    <li><input type="text" placeholder="Lọc" style="background-color:#fff;" class="form-control" ng-model="nm.fiterformula" ng-change="filterformular(nm)"/> </li>
+                                    <li ng-mouseover="nm.overflow='none'" ng-mouseout="nm.overflow='auto'" ng-show="(nm.fiterformula=='' || item.canshow)&& item.id!=-1"  ng-repeat="item in nm.formula" ng-click="nm.formulaselected=nm.formula[$index];nm.showlistfolmurla=!nm.showlistfolmurla;" >
+                                        <span ng-mouseover="item.showdetail=true" ng-mouseout="item.showdetail=false">
+                                            [[item.callname]]
+                                        </span>
+                                        <div  style="position:absolute;width:310px;" ng-show="item.showdetail" ng-if="item.id!=-1">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Hạn mức hóa đơn</th>
+                                                        <th>Mức khấu trừ</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr ng-repeat="dt in item.detail">
+                                                        <td>
+                                                            <span ng-if="($first||$middle) && !$last">[[(dt.billamount| number:0)]]<span style="font-size:x-small;vertical-align: text-top;">đ</span></span>
+                                                            <span ng-if="$last || $last==$first">Từ [[(dt.billamount| number:0)]]<span style="font-size:x-small;vertical-align: text-top;">đ</span> trở lên</span>
+                                                        </td>
+                                                        <td class="text-info">[[(dt.deductionamount | number:0)]]<span style="font-size:x-small;vertical-align: text-top;">đ</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        <tr>
+            <td><button ng-if="(sf.ischange && (mypermission.iseditall || (mypermission.isedit && mypermission.userid==sf.userid)));" type="submit" ng-click="post_redemption(sf)" class="btn btn-success btn-block"
+                    ng-disabled="detailredemptionform.$invalid ||detailredemptionform.$error.pattern" >
+                Lưu
+                </button></td>
+        </tr>
+        </tbody>
+    </table>
+    </form>
+</div>

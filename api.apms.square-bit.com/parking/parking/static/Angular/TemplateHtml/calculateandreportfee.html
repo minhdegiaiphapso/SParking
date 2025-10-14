@@ -1,0 +1,48 @@
+<div  style="margin:20px;" ng-controller="calandreportfee">
+    <div ng-if="!mypermission.isadd || !mypermission.iseditall">
+        <h2>Tài khoản của bạn chưa đủ quyền truy cập chức năng này</h2>
+    </div>
+    <div ng-if="mypermission.isadd && mypermission.iseditall">
+    <form name="calform">
+        <img ng-show="loading" class="loading" src="/static/image/loading.gif">
+    <div class="row">
+        <div class="form-group col-md-4">
+           <label>Chọn mẫu phí:</label>
+            <select  ensure-expression="samples.sampleselected.id!=-1" ng-model="samples.sampleselected" class="form-control" required
+                    ng-options="item as item.callname for item in samples.samples"></select>
+            <!--[[samples.sampleselected]]-->
+        </div>
+        <div class="form-group col-md-4">
+            <label>Chọn file import:</label>
+            <input class="form-control" required id="fileSelect" type="file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
+        </div>
+         <div class="form-group col-md-4">
+            <label>File mẫu:</label>
+             <button  class="btn btn-success form-control" onclick="downloadtemp()">Tải file</button>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="btn-group form-group col-md-4" >
+            <button type="submit" ng-click="posttocalandreport()" class="btn btn-success"
+                ng-disabled="calform.$invalid ||calform.$error.pattern" >
+                Tính phí ra file Excel
+            </button>
+            <button ng-show="isdownload"  class="btn btn-success" onclick="download()" ng-click="isdownload=false">File kết quả</button>
+            <button ng-show="invaliddata"  class="btn btn-success" onclick="downloadinvalid()" ng-click="invaliddata=false">File Invalid</button>
+        </div>
+    </div>
+    </form>
+        <script>
+        var static_url = '{{STATIC_URL}}';
+        var url_root = location.protocol + '//' + location.host;
+        function download(){
+            window.location.href = url_root+'/get/downloadfeeresult/';
+        }
+        function downloadtemp(){
+            window.location.href = url_root+'/get/downloadtemplate/';
+        }
+        function downloadinvalid(){
+            window.location.href = url_root+'/get/invalidimport/';
+        }
+    </script>
+    </div>
+</div>

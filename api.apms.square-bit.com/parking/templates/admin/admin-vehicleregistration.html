@@ -1,0 +1,171 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls admin_static admin_modify %}
+
+{% block extrahead %}
+{{ block.super }}
+<script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
+{{ media }}
+{% endblock %}
+
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}" />{% endblock %}
+
+{% block coltype %}colM{% endblock %}
+
+{% block bodyclass %}{{ opts.app_label }}-{{ opts.object_name.lower }} change-form{% endblock %}
+
+{% if not is_popup %}
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+&rsaquo; <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ app_label|capfirst|escape }}</a>
+&rsaquo; {% if has_change_permission %}<a href="{% url opts|admin_urlname:'changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>{% else %}{{ opts.verbose_name_plural|capfirst }}{% endif %}
+&rsaquo; {% if add %}{% trans 'Add' %} {{ opts.verbose_name }}{% else %}{{ original|truncatewords:"18" }}{% endif %}
+</div>
+{% endblock %}
+{% endif %}
+
+{% block content %}<div id="content-main">
+{% block object-tools %}
+{% if change %}{% if not is_popup %}
+  <ul class="object-tools">
+    {% block object-tools-items %}
+    <li>
+        {% url opts|admin_urlname:'history' original.pk|admin_urlquote as history_url %}
+        <a href="{% add_preserved_filters history_url %}" class="historylink">{% trans "History" %}</a>
+    </li>
+    {% if has_absolute_url %}<li><a href="{% url 'admin:view_on_site' content_type_id original.pk %}" class="viewsitelink">{% trans "View on site" %}</a></li>{% endif%}
+    {% endblock %}
+  </ul>
+{% endif %}{% endif %}
+{% endblock %}
+<form {% if has_file_field %}enctype="multipart/form-data" {% endif %}action="{{ form_url }}" method="post" id="{{ opts.model_name }}_form">{% csrf_token %}{% block form_top %}{% endblock %}
+<div>
+{% if is_popup %}<input type="hidden" name="_popup" value="1" />{% endif %}
+{% if errors %}
+    <p class="errornote">
+    {% if errors|length == 1 %}{% trans "Please correct the error below." %}{% else %}{% trans "Please correct the errors below." %}{% endif %}
+    </p>
+    {{ adminform.form.non_field_errors }}
+{% endif %}
+
+{% block field_sets %}
+{% for fieldset in adminform %}
+  {% include "admin/includes/fieldset.html" %}
+{% endfor %}
+{% endblock %}
+
+{% block after_field_sets %}{% endblock %}
+
+{% block inline_field_sets %}
+{% for inline_admin_formset in inline_admin_formsets %}
+    {% include inline_admin_formset.opts.template %}
+{% endfor %}
+{% endblock %}
+
+{% block after_related_objects %}{% endblock %}
+
+{% block submit_buttons_bottom %}{% submit_row %}{% endblock %}
+
+{% if adminform.first_field and add %}
+   <script type="text/javascript">document.getElementById("{{ adminform.first_field.id_for_label }}").focus();</script>
+{% endif %}
+
+{# JavaScript for prepopulated fields #}
+{% prepopulated_fields_js %}
+
+</div>
+</form></div>
+<script>
+var id_customer = document.getElementById('id_customer');
+var id_staff = document.getElementById('id_staff');
+
+var current_url = document.URL;
+var vitri_dau = current_url.indexOf('/vehicleregistration/');
+var vitri_cuoi = current_url.lastIndexOf('/');
+var vehicle_registration_id = current_url.substring(vitri_dau + 21, vitri_cuoi);
+
+var vehicle_registration_form = document.getElementById('vehicleregistration_form');
+if (vehicle_registration_form) {
+    var h2 = vehicle_registration_form.getElementsByTagName('h2')[0];
+
+    var link1 = '<a class="my-button-color" target="_blank" style="display:inline-block;width: 120px;text-align:center; margin: 10px; padding: 6px;color: white; font-weight:bold;" href="/admin/log/vehicleregistration/' + vehicle_registration_id + '">Lịch sử thay đổi</a>';
+
+    h2.outerHTML += link1 + "<br />";
+}
+
+
+// Chi cho chon duy nhat khach hang hien tai
+if (current_url.indexOf('?customer=') != -1) {
+    var options = id_customer.options;
+    var length = options.length;
+    var selected = id_customer.value;
+
+    var records = [];
+
+    for (var i = 0; i < length; i++) {
+        if (options[i] && options[i].value != selected) {
+            records[records.length] = options[i];
+        }
+    }
+
+    for(var j = 0; j < records.length; j++) {
+        records[j].remove();
+    }
+}
+
+// Chi cho chon duy nhat nhan vien hien tai
+if (current_url.indexOf('?staff=') != -1) {
+    var options = id_staff.options;
+    var length = options.length;
+    var selected = id_staff.value;
+
+    var records = [];
+
+    for (var i = 0; i < length; i++) {
+        if (options[i] && options[i].value != selected) {
+            records[records.length] = options[i];
+        }
+    }
+
+    for(var j = 0; j < records.length; j++) {
+        records[j].remove();
+    }
+}
+else {
+    if (staff_id) {
+        var staff_id = '';
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", "/get/currentuser/", false);
+        xmlhttp.send();
+        if (xmlhttp.status == '200') {
+            staff_id = xmlhttp.responseText;
+
+            var options = id_staff.options;
+            for (var i = 0; i < options.length; i++) {
+                if (options[i] && options[i].value == staff_id) {
+                    options[i].setAttribute('selected', 'selected');
+                }
+            }
+
+            // Xoa cac nhan vien khong phai nhan vien hien tai
+            var length = options.length;
+            var selected = id_staff.value;
+
+            var records = [];
+
+            for (var i = 0; i < length; i++) {
+                if (options[i] && options[i].value != selected) {
+                    records[records.length] = options[i];
+                }
+            }
+
+            for (var j = 0; j < records.length; j++) {
+                records[j].remove();
+            }
+        }
+    }
+}
+
+</script>
+
+{% endblock %}

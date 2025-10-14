@@ -1,0 +1,49 @@
+{% extends "admin/base.html" %}
+{% block title %}
+| Phục hồi đăng ký xe
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+    xmlns="http://www.w3.org/1999/html">
+</h1>
+{% endblock %}
+
+{% block extrahead %}
+<!--custom view style-->
+<link rel="stylesheet" type="text/css" href="/static/css/page.css"/>
+
+<!--datetimepicker-->
+<link rel="stylesheet" type="text/css" href="/static/css/jquery.datetimepicker.css"/>
+
+<!--datatable-->
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/jquery.dataTables.min.css"/>
+
+{% endblock %}
+
+{% block content %}
+<div class="containerRPS">
+    <h2>Phục hồi đăng ký xe</h2>
+    <form action="/admin/ConfirmResume/" method="post">
+    {% csrf_token %}
+        <ul>
+        <li><b>Tên KH: </b>{{ customer_name }}</li>
+        <li><b>Ngày tạm ngừng: </b>{{ pause_date }}</li>
+        <li><b>Thời gian còn lại: </b>{{ remain_duration }}</li>
+        <li><b>Lần cuối xe vào nhưng chưa ra: </b>{{ last_check_in_but_not_check_out }}</li>
+        <li><b>Hôm nay là: </b>{{ today }}</li>
+        <li>{{ form.as_p }}</li>
+        </ul>
+        <input type="hidden" value="{{customer_id}}" name="customer_id"/>
+        <input type="hidden" value="{{selected}}" name="selected"/>
+        <br style="clear:both"/>
+        <button type="submit" name="btn_OK"  style="font-size: 13px; color: white;background-color: rgb(207, 73, 68); width: 77px; height: 28px; border: 1px solid #ccc;">Xác nhận</button>
+        <button name="btn_CANCEL" style="font-size: 13px; color: white;background-color: rgb(207, 73, 68); width: 77px; height: 28px; border: 1px solid #ccc;">Hủy bỏ</button>
+    </form>
+</div>
+
+<!--script for datimepicker-->
+<script src="/static/jquery/jquery.js"></script>
+<script src="/static/jquery/jquery.datetimepicker.js"></script>
+{% endblock %}

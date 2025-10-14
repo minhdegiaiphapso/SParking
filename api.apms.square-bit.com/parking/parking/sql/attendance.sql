@@ -1,0 +1,1 @@
+ALTER TABLE parking_attendance ADD CONSTRAINT attendance_parking_session_id_refs_id FOREIGN KEY (parking_session_id) REFERENCES parking_parkingsession(id) ON DELETE SET NULL ON UPDATE CASCADE;

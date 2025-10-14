@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/static/Angular/css/bootstrap/css/bootstrap.min.css" />
+    <!--<link rel="stylesheet" type="text/css" href="/static/css/greenparking.css" />-->
+    <script type="text/javascript" src="/static/Angular/js/jquery.js"></script>
+    <!--datetimepicker-->
+    <link rel="stylesheet" type="text/css" href="/static/css/jquery.datetimepicker.css"/>
+
+    <script type="text/javascript" src="/static/Angular/css/bootstrap/js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="/static/Angular/js/angularjs/angular.min.js"></script>-->
+    <!--<script type="text/javascript" src="/static/Angular/js/angularjs/angular-route.min.js"></script>-->
+    <!--<script type="text/javascript" src="/static/Angular/js/app.js"></script>-->
+    <style>
+        .fomurla{
+            padding:5px;
+            padding-right:15px;
+            border:solid 1px green;
+            list-style: none;
+            position:absolute;
+            z-index:9999;
+            background-color:#efefef;
+        }
+        .fomurla li{
+            margin:3px;
+            padding:0px;
+        }
+        .fomurla li:hover{
+            background-color:green;
+            cursor:pointer;
+        }
+        .active-0{
+            background-color:orange;
+        }
+        .active-1{
+            background-color:#ececec;
+        }
+        .active-2{
+            background-color:#1da362;
+        }
+
+        .table tr td{
+            padding-left:5px;
+        }
+        .table thead{
+            background-color:#27af60;
+            color:white;
+        }
+        .f-valid{background:green; color:#000;}
+        .f-invalid{background:orange; color:#000;}
+        form .ng-invalid-required{background:red; color:#000;}
+        form .ng-invalid{background:orange; color:#000;}
+        form .ng-valid{background:green; color:#000;}
+        form .ng-disabled{color:black;}
+        .form-control[disabled]{
+            color:black;
+        }
+        .my-nav{
+            background-color:#27af60;
+            max-height:24px;
+            border:0px;
+            border-radius:0px;
+        }
+        .nn{
+            color:red;
+
+        }
+        .navbar-nav{
+            color:white;
+            font-size:16px;
+        }
+        .navbar-nav li a:active{
+            background-color:#2ecc71;
+        }
+        .navbar-nav li a:hover{
+            background-color:#2ecc71;
+        }
+        .loading{
+            position:absolute;
+            top:40%;
+            left:46%;
+            width:32px;
+        }
+        .loading-inner{
+            position:absolute;
+            left:46%;
+            width:32px;
+        }
+        .myactive{
+            background-color:#2ecc71;
+        }
+        ul li:hover{
+             background-color:#2ecc71;
+        }
+        .user-menu-detail{
+            display:none;
+            position:absolute;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse my-nav">
+      <div class="container-fluid">
+        <!--<div class="navbar-header">-->
+          <!--<div>-->
+               <!---->
+           <!--</div>-->
+        <!--</div>-->
+        <ul class="nav navbar-nav" style="width:100%">
+            <li style="max-height:50px;">
+                <a style="vertical-align: top; margin-top: 1px; font-size:1.5em;color:#fff;" aria-label="Green Parking" title="Trang chủ" href="/admin/"><img src="/static/image/logo_gp_small.png" width="26px" height="25px" style="color:#fff;">Green Parking
+               </a>
+            </li>
+            <li  class="dropdown"><a style="color:#fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">Phí giữ xe<span class="caret"></span></a>
+                <ul class="dropdown-menu" style=" background-color:#27af60;">
+                    <li onclick="choseitem1(this);"><a style="color:#fff;"  href="/admin/support/configfee#!formulafee">Định mức phí</a></li>
+                    <li onclick="choseitem1(this);"><a style="color:#fff;" href="/admin/support/configfee#!configfee">Công thức phí</a></li>
+                    <li onclick="choseitem1(this);"><a style="color:#fff;" href="/admin/support/configfee#!testfee">Biểu phí</a></li>
+				</ul>
+			</li>
+			<li  class="dropdown"><a style="color:#fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">Khấu trừ phí<span class="caret"></span></a>
+                <ul class="dropdown-menu" style=" background-color:#27af60;">
+                    <!--<li onclick="choseitem1(this);"><a style="color:#fff;"  href="/admin/support/configfee#!grouptenant">Nhóm đối tác, cửa hàng</a></li>-->
+                    <li onclick="choseitem1(this);"><a style="color:#fff;" href="/admin/support/configfee#!formulabill">Định mức khấu trừ</a></li>
+                    <li onclick="choseitem1(this);"><a style="color:#fff;" href="/admin/support/configfee#!configfee">Công thức khấu trừ</a></li>
+                    <li onclick="choseitem1(this);"><a style="color:#fff;" href="/admin/support/configfee#!configredemption">Biểu khấu trừ phí</a></li>
+				</ul>
+			</li>
+			<li  class="dropdown"><a style="color:#fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">Báo cáo<span class="caret"></span></a>
+                <ul class="dropdown-menu" style=" background-color:#27af60;">
+                    <li onclick="choseitem1(this);"><a style="color:#fff;"  href="/admin/report/ParkingFee_New/">Báo cáo phí vãng lai</a></li>
+                    <li onclick="choseitem1(this);"><a style="color:#fff;"  href="/admin/report/ParkingRedemption1/">Báo cáo redemption</a></li>
+                    <li onclick="choseitem1(this);"><a style="color:#fff;" href="/admin/report/configfee_history/">Báo cáo lịch sử tác động</a></li>
+					<li onclick="choseitem1(this);"><a style="color:#fff;" href="/admin/report/permission_configfee/">Báo cáo phân quyền</a></li>
+				</ul>
+			</li>
+			<li  class="dropdown"><a style="color:#fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">Công cụ<span class="caret"></span></a>
+                <ul class="dropdown-menu" style=" background-color:#27af60;">
+                    <li onclick="choseitem1(this);"><a style="color:#fff;"  href="/admin/support/configfee#!calcualteandreport">Kiểm tra công thức</a></li>
+                    <!--<li onclick="choseitem1(this);"><a style="color:#fff;" href="/admin/support/configfee#!configfee">Tìm kiếm</a></li>-->
+				</ul>
+			</li>
+			<li  class="dropdown"><a style="color:#fff;" class="dropdown-toggle" data-toggle="dropdown" href="#">Cấu hình<span class="caret"></span></a>
+                <ul class="dropdown-menu" style=" background-color:#27af60;">
+                    <li onclick="choseitem1(this);"><a style="color:#fff;"  href="/admin/support/configfee#!specialdate">Ngày đặc biệt</a></li>
+                    <!--<li onclick="choseitem1(this);"><a style="color:#fff;" href="/admin/support/configfeepermission">Loại thẻ</a></li>-->
+					<!--<li onclick="choseitem1(this);"><a style="color:#fff;" href="/admin/support/configfeepermission">Loại xe</a></li>-->
+					<li onclick="choseitem1(this);"><a style="color:#fff;" href="/admin/support/configfee#!permission">Phân quyền</a></li>
+				    {% if isroot %}
+                        <li  onclick="choseitem1(this);"><a style="color:#fff;" href="/admin/support/configfee#!rootpermission">Root</a></li>
+                    {% endif %}
+                </ul>
+			</li>
+            {%if username%}
+            <li style="float:right;" onmouseover="showuser();"; onmouseout="hideuser();">
+                <div clas="user-menu">
+                <div style="padding:10px;">
+                    <img style="background-color:white" class="wp-small-gravatar" width="16" height="16" src="/static/image/green_user_icon.png">Chào mừng bạn, <strong>{{username}}</strong>.
+                </div>
+                <div class="user-menu-detail">
+                    <ul style="margin:0; background-color:#27af60;list-style-type:none">
+                        <li style="cursor: pointer; width:100%;padding:5px;color:#fff;" onclick="changepass();" > <span style="cursor: pointer;">Thay đổi mật khẩu</span></li>
+                        <li style="cursor: pointer; width:100%; padding:3px;color:#fff;" onclick="logout();" > <span style="cursor: pointer;">Thoát</span></li>
+                    </ul>
+                </div>
+                </div>
+            </li>
+            {%endif%}
+        </ul>
+      </div>
+    </nav>
+    <div style="margin-left:20px;" class="containerRPS">
+    <h2>BÁO CÁO REDEMPTION</h2>
+    <form method="post" id="formRPS">
+        {% csrf_token %}
+        <div class="form-field">
+            <label>Từ</label>
+
+            <div>
+                <input style="height: 30px; width: 150px;" type="text" value="{{from_time}}"
+                       id="datetimepicker_start" name="from_time"/>
+            </div>
+        </div>
+        <div class="form-field">
+            <label>Đến</label>
+
+            <div>
+                <input style="height: 30px; width: 150px;" type="text"
+                       value='{{to_time}}'
+                       id="datetimepicker_end"
+                       name="to_time"/>
+            </div>
+        </div>
+        <br style="clear:both;"/>
+        <div class="form-field" style="margin-top: 15px">
+            <div>
+                <button style="height: 30px; width: 150px; background-color: #26C281;color:white;font-weight:bold;text-align:center"
+                        class="form-field" type="submit" name="btn_REPORT">
+                    Báo cáo
+                </button>
+
+            </div>
+        </div>
+    </form>
+</div>
+    <script>
+        var static_url = '{{STATIC_URL}}';
+        var url_root = location.protocol + '//' + location.host;
+        function backhome(){
+            window.location.href = url_root;
+        }
+        function choseitem(elm){
+            $(".nav li").removeClass("myactive");
+            $(elm).addClass("myactive");
+        }
+        function choseitem1(elm){
+            $(".nav li").removeClass("myactive");
+            $(".dropdown-menu").removeClass("myactive");
+            $(elm).addClass("myactive");
+            $(elm).parent('ul').parent('li').addClass("myactive");
+        }
+        function showuser()
+        {
+            $('.user-menu-detail').show();
+        }
+        function hideuser()
+        {
+            $('.user-menu-detail').hide();
+        }
+        function changepass()
+        {
+            window.location.href = url_root+'/admin/password_change/';
+        }
+        function logout()
+        {
+            window.location.href = url_root+'/admin/logout/';
+        }
+
+
+    </script>
+<script src="/static/jquery/jquery.js"></script>
+<script src="/static/jquery/jquery.datetimepicker.js"></script>
+<script src="/static/jquery/jquery.js"></script>
+<script src="/static/jquery/jquery.datetimepicker.js"></script>
+<script>
+    jQuery('#datetimepicker_start').datetimepicker({
+        format:'d/m/Y H:i:s',
+        timepicker:true,
+        lang:'vi',
+        i18n:{
+            vi:{
+                months:[
+                    'Tháng Một','Tháng Hai','Tháng Ba','Tháng Tư',
+                    'Tháng Năm','Tháng Sáu','Tháng Bảy','Tháng Tám',
+                    'Tháng Chín','Tháng Mười','Tháng Mười Một','Tháng Mười Hai',
+                    ],
+                dayOfWeek:[
+                    "Chủ Nhật", "Hai", "Ba", "Tư",
+                    "Năm", "Sáu", "Bảy."
+                ]
+            }
+        },
+        onShow:function( ct ){
+            this.setOptions({
+                maxDate:jQuery('#datetimepicker_end').val()?jQuery('#datetimepicker_end').val():false
+            })
+        }
+    });
+    jQuery('#datetimepicker_end').datetimepicker({
+        format:'d/m/Y H:i:s',
+        timepicker:true,
+        lang:'vi',
+        i18n:{
+            vi:{
+                months:[
+                    'Tháng Một','Tháng Hai','Tháng Ba','Tháng Tư',
+                    'Tháng Năm','Tháng Sáu','Tháng Bảy','Tháng Tám',
+                    'Tháng Chín','Tháng Mười','Tháng Mười Một','Tháng Mười Hai'
+                    ],
+                dayOfWeek:[
+                    "Chủ Nhật", "Hai", "Ba", "Tư",
+                    "Năm", "Sáu", "Bảy."
+                ]
+            }
+        },
+        onShow:function( ct ){
+            this.setOptions({
+
+            })
+        }
+    });
+
+
+</script>
+</body>
+
+</html>

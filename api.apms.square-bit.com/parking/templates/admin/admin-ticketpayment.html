@@ -1,0 +1,637 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls admin_static admin_modify %}
+
+{% block extrahead %}{{ block.super }}
+<script type="text/javascript" src="{% url 'admin:jsi18n' %}"></script>
+{{ media }}
+{% endblock %}
+
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}" />{% endblock %}
+
+{% block coltype %}colM{% endblock %}
+
+{% block bodyclass %}{{ opts.app_label }}-{{ opts.object_name.lower }} change-form{% endblock %}
+
+{% if not is_popup %}
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+&rsaquo; <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ app_label|capfirst|escape }}</a>
+&rsaquo; {% if has_change_permission %}<a href="{% url opts|admin_urlname:'changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>{% else %}{{ opts.verbose_name_plural|capfirst }}{% endif %}
+&rsaquo; {% if add %}{% trans 'Add' %} {{ opts.verbose_name }}{% else %}{{ original|truncatewords:"18" }}{% endif %}
+</div>
+{% endblock %}
+{% endif %}
+
+{% block content %}<div id="content-main">
+{% block object-tools %}
+{% if change %}{% if not is_popup %}
+  <ul class="object-tools">
+    {% block object-tools-items %}
+    <li>
+        {% url opts|admin_urlname:'history' original.pk|admin_urlquote as history_url %}
+        <a href="{% add_preserved_filters history_url %}" class="historylink">{% trans "History" %}</a>
+    </li>
+    {% if has_absolute_url %}<li><a href="{% url 'admin:view_on_site' content_type_id original.pk %}" class="viewsitelink">{% trans "View on site" %}</a></li>{% endif%}
+    {% endblock %}
+  </ul>
+{% endif %}{% endif %}
+{% endblock %}
+<form {% if has_file_field %}enctype="multipart/form-data" {% endif %}action="{{ form_url }}" method="post" id="{{ opts.model_name }}_form">{% csrf_token %}{% block form_top %}{% endblock %}
+<div>
+{% if is_popup %}<input type="hidden" name="_popup" value="1" />{% endif %}
+{% if errors %}
+    <p class="errornote">
+    {% if errors|length == 1 %}{% trans "Please correct the error below." %}{% else %}{% trans "Please correct the errors below." %}{% endif %}
+    </p>
+    {{ adminform.form.non_field_errors }}
+{% endif %}
+
+{% block field_sets %}
+{% for fieldset in adminform %}
+  {% include "admin/includes/fieldset.html" %}
+{% endfor %}
+{% endblock %}
+
+{% block after_field_sets %}{% endblock %}
+
+{% block inline_field_sets %}
+{% for inline_admin_formset in inline_admin_formsets %}
+    {% include inline_admin_formset.opts.template %}
+{% endfor %}
+{% endblock %}
+
+{% block after_related_objects %}{% endblock %}
+
+{% block submit_buttons_bottom %}{% submit_row %}{% endblock %}
+
+{% if adminform.first_field and add %}
+   <script type="text/javascript">document.getElementById("{{ adminform.first_field.id_for_label }}").focus();</script>
+{% endif %}
+
+{# JavaScript for prepopulated fields #}
+{% prepopulated_fields_js %}
+
+</div>
+</form></div>
+<script>
+var id_customer = document.getElementById('id_customer');
+var id_staff = document.getElementById('id_staff');
+
+// Khong cho them dong moi
+
+var tr_add_row = document.getElementsByClassName('add-row')[0];
+if (tr_add_row) {
+    tr_add_row.remove();
+}
+
+
+// Readonly tong tien
+var payment_fee = document.getElementById('id_payment_fee');
+payment_fee.readOnly = true;
+payment_fee.style.fontWeight = "bold";
+payment_fee.style.fontSize = "1.6em";
+payment_fee.style.textAlign = "right";
+payment_fee.style.border = "0px";
+payment_fee.style.color = "red";
+
+//"font-weight: bold; color:
+//; font-size: 120%";
+
+// Chi cho chon duy nhat khach hang hien tai
+if (id_customer.baseURI.indexOf("add") != id_customer.baseURI.length - 4) {
+    var options = id_customer.options;
+    var length = options.length;
+    var selected = id_customer.value;
+
+    var records = [];
+
+    for (var i = 0; i < length; i++) {
+        if (options[i] && options[i].value != selected) {
+            records[records.length] = options[i];
+        records[j].remove();
+    }
+}
+
+// Chi cho chon duy nhat nhan vien hien tai
+
+    if (id_staff) {
+        if (id_customer.baseURI.indexOf('staff=') != -1) {
+        //console.log("Khong cho chon nhan vien ne.");
+        var options = id_staff.options;
+        if (options) {
+            var length = options.length;
+            var selected = id_staff.value;
+
+            var records = [];
+
+            for (var i = 0; i < length; i++) {
+                if (options[i] && options[i].value != selected) {
+                    records[records.length] = options[i];
+                }
+            }
+
+            for (var j = 0; j < records.length; j++) {
+                records[j].remove();
+            }
+        }
+        }
+    else {
+        var staff_id = '';
+        var xmlhttp = new XMLHttpRequest();
+
+        xmlhttp.onreadystatechange=function()
+        {
+            if (xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+                staff_id = xmlhttp.responseText;
+
+                if (id_staff.options) {
+                    var options = id_staff.options;
+
+                    if (options) {
+                        for (var i = 0; i < options.length; i++) {
+                            if (options[i] && options[i].value == staff_id) {
+                                options[i].setAttribute('selected', 'selected');
+                            }
+                        }
+
+                        // Xoa cac nhan vien khong phai nhan vien hien tai
+                        var length = options.length;
+                        var selected = id_staff.value;
+
+                        var records = [];
+
+                        for (var i = 0; i < length; i++) {
+                            if (options[i] && options[i].value != selected) {
+                                records[records.length] = options[i];
+                            }
+                        }
+
+                        for (var j = 0; j < records.length; j++) {
+                            records[j].remove();
+                        }
+                    }
+                }
+            }
+        };
+
+        xmlhttp.open("GET", "/get/currentuser/", true);
+        xmlhttp.send();
+    }
+}
+
+/////////////////////////////////////////
+function getVehicleRegistrationInfo(id, current_row, input_effective_date, select_duration, input_day_duration, input_level_fee, input_expired_date, input_payment_detail_fee) {
+    if (id)
+    {
+        var xmlhttp = new XMLHttpRequest();
+
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                info = xmlhttp.responseText;
+                if (info && info.length > 0) {
+                    var infos = info.split('@');
+
+                    var p_get_vehicle_type = current_row.getElementsByClassName('field-get_vehicle_type')[0].getElementsByTagName('p')[0];
+                    var p_get_status = current_row.getElementsByClassName('field-get_status')[0].getElementsByTagName('p')[0];
+//                    var p_get_current_expired_date = current_row.getElementsByClassName('field-get_current_expired_date')[0].getElementsByTagName('p')[0];
+
+                    if (p_get_vehicle_type.innerHTML != infos[0] ||
+                        p_get_status.innerHTML != infos[1]
+                        ) {
+
+                        p_get_vehicle_type.innerHTML = infos[0];
+
+                        p_get_status.innerHTML = infos[1];
+
+                        new_color = "gray";
+
+                        switch(p_get_status.innerHTML) {
+                            case "Đang dùng":
+                                new_color = "blue";
+                                break;
+                            case "Hủy":
+                                new_color = "gray";
+                                break;
+                            case "Tạm ngưng":
+                                new_color = "brown";
+                                break;
+                            case "Chưa đăng ký":
+                                new_color = "green";
+                                break;
+                            default:
+                                new_color = "green";
+                                break;
+                        }
+
+                        p_get_status.style.color = new_color;
+
+                        // Neu da co han cu (infos[3]), thi ngay bat dau la ngay ke tiep han cu
+                        // Readonly ngay bat dau
+                        if (infos[3].length > 0) {
+//                            p_get_current_expired_date.innerHTML = infos[3];
+                            var span_datetime_field_effective_date = current_row.getElementsByClassName('field-effective_date')[0].getElementsByTagName('span')[0];
+
+                            input_effective_date.readOnly = true;
+                            input_effective_date.style.border = "none";
+
+                            if (span_datetime_field_effective_date) {
+                                span_datetime_field_effective_date.style.visibility = "hidden";
+                            }
+                        }
+                        else {
+//                            p_get_current_expired_date.innerHTML = infos[3];
+                            var span_datetime_field_effective_date2 = current_row.getElementsByClassName('field-effective_date')[0].getElementsByTagName('span')[0];
+
+                            if (span_datetime_field_effective_date2) {
+                                input_effective_date.readOnly = false;
+                                input_effective_date.style.borderWidth = "1px";
+                                span_datetime_field_effective_date2.style.visibility = "hidden";
+                            }
+                        }
+
+                        if (document.baseURI.indexOf('add') != -1 ) {
+                            input_effective_date.value = infos[4];
+                        }
+
+                        input_level_fee.value = infos[5];
+
+                        var final_expired_date_duration = getLastDateOfMonthAndDuration(input_effective_date.value, select_duration.value, input_day_duration.value, input_level_fee.value, input_expired_date, input_payment_detail_fee);
+                    }
+                }
+
+            }
+            else return "";
+        };
+
+        xmlhttp.open("GET", "/get/vehicleregistration/" + id + "/", true);
+        xmlhttp.send();
+    }
+}
+
+///////////////////////////////////////
+
+function getLastDateOfMonthAndDuration(date_str, month_duration, day_duration, level_fee, input_expired_date, input_payment_detail_fee, update_total_payment_fee) {
+    //console.log("ngay cuoi thang aaa " + date_str + " duration " + duration);
+    update_total_payment_fee = (typeof update_total_payment_fee === 'undefined') ? false : update_total_payment_fee;
+
+
+    var xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.onreadystatechange=function()
+    {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {
+            var results = xmlhttp.responseText.split('@');
+            input_expired_date.value = results[0];
+            input_payment_detail_fee.value = results[1];
+            if (update_total_payment_fee)
+                updateTotalPaymentFee(idx);
+        }
+        else return "@0";
+    };
+
+    xmlhttp.open("GET","/get/newexpireddate/" + date_str + "/" + month_duration + "/" +  day_duration + "/" + level_fee, true);
+    xmlhttp.send();
+}
+
+function getTicketPaymentInfo(ticket_payment_id) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET","/get/ticketpayment/" + ticket_payment_id,false);
+    xmlhttp.send();
+
+    if (xmlhttp.status == '200') {
+        final = xmlhttp.responseText;
+        //console.log(final);
+        return final;
+    }
+    return "";
+}
+
+///////////////////////////////////////////////////////////////////////////
+// Cap nhat tong so tien luot thanh toan
+function updateTotalPaymentFee(i) {
+    var total = 0.0;
+    for(var i = 0; i <= idx; i++) {
+        var current_row = document.getElementById('ticketpaymentdetail_set-'  + i);
+
+        if (current_row) {
+            var enable_check_box = current_row.getElementsByClassName('get_enable_check_box')[0];
+
+            if (document.baseURI.indexOf('add') != -1) {
+                if (enable_check_box) {
+                    var level_fee_i = document.getElementById('id_ticketpaymentdetail_set-' + i + '-payment_detail_fee');
+
+                    if (level_fee_i) {
+                        if (enable_check_box.checked) {
+                            total = total + parseFloat(level_fee_i.value);
+                        }
+                        else {
+                            level_fee_i.value = 0;
+                        }
+                    }
+                }
+            }
+            else {
+                var level_fee_i = document.getElementById('id_ticketpaymentdetail_set-' + i + '-payment_detail_fee');
+
+                if (level_fee_i) {
+                    total = total + parseFloat(level_fee_i.value);
+                }
+                else {
+                    level_fee_i.value = 0;
+                }
+            }
+            }
+        }
+
+    if (payment_fee) {
+        payment_fee.value = total;
+    }
+}
+
+function dimAndToggleCurrentRow(current_row, flag) {
+    function dimAndToggleElement(element1, i, flag, clear) {
+
+        if (flag) {
+            element1.style.backgroundColor = "white";
+        }
+        else {
+            element1.style.backgroundColor = "silver";
+        }
+
+        if (clear) {
+                element1.value = 0;
+                element1.readOnly = !flag;
+        }
+        updateTotalPaymentFee(i)
+    }
+    var i = current_row.id.split('-')[1];
+
+    if (current_row) {
+        var input_vehicle_registration = document.getElementById('id_ticketpaymentdetail_set-' + i + '-vehicle_registration');
+        var input_level_fee = document.getElementById('id_ticketpaymentdetail_set-' + i + '-level_fee');
+        var input_vehicle_number = document.getElementById('id_ticketpaymentdetail_set-' + i + '-vehicle_number');
+        var input_payment_detail_fee = document.getElementById('id_ticketpaymentdetail_set-' + i + '-payment_detail_fee');
+        var input_cardnumber = document.getElementById('id_ticketpaymentdetail_set-' + i + '-cardnumber');
+        var select_duration = document.getElementById('id_ticketpaymentdetail_set-' + i + '-duration');
+        var input_day_duration = document.getElementById('id_ticketpaymentdetail_set-' + i + '-day_duration');
+        var input_effective_date = document.getElementById('id_ticketpaymentdetail_set-' + i + '-effective_date');
+        var input_expired_date = document.getElementById('id_ticketpaymentdetail_set-' + i + '-expired_date');
+
+
+        if (document.baseURI.indexOf('ticketpayment') != -1) {
+            var p_get_vehicle_type = current_row.getElementsByClassName('field-get_vehicle_type')[0].getElementsByTagName('p')[0];
+            var p_get_status = current_row.getElementsByClassName('field-get_status')[0].getElementsByTagName('p')[0];
+//            var p_get_current_expired_date = current_row.getElementsByClassName('field-get_current_expired_date')[0].getElementsByTagName('p')[0];
+            var p_get_this_old_expired_date = document.getElementById('id_ticketpaymentdetail_set-' + i + '-old_expired_date');
+
+            dimAndToggleElement(input_cardnumber, i, flag);
+            dimAndToggleElement(current_row, i,flag);
+            dimAndToggleElement(input_vehicle_registration, i, flag);
+            dimAndToggleElement(input_level_fee, i, flag);
+            dimAndToggleElement(input_vehicle_number, i, flag);
+            dimAndToggleElement(input_payment_detail_fee, i, flag, true);
+            dimAndToggleElement(select_duration, i, flag, true);
+            dimAndToggleElement(input_day_duration, i, flag, true);
+
+            dimAndToggleElement(input_effective_date, i, flag);
+            dimAndToggleElement(input_expired_date, i, flag);
+
+            dimAndToggleElement(p_get_vehicle_type, i, flag);
+            dimAndToggleElement(p_get_status, i, flag);
+//            dimAndToggleElement(p_get_current_expired_date, i, flag);
+            dimAndToggleElement(p_get_this_old_expired_date, i, flag);
+        }
+    }
+}
+
+function togglePaymentDetail(check_box) {
+    var flag = check_box.checked;
+    var current_row = check_box.parentElement.parentElement.parentElement;
+    if (current_row) { dimAndToggleCurrentRow(current_row, flag); }
+}
+
+var popup_show_count = 0;
+
+function updatePaymentDetail(i) {
+    var current_row = document.getElementById('ticketpaymentdetail_set-'  + i);
+ $('#ticketpaymentdetail_set-'  + i+'').find('.field-vehicle_registration').hide();
+    if (current_row) {
+        var input_vehicle_registration = document.getElementById('id_ticketpaymentdetail_set-' + i + '-vehicle_registration');
+        var input_level_fee = document.getElementById('id_ticketpaymentdetail_set-' + i + '-level_fee');
+        var input_vehicle_number = document.getElementById('id_ticketpaymentdetail_set-' + i + '-vehicle_number');
+        var input_payment_detail_fee = document.getElementById('id_ticketpaymentdetail_set-' + i + '-payment_detail_fee');
+        ///Fix 22-11-2017
+        var input_cardnumber = document.getElementById('id_ticketpaymentdetail_set-' + i + '-cardnumber');
+        ///
+        var select_duration = document.getElementById('id_ticketpaymentdetail_set-' + i + '-duration');
+        var input_day_duration = document.getElementById('id_ticketpaymentdetail_set-' + i + '-day_duration');
+        var input_effective_date = document.getElementById('id_ticketpaymentdetail_set-'  + i + '-effective_date');
+        var input_expired_date = document.getElementById('id_ticketpaymentdetail_set-' + i + '-expired_date');
+
+        var options = input_vehicle_registration.options;
+        var length = options.length;
+        var selected = input_vehicle_registration.value;
+
+        var records = [];
+
+        for (var l = 0; l < length; l++) {
+            if (options[l] && options[l].value != selected) {
+                records[records.length] = options[l];
+            }
+        }
+
+        for(var j = 0; j < records.length; j++) {
+            records[j].remove();
+        }
+
+        // Neu la them moi thanh toan (add)
+        // Cap nhat loai xe, tinh trang, muc phi (get_level_fee)
+
+        if (document.baseURI.indexOf('ticketpayment') != -1) {
+            var info = getVehicleRegistrationInfo(input_vehicle_registration.value, current_row, input_effective_date, select_duration, input_day_duration, input_level_fee, input_expired_date, input_payment_detail_fee);
+            //console.log("Cap nhat loai xe, tinh trang, muc phi");
+            //console.log(" info " + info);
+        }
+
+        // Readonly gia tri muc phi
+        if (input_level_fee.value > 0)
+        {
+            input_level_fee.readOnly = true;
+            input_level_fee.style.border = "none";
+        }
+        ///Fix 22-11-2017
+        if (input_cardnumber.value.length > 0)
+        {
+            input_cardnumber.readOnly = true;
+            input_cardnumber.style.border = "none";
+        }
+        // Readonly bien so xe
+        if (input_vehicle_number.value.length > 0)
+        {
+            input_vehicle_number.readOnly = true;
+            input_vehicle_number.style.border = "none";
+        }
+
+        // Readonly han moi
+        input_expired_date.readOnly = true;
+        input_expired_date.style.border = "none";
+        var span_datetime_field_expired_date = current_row.getElementsByClassName('field-expired_date')[0].getElementsByTagName('span')[0];
+        //console.log("Mini span expired date " + span_datetime_field_expired_date);
+
+
+        if (span_datetime_field_expired_date) {
+            //console.log("Mini hidden");
+            span_datetime_field_expired_date.style.visibility = "hidden";
+        }
+
+        // Readonly thanh tien chi tiet thanh toan
+        input_payment_detail_fee.readOnly = true;
+        input_payment_detail_fee.style.fontSize = "1.6em";
+        input_payment_detail_fee.style.textAlign = "right";
+        input_payment_detail_fee.style.color = "red";
+        input_payment_detail_fee.style.border = "0px";
+
+
+
+        var span_datetime_field_effective_date = current_row.getElementsByClassName('field-effective_date')[0];
+        //console.log("*************************span: " + span_datetime_field_effective_date.innerHTML);
+        // Onfocus ngay bat dau hieu luc
+        input_effective_date.onfocus = function() {
+            // neu dang readonly khong quan tam
+            var final_expired_date_duration = getLastDateOfMonthAndDuration(input_effective_date.value, select_duration.value, input_day_duration.value, input_level_fee.value, input_expired_date, input_payment_detail_fee, true);
+        };
+
+        // Onchange ngay bat dau hieu luc
+        input_effective_date.onchange = function() {
+            // neu dang readonly khong quan tam
+
+            var final_expired_date_duration = getLastDateOfMonthAndDuration(input_effective_date.value, select_duration.value, input_day_duration.value, input_level_fee.value, input_expired_date, input_payment_detail_fee);
+        };
+
+        // Oninput ngay bat dau hieu luc
+        input_effective_date.oninput = function() {
+            // neu dang readonly khong quan tam             {
+                var final_expired_date_duration = getLastDateOfMonthAndDuration(input_effective_date.value, select_duration.value, input_day_duration.value, input_level_fee.value, input_expired_date, input_payment_detail_fee, true);
+        };
+
+        // Onchange thoi gian gia han
+
+        if (editableFlag) {
+            if (document.baseURI.indexOf('add') == -1) {
+                if($('#id_ticketpaymentdetail_set-'+i+'-payment_detail_fee').val()=='0')
+                    $('#ticketpaymentdetail_set-'  + i+'').hide();
+                //<!--popup_show_count = popup_show_count + 1;-->
+                //<!--if (popup_show_count <= 1)-->
+                    //<!--alert("CẢNH BÁO:\nĐây là trang thay đổi luợt đóng tiền mới nhất của khách hàng này.\nHãy chắc rằng bạn chịu trách nhiệm về bất cứ thay đổi nào diễn ra trên trang này!");-->
+            }
+            select_duration.onchange = function () {
+                // neu dang readonly khong quan tam
+                var final_expired_date_duration = getLastDateOfMonthAndDuration(input_effective_date.value, select_duration.value, input_day_duration.value, input_level_fee.value, input_expired_date, input_payment_detail_fee, true);
+            };
+
+            input_day_duration.onfocus = function () {
+                var final_expired_date_duration = getLastDateOfMonthAndDuration(input_effective_date.value, select_duration.value, input_day_duration.value, input_level_fee.value, input_expired_date, input_payment_detail_fee, true);
+            };
+
+            input_day_duration.onchange = function () {
+                var final_expired_date_duration = getLastDateOfMonthAndDuration(input_effective_date.value, select_duration.value, input_day_duration.value, input_level_fee.value, input_expired_date, input_payment_detail_fee, true);
+            };
+
+            input_day_duration.oninput = function () {
+                var final_expired_date_duration = getLastDateOfMonthAndDuration(input_effective_date.value, select_duration.value, input_day_duration.value, input_level_fee.value, input_expired_date, input_payment_detail_fee, true);
+            };
+            $('.module> table th:eq(4)').hide();
+            $('.module> table th:eq(5)').hide();
+            $('#ticketpaymentdetail_set-'  + i+'').find('.field-get_vehicle_type').hide();
+            $('#ticketpaymentdetail_set-'  + i+'').find('.field-get_status').hide();
+        }
+        else {
+            select_duration.disabled = true;
+            <!--if($('#id_ticketpaymentdetail_set-'+i+'-payment_detail_fee').val()=='0')-->
+                 <!--$('#ticketpaymentdetail_set-'  + i+'').hide();-->
+        }
+    }
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+var e = document.getElementById('ticketpaymentdetail_set-group');
+
+
+// Lay so dong chi tiet thanh toan hien tai
+var idx = -1;
+
+var re = /(ticketpaymentdetail_set-(\d+))/g;
+var markup = document.documentElement.innerHTML;
+while ((m = re.exec(markup)) != null) {
+	if (m.index === re.lastIndex) {
+	re.lastIndex++;
+	    }
+    var s = m[0];
+    var num = parseInt(s.substring( s.lastIndexOf('-')+1, s.length));
+    if (idx < num) { idx = num; }
+	}
+
+//console.log(idx);
+
+//console.log('Do it');
+var editableFlag = true;
+
+function doIt() {
+    var baseuri = document.baseURI;
+    if (baseuri.indexOf('add') == -1) {
+        var ticket_payment_id = baseuri.lastIndexOf('ticketpayment/');
+
+        var last_slash = baseuri.lastIndexOf('/');
+
+        if (ticket_payment_id < last_slash) {
+            var ticket_payment_id = baseuri.substr(ticket_payment_id + 14, last_slash - ticket_payment_id - 14);
+
+            var info = getTicketPaymentInfo(ticket_payment_id);
+            if (info == "False") {
+                editableFlag = false;
+            }
+        }
+    }
+
+    for(var i = 0; i <= idx; i++) {
+        if (document.baseURI.indexOf('add') != -1) {
+            var current_row = document.getElementById('ticketpaymentdetail_set-'  + i);
+
+            dimAndToggleCurrentRow(current_row, false);
+        }
+
+        updatePaymentDetail(i);
+        var select_vehicle = document.getElementById('id_ticketpaymentdetail_set-' + i + '-vehicle_registration');
+
+        select_vehicle.onchange = function() {
+            var order = this.id.split('-')[1];
+            updatePaymentDetail(order);
+            updateTotalPaymentFee(idx);
+        }
+    }
+    updateTotalPaymentFee(idx);
+}
+
+doIt();
+
+//setInterval(function() {
+  //  for(var i = 0; i <= idx; i++) {
+    //    updatePaymentDetail(i);
+//
+  //      var select_vehicle = document.getElementById('id_ticketpaymentdetail_set-' + i + '-vehicle_registration');
+    //    console.log(select_vehicle);
+   // }
+    // },3000);
+</script>
+<script>
+    $(document).ready(function () {
+        $('.module> table th:eq(1)').hide();
+        $("input").prop('disabled', true);
+        $(".field-effective_date").find('span').hide();
+    });
+</script>
+{% endblock %}

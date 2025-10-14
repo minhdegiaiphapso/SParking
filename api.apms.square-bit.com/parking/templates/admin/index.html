@@ -1,0 +1,76 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_static %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href='{% static "admin/css/dashboard.css" %}'/>
+<link rel="stylesheet" type="text/css" href="/static/css/page.css"/>
+{% endblock %}
+{% block extrahead %}
+{{ block.super }}
+<script type="text/javascript">
+    $(document).ready(function() {
+        function refresh_terminal_table() {
+            $('#terminal_table').load('/api/terminals');
+        }
+        function refresh_server_table() {
+            $('#server_table').load('/api/servers');
+        }
+        setInterval(refresh_terminal_table, 5 * 1000);
+        setInterval(refresh_server_table, 5 * 1000);
+        refresh_terminal_table();
+        refresh_server_table();
+    });
+</script>
+{% endblock %}
+{% block coltype %}colMS{% endblock %}
+
+{% block bodyclass %}dashboard{% endblock %}
+
+{% block breadcrumbs %}{% endblock %}
+
+{% block content_title %}{% endblock %}
+
+{% block content %}
+<div class="group">
+    <div class="left_column">
+        <h2>Trạng thái máy chủ</h2>
+        <div id="server_table"></div>
+        <br/>
+        <h2>Trạng thái máy trạm</h2>
+        <div id="terminal_table"></div>
+    </div>
+    <div class="right_column">
+        <div id="content-related" class="right_column_child">
+            <h2>{% trans 'Recent Actions' %}</h2>
+            <div class="module" id="recent-actions-module">
+                <h3>{% trans 'My Actions' %}</h3>
+                {% load log %}
+                {% get_admin_log 10 as admin_log for_user user %}
+                {% if not admin_log %}
+                <p>{% trans 'None available' %}</p>
+                {% else %}
+                <ul class="actionlist">
+                    {% for entry in admin_log %}
+                    <li class="{% if entry.is_addition %}addlink{% endif %}{% if entry.is_change %}changelink{% endif %}{% if entry.is_deletion %}deletelink{% endif %}">
+                        {% if entry.is_deletion or not entry.get_admin_url %}
+                        {{ entry.object_repr }}
+                        {% else %}
+                        <a href="{{ entry.get_admin_url }}">{{ entry.object_repr }}</a>
+                        {% endif %}
+                        <br/>
+                        {% if entry.content_type %}
+                        <span class="mini quiet">{% filter capfirst %}{% trans entry.content_type.name %}{% endfilter %}</span>
+                        {% else %}
+                        <span class="mini quiet">{% trans 'Unknown content' %}</span>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

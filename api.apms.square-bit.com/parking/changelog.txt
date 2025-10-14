@@ -1,0 +1,74 @@
+VERSION=2.0.3_20170303
+
+================
+NHAT KY THAY DOI
+================
+
+Ghi chep ngan gon mot so thay doi trong thoi gian gan day.
+
+Nghia Huynh
+
+* Thang 06 - 08/2016
+Cap nhat, sua loi, bo sung mot so chuc nang ClaimPromotion (SFactor, SaigonCentre)
+
+* 18/12/2015
+  Nhap khach hang: Dang ky xe - bo sung them field: ngay dang ky, han hien tai
+* 24/11/2015
+  Khach hang:
+  Cho phep khach hang co nhieu can ho.
+  Thay doi rang buoc khong cho 2 khach hang trung TEN + CMND.
+
+* 20/11/2015
+  Tuy chinh giao dien Web Admin thu cong
+
+  Tao file theme moi dua tren file theme mau greenparking_template.css (xem tai lieu HDSD - danh cho nguoi co quyen truy cap may chu), sau do chep de vao may chu voi ten greenparking.css.
+  Thay hinh logo, hinh nen, hinh logo mau bao cao Excel (xem tai lieu HDSD - danh cho nguoi co quyen truy cap may chu) - chep de cac file hinh moi voi ten chinh xac giong ten cu tren may chu.
+
+* 21/10/2015
+
+  Yeu cau nhap du lieu moi de test ket qua cap nhat!
+
+  * BC Tinh trang xe:
+     ngay hieu luc -> ngay dong phi
+     ngay dang ky: ngay hieu luc dau tien
+
+     Sua loi BC Tinh trang xe da huy: hien ngay huy.
+     Sua loi BC Tinh trang xe hoat dong.
+
+     Bo sung BC Tinh trang xe tam ngung: + cot ngay hieu luc phuc hoi.
+     => Thao tac phuc hoi dang ky xe: cho phep dien ngay hieu luc phuc hoi (trong tuong lai) nen co the khac voi ngay hom nay!
+
+  * BC Xuat hoa don:
+      Noi dung xuat hoa don co the dung mau (template)
+      Chon logo template.
+      => Cau hinh - Thiet lap chung: "Mau noi dung xuat hoa don", "Mau logo dung trong bao cao"
+
+* 6/10/2015:
++ Add new table "CustomerAuditLogEntry"
+Please syncdb
+
+* 21/9/2015:
++ PauseResumeHistory Model:
+- ADD new field 'expired_date'
+
++ TicketPaymentDetail Model:
+- ADD new field 'old_expired_date'
+
+* 16/9/2015:
++ Add new table "CardAuditLogEntry"
+Please syncdb
+
+* 14/9/2015:
++ TicketPayment Model:
+- ADD new field 'duration_in_days'
+
+* Phu luc:
+  DANG KY XE
+  Quy uoc cach goi mot so truong thong tin dang ky xe:
+    Ngay tao: ngay nhap thong tin dang ky xe lan dau tien (registration_date)
+    Ngay dang ky: ngay hieu luc dau tien (first_renewal_effective_date)
+    Ngay dong phi: ngay dong phi gan nhat (last_renewal_date)
+    Ngay hieu luc: ngay hieu luc hien tai (last_renewal_effective_date)
+
+DROP DATABASE `apmsdb`;
+CREATE SCHEMA `apmsdb` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;

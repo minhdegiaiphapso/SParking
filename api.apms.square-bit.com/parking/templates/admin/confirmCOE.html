@@ -1,0 +1,112 @@
+{% extends "admin/base.html" %}
+{% block title %}
+Xác nhận cho ra ngoại lệ
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+    xmlns="http://www.w3.org/1999/html">
+</h1>
+{% endblock %}
+
+{% block extrahead %}
+<!--custom view style-->
+<link rel="stylesheet" type="text/css" href="/static/css/page.css"/>
+
+<!--datetimepicker-->
+<link rel="stylesheet" type="text/css" href="/static/css/jquery.datetimepicker.css"/>
+
+<!--datatable-->
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/css/jquery.dataTables.min.css"/>
+
+{% endblock %}
+
+{% block content %}
+<div class="containerRPS">
+    <h2>Xác nhận cho ra ngoại lệ</h2>
+    <p>Lí do:</p>
+    <form action="/admin/ConfirmCOE/" method="post">
+    {% csrf_token %}
+
+    <div style="margin-left: auto;margin-right: auto;width: 100%; height:100%">
+    <textarea name="note" rows="10" style="width: 100%;height:100%;" placeholder="Nhập lí do "></textarea>
+    <br />
+    <!--<button name="btn_SUBMIT" type="submit" style="color: white;background-color: rgb(207, 73, 68)"/>Cập nhật-->
+        <!--</button>-->
+    </div>
+
+
+    <table id="datatable" style="width: 100%">
+        <thead>
+            <tr>
+                <th>Mã lượt</th>
+                <th>Tên thẻ</th>
+                <th>Thời điểm vào</th>
+                <th>Người cho vào</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if data %}
+                {% for item in data %}
+                    <tr>
+                        <td>{{ item.parking_session_id }}</td>
+                        <td>{{ item.card_label }}</td>
+                        <td>{{ item.check_in_time }}</td>
+                        <td>{{ item.check_in_operator }}</td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+        </tbody>
+    </table>
+    <br />
+    <br />
+
+
+
+         <!-- Meo: luu giu chuoi cac parkingsession id duoc chon -->
+        <textarea type="hidden" name="selected" style="display:none;" >{{ selected }}</textarea>
+        <button type="submit" name="btn_OK" style="color: white;background-color: rgb(207, 73, 68)">Xác nhận</button>
+        <button name="btn_CANCEL" style="font-size: 13px; color: white;background-color: rgb(207, 73, 68); width: 77px; height: 28px; border: 1px solid #ccc;">Hủy bỏ</button>
+    </form>
+</div>
+
+<script src="/static/jquery/jquery.js"></script>
+<script src="/static/jquery/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var table = $('#datatable').dataTable( {
+            "oLanguage": {
+                "sProcessing":   "Đang xử lý...",
+                "sLengthMenu":   "Xem _MENU_ mục",
+                "sZeroRecords":  "Không tìm thấy dòng nào phù hợp",
+                "sInfo":         "Đang xem _START_ đến _END_ trong tổng số _TOTAL_ mục",
+                "sInfoEmpty":    "Đang xem 0 đến 0 trong tổng số 0 mục",
+                "sInfoFiltered": "(được lọc từ _MAX_ mục)",
+                "sInfoPostFix":  "",
+                "sSearch":       "",
+                "sUrl":          "",
+                "oPaginate": {
+                "sFirst":    "Đầu",
+                 "sPrevious": "Trước",
+                 "sNext":     "Sau",
+                 "sLast":     "Cuối"
+                 }
+            }
+        } );
+    });
+</script>
+
+<link rel="stylesheet" href="/static/css/1.8.18/jquery-ui.css" type="text/css" media="all"/>
+<script src="/static/jquery/jquery.min.js" type="text/javascript"></script>
+<script src="/static/jquery/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+<script>
+    var $j = jQuery.noConflict();
+    $j(function() {
+        $j("#txt_user").autocomplete({
+            source: "/admin/get_users",
+            minLength: 2
+            });
+        });
+</script>
+{% endblock %}
