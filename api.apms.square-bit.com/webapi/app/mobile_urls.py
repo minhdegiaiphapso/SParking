@@ -20,4 +20,5 @@ urlpatterns = patterns(
     url(r'^login-api/$', mobile_views.login_api, name='login_api'),
     url(r'^log-invoce-retail/$', mobile_views.invoice_log_retail, name='log-invoce-retail'),
     url(r'^log-invoice-consoliddate/$', mobile_views.invoice_log_consoliddate, name='log-invoice-consoliddate'),
+    url(r'^sync-invoice/$', mobile_views.sync_invoice, name='sync-invoice'),
 )

@@ -273,6 +273,15 @@ class ConsolidatedInvoice(models.Model):
     iscompleted = models.BooleanField(db_column='iscompleted', verbose_name='Đã hoàn thành', default=False)
     class Meta:
         verbose_name_plural = u'Hóa đơn tổng hợp'
+
+class SyncInvoice(models.Model):
+    id = models.AutoField(primary_key=True)
+    refid = models.CharField(max_length=50, db_column='refid', verbose_name='Mã tham chiếu hóa đơn')
+    invoicedata = models.TextField(db_column='invoicedata', verbose_name='Nội dung phản hồi', null=True,
+                                       blank=True)
+    resultcode = models.IntegerField(db_column='resultcode',verbose_name='Mã kết quả', null=True)
+    class Meta:
+        verbose_name_plural = u'Đồng bộ hóa đơn'
 class MobileShift(models.Model):
     id = models.IntegerField(primary_key=True)
     app_id = models.CharField(max_length=128, verbose_name=u"Mã Mobile App", db_column='app_id')

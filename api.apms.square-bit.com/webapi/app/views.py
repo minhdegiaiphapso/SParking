@@ -15,17 +15,17 @@ from rest_framework import status
 from rest_framework import generics
 from rest_framework.views import APIView
 # from parking.views import calculate_parking_fee
-from parking.parking.views import callredemtion1, get_parking_fee_info, get_parking_fee_or_customer_info, calculate_parking_fee, is_vehicle_registration_available
+from parking.views import callredemtion1, get_parking_fee_info, get_parking_fee_or_customer_info, calculate_parking_fee, is_vehicle_registration_available
 from serializers import *
 from webapi.settings import MEDIA_ROOT, IS_TEST, MEM_CACHE_ENABLE
-from parking.parking.models import Card, CardStatus, Terminal, Lane, Camera, ParkingSession, CheckInImage, UserCard, \
+from parking.models import Card, CardStatus, Terminal, Lane, Camera, ParkingSession, CheckInImage, UserCard, \
     UserShift, ParkingSetting, CheckOutException, UserProfile, Attendance, CardType, VehicleType, \
     CheckOutExceptionInfo, TerminalGroup, ParkingFeeSession, VehicleRegistration, \
     ClaimPromotion, ClaimPromotionBill, ClaimPromotionCoupon, ClaimPromotionV2, ClaimPromotionBillV2, ClaimPromotionCouponV2, \
     ClaimPromotionTenant, ClaimPromotionVoucher, Customer,\
     VEHICLE_TYPE_CATEGORY, load_nghia_vehicle_type, get_storaged_vehicle_type, decode_vehicle_type, get_setting
-from parking.parking.common import CARD_STATUS
-from parking.parking.services import search_parking_session, get_statistics, search_parking_session_new, search_claim_promotion
+from parking.common import CARD_STATUS
+from parking.services import search_parking_session, get_statistics, search_parking_session_new, search_claim_promotion
 from utils import *
 from image_replication import ImageReplicationController
 from django.db import connections

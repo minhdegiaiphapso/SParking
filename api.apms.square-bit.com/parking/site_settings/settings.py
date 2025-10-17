@@ -90,7 +90,7 @@ WPADMIN = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'spk',
+        'NAME': 'hd',
         'USER': 'root',
         'PASSWORD': '@MinhDe81$123',
         'HOST': '127.0.0.1',
@@ -101,7 +101,7 @@ DATABASES = {
     },
     'secondary': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'spkfee',
+        'NAME': 'hd_fee',
         'USER': 'root',
         'PASSWORD': '@MinhDe81$123',
         'HOST': '127.0.0.1',

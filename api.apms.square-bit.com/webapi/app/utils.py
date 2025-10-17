@@ -8,10 +8,10 @@ import sys
 import json
 from django.utils.timezone import utc
 from dateutil import tz
-from parking.parking.models import CardStatus, ParkingSession, Card
+from parking.models import CardStatus, ParkingSession, Card
 from rest_framework.views import exception_handler
 from webapi.host_settings import LOG_SERVER
-from parking.parking.views import  calculate_parking_fee
+from parking.views import  calculate_parking_fee
 import pytz
 
 __author__ = 'ndhoang'

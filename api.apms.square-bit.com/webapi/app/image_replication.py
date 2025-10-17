@@ -3,7 +3,7 @@ import json
 from threading import Thread
 import pika
 from pika.exceptions import AMQPConnectionError
-from parking.parking.models import ImageReplicationSetting
+from parking.models import ImageReplicationSetting
 import time
 import logging
 

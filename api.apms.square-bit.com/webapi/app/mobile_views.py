@@ -20,15 +20,15 @@ from rest_framework.views import APIView
 
 from mobile_serializers import *
 from webapi.settings import MEDIA_ROOT
-from  parking.parking.invoiceService import DoRetailInvoice
-from parking.parking.models import Card, CardStatus, Terminal, Lane, Camera, ParkingSession, CheckInImage, UserCard, \
+from  parking.invoiceService import DoRetailInvoice
+from parking.models import Card, CardStatus, Terminal, Lane, Camera, ParkingSession, CheckInImage, UserCard, \
     UserShift, ParkingSetting, CheckOutException, UserProfile, Attendance, CardType, VehicleType, \
     CheckOutExceptionInfo, TerminalGroup, ParkingFeeSession, VehicleRegistration, \
     ClaimPromotion, ClaimPromotionBill, ClaimPromotionCoupon, ClaimPromotionV2, ClaimPromotionBillV2, ClaimPromotionCouponV2, \
     ClaimPromotionTenant, ClaimPromotionVoucher, Customer,\
     VEHICLE_TYPE_CATEGORY, load_nghia_vehicle_type, get_storaged_vehicle_type, decode_vehicle_type, get_setting
-from parking.parking.common import CARD_STATUS
-from parking.parking.services import search_parking_session, get_statistics, search_parking_session_new, search_claim_promotion
+from parking.common import CARD_STATUS
+from parking.services import search_parking_session, get_statistics, search_parking_session_new, search_claim_promotion
 from utils import *
 from image_replication import ImageReplicationController
 from django.db import connections
@@ -919,7 +919,7 @@ def revenue_report(request):
         return Response({"Error":ex}, status.HTTP_200_OK)
 
 from django.contrib.auth import authenticate
-from  parking.parking.models import ApiToken, RetailInvoice, ConsolidatedInvoice
+from  parking.models import ApiToken, RetailInvoice, ConsolidatedInvoice, SyncInvoice
 
 @api_view(('POST',))
 def login_api(request):
@@ -1015,5 +1015,43 @@ def invoice_log_consoliddate(request):
             return HttpResponse(json.dumps({'error': 'Invalid data'}), content_type='application/json', status=400)
 
 
+
+    return HttpResponse(json.dumps({'error': 'POST required'}), content_type='application/json', status=405)
+
+@api_view(('POST',))
+def sync_invoice(request):
+    if request.method == 'POST':
+        try:
+            auth_header = request.META.get('HTTP_AUTHORIZATION')
+            if not auth_header or not auth_header.startswith('Token '):
+                return HttpResponse(json.dumps({'error': 'Unauthorized'}), content_type='application/json', status=401)
+
+            token_key = auth_header.split(' ')[1]
+            try:
+                token = ApiToken.objects.get(key=token_key)
+            except ApiToken.DoesNotExist:
+                return HttpResponse(json.dumps({'error': 'Invalid token'}), content_type='application/json', status=401)
+
+            data = json.loads(request.body)
+            refid = data.get('keyMaster')
+            invoicedata = data.get('InvoiceData') if 'InvoiceData' in data else None
+            resultcode = int(data.get('ResultCode')) if 'ResultCode' in data else -1
+
+            try:
+                qr =SyncInvoice.objects.filter(refid = refid)
+                if qr:
+                    d = qr[0]
+                else:
+                    d = SyncInvoice()
+                d.refid= refid
+                d.invoicedata = invoicedata
+                d.resultcode = resultcode
+                d.save()
+                return HttpResponse(json.dumps({'Message': "Sync success", "ResultCode":resultcode}), content_type='application/json')
+            except Exception as ex:
+                return HttpResponse(json.dumps({'error': 'Invalid data'}),
+                                    content_type='application/json', status=400)
+        except:
+            return HttpResponse(json.dumps({'error': 'Invalid data'}), content_type='application/json', status=400)
 
     return HttpResponse(json.dumps({'error': 'POST required'}), content_type='application/json', status=405)

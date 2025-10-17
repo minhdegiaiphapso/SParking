@@ -74,7 +74,7 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': DB_SETTINGS.get('NAME', 'spk'),
+            'NAME': DB_SETTINGS.get('NAME', 'hd'),
             'USER': DB_SETTINGS.get('USER', 'root'),
             'PASSWORD': DB_SETTINGS.get('PASSWORD', '@MinhDe81$123'),
             'HOST': DB_SETTINGS.get('HOST', '127.0.0.1'),
@@ -86,7 +86,7 @@ else:
         },
         'secondary': {
              'ENGINE': 'django.db.backends.mysql',
-             'NAME': DB_SETTINGS.get('NAME', 'spkfee'),
+             'NAME': DB_SETTINGS.get('NAME', 'hd_fee'),
              'USER': DB_SETTINGS.get('USER', 'root'),
              'PASSWORD': DB_SETTINGS.get('PASSWORD', '@MinhDe81$123'),
              'HOST': DB_SETTINGS.get('HOST', '127.0.0.1'),

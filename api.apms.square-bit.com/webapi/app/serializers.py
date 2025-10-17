@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from rest_framework import serializers
 from utils import get_now_utc, datetime2timestamp
-from parking.parking.models import Customer, Card, Terminal, Lane, Camera, ParkingSession, ParkingFeeSession, CheckInImage, UserProfile , UserShift, CardType,\
+from parking.models import Customer, Card, Terminal, Lane, Camera, ParkingSession, ParkingFeeSession, CheckInImage, UserProfile , UserShift, CardType,\
     VehicleType, TerminalGroup, ClaimPromotionTenant, ClaimPromotionVoucher, ClaimPromotion, ClaimPromotionBill, ClaimPromotionCoupon, ClaimPromotionV2, ClaimPromotionBillV2, ClaimPromotionCouponV2
 
 
